@@ -2,7 +2,8 @@
 layout: post
 title:  "Websharper Shopping cart"
 date:   2022-03-12 10:41:39 +0100
-categories: websharper update
+categories: websharper
+tags: f# template
 ---
 
 ## Websharper Shopping cart

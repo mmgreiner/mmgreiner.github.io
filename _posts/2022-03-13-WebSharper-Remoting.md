@@ -2,7 +2,8 @@
 layout: post
 title:  "WebSharper Remoting"
 date:   2022-03-13 09:07:00 +0100
-categories: websharper removing
+categories: websharper
+tags: f# remoting
 
 ---
 

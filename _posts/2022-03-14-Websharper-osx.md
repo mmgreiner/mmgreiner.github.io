@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Websharper OSX"
-categories: websharper osx
+categories: websharper
+tags: osx monterey
 ---
 
 ## WebSharper on OSX
 
-I'm developing [WebSharper](https://websharper.com) applications on OSX, macOS Monterey. 
+I'm developing [WebSharper][websharper-home] applications on OSX, macOS Monterey. 
 
 The following templates are installed:
 
@@ -50,7 +51,7 @@ When creating a new project, the created project file looks as follows:
 </Project>
 ```
 
-These ``5.0...`` versions of WebSharper do not compile:
+These `5.0...` versions of WebSharper do not compile:
 
 ```sh
 dotnet build
@@ -65,7 +66,7 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 Build FAILED.
 ```
 
-Problem seems to be that for version 6, the targets for ``òsx-x64`` are missing:
+Problem seems to be that for version 5 of [WebSharper][websharper-home], the targets for `osx-x64` are missing:
 
 ```sh
 % ls /Users/XXX/.nuget/packages/websharper.fsharp/5.0.0.120/build//../tools/net5.0
@@ -74,7 +75,7 @@ linux-musl-x64	linux-x64	win-x64
 
 ### Remidy
 
-Change all the references to ``5.0...`` in the project file to ``4.*``:
+Change all the references to `5.0...` in the project file to `4.*`:
 
 ```xml
 <ItemGroup>
@@ -85,6 +86,17 @@ Change all the references to ``5.0...`` in the project file to ``4.*``:
 </ItemGroup>
 ```
 
-*Note*: I did not find a way to use a variable inside the project xml to set the version.
+Another way is to set a variable for the version:
+
+```xml
+<PropertyGroup>
+  <TargetFramework>net5.0</TargetFramework>
+  <WSVersion>4.*</WSVersion>
+</PropertyGroup>
+...
+  <PackageReference Include="WebSharper" Version="$(WSVersion)" />  
+```
 
 
+
+[websharper-home]:  https://websharper.com
