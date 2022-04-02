@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Using Jekyll"
 date:   2022-03-12 09:00:39 +0100
-categories: jekyll update
+categories: jekyll github fsharp websharper 
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -30,11 +30,28 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 ## Hints
 
+### Installing
+
+Under OSX, the following line has to be added to the Gemfile:
+
+~~~~ruby
+gem "github-pages", "~> 225", group: :jekyll_plugins
+gem "webrick"
+~~~~
+
+### Deploying
+
+These posts are stored at [GitHub](https://github.com/mmgreiner/mmgreiner.github.io) and published to Github Pages [mmgreiner.github.io](https://mmgreiner.github.io).
+
+###  Compiling
+
 To compile into pages, use: 
 
 ````csh
  % bundle exec jekyll serve   
 ````
+
+### Supported languages
 
 To find out which programming languages are supported, use `rogify`:
 
@@ -49,10 +66,7 @@ ada: The Ada 2012 programming language
 
 apache: configuration files for Apache web server
 
-apex: The Apex programming language (provided by salesforce)
-
 ...
-
 
 yaml: Yaml Ain't Markup Language (yaml.org) [aliases: yml]
 

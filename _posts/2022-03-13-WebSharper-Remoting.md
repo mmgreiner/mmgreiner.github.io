@@ -2,12 +2,12 @@
 layout: post
 title:  "WebSharper Remoting"
 date:   2022-03-13 09:07:00 +0100
-categories: websharper
+categories: websharper fsharp
 tags: f# remoting
 
 ---
 
-Note that WebSharper JavaScript does not support ``Async.RunSynchronously`` as stated here:
+Note that WebSharper JavaScript does not support ``Async.RunSynchronously`` as stated here [WebSharper Doc]({{site.websharper_link | append: "/remoting"}}).
 
 https://developers.websharper.com/docs/v4.x/fs/remoting
 

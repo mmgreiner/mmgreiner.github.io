@@ -1,13 +1,19 @@
 ---
 layout: post
 title:  "Websharper OSX"
-categories: websharper
+categories: websharper 
 tags: osx monterey
 ---
 
 ## WebSharper on OSX
 
-I'm developing [WebSharper][websharper-home] applications on OSX, macOS Monterey. 
+I'm developing [WebSharper][{{site.websharper_link}}] applications on OSX, macOS Monterey. 
+
+To install the the templates, use:
+
+~~~~sh
+% dotnet new -i WebSharper.Templates
+~~~~
 
 The following templates are installed:
 
@@ -26,7 +32,9 @@ WebSharper 5 Proxy                      websharper-prx   [C#],F#   WebSharper
 WebSharper 5 Single Page Application    websharper-spa   [C#],F#   WebSharper/Web
 ```
 
-When creating a new project, the created project file looks as follows:
+To create a project, use `dotnet new websharper-web -lang F# -o outputFolder`.
+
+After the project has been created, the project file looks as follows:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">
@@ -51,7 +59,7 @@ When creating a new project, the created project file looks as follows:
 </Project>
 ```
 
-These `5.0...` versions of WebSharper do not compile:
+These `5.0...` versions of WebSharper do not compile on OSX:
 
 ```sh
 dotnet build
@@ -99,4 +107,4 @@ Another way is to set a variable for the version:
 
 
 
-[websharper-home]:  https://websharper.com
+[websharper-home]:  {{site.websharper_link}}
