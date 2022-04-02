@@ -37,7 +37,7 @@ a + a       // return 2*a
 kompliziert |> Infix.format     // returns 1/(a*b)
 ~~~
 
-Formulars can also be turned int LaTeX:
+Formulas can also be turned int LaTeX:
 
 ~~~fsharp
 kompliziert |> LaTex.format
