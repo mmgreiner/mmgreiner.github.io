@@ -27,3 +27,39 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+
+## Hints
+
+To compile into pages, use: 
+
+````csh
+ % bundle exec jekyll serve   
+````
+
+To find out which programming languages are supported, use `rogify`:
+
+~~~csh
+% rogify list
+== Available Lexers ==
+abap: SAP - Advanced Business Application Programming
+
+actionscript: ActionScript [aliases: as,as3]
+
+ada: The Ada 2012 programming language
+
+apache: configuration files for Apache web server
+
+apex: The Apex programming language (provided by salesforce)
+
+...
+
+
+yaml: Yaml Ain't Markup Language (yaml.org) [aliases: yml]
+
+yang: Lexer for the YANG 1.1 modeling language (RFC7950)
+
+zig: The Zig programming language (ziglang.org) [aliases: zir]
+
+~~~
+
+[rogify]: https://simpleit.rocks/ruby/jekyll/what-are-the-supported-language-highlighters-in-jekyll/
