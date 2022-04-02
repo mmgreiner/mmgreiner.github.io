@@ -2,7 +2,7 @@
 layout: post
 title:  "Mathe Uffzgi"
 categories: math 
-tags: homework fsharp
+tags: homework fsharp math visualization
 ---
 
 Once in a while, I'm supporting Lea with her math homework (Swiss: *Uffzgi*). Here are some tools that help me (remember, that I prefer [F#]({{fsharp_link}}) to other languages.
@@ -44,9 +44,8 @@ kompliziert |> LaTex.format
 // returns \frac{1}{ab} 
 ~~~
 
-And this LaTeX can then be used in markdown documentation.
+And this LaTeX can then be used in markdown documents. How to do this with [Jekyll]({{site.jekyll_link}}), is shown in the post [Liquid tricks]({% post_url 2022-04-02-liquid-tricks %}).
 
-It is also 
 
 ~~~fsharp
 let symbols = Map.ofList [ "a", FloatingPoint.Real 2.0; "b", FloatingPoint.Real 3.0 ]
