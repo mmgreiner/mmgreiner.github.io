@@ -5,9 +5,9 @@ categories: websharper
 tags: osx monterey
 ---
 
-## WebSharper on OSX
+## Installing WebSharper
 
-I'm developing [WebSharper][{{site.websharper_link}}] applications on OSX, macOS Monterey. 
+I'm developing web applications using [WebSharper][websharper-home] on macOS Monterey. 
 
 To install the the templates, use:
 

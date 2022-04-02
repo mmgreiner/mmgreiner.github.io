@@ -5,5 +5,5 @@
 layout: home
 ---
 
-This a page where Markus Greiner keeps some thoughts and experiences on coding, mostly in F#.
+This a page where Markus *Küse* Greiner keeps some thoughts and experiences on coding, mostly in F#.
 

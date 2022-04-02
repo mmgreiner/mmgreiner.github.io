@@ -15,5 +15,7 @@ Unfortunately, the code was not published, and as an exercise, I wanted to re-im
 - as shown in the article using the reactive UI
 - as an elmish MVU implementation
 
-I found the code later in [github](https://github.com/websharper-samples/ShoppingCart).
+I found the code later in [github](https://github.com/websharper-samples/ShoppingCart). Starting from there, I'm working on int in [github]({{exercise_link}}).
+
+
 
