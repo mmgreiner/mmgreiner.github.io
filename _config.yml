@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   WebSharper is used for web programming.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+twitter_username: mmgreiner
 github_username:  mmgreiner
 
 # Build settings
@@ -57,4 +57,5 @@ plugins:
 websharper_link:  https://developers.websharper.com/docs/v4.x/fs/
 mozilla_link: https://developer.mozilla.org/en-US/docs/Web/HTML
 exercise_link: https://github.com/mmgreiner/Exercises
+fsharp_link: https://fsharp.org
 
