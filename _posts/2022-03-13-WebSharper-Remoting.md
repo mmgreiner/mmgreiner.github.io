@@ -9,7 +9,6 @@ tags: f# remoting
 
 Note that WebSharper JavaScript does not support ``Async.RunSynchronously`` as stated here [WebSharper Doc]({{site.websharper_link | append: "/remoting"}}).
 
-https://developers.websharper.com/docs/v4.x/fs/remoting
 
 ~~~ fsharp
 module Server =
@@ -29,12 +28,19 @@ module Client =
 
 
 
-https://github.com/AlexPeret/websharper-cookbook-tutorial/blob/master/articles/cookbook-chapter-03.md
-
-Themen:
+Topics:
 
 - `list` cannot be converted to JSON internally, use array or ??
 - or do I have to add FSharp.Types?
 - Same problem for `Option`
-- On client side, you cannot use Async.RunSynchornously. Need a reactive variable and load at the start.
+- On client side, you cannot use Async.RunSynchronously. Need a reactive variable and load at the start.
 - 
+
+
+### Authentication
+
+See [WebSharper Cookbook][cookbook]
+
+
+[cookbook]: https://github.com/AlexPeret/websharper-cookbook-tutorial/blob/master/articles/cookbook-chapter-03.md
+

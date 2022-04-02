@@ -5,7 +5,7 @@ categories: math
 tags: homework fsharp math visualization
 ---
 
-Once in a while, I'm supporting Lea with her math homework (Swiss: *Uffzgi*). Here are some tools that help me (remember, that I prefer [F#]({{fsharp_link}}) to other languages.
+Once in a while, I'm supporting Lea with her math homework (Swiss: *Uffzgi*). Here are some tools that help me (remember, that I prefer [F#]({{site.fsharp_link}}) to other languages. Whenever possible, I use interactive Notebooks and make them available on [github][notebooks].
 
 ## Symbolic algebra and F#
 
@@ -62,3 +62,4 @@ An example of plotting herbizide influence on plant growth can be found as an in
 
 
 
+[notebooks]: {{site.greiner_link | append: "/Notebook" }}
