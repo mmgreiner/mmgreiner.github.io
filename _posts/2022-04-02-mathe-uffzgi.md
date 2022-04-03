@@ -42,7 +42,7 @@ mitternacht 1.0 -4.0 -5.0
 
 A simple way is to use the [Microsoft Math Solver][mathsolver]. You can type in the mathematical equation like 
 
-    $$ x^2 - 4x - 5 = 0 $$ 
+    x^2 - 4x - 5 = 0
     
 and it will return the solution and visualizes the graph.
 
