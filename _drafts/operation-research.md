@@ -100,6 +100,8 @@ Note that in FSharp there is no implicit type conversion. So the constraints hav
 
 Note also that this corresponds the optimal solution as indicated in [stacho]. There, the optimal solution is also given as $$ (x_1, x_2) = (20, 60) $$. 
 
+The Jupyter notebook is availe on [github](https://github.com/mmgreiner/Notebook/blob/main/OR-Tools.ipynb)
+
 ## Classification of problems
 
 **To Do**: I had this big table, hand written.

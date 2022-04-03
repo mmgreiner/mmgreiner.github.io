@@ -9,6 +9,35 @@ tags: homework fsharp math visualization
 
 Once in a while, I'm supporting Lea with her math homework (Swiss: *Uffzgi*). Here are some tools that help me (remember, that I prefer [F#]({{site.fsharp_link}}) to other languages. Whenever possible, I use interactive Notebooks and make them available on [github][notebooks].
 
+## Mitternachtsformel
+
+The quadractic formula is called *Mitternachtsformel* in German speaking schools, since the student is supposed to know it by heart even when suddenly woken up after midnight.
+
+It goes like this:
+
+$$ (x_1, x_2) = \frac{ - b \pm \sqrt {b^2 - 4ac} }{2a} $$
+
+when 
+
+$$ ax^2 + bx + c = 0 $$
+
+It can easily be computed in [F#]({{site.fsharp_link}}) using this piece of code:
+
+~~~fsharp
+let mitternacht (a: float) b c =
+    let cof = sqrt (b * b - 4.0 * a * c) 
+    let den = 2.0 * a
+    ( (-1.0 * b + cof) / den, (-1.0 * b - cof) / den)
+~~~~
+
+Try it:
+
+~~~fsharp
+mitternacht 1.0 -4.0 -5.0
+|> printfn "%A"
+// returns (5.0, -1.0)
+~~~~
+
 ## Microsoft Math Solver
 
 A simple way is to use the [Microsoft Math Solver][mathsolver]. You can type in the mathematical equation like 
