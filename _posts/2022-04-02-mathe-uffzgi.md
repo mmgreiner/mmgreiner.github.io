@@ -5,7 +5,23 @@ categories: math
 tags: homework fsharp math visualization
 ---
 
+{% include mathscripts.html %}
+
 Once in a while, I'm supporting Lea with her math homework (Swiss: *Uffzgi*). Here are some tools that help me (remember, that I prefer [F#]({{site.fsharp_link}}) to other languages. Whenever possible, I use interactive Notebooks and make them available on [github][notebooks].
+
+## Microsoft Math Solver
+
+A simple way is to use the [Microsoft Math Solver][mathsolver]. You can type in the mathematical equation like 
+
+    $$ x^2 - 4x - 5 = 0 $$ 
+    
+and it will return the solution and visualizes the graph.
+
+![Math]({{site.url}}/images/mathsolver.png)
+
+
+
+[mathsolver]: https://math.microsoft.com/en
 
 ## Symbolic algebra and F#
 

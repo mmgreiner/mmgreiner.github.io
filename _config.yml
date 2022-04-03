@@ -61,4 +61,5 @@ fsharp_link: https://fsharp.org
 jekyll_link: https://jekyllrb.com
 greiner_link: https://github.com/mmgreiner
 
-
+kramdown:
+  auto_ids: true

@@ -59,5 +59,10 @@ Now in the post that uses math scripts, include the line `{% raw %}{% include ma
 See the post [Copy to Clipboard](https://www.aleksandrhovhannisyan.com/blog/how-to-add-a-copy-to-clipboard-button-to-your-jekyll-blog/) by Aleksandr Hovhannisyan.
 
 
+## Markdown syntax and extensions
+Liquid uses the Ruby based markdown parser [kramdown].
+
+
 [liquid]: https://shopify.github.io/liquid/
 [mathjax]: https://www.mathjax.org
+[kramdown]: https://kramdown.gettalong.org/quickref.html#code-blocks
