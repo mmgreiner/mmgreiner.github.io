@@ -12,14 +12,13 @@ Some resources I found are:
 - [ML.NET Cookbook](https://github.com/dotnet/machinelearning/blob/main/docs/code/MlNetCookBook.md#how-do-i-train-a-regression-model)
 - [ML.NET Samples](https://github.com/dotnet/machinelearning-samples)
     Also has some F# samples, unfortunately not all.
+- [Binary Classification for mushrooms](https://www.c-sharpcorner.com/article/how-to-do-binary-classification-in-asp-net-core-using-ml-net/) coded in C#, but interesting example.
+- [FSharpML](https://csbiology.github.io/FSharpML//index.html) is a light weight API written in F# on top of [ML.NET].
+
 
 ## Supported classification
 
-Machine learning falls into two big categories [[IBM]]:
-
-- **supervised** and
-
-- **unsupervised** learning
+Machine learning falls into two big categories [[IBM]]: **supervised** and **unsupervised** learning.
 
 *Supervised* learning algorithms are provided with a data set that has been prepared to contains the desired result, the *label*. *Unsupervised* learning does not have labels, but discovers patterns that help solve for clustering or association problems. 
 
