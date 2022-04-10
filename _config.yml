@@ -19,6 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Küse's Codes
+author: Markus Greiner
 email: mmgreiner@bluewin.ch
 description: >- # this means to ignore newlines until "baseurl:"
   Code snippets, mostly in FSharp, that I collected over time.
@@ -28,8 +29,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mmgreiner
 github_username:  mmgreiner
 
+#author:
+#  name: Markus Greiner
+#  email: mmgreiner@bluewin.ch
+
 # Build settings
 theme: minima
+#theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
