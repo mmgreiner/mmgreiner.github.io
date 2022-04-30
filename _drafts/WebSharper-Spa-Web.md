@@ -85,9 +85,9 @@ Web:
 [<JavaScript>]
 module Client =
 let Main () =
-        let rvReversed = Var.Create ""
         MainTemplate.Main()
             .Title()
             // ...
             .Doc()
 ~~~
+

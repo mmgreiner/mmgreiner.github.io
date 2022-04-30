@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "WebSharper Remoting - Under construction"
-date:   2022-03-13 09:07:00 +0100
+title:  "WebSharper Remoting"
+date:   2022-04-28
 categories: websharper fsharp
 tags: f# remoting
 
