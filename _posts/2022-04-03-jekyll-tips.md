@@ -1,8 +1,7 @@
 ---
-layout: post
 title:  "Jekyll Tips & Tricks"
-categories: jekyll
-tags: search 
+categories: publishing
+tags: search jekyll
 ---
 
 This post covers some more Jekyll tips and tricks like searching a web page.

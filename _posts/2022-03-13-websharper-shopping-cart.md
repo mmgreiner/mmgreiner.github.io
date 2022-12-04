@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "WebSharper shopping cart"
 date:   2022-03-12 10:41:39 +0100
-categories: websharper fsharp
-tags: f# template
+categories: programming
+tags: F# template websharper
 ---
 
 ## Websharper Shopping cart

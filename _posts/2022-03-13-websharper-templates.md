@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "WebSharper templates"
 date:   2022-03-13 13:00:00 +0100
-categories: websharper fsharp
-tags: f# template
+categories: programming
+tags: F# template websharper
 ---
 
 

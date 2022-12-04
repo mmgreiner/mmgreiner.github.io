@@ -1,13 +1,13 @@
 ---
-layout: post
 title:  "Websharper OSX"
-categories: websharper 
-tags: osx monterey
+categories: programming 
+tags: osx websharper dotnet
+toc: true
 ---
 
 ## Installing WebSharper
 
-I'm developing web applications using [WebSharper][websharper-home] on macOS Monterey. 
+I'm developing web applications using [WebSharper] on macOS Monterey. 
 
 To install the the templates, use:
 
@@ -107,4 +107,4 @@ Another way is to set a variable for the version:
 
 
 
-[websharper-home]:  {{site.websharper_link}}
+[WebSharper]:  {{site.websharper_link}}

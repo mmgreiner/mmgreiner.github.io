@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Static templating with handlebars and liquid"
-categories: templating
-tags: fsharp html liquid handlebars
+categories: programming
+tags: F# html liquid handlebars fluid
+toc: true
 ---
 
 ## Static templating with handlebars and liquid
@@ -112,7 +112,7 @@ You can create your own helpers, as documented in [Handlebars]. the ``context`` 
     )
 ~~~~
 
-### Template loacation
+### Template location
 tbd
 
 ### The program
@@ -143,7 +143,7 @@ This should give us:
 </ul>
 ~~~~
 
-## Liquid
+## DotLiquid
 to be done.
 
 ### Installation
@@ -219,7 +219,28 @@ To prevent this, you can set the nameing convention:
 Template.NamingConvention <- new NamingConventions.CSharpNamingConvention()
 ~~~~
 
-Unfortunately, this has the side effect that standard [Liquid] functions like ``date`` also now follow the CamelCase naming convention and become ``Date``.
+Unfortunately, this has the side effect that standard [Liquid] functions like ``date`` also now follow the CamelCase naming convention and become ``Date``. I had to look into [StandardFilter.cs](https://github.com/dotliquid/dotliquid/blob/master/src/DotLiquid/StandardFilters.cs) to fully understand this.
+
+We created our own naming convention for this:
+
+~~~~ fsharp
+type CamelCaseNamingConvention() =
+    let UpperFirstLetter (str: string) = 
+        string (Char.ToUpperInvariant(str.[0])) + str.[1..]
+    let LowerFirstLetter (str: string) = 
+        string (Char.ToLowerInvariant(str.[0])) + str.[1..]
+
+    interface NamingConventions.INamingConvention with
+        member val StringComparer: StringComparer = StringComparer.Ordinal
+        
+        member this.GetMemberName name = name
+
+        member this.OperatorEquals(testedOperator, referenceOperator): bool =
+            UpperFirstLetter testedOperator = referenceOperator 
+            || LowerFirstLetter testedOperator = referenceOperator
+            || testedOperator = LowerFirstLetter referenceOperator
+
+~~~~
 
 ### Date formats
 
@@ -238,6 +259,10 @@ let data = { Persons = persons }
 template.Render(Hash.FromAnonymousObject(data))
 ~~~~
 
+## Fluid
+
+[fluid] is another open-source templating language based on [liquid]. It's benchmark compares it to [DotLiquid] and [Handlebars] and claims it to be faster compared to those (see [fluid-benchmark](https://github.com/sebastienros/fluid#benchmarks)).
+
 
 
 ## Note on this post
@@ -249,4 +274,4 @@ Since this is a [Jekyll] post, it uses [Liquid] iself. This means that all refer
 [Handlebars]: https://handlebarsjs.com
 [DotLiquid]: http://dotliquidmarkup.org
 [Handlebars.Net]: https://github.com/Handlebars-Net/Handlebars.Net
-
+[fluid]: https://github.com/sebastienros/fluid

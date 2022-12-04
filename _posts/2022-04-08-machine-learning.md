@@ -1,11 +1,11 @@
 ---
-layout: post
-title:  "Machine Learning with ML.NET"
-categories: fsharp 
-tags: machine learning, ml
+title: "Machine Learning with ML.NET"
+categories: programming
+tags: machine-learning F# dotnet
+toc: true
 ---
 
-Machine learning with [ML.NET][mlnet] is documented in a confusing way, in particular when it comes to F#.
+Machine learning with [ML.NET] is documented in a confusing way, in particular when it comes to F#.
 
 Some resources I found are:
 
@@ -198,5 +198,5 @@ let trainedModel = trainingPipeline.Fit(dataSplit.TrainSet)
 [mlnet]:    https://dotnet.microsoft.com/en-us/learn/ml-dotnet
 [fsharp-data]:  https://fsprojects.github.io/FSharp.Data/
 [tutorial]:  https://dotnet.microsoft.com/en-us/learn/ml-dotnet/get-started-tutorial/create
-[ML.NET]:   [mlnet]
+[ML.NET]:   https://dotnet.microsoft.com/en-us/learn/ml-dotnet
 [IBM]:      https://www.ibm.com/cloud/learn/supervised-learning#toc-how-superv-A-QjXQz-

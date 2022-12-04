@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Mathe Uffzgi"
 categories: math 
-tags: homework fsharp math visualization
+tags: homework F# math visualization
+toc: true
 ---
 
 {% include mathscripts.html %}

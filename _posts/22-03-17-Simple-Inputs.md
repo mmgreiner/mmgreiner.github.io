@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "WebSharper simple inputs"
-categories: websharper
-tags: input html5
+categories: programming
+tags: input html5 websharper F#
+toc: true
 ---
 
 This post shows various ways to handle input using [WebSharper]({{site.websharper_link}}).

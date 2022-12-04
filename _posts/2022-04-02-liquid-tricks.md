@@ -1,8 +1,7 @@
 ---
-layout: post
 title:  "Liquid templating tips & tricks"
-categories: jekyll
-tags: liquid math markdown mathjax
+categories: publishing
+tags: liquid math markdown mathjax jekyll
 ---
 
 {% include mathscripts.html %}

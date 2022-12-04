@@ -1,10 +1,9 @@
 ---
-layout: post
 title:  "Bolero Post Endpoint"
 date:   2022-08-21
-categories: bolero fsharp
-tags: f# bolero file-upload
-
+categories: programming
+tags: f# bolero file-upload dotnet
+toc: true
 ---
 
 ## Bolero Server endpoint for Posts
@@ -13,7 +12,7 @@ I came across this topic trying to implement a file upload in [Bolero]. The It s
 
 Searching for a solution, I found this conversation about [Bolero uploading files](https://github.com/fsbolero/Bolero/issues/66), which made the comment to create a ASP.NET Core endpoint. This post explores how to do this.
 
-### The HTML
+## HTML
 
 We use a standard html form with post to upload the file:
 
@@ -29,7 +28,7 @@ We use a standard html form with post to upload the file:
 
 Remember the name ``myfiles``. It will be used later on in the ASP.NET controller.
 
-### The ASP.NET controller
+## ASP.NET controller
 
 It wasn't easy to find the simplest tutorial on how to write an ASP.NET controller in F#. In the end, [stackoverflow](https://stackoverflow.com/questions/39626220/f-syntax-for-async-controller-methods-in-asp-net-core) was helpful, as was this Microsoft introduction to getting started with [web-app and f#](https://docs.microsoft.com/en-us/visualstudio/get-started/tutorial-fsharp-web-app?view=vs-2022)
 and this tutorial [MVC file-upload](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/file-uploads?view=aspnetcore-6.0)
@@ -72,7 +71,7 @@ It took me some time to understand how the routes are mapped.
 
 It also took some time to discover that the name of the parameter of the post, ``myfiles`` must match exactly the name of the ``<input type="file" name="myfiles" />`` for the parameter to be set.
 
-### The server side
+## Server side
 
 So how do we make the server recognize our controller? This is where the magic of dependency injection kicks in. We just have to add it to the services and endpoints.
 
