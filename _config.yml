@@ -122,11 +122,14 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
+    - label: LinkedIn
+      icon: fab -fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/markus-greiner-60b51811
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+      url: "https://github.com/mmgreiner"
+    #- label: "Instagram"
+    #  icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
 # Site Footer
@@ -308,3 +311,4 @@ exercise_link: https://github.com/mmgreiner/Exercises
 fsharp_link: https://fsharp.org
 jekyll_link: https://jekyllrb.com
 greiner_link: https://github.com/mmgreiner
+bolero_link: https://fsbolero.io
