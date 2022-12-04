@@ -305,6 +305,10 @@ head_scripts:
   - "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
   - 
 
+# exec causes strange Github API warnings. Hope this helps, taken from:
+# https://github.com/github/pages-gem/issues/399
+github: [metadata]
+
 # my global variables. Access them like: {{site.websharper_link}}
 websharper_link:  https://developers.websharper.com/docs/v4.x/fs/
 mozilla_link: https://developer.mozilla.org/en-US/docs/Web/HTML
