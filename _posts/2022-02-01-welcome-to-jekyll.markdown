@@ -1,6 +1,5 @@
 ---
 title:  "Welcome to Jekyll!"
-date:   2022-10-17 05:53:21 +0200
 categories: jekyll
 toc: true
 ---

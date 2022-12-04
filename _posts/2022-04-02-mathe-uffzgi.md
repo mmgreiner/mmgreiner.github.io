@@ -5,7 +5,6 @@ tags: homework F# math visualization
 toc: true
 ---
 
-{% include mathscripts.html %}
 
 Once in a while, I'm supporting Lea with her math homework (Swiss: *Uffzgi*). Here are some tools that help me (remember, that I prefer [F#]({{site.fsharp_link}}) to other languages. Whenever possible, I use interactive Notebooks and make them available on [github][notebooks].
 
