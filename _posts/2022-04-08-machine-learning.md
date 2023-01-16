@@ -200,3 +200,5 @@ let trainedModel = trainingPipeline.Fit(dataSplit.TrainSet)
 [tutorial]:  https://dotnet.microsoft.com/en-us/learn/ml-dotnet/get-started-tutorial/create
 [ML.NET]:   https://dotnet.microsoft.com/en-us/learn/ml-dotnet
 [IBM]:      https://www.ibm.com/cloud/learn/supervised-learning#toc-how-superv-A-QjXQz-
+
+[Accessible-AI]: https://accessibleai.dev/post/mlnet_fsharp_regression/

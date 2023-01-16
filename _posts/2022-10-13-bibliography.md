@@ -1,6 +1,6 @@
 ---
 title:  "Bibliographies, citations and dotnet programming"
-categories: authoring programming
+categories: publishing programming
 tags: Zotero citation bibliography csharp json-schema
 toc: true
 ---
