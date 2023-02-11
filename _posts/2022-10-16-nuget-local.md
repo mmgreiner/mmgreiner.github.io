@@ -44,13 +44,13 @@ To the project config file (`*.fsproj` or `*.csproj`), add:
       CSLData -> /Users/mmgreiner/Projects/bibTeX/CSL/CSLData/bin/Debug/net6.0/CSLData.dll
       Successfully created package '/Users/mmgreiner/Projects/bibTeX/CSL/CSLData/bin/Debug/CSLData.1.0.0.nupkg'.
 
-Now the trick is not to use the CLI, but nuget directly.
+Using nuget directly, you can add it locally.
 
     % nuget add /Users/mmgreiner/Projects/bibTeX/CSL/CSLData/bin/Debug/CSLData.1.0.0.nupkg -source ~/.mynuget
  
-This should also work: 
+Using the CLI it works like this: 
 
-    % dotnet nuget push bin/Debug/CSLData.1.0.0.nupkg -source ~/.mynuget -s ~/.mynuget
+    % dotnet nuget push bin/Debug/CSLData.1.0.0.nupkg -s ~/.mynuget
 
 **Note**: in the dotnet CLI, the command is called `push` which corresponds to `nuget add`. The CLI command `dotnet nuget add` adds a new source, ie. repository, not a package.
 

@@ -1,7 +1,7 @@
 ---
 title:  "Input file element with Bolero"
 categories: programming
-tags: input html5 bolero
+tags: input html5 bolero F#
 toc: true
 ---
 
@@ -71,9 +71,11 @@ TBD
 
 ## Approach 3: Using Server posts
 
-TBD
+An example for this can be found on my [Github/BoleroApp]({{site.greiner_link}}/BoleroApp) repository. It implements a simple AspNet MVC controller for file uploads.
 
+## Further information
 
+See <https://procodeguide.com/programming/file-upload-in-aspnet-core/> for an example how to implement file upload in Asp.Net Core 6.0.
 
 
 [Bolero]: https://fsbolero.io
