@@ -11,8 +11,7 @@ You develop [F#] code for the client side (inside the browser), which is compile
 
 The client contains predefined `<input>` types for text, numbers and booleans, but not for file uploads. How can this be done?
 
-
-## Client and Server
+## Client and Server
 
 [Bolero] uses the [Elmish] Model-View-Update architecture. 
 
@@ -72,6 +71,8 @@ TBD
 ## Approach 3: Using Server posts
 
 An example for this can be found on my [Github/BoleroApp]({{site.greiner_link}}/BoleroApp) repository. It implements a simple AspNet MVC controller for file uploads.
+
+See also this [post]({% post_url 23-02-10-github-fsharp %}).
 
 ## Further information
 
