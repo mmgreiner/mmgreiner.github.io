@@ -1,13 +1,11 @@
 ---
-title:  "Static templating with handlebars and liquid"
+title:  "Static templating with handlebars, liquid and others"
 categories: programming
 tags: F# html liquid handlebars fluid
 toc: true
 ---
 
-## Static templating with handlebars, liquid, and others
-
-Templating is an older method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time. Well-known templating languages are [Liquid], which is written in ruby and used by [Jekyll], and [Handlebars], which calls itself *minimal templating on steroids".
+Templating is an proofen method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time. Well-known templating languages are [Liquid], which is written in ruby and used by [Jekyll], and [Handlebars], which calls itself *minimal templating on steroids*.
 
 For both there exist dotnet versions: [Handlebars.Net] and [DotLiquid].
 
