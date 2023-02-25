@@ -272,6 +272,10 @@ template.Render(Hash.FromAnonymousObject(data))
 Its templating language is less baroque than Liquids, but it can handle liquid input correctly.
 According to its [benchmark](https://github.com/scriban/scriban/blob/master/doc/benchmarks.md), it outperforms [DotLiquid], [Handlebars.Net], and [fluid].
 
+## Comparison
+
+Without going into too much details, it seems that [Scriban] is by far the easiest to use, and, according to its own benchmark, the fastest.
+
 ## Note on this post
 Since this is a [Jekyll] post, it uses [Liquid] iself. This means that all references to {%raw%}{{...}}{%endraw%} had to be encapsulated in *{%raw%}&#123;%raw%&#125;{%endraw%}* and *{%raw%}&#123;%endraw%&#125;{%endraw%}*.
 
