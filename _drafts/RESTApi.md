@@ -68,3 +68,5 @@ Fielding, Roy Thomas (2000). ["Chapter 5: Representational State Transfer (REST)
 [Hevodata]: https://hevodata.com/learn/rest-api-best-practices/
 
 [Microsoft Guidelines]: https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md#31-recommended-reading
+
+[Minimal API F#]: https://github.com/teodoran/fsharp-aspnetcore-minimal-apis/blob/main/TodoApi/Program.fs

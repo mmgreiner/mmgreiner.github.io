@@ -11,11 +11,13 @@ For both there exist dotnet versions: [Handlebars.Net] and [DotLiquid].
 
 This post compares these two. In addition, it also takes a brief look at [Scriban] and [Fluid].
 
+Code samples are available at [Github mmgreiner](https://github.com/mmgreiner/Templating).
+
 ## The task
 You have several persons which have tasks to perform. We will test how F# types, particularely sequences, records and options, are handled.
 
 ~~~ fsharp
-type Task = 
+type Chore = 
     {
         Name: string
         DueDate: DateTime
@@ -25,7 +27,7 @@ type Task =
 type Person = 
     {
         Name: string
-        Tasks: Task seq 
+        Chores: Task seq 
     }
 
 module Data = 
@@ -74,7 +76,7 @@ let templateString = """
     <li>
     <p>{{this.Name}} has the following tasks to do:</p>
     <ul>
-        {{#each this.Tasks}}
+        {{#each this.Chores}}
         <li>{{this.Name}} by {{date_format this.DueDate}}{{#if this.Completed}}, completed {{date_format this.Completed.Value}} {{/if}}
         </li>
         {{else}}
@@ -142,7 +144,8 @@ This should give us:
 ~~~~
 
 ## DotLiquid
-to be done.
+
+[Liquid] was made popular by Ruby based static templating engines like [Jekyll]. [DotLiquid] is a dotnet base implementation.
 
 ### Installation
 
@@ -168,9 +171,10 @@ let templateString = """
     <li>
     <p>{{person.Name}} has the following tasks to do:</p>
     <ul>
-        {% for task in person.Tasks %}
-            <li>{{ task.Name }} by {{task.DueDate | Date: "yyyy-MM-dd"}} {%if task.Completed %}, completed {{task.Completed.Value | date: "%Y-%m-%d"}} {%endif%}
+        {% for task in person.Chores %}
+            <li>{{ task.Name }} by {{task.DueDate | Date: "%Y-%m-%d"}} {%if task.Completed %}, completed {{task.Completed.Value | date: "%Y-%m-%d"}} {%endif%}
             </li>
+        {% else %}Free afternoon
         {% endfor %}
     </ul>
 {%endfor%}
@@ -239,6 +243,8 @@ type CamelCaseNamingConvention() =
             || testedOperator = LowerFirstLetter referenceOperator
 
 ~~~~
+
+In the end, we used the supplied `NamingConventions.CSharpNamingConvention` and wrote `Date` for the pipe function instead of `date`.
 
 ### Date formats
 

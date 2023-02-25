@@ -3,6 +3,9 @@ Functional Programming with Go-Lang: <https://pkg.go.dev/github.com/BooleanCat/g
 
 <https://marketplace.visualstudio.com/items?itemName=golang.Go>
 
+How to bring it to IIS: 
+https://labod.co/posts/running_a_go_project_with_iis
+
 
 
 
