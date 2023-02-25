@@ -27,7 +27,7 @@ JsonSerializer.Serialize(you, options)
 
 tbd
 
-## Json sSerialization with Swagger / OpenAPI
+## Json Serialization with Swagger / OpenAPI
 
 [Web-Api-Swagger](https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-6.0)
 

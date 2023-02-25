@@ -12,6 +12,7 @@ Some of my codes are documented on my [Github] with description in the readme fi
 | [BoleroApp]({{site.greiner_link}}/BoleroApp) | A simple [Bolero] app with file upload and data repository using dependency injection |
 | [StringAlgorithms]({{site.greiner_link}}/StringAlgorithms) | Some string algorithms in [F#] to measure string similarity |
 | [WebAPI]({{site.greiner_link}}/WebAPI) | A net7.0 based RestAPI in [F#] |
+| [DependencyInjection]({{site.greiner_link}}/dependencyInjection) | simple attempts at dependency injection in [F#] |
 
 
 
