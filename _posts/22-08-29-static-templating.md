@@ -5,13 +5,13 @@ tags: F# html liquid handlebars fluid
 toc: true
 ---
 
-## Static templating with handlebars and liquid
+## Static templating with handlebars, liquid, and others
 
 Templating is an older method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time. Well-known templating languages are [Liquid], which is written in ruby and used by [Jekyll], and [Handlebars], which calls itself *minimal templating on steroids".
 
 For both there exist dotnet versions: [Handlebars.Net] and [DotLiquid].
 
-This post compares these two.
+This post compares these two. In addition, it also takes a brief look at [Scriban] and [Fluid].
 
 ## The task
 You have several persons which have tasks to perform. We will test how F# types, particularely sequences, records and options, are handled.
@@ -250,8 +250,6 @@ See [DotLiquid formatting](http://dotliquidmarkup.org/docs/formatting). By defau
 Liquid.UseRubyDateFormat <- true
 ~~~
 
-
-
 ### The program
 
 ~~~~ fsharp
@@ -261,9 +259,14 @@ template.Render(Hash.FromAnonymousObject(data))
 
 ## Fluid
 
-[fluid] is another open-source templating language based on [liquid]. It's benchmark compares it to [DotLiquid] and [Handlebars] and claims it to be faster compared to those (see [fluid-benchmark](https://github.com/sebastienros/fluid#benchmarks)).
+[Fluid] is another open-source templating language based on [liquid]. It's benchmark compares it to [DotLiquid] and [Handlebars] and claims it to be faster compared to those (see [fluid-benchmark](https://github.com/sebastienros/fluid#benchmarks)).
 
+## Scriban
 
+>  [Scriban] is a fast, powerful, safe and lightweight scripting language and engine for .NET, which was primarily developed for text templating with a compatibility mode for parsing [Liquid] templates.
+
+Its templating language is less baroque than Liquids, but it can handle liquid input correctly.
+According to its [benchmark](https://github.com/scriban/scriban/blob/master/doc/benchmarks.md), it outperforms [DotLiquid], [Handlebars.Net], and [fluid].
 
 ## Note on this post
 Since this is a [Jekyll] post, it uses [Liquid] iself. This means that all references to {%raw%}{{...}}{%endraw%} had to be encapsulated in *{%raw%}&#123;%raw%&#125;{%endraw%}* and *{%raw%}&#123;%endraw%&#125;{%endraw%}*.
@@ -274,4 +277,5 @@ Since this is a [Jekyll] post, it uses [Liquid] iself. This means that all refer
 [Handlebars]: https://handlebarsjs.com
 [DotLiquid]: http://dotliquidmarkup.org
 [Handlebars.Net]: https://github.com/Handlebars-Net/Handlebars.Net
-[fluid]: https://github.com/sebastienros/fluid
+[Fluid]: https://github.com/sebastienros/fluid
+[Scriban]: https://github.com/scriban/scriban/blob/master/doc/language.md
