@@ -265,12 +265,50 @@ template.Render(Hash.FromAnonymousObject(data))
 
 [Fluid] is another open-source templating language based on [liquid]. It's benchmark compares it to [DotLiquid] and [Handlebars] and claims it to be faster compared to those (see [fluid-benchmark](https://github.com/sebastienros/fluid#benchmarks)).
 
+
 ## Scriban
 
 >  [Scriban] is a fast, powerful, safe and lightweight scripting language and engine for .NET, which was primarily developed for text templating with a compatibility mode for parsing [Liquid] templates.
 
 Its templating language is less baroque than Liquids, but it can handle liquid input correctly.
 According to its [benchmark](https://github.com/scriban/scriban/blob/master/doc/benchmarks.md), it outperforms [DotLiquid], [Handlebars.Net], and [fluid].
+
+You install *Scriban* using `dotnet add package Scriban`. The template would look like this:
+
+~~~ html
+{%raw%}<ul>
+{{- for person in Persons }}
+    <li>
+    <p>{{person.Name}} has the following tasks to do:</p>
+    <ul>
+        {{- if person.Chores | array.size == 0 }}
+        Free afternoon
+        {{ else }}
+        {{- for task in person.Chores }}
+            <li>{{ task.Name }} by {{task.DueDate | date.to_string "%Y-%m-%d"}}{{if task.Completed -}}, completed {{task.Completed.Value | date.to_string "%Y-%m-%d"}} {{end}}
+            </li>
+        {{- end }}
+        {{- end }}
+    </ul>
+{{- end -}}
+</ul>{%endraw%}
+~~~
+
+The code is simple:
+
+~~~ fsharp
+open Scriban
+
+let template = Template.Parse(templateString)
+let persons = {| Persons = Chores.Data.persons |}
+
+let result = template.Render(persons, fun m -> m.Name)
+printfn "%s" result
+~~~
+
+By default, Scriban uses standard ruby naming with underlines. 
+To prevent this, we have to use the `MemberRenamer`delegate with `fun m -> m.Name`. See [Member Renamer](https://github.com/scriban/scriban/blob/master/doc/runtime.md#member-renamer) in the Scriban documentation for more information.
+
 
 ## Comparison
 
