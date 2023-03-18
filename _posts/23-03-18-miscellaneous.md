@@ -51,7 +51,7 @@ It comes with [Github plugins](https://mermaid-js.github.io/mermaid/#/./integrat
 
 ## CSV conversion
 
-Next to [FSharp.Data](https://fsprojects.github.io/FSharp.Data/) there is [CSVHelper](https://joshclose.github.io/CsvHelper/). However, it does not support FSharp types intrinsically. A [stackoverflow](https://stackoverflow.com/questions/66401283/how-do-you-use-csvhelper-csvwriter-with-f-option-types) article describes the details.
+Next to [FSharp.Data] there is [CSVHelper]. However, it does not support FSharp types intrinsically. A [stackoverflow](https://stackoverflow.com/questions/66401283/how-do-you-use-csvhelper-csvwriter-with-f-option-types) article describes the details.
 
 I have concluded that to read CSV files, [FSharp.Data] is the best. To easily write CSV files, use [CSVHelper].
 
@@ -66,6 +66,9 @@ config.Delimiter <- ";"
 use csvWriter = new CsvHelper.CsvWriter(csvStream, config)
 csvWriter.WriteRecords(data)
 ~~~
+
+[FSharp.Data]: https://fsprojects.github.io/FSharp.Data/
+[CSVHelper]: https://joshclose.github.io/CsvHelper/
 
 ### Stess tests of CSV
 

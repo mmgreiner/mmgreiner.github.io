@@ -13,6 +13,7 @@ Some of my codes are documented on my [Github] with description in the readme fi
 | [StringAlgorithms]({{site.greiner_link}}/StringAlgorithms) | Some string algorithms in [F#] to measure string similarity |
 | [WebAPI]({{site.greiner_link}}/WebAPI) | A net7.0 based RestAPI in [F#] |
 | [DependencyInjection]({{site.greiner_link}}/dependencyInjection) | simple attempts at dependency injection in [F#] |
+| [MinimalAPI]({{site.greiner_link}}/Tutorials/tree/master/MinimalApiPost) | Minimal API with a file upload example |
 
 
 
