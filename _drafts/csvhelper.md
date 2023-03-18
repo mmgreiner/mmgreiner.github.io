@@ -23,7 +23,7 @@ There is another library better suited for [F#], the [FSharp.Data] library. Howe
 
 ### Option types
 
-[F#] ption types are not natively handled by [CsvHelper]. This [stackoverflow entry](https://stackoverflow.com/questions/66401283/how-do-you-use-csvhelper-csvwriter-with-f-option-types) shows how it can be done:
+[F#] option types are not natively handled by [CsvHelper]. This [stackoverflow entry](https://stackoverflow.com/questions/66401283/how-do-you-use-csvhelper-csvwriter-with-f-option-types) shows how it can be done:
 
 ~~~fsharp
 open CsvHelper

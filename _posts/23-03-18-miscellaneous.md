@@ -1,11 +1,11 @@
 ---
-title:  "Open questions"
+title:  "Miscellaneous"
 categories: programming jekyll
-tags: jekyll
+tags: jekyll F# mermaid
 toc: true
 ---
 
-This is a list of reminders and open questions I still wanted to look at
+This is a list of reminders and open questions I still wanted to look at in more detail.
 
 ## Mermaid
 
@@ -51,7 +51,9 @@ It comes with [Github plugins](https://mermaid-js.github.io/mermaid/#/./integrat
 
 ## CSV conversion
 
-Next to [FSharp.Data](https://fsprojects.github.io/FSharp.Data/) there is [CSVHelper](https://joshclose.github.io/CsvHelper/). However, it does not support FSharp types intrinsically. There is a stackoverflow article here: [stackoverflow](https://stackoverflow.com/questions/66401283/how-do-you-use-csvhelper-csvwriter-with-f-option-types).
+Next to [FSharp.Data](https://fsprojects.github.io/FSharp.Data/) there is [CSVHelper](https://joshclose.github.io/CsvHelper/). However, it does not support FSharp types intrinsically. A [stackoverflow](https://stackoverflow.com/questions/66401283/how-do-you-use-csvhelper-csvwriter-with-f-option-types) article describes the details.
+
+I have concluded that to read CSV files, [FSharp.Data] is the best. To easily write CSV files, use [CSVHelper].
 
 The configuration is set like this:
 
@@ -67,13 +69,11 @@ csvWriter.WriteRecords(data)
 
 ### Stess tests of CSV
 
-See https://github.com/maxogden/csv-spectrum
-
-See https://github.com/wireservice/csvkit/tree/master/examples
-
-See https://discourse.julialang.org/t/csv-reader-benchmarks-julia-reads-csvs-10-20x-faster-than-python-and-r/41974
-
-See https://data.world/datasets/csv
+There are several stress tests for CSV reading and writing:
+- <https://github.com/maxogden/csv-spectrum>
+- <https://github.com/wireservice/csvkit/tree/master/examples>
+- <https://discourse.julialang.org/t/csv-reader-benchmarks-julia-reads-csvs-10-20x-faster-than-python-and-r/41974>
+- <https://data.world/datasets/csv>
 
 ## Writing scientific papers
 
@@ -83,4 +83,20 @@ See with more detail:
 <https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown>
 
 
+## Humanizer
+
+> [Humanizer] meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities. It is part of the [.NET Foundation](https://www.dotnetfoundation.org/), and operates under their [code of conduct](https://www.dotnetfoundation.org/code-of-conduct). 
+
+[Humanizer] is an amazing library to do string conversions from programming strings to human readable strings. For instance, it handles all the PascalCase, camelCase, etc renaming, shortening of strings, even creating `[Display("Family Name")]` attribute handling.
+
+
+[Humanizer]: https://github.com/Humanizr/Humanizer
+
+## Yaml
+
+Use [YamlDotNet](https://github.com/aaubry/YamlDotNet).
+
+## Markdown
+
+Use [Markdig](https://github.com/xoofx/markdig).
 

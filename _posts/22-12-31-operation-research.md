@@ -63,7 +63,7 @@ Particularly for expressing equations directly in the code, C# is much handier w
 
 Compare these two pieces of code to demonstrate this, taken from [OR-Tools MIP Example](https://developers.google.com/optimization/mip/mip_example):
 
-**Maximize $$ x + 10y $$ subject to:**
+**Maximize $x + 10y$ subject to:**
 
 $$
 \begin{align}
@@ -543,7 +543,7 @@ TBD
 - [Prof. Roughan: Optimisation and Operation Research][Roughan]
 - [Google OR-Tools][OR-Tools]
 - [Stigler Diet with Gurobi](http://a-d-c.ca/solving-the-stigler-diet-problem-with-gurobi-cplex-and-glop/#page-content)
-- [Geek culture: A primer on the OR libraries in python and julia]((https://medium.com/geekculture/a-primer-on-the-operations-research-libraries-in-python-and-julia-d10da69591ff))
+- [Geek culture: A primer on the OR libraries in python and julia](https://medium.com/geekculture/a-primer-on-the-operations-research-libraries-in-python-and-julia-d10da69591ff)
 
 ## Notes
 
