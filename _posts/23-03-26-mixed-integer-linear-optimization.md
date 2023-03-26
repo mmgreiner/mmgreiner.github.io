@@ -1,7 +1,7 @@
 ---
 title:  "Mixed integer linear optimiziation of supply chain problem"
-categories: programming  math
-tags: F# C# math OR
+categories: math
+tags: math OR Optimiziation
 toc: true
 ---
 
@@ -27,7 +27,7 @@ For each product, there is a demand you have to fulfill in order to be able to m
 
 The goal is to find the best combination of products and suppliers, which fullfills your demands at the minimum possible cost.
 
-### Mathematical formulation
+## Mathematical formulation
 
 The field of mathematics handling these kind of questions is called [Operation Research](https://en.wikipedia.org/wiki/Operations_research). There is some more information also on the [related post]({% post_url 22-12-31-operation-research %}).
 
