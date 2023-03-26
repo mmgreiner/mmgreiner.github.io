@@ -537,6 +537,12 @@ nutrients
 
 TBD
 
+## Flips
+
+> [Flips] is an F# library for modeling and solving Linear Programming (LP) and Mixed-Integer Programming (MIP) problems. It is inspired by the work of the PuLP library for Python and the excellent Gurobi Python library. It builds on the work of the outstanding Google OR-Tools library and the OPTANO library.
+
+For me, it turned out that [Flips] is much more suited for [F#] programming of optimization problems that [OR-Tools], which is not designed to be used with functional, strongly typed programming languages.
+
 ## References
 
 - [Prof. Juraj Stacho, Columbia University, New York: Introduction to Operations Research][Stacho]
@@ -544,6 +550,8 @@ TBD
 - [Google OR-Tools][OR-Tools]
 - [Stigler Diet with Gurobi](http://a-d-c.ca/solving-the-stigler-diet-problem-with-gurobi-cplex-and-glop/#page-content)
 - [Geek culture: A primer on the OR libraries in python and julia](https://medium.com/geekculture/a-primer-on-the-operations-research-libraries-in-python-and-julia-d10da69591ff)
+- [Mosek Modelling Cookbook][Mosek]
+- [Towards Data Science: Supply Planning][Supply Planning]
 
 ## Notes
 
@@ -552,11 +560,16 @@ Still looking for the best way to layout these equations with LaTeX.
 
 
 [Roughan]: https://roughan.info/notes/oorii/03lecture_notes.html
-
 [Stacho]: https://www.cs.toronto.edu/~stacho/public/IEOR4004-notes1.pdf
-
 [OR-Tools]: https://developers.google.com/optimization
-
 [F#]: {{site.fsharp_link}}
-
 [Julia]: https://julialang.org
+[Flips]: https://github.com/fslaborg/flips
+[Mosek]: https://docs.mosek.com/modeling-cookbook/index.html
+
+[Excel Example]: https://supplychaindetective.com/supply-chain-modeling-optimization/
+[Supply Planning]: https://towardsdatascience.com/supply-planning-using-linear-programming-with-python-bff2401bf270
+[PuLP]: https://coin-or.github.io/pulp/
+[LP Python]: https://realpython.com/linear-programming-python/#what-is-mixed-integer-linear-programming
+
+
