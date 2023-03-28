@@ -140,7 +140,7 @@ Often I look for the simplest `index.html` possible. I use this one with [bulma]
   </head>
   <body>
   <section class="section">
-    <div class="container">
+    <div class="content">
       <h1>De finibus bonorum et malorum</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
     </div>
