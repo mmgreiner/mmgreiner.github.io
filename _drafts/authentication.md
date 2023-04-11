@@ -17,7 +17,7 @@ Good samples of aspnet MVC with google, twitter, Apple-ID:
 > **AspNet.Security.OAuth.Providers** is a **collection of security middleware** that you can use in your **ASP.NET Core**application to support social authentication providers like **[GitHub](https://github.com/)**, **[Foursquare](https://foursquare.com/)** or **[Dropbox](https://www.dropbox.com/)**. It is directly inspired by **[Jerrie Pelser](https://github.com/jerriep)**'s initiative, **[Owin.Security.Providers](https://github.com/RockstarLabs/OwinOAuthProviders)**.
 
 
-### Azure AD with bolero
+### Azure AD with bolero
 
 > This is an example of how to authenticate with an `Azure AD` using `MSAL.js`.
 
@@ -162,6 +162,7 @@ The new net7.0 allows the following creatings:
 | Razor Pages | Server based dynamic pages          | `dotnet new webapp` | `-au Individual`  | C#       | [Razor Tutorial] |
 | MVC         | Model View Control with Controllers | `dotnet new mvc`    | `-au Individual`  | C#       | [MVC Tutorial]   |
 | Blazor      | Dynamic SPA pages                   |                     |                   |          |                  |
+
 So the idea is, to create a Bolero App and create a Blazor App, and then copy the Blazor App pages that handle login to the Bolero App.
 
 [Razor Tutorial]: https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-7.0&tabs=visual-studio-code
