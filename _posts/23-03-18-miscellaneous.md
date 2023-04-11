@@ -103,3 +103,11 @@ Use [YamlDotNet](https://github.com/aaubry/YamlDotNet).
 
 Use [Markdig](https://github.com/xoofx/markdig).
 
+## datatools
+
+> [datatools](https://github.com/caltechlibrary/datatools/) is a rich collection of command line programs targetting data conversion, cleanup and analysis directly from your favorite POSIX shell. It has proven useful for data collaberations where individual members of a project may prefer different toolsets in their analysis (e.g. Julia, R, Python) but want to work from a common baseline. It also has been used intensively for internal reporting from various Caltech Library metadata sources.
+
+### MVC, Razor, Razor Pages, MVC, and Blazor
+
+I found a good article explaining all of this on [Progress Telerik](https://www.telerik.com/blogs/difference-between-blazor-vs-razor)
+

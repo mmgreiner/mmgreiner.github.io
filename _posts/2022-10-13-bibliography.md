@@ -402,6 +402,13 @@ Get Cittations of films: No standard, but can use film database [IMDb](https://w
 
 Code to generate from PDF: [bibtex-generator]
 
+### Support in Github
+
+See this [stackoverflow](https://stackoverflow.com/questions/26587527/cite-a-paper-using-github-markdown-syntax) article, or directly on [Github](https://github.blog/2021-08-19-enhanced-support-citations-github/).
+
+Further information:
+- <https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench>
+- <https://github.com/citation-file-format/ruby-cff>
 
 [Zotero]: https://www.zotero.org
 [BibTeX]: http://www.bibtex.org/Format/

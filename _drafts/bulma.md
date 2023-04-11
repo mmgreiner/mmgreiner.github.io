@@ -19,7 +19,7 @@ See [Bulma](https://bulma.io)
   </head>
   <body>
   <section class="section">
-    <div class="container">
+    <div class="content">
       <h1 class="title">
         Hello World
       </h1>
