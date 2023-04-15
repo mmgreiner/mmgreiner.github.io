@@ -30,7 +30,7 @@ General production structure capacited multi-level lot-sizing model [PochetWolse
     - $$y_t$$: binary variable indicating wether there is a positive production in period *t* 
     - $$s_t$$:inventory at the end of period *t*
 
-**Objective Function**
+### Objective Function
 
 $$
 \begin{aligned}
@@ -39,9 +39,9 @@ $$
 s_{t-1}^i + x_{t-\gamma^i}^i & = [d_t^i + \sum_{j \in D(i)} r^{i j} x_t^j] + s_t^i \\
 x_t^i & \le  M_t^i y_t^i \\
 \sum_i \alpha^{i k} x_t^i + \sum_t \beta^{i k} y_t^i & \le L_t^k \\
-
 \end{aligned}
 $$
+
 
 ## Example production MTCe
 
@@ -80,7 +80,9 @@ Online in mermaid.
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-0-387-29959-4&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Production%20planning%20by%20mixed%20integer%20programming&amp;rft.place=New%20York%20%3B%20Berlin&amp;rft.publisher=Springer&amp;rft.series=Springer%20series%20in%20operations%20research%20and%20financial%20engineering&amp;rft.aufirst=Yves&amp;rft.aulast=Pochet&amp;rft.au=Yves%20Pochet&amp;rft.au=Laurence%20A.%20Wolsey&amp;rft.date=2006&amp;rft.tpages=499&amp;rft.isbn=978-0-387-29959-4"></span>
 </div>
 
+
 [fsharp]: {{ site.fsharp_link }}
 
 [PochetWolsey]: https://dl.acm.org/doi/book/10.5555/1202598
+[Mosek]: https://docs.mosek.com/modeling-cookbook/index.html
 
