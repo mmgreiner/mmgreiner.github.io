@@ -2,7 +2,7 @@
 title:  "Using local NuGet source / repository"
 date: 2022-10-16
 categories: programming
-tags: nuget source
+tags: nuget dotnet
 toc: true
 ---
 

@@ -32,4 +32,4 @@ select {
 } |> conn.SelectAsync<Person>
 ~~~
 
-[fsharp]: {{ site.fsharp_link }}
+[F#]: {{ site.fsharp_link }}

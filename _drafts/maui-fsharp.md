@@ -6,8 +6,8 @@ toc: true
 ---
 
 
-Maui in fsharp <https://github.com/fabulous-dev/FSharp.Mobile.Templates>
+Maui in [F#] <https://github.com/fabulous-dev/FSharp.Mobile.Templates>
 
 Using fabulous: <https://github.com/fabulous-dev/Fabulous.Maui>
 
-[fsharp]: {{ site.fsharp_link }}
+[F#]: {{ site.fsharp_link }}

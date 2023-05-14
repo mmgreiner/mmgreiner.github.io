@@ -50,6 +50,7 @@ institution = {International Organization for Standardization}
 
 [citation-guide]: https://libguides.nps.edu/citation/ieee-bibtex
 
+[Academic-Markdown]: https://v4.chriskrycho.com/2015/academic-markdown-and-citations.html
 
 ## BibTeX generator
 

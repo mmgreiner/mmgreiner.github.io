@@ -1,10 +1,17 @@
+---
+title:  "Golang information"
+categories: programming
+tags: go  
+toc: false
+---
 
 Functional Programming with Go-Lang: <https://pkg.go.dev/github.com/BooleanCat/go-functional>
 
 <https://marketplace.visualstudio.com/items?itemName=golang.Go>
 
 How to bring it to IIS: 
-https://labod.co/posts/running_a_go_project_with_iis
+<https://labod.co/posts/running_a_go_project_with_iis>
+
 
 
 

@@ -165,9 +165,16 @@ The new net7.0 allows the following creatings:
 
 So the idea is, to create a Bolero App and create a Blazor App, and then copy the Blazor App pages that handle login to the Bolero App.
 
+## Authentication in giraffe
+
+This is a good explanation of how to use EF Core also with [F#]: 
+<https://carpenoctem.dev/blog/fsharp-giraffe-auth-identity-ef-core/>
+
+
 [Razor Tutorial]: https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-7.0&tabs=visual-studio-code
 [MVC Tutorial]: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-7.0&tabs=visual-studio
 
+[F#]: {{ site.fsharp_link }}
 
 [Blazor Tutorial]: https://dotnet.microsoft.com/en-us/learn/aspnet/blazor-tutorial/intro
 
