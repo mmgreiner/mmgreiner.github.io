@@ -49,16 +49,22 @@ B --> C[Server1]
 B --> D[Server2]
 ~~~
 
+
+However, this will not work in your local Jekyll deployment. Also, it does not work on **Github Pages**. There you need the same approach as described [below](#using-mermaid-locally).
+
+### Test with pre
+
 test 2: try to find a solution that works locally and on Github and Github pages.
 
-<pre class="mermaid mermaid-language">
+<pre class="mermaid language-mermaid">
 graph TD 
 A[Client] --> B[Load Balancer] 
 B --> C[Server1] 
 B --> D[Server2]
 </pre>
 
-However, this will not work in your local Jekyll deployment. Also, it does not work on **Github Pages**. There you need the same approach as described [below](#using-mermaid-locally).
+### test with code language and different script
+
 
 ## Using mermaid locally
 
