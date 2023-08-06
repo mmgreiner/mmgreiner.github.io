@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+gem "github-pages", "~> 228", group: :jekyll_plugins
+# gem "github-pages", "~> GITHUB-PAGES-VERSION", group: :jekyll_plugins
 gem "minimal-mistakes-jekyll"
 
 gem "tzinfo-data"
@@ -16,4 +17,5 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   # gem "jekyll-algolia"
   gem "webrick"
+  gem 'jekyll-mermaid-diagrams'
 end
