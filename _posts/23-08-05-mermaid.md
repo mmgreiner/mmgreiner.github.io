@@ -49,7 +49,16 @@ B --> C[Server1]
 B --> D[Server2]
 ~~~
 
-However, this will not work in your local Jekyll deployment.
+test 2: try to find a solution that works locally and on Github and Github pages.
+
+<pre class="mermaid mermaid-language">
+graph TD 
+A[Client] --> B[Load Balancer] 
+B --> C[Server1] 
+B --> D[Server2]
+</pre>
+
+However, this will not work in your local Jekyll deployment. Also, it does not work on **Github Pages**. There you need the same approach as described [below](#using-mermaid-locally).
 
 ## Using mermaid locally
 
@@ -66,7 +75,7 @@ I looked at the [Github plugins](https://mermaid-js.github.io/mermaid/#/./integr
 
 {% include mermaid.html %}
 
-- in the relevant posts, include it: {% raw %} {% include mermaid.html %}{% endraw %}.
+- in the relevant posts, include it: {% raw %}{% include mermaid.html %}{% endraw %}.
 
 - Now mark the diagramm with `<pre class="mermaid"`. Unfortunately, normal code blocks translate to `class="language-mermaid"`, which is not caught by the [mermaid] initialize function.
 
