@@ -38,10 +38,11 @@ sequenceDiagram
 ~~~
 
 
-## Github support
+## Github and github pages support
 
-Github now natively supports [mermaid], see this [article](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/). All you have to do is to mark a code block with **mermaid**:
+Github now natively supports [mermaid], see this [article](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/). All you have to do is to mark a code block with `mermaid``:
 
+{:.mermaid}
 ~~~mermaid
 graph TD 
 A[Client] --> B[Load Balancer] 
@@ -49,12 +50,69 @@ B --> C[Server1]
 B --> D[Server2]
 ~~~
 
+<code class="mermaid language-mermaid">
+graph TD 
+A[Client] --> B[Load Balancer] 
+B --> C[Server1] 
+B --> D[Server2]
+</code>
 
-However, this will not work in your local Jekyll deployment. Also, it does not work on **Github Pages**. There you need the same approach as described [below](#using-mermaid-locally).
 
-### Test with pre
+However, this will not work in your local Jekyll deployment. Also, it does not work on [Github Pages]. There you need the same approach as described [below](#using-mermaid-locally). 
 
-test 2: try to find a solution that works locally and on Github and Github pages.
+The basic problem is:
+
+- [Github mermaid] requires a code block with language tag `mermaid`, which translates to:
+
+~~~html
+<code class="language-mermaid">
+    ...
+</code>
+~~~
+
+whereas the local solution and [Github Pages] require a `pre` element of class `mermaid`.
+
+~~~html
+<pre class="mermaid">
+    ...
+</pre>
+~~~~
+
+### Attempt 1: additional class on code block
+
+The first idea was to augment the code block with the class `mermaid`:
+
+~~~
+{% raw %} {.mermaid} {% endraw %}
+... 
+~~~
+
+However, the generated code was:
+
+~~~html
+<pre class="mermaid"><code class="language-mermaid">graph TD 
+A[Client] --&gt; B[Load Balancer] 
+B --&gt; C[Server1] 
+B --&gt; D[Server2]
+</code></pre>
+~~~
+
+This caused [mermaid] to throw an error, since it did not recognise the `<code>` block.
+
+### Attempt 2: only code block
+
+<code class="mermaid language-mermaid">
+graph TD 
+A[Client] --&gt; B[Load Balancer] 
+B --&gt; C[Server1] 
+B --&gt; D[Server2]
+<code>
+
+Again, we get a [mermaid] error since it is not a `pre` html element.
+
+### Test with <pre> element
+
+Using a pre html element will display fine locally and on [Github Pages], but not on [Github][Github mermaid]:
 
 <pre class="mermaid language-mermaid">
 graph TD 
@@ -63,7 +121,6 @@ B --> C[Server1]
 B --> D[Server2]
 </pre>
 
-### test with code language and different script
 
 
 ## Using mermaid locally
@@ -74,8 +131,8 @@ I looked at the [Github plugins](https://mermaid-js.github.io/mermaid/#/./integr
 
 ~~~html
 <script type="module">
-      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({ startOnLoad: true });
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
 </script>
 ~~~
 
@@ -83,7 +140,7 @@ I looked at the [Github plugins](https://mermaid-js.github.io/mermaid/#/./integr
 
 - in the relevant posts, include it: {% raw %}{% include mermaid.html %}{% endraw %}.
 
-- Now mark the diagramm with `<pre class="mermaid"`. Unfortunately, normal code blocks translate to `class="language-mermaid"`, which is not caught by the [mermaid] initialize function.
+- Now mark the diagramm with the element `<pre class="mermaid">`. Unfortunately, normal code blocks translate to `<code class="language-mermaid">`, which is not caught by the [mermaid] initialize function.
 
 Example: 
 
@@ -156,6 +213,11 @@ Unfortunately, both don't work on github.
 [Mermaid]: https://mermaid-js.github.io/mermaid/#/
 
 ## Conclusio
-If publishing on github anyway, go with the [language code approach](#github-support) and ignore, that they are not displayed locally.
+
+Since I use [mermaid] mainly not to document code, but to end up on [Github Pages], I ended up using the `<pre class="mermaid">` approach, as described in [above](#github-support) and ignore that it is not displayed on [Github][Github mermaid].
+
+
+[Github mermaid]: https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/
+[Github Pages]: https://pages.github.com
 
 
