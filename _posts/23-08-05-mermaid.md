@@ -40,9 +40,8 @@ sequenceDiagram
 
 ## Github and github pages support
 
-Github now natively supports [mermaid], see this [article](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/). All you have to do is to mark a code block with `mermaid``:
+Github now natively supports [mermaid], see this [article](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/). All you have to do is to mark a code block with `mermaid`:
 
-{:.mermaid}
 ~~~mermaid
 graph TD 
 A[Client] --> B[Load Balancer] 
@@ -50,19 +49,9 @@ B --> C[Server1]
 B --> D[Server2]
 ~~~
 
-<code class="mermaid language-mermaid">
-graph TD 
-A[Client] --> B[Load Balancer] 
-B --> C[Server1] 
-B --> D[Server2]
-</code>
+However, this will not work in your local Jekyll deployment. Also, it does not work on [Github Pages]. The basic problem is:
 
-
-However, this will not work in your local Jekyll deployment. Also, it does not work on [Github Pages]. There you need the same approach as described [below](#using-mermaid-locally). 
-
-The basic problem is:
-
-- [Github mermaid] requires a code block with language tag `mermaid`, which translates to:
+- [Github][Github mermaid] requires a code block with language tag `mermaid`, which translates to:
 
 ~~~html
 <code class="language-mermaid">
@@ -91,9 +80,9 @@ However, the generated code was:
 
 ~~~html
 <pre class="mermaid"><code class="language-mermaid">graph TD 
-A[Client] --&gt; B[Load Balancer] 
-B --&gt; C[Server1] 
-B --&gt; D[Server2]
+A[Client] --> B[Load Balancer] 
+B --> C[Server1] 
+B --> D[Server2]
 </code></pre>
 ~~~
 
@@ -101,18 +90,34 @@ This caused [mermaid] to throw an error, since it did not recognise the `<code>`
 
 ### Attempt 2: only code block
 
+We tried a code block with two classes:
+
+~~~html
+<code class="mermaid language-mermaid">
+...
+</code>
+~~~
+
+Display:
+
 <code class="mermaid language-mermaid">
 graph TD 
-A[Client] --&gt; B[Load Balancer] 
-B --&gt; C[Server1] 
-B --&gt; D[Server2]
+A[Client] --> B[Load Balancer] 
+B --> C[Server1] 
+B --> D[Server2]
 <code>
 
-Again, we get a [mermaid] error since it is not a `pre` html element.
+Again, we get a [mermaid] error locally and on [Github Pages] since it is not a `pre` html element.
 
 ### Test with <pre> element
 
 Using a pre html element will display fine locally and on [Github Pages], but not on [Github][Github mermaid]:
+
+~~~html
+<pre class="mermaid language-mermaid">
+...
+</pre>
+~~~
 
 <pre class="mermaid language-mermaid">
 graph TD 
