@@ -11,6 +11,7 @@ toc: true
 
 <https://www.nuget.org/packages/CommandLineParser.FSharp/>
 
+<https://github.com/commandlineparser/commandline/wiki>
 
 ~~~~fsharp
 type options = {

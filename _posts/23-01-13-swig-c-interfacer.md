@@ -1,7 +1,7 @@
 ---
 title: "SWIG - interface for C and C++"
 categories: programming 
-tags: C C++ 
+tags: C C++ go
 ---
 
 ## SWIG
@@ -14,5 +14,11 @@ tags: C C++
 
 ~~~~
 
+## SWIG and Go
+
+How to interface [SWIG and Go] is explained in the [SWIG] documentation. [Go] usually interfaces to C using [cgo](https://golang.org/cmd/cgo/), but cannot easily interface to C++. This is where [SWIG] can help. For more information, see the [documentation][SWIG and Go].
+
 [SWIG]: https://swig.org/index.html
 [SWIG Master Class]: http://www.dabeaz.com/SwigMaster/index.html
+[Go]: {{site.go_link}}
+[SWIG and Go]: https://www.swig.org/Doc4.0/Go.html

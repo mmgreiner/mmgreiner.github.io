@@ -54,7 +54,7 @@ Wie gross ist die Wahrscheinlichkeit
 
 $$ P(3 rote |10 total) = 3/10, drei mal: 3/10 * 3/10 * 3/10 = 9 / 1000 $$
 
-### genau zwei mal eine sschwarze Kugel
+### genau zwei mal eine schwarze Kugel
 ## References
 
 https://www.math.net/probability-and-statistics

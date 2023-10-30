@@ -19,6 +19,18 @@ go mod init github.com/mmgreiner/mymodule
 
 This initializes a module which is called `github.com/mmgreiner/mymodule`. Note the prefix `github.com/mmgreiner`: this is later useful when deploying the module to github. 
 
+`go mod init` creates the file `go.mod`, which has the same package name:
+
+~~~~go
+module github.com/mmgreiner/mymodule
+
+go 1.19
+
+require (
+    ...
+)
+~~~~
+
 ### Executable modules
 
 If this module is an executable, this folder must contain a file, typically called `main.go`, and the following content:
@@ -85,11 +97,26 @@ You have to tag it locally, and then push it to the remote repository on `github
 *Note*: sometimes I messed up the tags and then had to delete them again, since [go] could not find the module. I followed this instruction [*How to delete git tags*](https://devconnected.com/how-to-delete-local-and-remote-tags-on-git/) to do this.
 
 ### Publishing
-Very important: don't forget:
+Very important: don't forget to list it in the go directory
 
 ~~~
-$ GOPROXY=proxy.golang.org go list -m example.com/mymodule@v0.1.0
+$ GOPROXY=proxy.golang.org go list -m github/mmgreiner/mymodule@v0.0.1
 ~~~
+
+
+
+### Publishing with homebrew
+
+TBD
+
+See <https://docs.brew.sh/Formula-Cookbook>.
+
+See <https://docs.brew.sh/Adding-Software-to-Homebrew#formulae>
+
+To create the ruby script for executable apps, use:
+
+    brew create --go --set-version 0.0.1 https://github.com/mmgreiner/mymodule 
+
 
 
 ### Open questions

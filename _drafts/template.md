@@ -1,7 +1,7 @@
 ---
 title:  "Template for posts"
 categories: programming publishing jekyll math
-tags: jekyll F# C# jekyll math  
+tags: jekyll F# C# math  
 toc: true
 ---
 

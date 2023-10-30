@@ -1,7 +1,8 @@
 ---
 title: "NoSQL databases"
 tags: nosql LiteDB F# CouchDB MongoDB
-categories: programming 
+categories: programming database
+toc: false
 ---
 
 Explain the experience with NoSQL databases.
@@ -9,9 +10,9 @@ Explain the experience with NoSQL databases.
 ## LiteDB 
 
 Some links:
-- https://www.compositional-it.com/news-blog/exploring-nosql-in-f-using-litedb/
-- https://www.litedb.org
-- https://github.com/Zaid-Ajaj/LiteDB.FSharp
+- <https://www.compositional-it.com/news-blog/exploring-nosql-in-f-using-litedb/>
+- <https://www.litedb.org>
+- <https://github.com/Zaid-Ajaj/LiteDB.FSharp>
 
 ## CouchDB
 
