@@ -1,13 +1,7 @@
 ---
-categories:
-    - programming
-    - database
-tags:
-    - F#
-    - C#
-    - SQLProvider
-    - Dapper
-title: Sql F# interfaces
+title:  "Sql F# interfaces"
+categories: programming database
+tags: F# C# SQLProvider Dapper 
 toc: true
 ---
 

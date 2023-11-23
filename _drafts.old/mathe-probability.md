@@ -1,11 +1,7 @@
 ---
-categories:
-    - math
-tags:
-    - probability
-    - homework
-    - school
-title: Math question on probability
+title: "Math question on probability"
+categories: math 
+tags: probability homework school
 ---
 
 {% include mathscripts.html %}

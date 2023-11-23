@@ -1,14 +1,7 @@
 ---
-categories:
-    - programming
-    - database
-tags:
-    - nosql
-    - LiteDB
-    - F#
-    - CouchDB
-    - MongoDB
-title: NoSQL databases
+title: "NoSQL databases"
+tags: nosql LiteDB F# CouchDB MongoDB
+categories: programming database
 toc: false
 ---
 

@@ -1,11 +1,8 @@
 ---
-categories:
-    - programming
-date: 2022-10-16T00:00:00Z
-tags:
-    - nuget
-    - dotnet
-title: Using local NuGet source / repository
+title:  "Using local NuGet source / repository"
+date: 2022-10-16
+categories: programming
+tags: nuget dotnet
 toc: true
 ---
 

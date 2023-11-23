@@ -1,11 +1,7 @@
 ---
-categories:
-    - programming
-tags:
-    - osx
-    - websharper
-    - dotnet
-title: Websharper OSX
+title:  "Websharper OSX"
+categories: programming 
+tags: osx websharper dotnet
 toc: true
 ---
 

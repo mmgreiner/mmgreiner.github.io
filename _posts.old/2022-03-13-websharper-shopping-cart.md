@@ -1,12 +1,8 @@
 ---
-categories:
-    - programming
-date: 2022-03-12 10:41:39 +0100
-tags:
-    - F#
-    - template
-    - websharper
-title: WebSharper shopping cart
+title:  "WebSharper shopping cart"
+date:   2022-03-12 10:41:39 +0100
+categories: programming
+tags: F# template websharper
 ---
 
 ## Websharper Shopping cart

@@ -3,7 +3,7 @@ categories:
     - authoring
 tags:
     - bibTeX
-title: BibTeX for standards
+title: Bibliographies and citations - More info
 ---
 
 How to handle a standard?
@@ -17,22 +17,27 @@ How to handle a standard?
     }
 
 
-This [Blogspot](https://b-p-i.blogspot.com/2012/08/cite-iso-standard-bibtex.html) recommends `techreport`:
+https://b-p-i.blogspot.com/2012/08/cite-iso-standard-bibtex.html recommends `techreport`:
 
-    @techreport{ISOPDF,
-    author = {ISO},
-    Institution = {International Organization for Standardization},
-    address = {Geneva, Switzerland},
-    Title = {Document management---{P}ortable document format---{P}art~1: {PDF}~1.7},
-    number = {32000\char"2012 1:2008},
-    Type = {ISO},
-    Year = {2008}
-    }
+~~~
+{% raw %}
+@techreport{ISOPDF,
+author = {ISO},
+Institution = {International Organization for Standardization},
+address = {Geneva, Switzerland},
+Title = {Document management---{P}ortable document format---{P}art~1: {PDF}~1.7},
+number = {32000\char"2012 1:2008},
+Type = {ISO},
+Year = {2008}
+}
+{% endraw %}
+~~~
 
 or 
 
 ~~~
-{% raw %}@techreport{ISO13586,
+{% raw %}
+@techreport{ISO13586,
 type = {Standard},
 key = {ISO 13586:2000(E)},
 month = mar,
@@ -41,14 +46,13 @@ title = {{Plastics -- Determination of fracture toughness (${G}_{\mathrm{IC}}$ a
 volume = {2000},
 address = {Geneva, CH},
 institution = {International Organization for Standardization}
-}{% endraw %}
+}
+{% endraw %}
 ~~~
-
-See also this [Blog]({% post_url 2022-10-13-bibliography %})
 
 [citation-guide]: https://libguides.nps.edu/citation/ieee-bibtex
 
-
+[Academic-Markdown]: https://v4.chriskrycho.com/2015/academic-markdown-and-citations.html
 
 ## BibTeX generator
 

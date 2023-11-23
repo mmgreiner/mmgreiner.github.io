@@ -1,11 +1,7 @@
 ---
-categories:
-    - programming
-tags:
-    - machine-learning
-    - F#
-    - dotnet
-title: Machine Learning with ML.NET
+title: "Machine Learning with ML.NET"
+categories: programming
+tags: machine-learning F# dotnet
 toc: true
 ---
 

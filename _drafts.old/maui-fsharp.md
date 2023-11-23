@@ -1,10 +1,7 @@
 ---
-categories:
-    - programming
-tags:
-    - F#
-    - maui
-title: Using FSharp with MAUI
+title:  "Using FSharp with MAUI"
+categories: programming 
+tags: F# maui 
 toc: true
 ---
 

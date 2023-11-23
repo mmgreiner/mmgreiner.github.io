@@ -1,13 +1,7 @@
 ---
-categories:
-    - publishing
-tags:
-    - liquid
-    - math
-    - markdown
-    - mathjax
-    - jekyll
-title: Liquid templating tips & tricks
+title:  "Liquid templating tips & tricks"
+categories: publishing
+tags: liquid math markdown mathjax jekyll
 ---
 
 {% include mathscripts.html %}

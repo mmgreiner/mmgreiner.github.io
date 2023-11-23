@@ -1,12 +1,7 @@
 ---
-categories:
-    - math
-tags:
-    - homework
-    - F#
-    - math
-    - visualization
-title: Mathe Uffzgi
+title:  "Mathe Uffzgi"
+categories: math 
+tags: homework F# math visualization
 toc: true
 ---
 

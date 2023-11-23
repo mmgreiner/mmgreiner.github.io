@@ -1,12 +1,7 @@
 ---
-categories:
-    - programming
-tags:
-    - input
-    - html5
-    - bolero
-    - F#
-title: Input file element with Bolero
+title:  "Input file element with Bolero"
+categories: programming
+tags: input html5 bolero F#
 toc: true
 ---
 

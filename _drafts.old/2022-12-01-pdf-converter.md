@@ -1,11 +1,7 @@
 ---
-categories:
-    - programming
-tags:
-    - pdf
-    - dotnet
-    - F#
-title: PDF converter in dotnet
+title:  "PDF converter in dotnet"
+categories: programming
+tags: pdf dotnet F# 
 ---
 
 There is once in a while the need to extract pure text from PDF files within dotnet. This blog shows some attempts.

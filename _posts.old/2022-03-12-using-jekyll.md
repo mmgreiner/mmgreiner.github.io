@@ -1,13 +1,8 @@
 ---
-categories:
-    - programming
-date: 2022-03-12 19:00:00 +0100
-tags:
-    - jekyll
-    - github
-    - F#
-    - websharper
-title: Using Jekyll
+title:  "Using Jekyll"
+date:   2022-03-12 19:00:00 +0100
+categories: programming
+tags: jekyll github F# websharper 
 toc: true
 ---
 

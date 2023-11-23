@@ -1,12 +1,8 @@
 ---
-categories:
-    - programming
-date: 2022-03-13 13:00:00 +0100
-tags:
-    - F#
-    - template
-    - websharper
-title: WebSharper templates
+title:  "WebSharper templates"
+date:   2022-03-13 13:00:00 +0100
+categories: programming
+tags: F# template websharper
 ---
 
 

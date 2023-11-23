@@ -1,10 +1,7 @@
 ---
-categories:
-    - publishing
-tags:
-    - search
-    - jekyll
-title: Jekyll Tips & Tricks
+title:  "Jekyll Tips & Tricks"
+categories: publishing
+tags: search jekyll
 ---
 
 This post covers some more Jekyll tips and tricks like searching a web page.

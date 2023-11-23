@@ -1,9 +1,7 @@
 ---
-categories:
-    - authoring
-tags:
-    - bibTeX
-title: BibTeX for standards
+title:  "BibTeX for standards"
+categories: authoring
+tags: bibTeX 
 ---
 
 How to handle a standard?
