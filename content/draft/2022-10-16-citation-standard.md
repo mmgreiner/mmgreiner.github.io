@@ -46,7 +46,7 @@ institution = {International Organization for Standardization}
 }{% endraw %}
 ~~~
 
-See also this [Blog]({% post_url 2022-10-13-bibliography %})
+See also this [Blog]({{< ref 2022-10-13-bibliography >}})
 
 [citation-guide]: https://libguides.nps.edu/citation/ieee-bibtex
 

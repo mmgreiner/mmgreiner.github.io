@@ -16,11 +16,9 @@ math: true
 showshowToc: true
 ---
 
-{% include mathscripts.html %}
-
 ## Mathematical formulas
 
-While working on post [Mathe Uffzig]({% post_url 2022-04-02-mathe-uffzgi %}), I stumbled upon the problem of displaying mathematical formulas in the [Jekyll] markdown templating engine [Liquid](liquid).
+While working on post [Mathe Uffzig]({{< ref 2022-04-02-mathe-uffzgi >}}), I stumbled upon the problem of displaying mathematical formulas in the [Jekyll] markdown templating engine [Liquid](liquid).
 
 Searching the web, I found this blog: [Creating a mathematics blog with Jekyll](https://medium.com/coffee-in-a-klein-bottle/creating-a-mathematics-blog-with-jekyll-78cdee0339f3).
 
@@ -131,7 +129,7 @@ feerr
 
 ### Math code blocks
 
-One issue is, that all these pages are typically stored on [github](https://github.com/), which used again it's own way how to display math equations. It seems that code blocks of type math are the future.
+One issue is, that all these pages are typically stored on [github](https://github.com/), which uses again it's own way how to display math equations. It seems that code blocks of type math are the future.
 
 With version 0.93.0, [Hugo] allows extensions to the rendering of code blocks, see [render hooks](https://gohugo.io/templates/render-hooks/#render-hooks-for-code-blocks). 
 

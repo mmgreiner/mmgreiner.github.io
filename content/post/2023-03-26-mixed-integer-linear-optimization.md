@@ -38,7 +38,7 @@ The goal is to find the best combination of products and suppliers, which fullfi
 
 ## Mathematical formulation
 
-The field of mathematics handling these kind of questions is called [Operation Research](https://en.wikipedia.org/wiki/Operations_research). There is some more information also on the [related post]({% post_url 22-12-31-operation-research %}).
+The field of mathematics handling these kind of questions is called [Operation Research](https://en.wikipedia.org/wiki/Operations_research). There is some more information also on the [related post]({{< ref 2022-12-31-operation-research >}}).
 
 First define the **constants**:
 

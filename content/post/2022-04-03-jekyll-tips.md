@@ -45,7 +45,7 @@ The pages reside under `~<user>/Sites`. Normally, you would create a sub-site in
 
 To build your [Jekyll] static pages directly to that site, use (assuming the user is `mmgreiner`):
 
-~~~~
+~~~~sh
 jekyll build --drafts -d ~/Sites/mypages --baseurl "~mmgreiner/mypages"
 ~~~~
 

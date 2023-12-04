@@ -78,7 +78,7 @@ TBD
 
 An example for this can be found on my [Github/BoleroApp]({{site.greiner_link}}/BoleroApp) repository. It implements a simple AspNet MVC controller for file uploads.
 
-See also this [post]({% post_url 23-02-10-github-fsharp %}).
+See also this [post]({{< ref 2023-02-10-github-fsharp >}}).
 
 ## Further information
 

@@ -52,7 +52,7 @@ A simple way is to use the [Microsoft Math Solver][mathsolver]. You can type in 
     
 and it will return the solution and visualizes the graph.
 
-{{<figure src="images/mathsolver.png" title="Sample Microsoft Math Solver">}}
+{{<figure src="/images/mathsolver.png" title="Sample Microsoft Math Solver">}}
 
 
 [mathsolver]: https://math.microsoft.com/en
@@ -94,7 +94,7 @@ kompliziert |> LaTex.format
 // returns \frac{1}{ab} 
 ~~~
 
-And this LaTeX can then be used in markdown documents. How to do this with [Jekyll]({{site.jekyll_link}}), is shown in the post [Liquid tricks]({% post_url 2022-04-02-liquid-tricks %}).
+And this LaTeX can then be used in markdown documents. How to do this with [Jekyll]({{<param "jekyll_link" >}}), is shown in the post [Liquid tricks]({{< ref 2022-04-03-jekyll-tips >}}).
 
 
 ~~~fsharp
