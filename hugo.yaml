@@ -1,0 +1,73 @@
+baseURL: http://example.org/
+disablePathToLower: true
+languageCode: en-us
+title: Küse's Codes
+theme: PaperMod # hugo-theme-relearn   #hugo-pure    # ananke
+
+#sectionPagesMenu: "main"
+show_reading_time: true
+summaryLength: 20
+
+ignoreFiles:
+  - deploy-locals.sh
+
+menu:
+  main:
+    - name: Categories
+      url: /categories
+      weight: 30
+    - name: Tags
+      url: /tags
+      weight: 40
+    - name: Posts
+      url: /post
+      weight: 20
+    - name: Drafts
+      url: /draft
+      weight: 25
+    - name: About me
+      url: /about
+      weight: 80
+    - name: Search
+      url: /search
+      weight: 100
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+params:
+  homeInfoParams:
+    Title: Küse's Codes
+    Content: >
+      A Swiss nick name for Markus is Küse, and since I love alliterations, 
+      this blog is called Küse’s Code (although this is a really terrible alliteration)
+
+  socialIcons: # optional
+    - name: github
+      url: "https://github.com/mmgreiner"
+    - name: email
+      url: mailto:mmgreiner@bluewin.ch
+    - name: linkedin
+      url: https://www.linkedin.com/in/markus-greiner-60b51811
+
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+
+  # comments: true
+
+  websharper_link:  https://developers.websharper.com/docs/v4.x/fs/
+  mozilla_link: https://developer.mozilla.org/en-US/docs/Web/HTML
+  exercise_link: https://github.com/mmgreiner/Exercises
+  fsharp_link: https://fsharp.org
+  jekyll_link: https://jekyllrb.com
+  greiner_link: https://github.com/mmgreiner
+  bolero_link: https://fsbolero.io
+  go_link: https://go.dev
+  hugo_link: https://gohugo.io
+
+
+
+
