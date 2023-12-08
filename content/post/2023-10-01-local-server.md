@@ -36,14 +36,47 @@ If you now browse to <http://localhost/~mmgreiner/mypages/>, you should see your
 
 ## Deploy Hugo locally
 
-To publish and deploy the [Hugo] site locally, use the following command
+I later moved all the [Jekyll] pages to [Hugo]. To publish and deploy the [Hugo] site locally, use the following command
 
 ~~~csh
-hugo --destination ~/Sites/mypages-hugo --baseURL http://localhost/~mmgreiner/mypages-hugo
+hugo --destination ~/Sites/mypages --baseURL http://localhost/~mmgreiner/mypages
 ~~~
 
 Make sure that the destination directory name corresponds to the last name of the `baseURL`, in this case `mypages-hugo`.
 
+## Potential problems
+
+If the server cannot be found, it may be, that apache is not running. Check with:
+
+    apachectl
+
+This may throw an error like this:
+
+~~~
+% apachectl
+[Fri Dec 08 09:25:16.726003 2023] [so:error] [pid 18207] AH06663: Unable to find code signature authority 
+on module at /usr/local/opt/php/lib/httpd/modules/libphp.so that matches authority name "Markus Greiner" configured on LoadModule directive.
+httpd: Syntax error on line 192 of /private/etc/apache2/httpd.conf: 
+Code signing error - not loading module at: /usr/local/opt/php/lib/httpd/modules/libphp.so
+~~~
+
+Basically, this may happen after you have upgraded `apachectl`. The code needs to be signed again, which is a complex procedure. 
+
+From [stackoverflow](https://stackoverflow.com/questions/72787369/unable-to-code-sign-the-apache-modules-in-mac):
+
+> To fix the above problem, I created Certificate Authority in mac machine by following - <https://www.simplified.guide/macos/keychain-ca-code-signing-create> and trying to codesign to sign the AEM Dispatcher module with below command
+
+Only once, you have to create yourself a certificate. This is in detail described in <https://www.simplified.guide/macos/keychain-cert-code-signing-create>
+
+Everytime `php` is updated, for instance through a `brew update` command, the `libphp.so` file needs to be signed again. 
+
+- First, open *Keychain Access*, the *Keychains*, not the passwords. There, check that a certificate for *Markus Greiner* exists.
+- Now in the terminal, do:
+
+~~~
+% codesign --sign "Markus Greiner" --force --keychain ~/Library/Keychains/login.keychain-db /usr/local/opt/php/lib/httpd/modules/libphp.so
+% sudo apachectl
+~~~
 
 [tomcat]: https://tomcat.apache.org
 [Jekyll]: {{< param "jekyll_link" >}}

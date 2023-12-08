@@ -126,6 +126,7 @@ olver.Add(x + 7.0 * y ^<== 17.5)
 
 However, this seems to be very cumbersome. In this case, the functional programming style does not lead itself to be more concise.
 
+
 ### Longer example
 
 Back to the equation 1 of above:
@@ -181,7 +182,7 @@ objective.SetMaximization()
 ~~~
 
 
-## A longer Example
+### Another Example
 
 Let's take another example with only integers as variables and using arrays, taken also from [OR-Tools Arrays](https://developers.google.com/optimization/mip/mip_var_array). We will also use [F#] 2-dimensional arrays here. These are described in [F# arrays](https://learn.microsoft.com/en-gb/dotnet/fsharp/language-reference/arrays).
 
