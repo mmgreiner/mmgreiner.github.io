@@ -1,4 +1,5 @@
 ---
+title: Serving static pages locally
 categories:
 - programming
 date: "2023-10-01T00:00:00Z"
@@ -6,7 +7,6 @@ tags:
 - web
 - jekyll
 - hugo
-title: Serving static pages locally
 showshowToc: true
 ---
 
