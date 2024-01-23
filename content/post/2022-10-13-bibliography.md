@@ -24,6 +24,33 @@ Note: On OSX, another commonly used tool is [BibDesk].
 
 [BibDesk]: https://bibdesk.sourceforge.io
 
+### Better BibTeX
+There is an extension to [Zotero]  called [Better-BibTeX](https://retorque.re/zotero-better-bibtex/), which I installed.
+
+> Better BibTeX (BBT) is a plugin for [Zotero](https://www.zotero.org/) and [Juris-M](https://juris-m.github.io/) that makes it easier to manage bibliographic data, especially for people authoring documents using text-based toolchains (e.g. based on [LaTeX](https://www.latex-project.org/) / [Markdown](https://www.markdownguide.org/)).
+
+#### Features
+
+- Facilities for generating citation keys
+- Conversion between formats and encodings
+- Facilities for exporting data from Zotero
+
+#### Visual Studio Code
+
+Pick citation from Visual Studio Code: <https://marketplace.visualstudio.com/items?itemName=mblode.zotero>.
+
+It pops up a little window which lets you choose the bibliography entry from Zotero and creates a unique identifier:
+
+  @durrenmattDurcheinandertalRoman1989
+
+However, it is unclear how this can be used inside markdown.
+
+#### Further information
+
+I also found this link <https://lucidmanager.org/productivity/hugo-bibliography/> which is worth reading. It defines particals for citations.
+
+
+
 ## File Formats
 
 The oldest and best known (but cryptic) file format for a bibliography is [BibTeX]. It comes in a `.bib` file. A typical format looks like this:
@@ -406,7 +433,7 @@ Automatically generate citation from ISBN number
 
 ### IMDb for films
 
-Get Cittations of films: No standard, but can use film database [IMDb](https://www.imdb.com), which has a sequence number, Ex Manhattan has number [Woody Allen: Manhattan](https://www.imdb.com/title/tt0079522/) tt0079522 
+Get Citations of films: No standard, but can use film database [IMDb](https://www.imdb.com), which has a sequence number, Ex Manhattan has number [Woody Allen: Manhattan](https://www.imdb.com/title/tt0079522/) tt0079522 
 
 Code to generate from PDF: [bibtex-generator]
 
