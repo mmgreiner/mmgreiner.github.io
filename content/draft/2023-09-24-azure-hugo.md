@@ -84,6 +84,13 @@ The setup was straight forward is is excellently [documented](https://render.com
 
 [Render] also takes the pages directly from [Github](https://github.com), so the process is quite simple.
 
+## Publish to Netlify
+
+
+## Publish to Shopify
+
+[Shopify Authentication](https://shopify.dev/docs/apps/auth)
+
 
 [Hugo]: https://gohugo.io
 [azure-hugo]: https://learn.microsoft.com/en-us/azure/static-web-apps/publish-hugo

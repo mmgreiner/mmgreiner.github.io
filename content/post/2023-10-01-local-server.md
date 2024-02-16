@@ -7,6 +7,9 @@ tags:
 - web
 - jekyll
 - hugo
+- apache
+- tomcat
+- unix
 showshowToc: true
 ---
 
@@ -75,8 +78,12 @@ Everytime `php` is updated, for instance through a `brew update` command, the `l
 
 ~~~
 % codesign --sign "Markus Greiner" --force --keychain ~/Library/Keychains/login.keychain-db /usr/local/opt/php/lib/httpd/modules/libphp.so
-% sudo apachectl
 ~~~
+
+Restart the server with:
+
+    % sudo apachectl
+
 
 [tomcat]: https://tomcat.apache.org
 [Jekyll]: {{< param "jekyll_link" >}}

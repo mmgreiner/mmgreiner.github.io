@@ -3,11 +3,14 @@ title: Miscellaneous
 categories:
 - programming
 - jekyll
+- publishing
 date: "2023-03-18T00:00:00Z"
 mermaid: true
 tags:
 - jekyll
 - F#
+- pandoc
+- unix
 showToc: true
 ---
 
@@ -34,7 +37,7 @@ csvWriter.WriteRecords(data)
 [FSharp.Data]: https://fsprojects.github.io/FSharp.Data/
 [CSVHelper]: https://joshclose.github.io/CsvHelper/
 
-### Stess tests of CSV
+### Stress tests of CSV
 
 There are several stress tests for CSV reading and writing:
 - <https://github.com/maxogden/csv-spectrum>
@@ -49,6 +52,35 @@ see <https://jaantollander.com/post/scientific-writing-with-markdown/>
 See with more detail: 
 <https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown>
 
+## Print Markdown with pandoc
+
+[pandoc] is a tool to convert markdown to all kinds of formats. It states:
+
+> If you need to convert files from one markup format into another, pandoc is your swiss-army knife.
+
+You can use the yaml header in a markdown file to tell pandoc how to print it. For instance:
+
+~~~~yaml
+---
+title: My Title
+author: Markus Greiner
+date: 2024-01-18
+fontsize: 12pt
+papersize: a4
+geometry: margin=2cm
+---
+~~~~
+
+This will use paper size `A4` and font `12pt` when converting to pandoc, and will set the margin to 2 cm.
+
+The conversion to pdf is done as follows:
+
+~~~~csh
+% pandoc *.md -o mydoc.pdf
+~~~~
+
+
+[pandoc]: https://pandoc.org
 
 ## Humanizer
 
@@ -74,4 +106,10 @@ Use [Markdig](https://github.com/xoofx/markdig).
 ### MVC, Razor, Razor Pages, MVC, and Blazor
 
 I found a good article explaining all of this on [Progress Telerik](https://www.telerik.com/blogs/difference-between-blazor-vs-razor)
+
+## Unix stuff
+
+To only grep on stderr, do:
+
+    go run . 2>&1 >/dev/null | grep MyPattern
 

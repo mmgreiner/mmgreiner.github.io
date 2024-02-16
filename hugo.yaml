@@ -11,6 +11,11 @@ summaryLength: 20
 ignoreFiles:
   - deploy-locals.sh
 
+markup:
+  goldmark:
+    renderer: 
+      unsafe: true
+      
 menu:
   main:
     - name: Categories

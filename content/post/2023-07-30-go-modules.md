@@ -4,6 +4,7 @@ categories:
 date: "2023-07-30T00:00:00Z"
 tags:
 - go
+- github
 title: How to work with modules and packages in Go
 showToc: true
 ---
@@ -103,7 +104,7 @@ You have to tag it locally, and then push it to the remote repository on `github
 Very important: don't forget to list it in the go directory
 
 ~~~
-$ GOPROXY=proxy.golang.org go list -m github/mmgreiner/mymodule@v0.0.1
+$ GOPROXY=proxy.golang.org go list -m github.com/mmgreiner/mymodule@v0.0.1
 ~~~
 
 

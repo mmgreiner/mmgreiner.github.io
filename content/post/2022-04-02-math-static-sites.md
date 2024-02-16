@@ -1,4 +1,5 @@
 ---
+title: Math formulas and static web site generators
 categories:
 - publishing
 - math
@@ -11,7 +12,6 @@ tags:
 - jekyll
 - hugo
 - katex
-title: Math formulas and static web site generators
 math: true
 showshowToc: true
 ---
@@ -157,6 +157,9 @@ Now the codeblock with language `math` will render to a paragraph with the math 
 
 I had some difficulties generating multi-line math equations. I ended up using `\cr` for a line break, since double backslash did not work.
 
+### Hugo version 0.122
+
+With version [v0.122.0](https://github.com/gohugoio/hugo/releases/tag/v0.122.0), hugo has its own support of [mathematics in markdown](https://gohugo.io/content-management/mathematics/). See there for further information.
 
 
 
