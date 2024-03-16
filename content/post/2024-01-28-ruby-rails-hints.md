@@ -121,6 +121,8 @@ create_table "bs", force: :cascade do |t|
     t.datetime "updated_at", null: false
     t.index ["a_id"], name: "index_bs_on_a_id"
 end
+
+add_foreign_key "bs", "as"
 ~~~
 </td>
 
