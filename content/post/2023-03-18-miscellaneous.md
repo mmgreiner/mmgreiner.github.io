@@ -71,7 +71,13 @@ geometry: margin=2cm
 ---
 ~~~~
 
-This will use paper size `A4` and font `12pt` when converting to pandoc, and will set the margin to 2 cm.
+This will use paper size `A4` and font `12pt` when converting to pandoc, and will set the margin to 2 cm. If you want to print it landscape, do:
+
+~~~yaml
+---
+geometry: landscape
+---
+~~~
 
 The conversion to pdf is done as follows:
 
