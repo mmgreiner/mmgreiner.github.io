@@ -6,6 +6,7 @@ draft: false
 tags:
 - html
 - purecss
+- fontawesome
 title: A vertical responsive menu with PureCSS
 showToc: false
 ---
@@ -18,7 +19,7 @@ So it posed two challenges:
 - responsive vertical menu with hamburger
 - submenus
 
-The given code is available on my [github](https://github.com/mmgreiner/vertical-responsive-menu).
+The given code is available on my [github].
 
 ## Submenus
 
@@ -56,8 +57,20 @@ I noticed that the style sheet sets the width of the vertical menu to `150px`. J
  
 ## Usage
 
-Just download the three files and open `simple_index_vertical_menu.html` in your favorite browser.
+Just download the three files from [github] and open `simple_index_vertical_menu.html` in your favorite browser.
 
+## FontAwesome
 
+[Font Awesome] is a good source for any kind of icons. However, they have hidden their CDN, since they prefer that you log in to get more information.
+
+The CDN is here:
+
+~~~html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+~~~
+
+And the free icons can be found here: [Font Awesome free icons](https://fontawesome.com/search?o=r&m=free).
 
 [Pure.css]: https://purecss.io/
+[github]: https://github.com/mmgreiner/vertical-responsive-menu
+[Font Awesome]: https://fontawesome.com/
