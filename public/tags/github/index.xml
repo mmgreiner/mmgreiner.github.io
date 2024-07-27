@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Github on Küse&#39;s Codes</title>
+    <link>http://localhost:1313/tags/github/</link>
+    <description>Recent content in Github on Küse&#39;s Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to work with modules and packages in Go</title>
+      <link>http://localhost:1313/post/2023-07-30-go-modules/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-07-30-go-modules/</guid>
+      <description>I had to practice a long time to understand the go concepts of modules, packages, and how to publish them to github.</description>
+    </item>
+    
+    <item>
+      <title>Using Jekyll</title>
+      <link>http://localhost:1313/post/2022-03-12-using-jekyll/</link>
+      <pubDate>Sat, 12 Mar 2022 19:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-03-12-using-jekyll/</guid>
+      <description>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes.</description>
+    </item>
+    
+  </channel>
+</rss>

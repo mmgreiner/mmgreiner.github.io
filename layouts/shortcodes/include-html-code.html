@@ -1,0 +1,5 @@
+{{ $file := .Get "file" }}
+{{ with readFile $file }}
+{{ highlight (trim . "\n\r") "html" }}
+{{ end }}
+

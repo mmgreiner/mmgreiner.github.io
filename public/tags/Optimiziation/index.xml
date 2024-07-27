@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Optimiziation on Küse&#39;s Codes</title>
+    <link>http://localhost:1313/tags/Optimiziation/</link>
+    <description>Recent content in Optimiziation on Küse&#39;s Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/Optimiziation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mixed integer linear optimiziation for supply chain and production</title>
+      <link>http://localhost:1313/post/2023-03-26-mixed-integer-linear-optimization/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-03-26-mixed-integer-linear-optimization/</guid>
+      <description>This blog contains formulas which can be used to optimize the supply chain with multiple suppliers, and a general production planning formula, taken from the book POCHET, Yves und WOLSEY, Laurence A.</description>
+    </item>
+    
+  </channel>
+</rss>

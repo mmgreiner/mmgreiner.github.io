@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>OR-Tools on Küse&#39;s Codes</title>
+    <link>http://localhost:1313/tags/OR-Tools/</link>
+    <description>Recent content in OR-Tools on Küse&#39;s Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/OR-Tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Operation research</title>
+      <link>http://localhost:1313/post/2022-12-31-operation-research/</link>
+      <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-12-31-operation-research/</guid>
+      <description>Operation Research is defined in Wikipedia as
+Operations research (British English: operational research) &amp;hellip; , often shortened to the initialism OR, is a discipline that deals with the development and application of analytical methods to improve decision-making.</description>
+    </item>
+    
+  </channel>
+</rss>

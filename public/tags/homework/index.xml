@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Homework on Küse&#39;s Codes</title>
+    <link>http://localhost:1313/tags/homework/</link>
+    <description>Recent content in Homework on Küse&#39;s Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/homework/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mathe Uffzgi</title>
+      <link>http://localhost:1313/post/2022-04-02-mathe-uffzgi/</link>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-04-02-mathe-uffzgi/</guid>
+      <description>Once in a while, I&amp;rsquo;m supporting Lea with her math homework (Swiss: Uffzgi). Here are some tools that help me (remember, that I prefer F# to other languages.</description>
+    </item>
+    
+  </channel>
+</rss>

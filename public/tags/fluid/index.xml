@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fluid on Küse&#39;s Codes</title>
+    <link>http://localhost:1313/tags/fluid/</link>
+    <description>Recent content in Fluid on Küse&#39;s Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/fluid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Static templating with handlebars, liquid and others</title>
+      <link>http://localhost:1313/post/2022-08-29-static-templating/</link>
+      <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-08-29-static-templating/</guid>
+      <description>Templating is an proofen method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time.</description>
+    </item>
+    
+  </channel>
+</rss>

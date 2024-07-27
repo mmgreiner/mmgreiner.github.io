@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Math on Küse&#39;s Codes</title>
+    <link>http://localhost:1313/categories/math/</link>
+    <description>Recent content in Math on Küse&#39;s Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>General production optimization</title>
+      <link>http://localhost:1313/post/2023-04-01-production-optimization/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-04-01-production-optimization/</guid>
+      <description>Optimization General production structure capacited multi-level lot-sizing model PochetWolsey, page 45
+$1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared resources with limited capacity $1 \le t \le n$: time periods until final period n $p_t$: unit production cost $q_t$: fixed production cost $h_t$: unit inventory cost $d_t^i$: demand for item i to be satisified at period t $M_t$: large positive number, expressing an upper bound on the maximum lot size iin period t $L_t^k$: available capacity of resource k during period t $\alpha^{i k}, \beta^{i k}$: amount of capacity of resource k consumed $1 \le j \le m$: items $D(i)$ set of direct successors of part i in the BOM, i.</description>
+    </item>
+    
+    <item>
+      <title>Mixed integer linear optimiziation for supply chain and production</title>
+      <link>http://localhost:1313/post/2023-03-26-mixed-integer-linear-optimization/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-03-26-mixed-integer-linear-optimization/</guid>
+      <description>This blog contains formulas which can be used to optimize the supply chain with multiple suppliers, and a general production planning formula, taken from the book POCHET, Yves und WOLSEY, Laurence A.</description>
+    </item>
+    
+    <item>
+      <title>Math formulas and static web site generators</title>
+      <link>http://localhost:1313/post/2022-04-02-math-static-sites/</link>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-04-02-math-static-sites/</guid>
+      <description>Mathematical formulas While working on post Mathe Uffzig, I stumbled upon the problem of displaying mathematical formulas in the Jekyll markdown templating engine Liquid.</description>
+    </item>
+    
+    <item>
+      <title>Mathe Uffzgi</title>
+      <link>http://localhost:1313/post/2022-04-02-mathe-uffzgi/</link>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-04-02-mathe-uffzgi/</guid>
+      <description>Once in a while, I&amp;rsquo;m supporting Lea with her math homework (Swiss: Uffzgi). Here are some tools that help me (remember, that I prefer F# to other languages.</description>
+    </item>
+    
+  </channel>
+</rss>

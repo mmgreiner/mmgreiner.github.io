@@ -7,7 +7,6 @@ categories:
 tags:
 - hugo
 - jekyll
-- github
 showToc: true
 ---
 
@@ -82,6 +81,25 @@ outputs:
 ~~~~
 
 
+## Including source code
+
+What if you want to include source code in a code example? The post of [Marcus Olsson](https://marcusolsson.dev/how-to-include-code-examples-from-file-with-hugo/) shows how to do it.
+
+Basically, you need to define a shortcode like this one I use, called `layout/shortcodes/include-html-code.html`:
+
+~~~
+{{< include-file file="layouts/shortcodes/include-file.html" >}}
+~~~
+
+The minuses after the curly brackets indicate that the spaces and line breaks are not kept.
+
+Then in your post, use it as follows:
+
+~~~html
+{{</* include-file file="static/assets/purecss_index.html" */>}}
+~~~
+
+**Note**: Escaping shortcodes was kaken from [Chris Liatas](https://liatas.com/posts/escaping-hugo-shortcodes/)
 
 
 [Hugo]: {{<param "hugo_link">}}

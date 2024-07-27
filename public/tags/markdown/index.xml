@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Markdown on Küse&#39;s Codes</title>
+    <link>http://localhost:1313/tags/markdown/</link>
+    <description>Recent content in Markdown on Küse&#39;s Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Math formulas and static web site generators</title>
+      <link>http://localhost:1313/post/2022-04-02-math-static-sites/</link>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-04-02-math-static-sites/</guid>
+      <description>Mathematical formulas While working on post Mathe Uffzig, I stumbled upon the problem of displaying mathematical formulas in the Jekyll markdown templating engine Liquid.</description>
+    </item>
+    
+  </channel>
+</rss>

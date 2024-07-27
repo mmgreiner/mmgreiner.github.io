@@ -1,0 +1,4 @@
+{{- $file := .Get "file"}}
+{{- with readFile $file }}
+{{- trim . "\n\r" }}
+{{- end }}

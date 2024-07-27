@@ -6,6 +6,13 @@ Originally created in [Jekyll](https://jekyllrb.com/), later moved to [Hugo](htt
 
 The static generated pages are found on github pages [mmgreiner.github.io](https://mmgreiner.github.io).
 
+During development, use:
+
+~~~
+hugo server
+~~~
+
+
 To generate them locally, use:
 
 ~~~

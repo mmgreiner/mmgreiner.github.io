@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Programming on Küse&#39;s Codes</title>
+    <link>http://localhost:1313/categories/programming/</link>
+    <description>Recent content in Programming on Küse&#39;s Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A vertical responsive menu with PureCSS</title>
+      <link>http://localhost:1313/post/2024-07-27-purecss-menu/</link>
+      <pubDate>Sat, 27 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-07-27-purecss-menu/</guid>
+      <description>I have been using Pure.css in most of my applications since it is really simple to use.
+This is a small code sample that uses Pure.</description>
+    </item>
+    
+    <item>
+      <title>Pure.css framework</title>
+      <link>http://localhost:1313/post/2024-02-03-purecss/</link>
+      <pubDate>Sat, 03 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-02-03-purecss/</guid>
+      <description>Pure.css is a css framework that does not include JavaScript like other frameworks such as Vue, bootstrap, &amp;hellip;
+In contrast to those frameworks:</description>
+    </item>
+    
+    <item>
+      <title>Ruby on Rails Tips and Tricks</title>
+      <link>http://localhost:1313/post/2024-01-28-ruby-rails-hints/</link>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-01-28-ruby-rails-hints/</guid>
+      <description>This gives some tips and trick for Ruby on Rails.
+Quickref I found an excellent quick reference guide to Ruby on zenspider.</description>
+    </item>
+    
+    <item>
+      <title>Serving static pages locally</title>
+      <link>http://localhost:1313/post/2023-10-01-local-server/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-10-01-local-server/</guid>
+      <description>Running build-in tomcat server It is possible to deploy Jekyll sites locally, because OSX has a build-in Apache tomcat server. The local sites reside under ~/Sites.</description>
+    </item>
+    
+    <item>
+      <title>How to work with modules and packages in Go</title>
+      <link>http://localhost:1313/post/2023-07-30-go-modules/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-07-30-go-modules/</guid>
+      <description>I had to practice a long time to understand the go concepts of modules, packages, and how to publish them to github.</description>
+    </item>
+    
+    <item>
+      <title>Bolero hosting Razor page</title>
+      <link>http://localhost:1313/post/2023-04-11-bolero-razor/</link>
+      <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-04-11-bolero-razor/</guid>
+      <description>In this post we investigate how to use Razor pages on the host and Bolero WebAssembly on the client side. The final code can be found on My github - Tutorials - BoleroAppRazor.</description>
+    </item>
+    
+    <item>
+      <title>General production optimization</title>
+      <link>http://localhost:1313/post/2023-04-01-production-optimization/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-04-01-production-optimization/</guid>
+      <description>Optimization General production structure capacited multi-level lot-sizing model PochetWolsey, page 45
+$1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared resources with limited capacity $1 \le t \le n$: time periods until final period n $p_t$: unit production cost $q_t$: fixed production cost $h_t$: unit inventory cost $d_t^i$: demand for item i to be satisified at period t $M_t$: large positive number, expressing an upper bound on the maximum lot size iin period t $L_t^k$: available capacity of resource k during period t $\alpha^{i k}, \beta^{i k}$: amount of capacity of resource k consumed $1 \le j \le m$: items $D(i)$ set of direct successors of part i in the BOM, i.</description>
+    </item>
+    
+    <item>
+      <title>Miscellaneous</title>
+      <link>http://localhost:1313/post/2023-03-18-miscellaneous/</link>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-03-18-miscellaneous/</guid>
+      <description>This is a list of reminders and open questions I still wanted to look at in more detail.
+CSV conversion Next to FSharp.</description>
+    </item>
+    
+    <item>
+      <title>RESTful API</title>
+      <link>http://localhost:1313/post/2023-03-15-RESTApi/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-03-15-RESTApi/</guid>
+      <description>This contains some thoughts how to implement RESTful APIs.
+Background tbd
+Best practices A search for RESTful API best practices reveals many sites:</description>
+    </item>
+    
+    <item>
+      <title>Github resources</title>
+      <link>http://localhost:1313/post/2023-02-10-github-fsharp/</link>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-02-10-github-fsharp/</guid>
+      <description>Some of my codes are documented on my Github with description in the readme files. Take a look there.
+Github Description BoleroApp A simple Bolero app with file upload and data repository using dependency injection StringAlgorithms Some string algorithms in F# to measure string similarity WebAPI A net7.</description>
+    </item>
+    
+    <item>
+      <title>Go tricks &amp; tips</title>
+      <link>http://localhost:1313/post/2023-02-01-golang/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-02-01-golang/</guid>
+      <description>In 2023, I became interested in the programming language Go. It is a C derivates without all the nil pointer exceptions, and has a very solid infrastructure and libraries to compile across different operating systems.</description>
+    </item>
+    
+    <item>
+      <title>SWIG - interface for C and C&#43;&#43;</title>
+      <link>http://localhost:1313/post/2023-01-13-swig-c-interfacer/</link>
+      <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-01-13-swig-c-interfacer/</guid>
+      <description>SWIG SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.</description>
+    </item>
+    
+    <item>
+      <title>Operation research</title>
+      <link>http://localhost:1313/post/2022-12-31-operation-research/</link>
+      <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-12-31-operation-research/</guid>
+      <description>Operation Research is defined in Wikipedia as
+Operations research (British English: operational research) &amp;hellip; , often shortened to the initialism OR, is a discipline that deals with the development and application of analytical methods to improve decision-making.</description>
+    </item>
+    
+    <item>
+      <title>Input file element with Bolero</title>
+      <link>http://localhost:1313/post/2022-10-20-input-file/</link>
+      <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-10-20-input-file/</guid>
+      <description>Bolero is a set of free and open-source libraries and tools to write web applications in F#. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.</description>
+    </item>
+    
+    <item>
+      <title>Using local NuGet source / repository</title>
+      <link>http://localhost:1313/post/2022-10-16-nuget-local/</link>
+      <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-10-16-nuget-local/</guid>
+      <description>Had some problems creating a local nuget repository. This is how I succeeded:
+Create a local nuget repository / source $ cli nuget add source ~/.</description>
+    </item>
+    
+    <item>
+      <title>Bibliographies, citations and dotnet programming</title>
+      <link>http://localhost:1313/post/2022-10-13-bibliography/</link>
+      <pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-10-13-bibliography/</guid>
+      <description>Helping out a friend to get a Matura thesis completed, I stumbled onto the topics of citations and bibliographies. In the end, I wanted to get a handle on bibliographies using dotnet code.</description>
+    </item>
+    
+    <item>
+      <title>Static templating with handlebars, liquid and others</title>
+      <link>http://localhost:1313/post/2022-08-29-static-templating/</link>
+      <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-08-29-static-templating/</guid>
+      <description>Templating is an proofen method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time.</description>
+    </item>
+    
+    <item>
+      <title>Bolero Hints</title>
+      <link>http://localhost:1313/post/2022-08-21-Bolero/</link>
+      <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-08-21-Bolero/</guid>
+      <description>This blog contains some experiences working with Bolero.
+Bolero is a set of free and open-source libraries and tools to write web applications in F#.</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning with ML.NET</title>
+      <link>http://localhost:1313/post/2022-04-08-machine-learning/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-04-08-machine-learning/</guid>
+      <description>Machine learning with ML.NET is documented in a confusing way, in particular when it comes to F#.
+Some resources I found are:</description>
+    </item>
+    
+    <item>
+      <title>WebSharper simple inputs</title>
+      <link>http://localhost:1313/post/2022-03-17-Simple-Inputs/</link>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-03-17-Simple-Inputs/</guid>
+      <description>This post shows various ways to handle input using WebSharper.
+Client side There are two basic approaches: using HTML templates or using Websharper&amp;rsquo;s HTML.</description>
+    </item>
+    
+    <item>
+      <title>Websharper OSX</title>
+      <link>http://localhost:1313/post/2022-03-14-Websharper-osx/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-03-14-Websharper-osx/</guid>
+      <description>Installing WebSharper I&amp;rsquo;m developing web applications using WebSharper on macOS Monterey.
+To install the the templates, use:
+% dotnet new -i WebSharper.</description>
+    </item>
+    
+    <item>
+      <title>WebSharper templates</title>
+      <link>http://localhost:1313/post/2022-03-13-websharper-templates/</link>
+      <pubDate>Sun, 13 Mar 2022 13:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-03-13-websharper-templates/</guid>
+      <description>WebSharper allows several ways to instatiate HTML, and It took me some thinking to get these terms right:
+ws-replace ws-hole ws-template ws-template-children Replace Replace the given node with the provided string or list of docs.</description>
+    </item>
+    
+    <item>
+      <title>WebSharper shopping cart</title>
+      <link>http://localhost:1313/post/2022-03-13-websharper-shopping-cart/</link>
+      <pubDate>Sun, 13 Mar 2022 10:41:39 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-03-13-websharper-shopping-cart/</guid>
+      <description>Websharper Shopping cart I found an interesting article from 2020 by Adam Granizc on the implementation of a WebSharper shopping cart in WebSharper Shopping Cart</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Go on Küse&#39;s Codes</title>
+    <link>http://localhost:1313/tags/go/</link>
+    <description>Recent content in Go on Küse&#39;s Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to work with modules and packages in Go</title>
+      <link>http://localhost:1313/post/2023-07-30-go-modules/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-07-30-go-modules/</guid>
+      <description>I had to practice a long time to understand the go concepts of modules, packages, and how to publish them to github.</description>
+    </item>
+    
+    <item>
+      <title>Go tricks &amp; tips</title>
+      <link>http://localhost:1313/post/2023-02-01-golang/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-02-01-golang/</guid>
+      <description>In 2023, I became interested in the programming language Go. It is a C derivates without all the nil pointer exceptions, and has a very solid infrastructure and libraries to compile across different operating systems.</description>
+    </item>
+    
+    <item>
+      <title>SWIG - interface for C and C&#43;&#43;</title>
+      <link>http://localhost:1313/post/2023-01-13-swig-c-interfacer/</link>
+      <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-01-13-swig-c-interfacer/</guid>
+      <description>SWIG SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.</description>
+    </item>
+    
+  </channel>
+</rss>

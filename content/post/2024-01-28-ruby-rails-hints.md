@@ -13,6 +13,10 @@ showToc: true
 
 This gives some tips and trick for Ruby on Rails.
 
+# Quickref
+
+I found an excellent quick reference guide to Ruby on [zenspider][quickref].
+
 
 # ActiveRecords associations
 
@@ -197,8 +201,42 @@ TRANSACTION (0.9ms)  commit transaction
 This creates a and the associated b.
 </td>
 </tr>
-<tr>
 
+<tr>
+<td>Access</td>
+<td>
+
+Access to the reference via the foreign key:
+
+~~~ruby
+A.find(4).b
+  A Load (0.2ms)  SELECT "as".* FROM "as" WHERE "as"."id" = ? 
+  LIMIT ?  [["id", 4], ["LIMIT", 1]]
+  B Load (0.2ms)  SELECT "bs".* FROM "bs" WHERE "bs"."a_id" = ? 
+  LIMIT ?  [["a_id", 4], ["LIMIT", 1]]
+~~~
+</td>
+<td>
+
+Access with two sequential selects.
+
+~~~ruby
+B.find(3).a
+  B Load (0.2ms)  SELECT "bs".* FROM "bs" WHERE "bs"."id" = ? 
+  LIMIT ?  [["id", 3], ["LIMIT", 1]]
+  A Load (0.1ms)  SELECT "as".* FROM "as" WHERE "as"."id" = ? 
+  LIMIT ?  [["id", 4], ["LIMIT", 1]]
+~~~
+</td>
+</tr>
+
+<tr>
+<td>what</td>
+<td>
+
+~~~ruby
+~~~
+</td>
 <td>
 
 ~~~ruby
@@ -215,3 +253,4 @@ This creates a and the associated b.
 This is totally confusing when coming from another programming language. I found a fairly good explanation of instance variables and class instance variables [here](https://fernandobasso.dev/ruby/classes-and-objects.html).
 
 
+[quickref]: https://www.zenspider.com/ruby/quickref.html#types

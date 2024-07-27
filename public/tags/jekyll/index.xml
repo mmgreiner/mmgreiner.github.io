@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Jekyll on Küse&#39;s Codes</title>
+    <link>http://localhost:1313/tags/jekyll/</link>
+    <description>Recent content in Jekyll on Küse&#39;s Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo tips and tricks</title>
+      <link>http://localhost:1313/post/2023-11-27-hugo-tricks/</link>
+      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-11-27-hugo-tricks/</guid>
+      <description>This page describes my experiences with the static web site publishing tool Hugo.
+Open link in new tab There is a discussion which describes How to open links in a new tab.</description>
+    </item>
+    
+    <item>
+      <title>Serving static pages locally</title>
+      <link>http://localhost:1313/post/2023-10-01-local-server/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-10-01-local-server/</guid>
+      <description>Running build-in tomcat server It is possible to deploy Jekyll sites locally, because OSX has a build-in Apache tomcat server. The local sites reside under ~/Sites.</description>
+    </item>
+    
+    <item>
+      <title>Mermaid</title>
+      <link>http://localhost:1313/post/2023-08-05-mermaid/</link>
+      <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-08-05-mermaid/</guid>
+      <description>Mermaid is a JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.</description>
+    </item>
+    
+    <item>
+      <title>General production optimization</title>
+      <link>http://localhost:1313/post/2023-04-01-production-optimization/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-04-01-production-optimization/</guid>
+      <description>Optimization General production structure capacited multi-level lot-sizing model PochetWolsey, page 45
+$1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared resources with limited capacity $1 \le t \le n$: time periods until final period n $p_t$: unit production cost $q_t$: fixed production cost $h_t$: unit inventory cost $d_t^i$: demand for item i to be satisified at period t $M_t$: large positive number, expressing an upper bound on the maximum lot size iin period t $L_t^k$: available capacity of resource k during period t $\alpha^{i k}, \beta^{i k}$: amount of capacity of resource k consumed $1 \le j \le m$: items $D(i)$ set of direct successors of part i in the BOM, i.</description>
+    </item>
+    
+    <item>
+      <title>Miscellaneous</title>
+      <link>http://localhost:1313/post/2023-03-18-miscellaneous/</link>
+      <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2023-03-18-miscellaneous/</guid>
+      <description>This is a list of reminders and open questions I still wanted to look at in more detail.
+CSV conversion Next to FSharp.</description>
+    </item>
+    
+    <item>
+      <title>Jekyll Tips &amp; Tricks</title>
+      <link>http://localhost:1313/post/2022-04-03-jekyll-tips/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-04-03-jekyll-tips/</guid>
+      <description>This post covers some more Jekyll tips and tricks like searching a web page.
+Searching a Jekyll page Web pages based on databases such as WordPress search the data in the underlying database.</description>
+    </item>
+    
+    <item>
+      <title>Math formulas and static web site generators</title>
+      <link>http://localhost:1313/post/2022-04-02-math-static-sites/</link>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-04-02-math-static-sites/</guid>
+      <description>Mathematical formulas While working on post Mathe Uffzig, I stumbled upon the problem of displaying mathematical formulas in the Jekyll markdown templating engine Liquid.</description>
+    </item>
+    
+    <item>
+      <title>Using Jekyll</title>
+      <link>http://localhost:1313/post/2022-03-12-using-jekyll/</link>
+      <pubDate>Sat, 12 Mar 2022 19:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-03-12-using-jekyll/</guid>
+      <description>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes.</description>
+    </item>
+    
+  </channel>
+</rss>

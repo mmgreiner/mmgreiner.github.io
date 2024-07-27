@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Bolero Hints | Küse&#39;s Codes</title>
+<meta name="keywords" content="F#, bolero, file-upload, dotnet, template">
+<meta name="description" content="This blog contains some experiences working with Bolero.
+Bolero is a set of free and open-source libraries and tools to write web applications in F#.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/post/2022-08-21-Bolero/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/2022-08-21-Bolero/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Küse&#39;s Codes (Alt + H)">Küse&#39;s Codes</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/post" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/draft" title="Drafts">
+                    <span>Drafts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Küse&#39;s Code</a></div>
+    <h1 class="post-title">
+      Bolero Hints
+    </h1>
+    <div class="post-meta"><span title='2022-08-21 00:00:00 +0000 UTC'>August 21, 2022</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>This blog contains some experiences working with <a href="https://fsbolero.io/docs/">Bolero</a>.</p>
+<blockquote>
+<p>Bolero is a set of free and open-source libraries and tools to write web applications in <a href="https://fsharp.org">F#</a>. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.</p>
+<p>Bolero is built on top of <a href="https://blazor.net/">Blazor</a>, which means it can run in one of two modes: either in <a href="https://webassembly.org/">WebAssembly</a> directly in the browser, or on the server side with <a href="https://docs.microsoft.com/en-us/aspnet/core/signalr/introduction">SignalR</a>.</p>
+</blockquote>
+<p><a href="https://fsbolero.io/docs/">Bolero</a> uses the <a href="https://elmish.github.io/elmish/">Elmish</a> Model-View-Update architecture.</p>
+<p>You develop <a href="https://fsharp.org">F#</a> code for the <strong>client</strong> side (inside the browser), which is compiled into <a href="https://webassembly.org/">WebAssembly</a>. The views are either F# codes or Html templates.</p>
+<h2 id="server-endpoint-for-posts">Server endpoint for Posts<a hidden class="anchor" aria-hidden="true" href="#server-endpoint-for-posts">#</a></h2>
+<p>I came across this topic trying to implement a file upload in <a href="https://fsbolero.io/docs/">Bolero</a>. The It starts with the problem that <code>&lt;input type=&quot;file&quot; /&gt;</code>is not supported by <a href="https://fsbolero.io/docs/">Bolero</a>.</p>
+<p>Searching for a solution, I found this conversation about <a href="https://github.com/fsbolero/Bolero/issues/66">Bolero uploading files</a>, which made the comment to create a ASP.NET Core endpoint. This post explores how to do this.</p>
+<h3 id="html">HTML<a hidden class="anchor" aria-hidden="true" href="#html">#</a></h3>
+<p>We use a standard html form with post to upload the file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Uploader/PostFiles&#34;</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span> <span style="color:#a6e22e">enctype</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;multipart/form-data&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>        Data files
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;file&#34;</span> <span style="color:#a6e22e">multiple</span> <span style="color:#a6e22e">accept</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.csv,.json&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myfiles&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myfiles&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">label</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span>&gt;Upload files&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">form</span>&gt;
+</span></span></code></pre></div><p>Remember the name <code>myfiles</code>. It will be used later on in the ASP.NET controller.</p>
+<p><strong>Note</strong> also that the form action does not start with a slash. This is particular important when deploying to an IIS server, when relative URL paths are used.</p>
+<h3 id="aspnet-controller">ASP.NET controller<a hidden class="anchor" aria-hidden="true" href="#aspnet-controller">#</a></h3>
+<p>It wasn&rsquo;t easy to find the simplest tutorial on how to write an ASP.NET controller in F#. In the end, <a href="https://stackoverflow.com/questions/39626220/f-syntax-for-async-controller-methods-in-asp-net-core">stackoverflow</a> was helpful, as was this Microsoft introduction to getting started with <a href="https://docs.microsoft.com/en-us/visualstudio/get-started/tutorial-fsharp-web-app?view=vs-2022">web-app and f#</a>
+and this tutorial <a href="https://docs.microsoft.com/en-us/aspnet/core/mvc/models/file-uploads?view=aspnetcore-6.0">MVC file-upload</a>
+Here is our simple controller:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fsharp" data-lang="fsharp"><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> HalloController.Server
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">open</span> System
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">open</span> Microsoft.AspNetCore.Mvc
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">open</span> Microsoft.Extensions.Logging
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[&lt;</span>ApiController<span style="color:#f92672">&gt;]</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[&lt;</span>Route<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;[controller]&#34;</span><span style="color:#f92672">)&gt;]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">UploaderController</span> <span style="color:#f92672">(</span>logger <span style="color:#f92672">:</span> ILogger<span style="color:#f92672">&lt;</span>UploaderController<span style="color:#f92672">&gt;)</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">inherit</span> ControllerBase()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">[&lt;</span>HttpGet<span style="color:#f92672">&gt;]</span>         <span style="color:#75715e">// match GET Uploader/
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">member</span> _.<span style="color:#a6e22e">Get</span>() <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>        logger<span style="color:#f92672">.</span>LogInformation<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Inside UploadController Get&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;this is a simple GET&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">[&lt;</span>HttpGet<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Info&#34;</span><span style="color:#f92672">)&gt;]</span>     <span style="color:#75715e">// match GET Uploader/Info
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">member</span> _.<span style="color:#a6e22e">Info</span>() <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;this is a GET Info&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// important: parameter name has to match id and name in Http &lt;input&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">[&lt;</span>HttpPost<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;PostFiles&#34;</span><span style="color:#f92672">)&gt;]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">member</span> _.<span style="color:#a6e22e">PostFiles</span><span style="color:#f92672">(</span>myfiles<span style="color:#f92672">:</span> System.Collections.Generic.List<span style="color:#f92672">&lt;</span>Microsoft.AspNetCore.Http.IFormFile<span style="color:#f92672">&gt;)</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>        logger<span style="color:#f92672">.</span>LogInformation<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Inside Uploader PostFiles&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> f <span style="color:#66d9ef">in</span> myfiles <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>            printfn <span style="color:#e6db74">&#34;filename = %s&#34;</span> f<span style="color:#f92672">.</span>FileName
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;success&#34;</span>
+</span></span></code></pre></div><p>It took me some time to understand how the routes are mapped.</p>
+<ul>
+<li>The class name <code>UploaderController</code> provides the route part <code>Uploader</code>.</li>
+<li>the member attribute provides the next route part <code>Info</code> or <code>PostFiles</code>.</li>
+<li>So the complete routes are: http://localhost:12345/Uploader/Info.</li>
+</ul>
+<p>It also took some time to discover that the name of the parameter of the post, <code>myfiles</code> must match exactly the name of the <code>&lt;input type=&quot;file&quot; name=&quot;myfiles&quot; /&gt;</code> for the parameter to be set.</p>
+<h3 id="server-side">Server side<a hidden class="anchor" aria-hidden="true" href="#server-side">#</a></h3>
+<p>So how do we make the server recognize our controller? This is where the magic of dependency injection kicks in. We just have to add it to the services and endpoints.</p>
+<p>For the services, add the line <code>services.AddControllers()</code> to the ConfigureServices member.</p>
+<p>For the endpoints, add the line <code>endpoints.MapControllers()</code> to the mapped endpoints.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fsharp" data-lang="fsharp"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Startup</span>() <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// This method gets called by the runtime. Use this method to add services to the container.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">member</span> this.<span style="color:#a6e22e">ConfigureServices</span><span style="color:#f92672">(</span>services<span style="color:#f92672">:</span> IServiceCollection<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>        services<span style="color:#f92672">.</span>AddControllers() <span style="color:#f92672">|&gt;</span> ignore     <span style="color:#75715e">// added
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        services<span style="color:#f92672">.</span>AddMvc() <span style="color:#f92672">|&gt;</span> ignore
+</span></span><span style="display:flex;"><span>        services<span style="color:#f92672">.</span>AddServerSideBlazor() <span style="color:#f92672">|&gt;</span> ignore
+</span></span><span style="display:flex;"><span>        services
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">.</span>AddAuthorization()
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">.</span>AddAuthentication<span style="color:#f92672">(</span>CookieAuthenticationDefaults.AuthenticationScheme<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">.</span>AddCookie()
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">.</span>Services
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">.</span>AddRemoting<span style="color:#f92672">&lt;</span>BookService<span style="color:#f92672">&gt;</span>()
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">.</span>AddBoleroHost()
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#if</span> DEBUG
+</span></span><span style="display:flex;"><span>            .AddHotReload<span style="color:#f92672">(</span>templateDir <span style="color:#f92672">=</span> <span style="color:#f92672">__</span>SOURCE_DIRECTORY__ <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/../HalloController.Client&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#endif</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">|&gt;</span> ignore
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">member</span> this.<span style="color:#a6e22e">Configure</span><span style="color:#f92672">(</span>app<span style="color:#f92672">:</span> IApplicationBuilder<span style="color:#f92672">,</span> env<span style="color:#f92672">:</span> IWebHostEnvironment<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>        app
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">.</span>UseAuthentication()
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">.</span>UseRemoting()
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">.</span>UseStaticFiles()
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">.</span>UseRouting()
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">.</span>UseBlazorFrameworkFiles()
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">.</span>UseEndpoints<span style="color:#f92672">(</span><span style="color:#66d9ef">fun</span> endpoints <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#if</span> DEBUG
+</span></span><span style="display:flex;"><span>                endpoints<span style="color:#f92672">.</span>UseHotReload()
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#endif</span>
+</span></span><span style="display:flex;"><span>                endpoints<span style="color:#f92672">.</span>MapControllers() <span style="color:#f92672">|&gt;</span> ignore    <span style="color:#75715e">// added
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                endpoints<span style="color:#f92672">.</span>MapBlazorHub() <span style="color:#f92672">|&gt;</span> ignore
+</span></span><span style="display:flex;"><span>                endpoints<span style="color:#f92672">.</span>MapFallbackToBolero<span style="color:#f92672">(</span>Index.page<span style="color:#f92672">)</span> <span style="color:#f92672">|&gt;</span> ignore<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">|&gt;</span> ignore
+</span></span></code></pre></div><p>That&rsquo;s it!</p>
+<p>Now when you run the server, and post the files, ASP.NET will log the following message:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker<span style="color:#f92672">[</span>3<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>    Route matched with <span style="color:#f92672">{</span>action <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;PostFiles&#34;</span>, controller <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Uploader&#34;</span><span style="color:#f92672">}</span>. Executing controller action with signature Void PostFiles<span style="color:#f92672">(</span>System.Collections.Generic.List<span style="color:#e6db74">`</span>1<span style="color:#f92672">[</span>Microsoft.AspNetCore.Http.IFormFile<span style="color:#f92672">])</span> on controller HalloController.Server.UploaderController <span style="color:#f92672">(</span>HalloController.Server<span style="color:#f92672">)</span>.
+</span></span></code></pre></div><p>This example can be found on my <a href="%7B%7Bsite.greiner_link%7D%7D/BoleroApp">Github/BoleroApp</a> repository. It implements a simple AspNet MVC controller for file uploads.</p>
+<h2 id="templating-on-bolero-server">Templating on Bolero Server<a hidden class="anchor" aria-hidden="true" href="#templating-on-bolero-server">#</a></h2>
+<p>The standard scaffold for the <a href="https://fsbolero.io/docs/">Bolero</a> server looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fsharp" data-lang="fsharp"><span style="display:flex;"><span><span style="color:#75715e">// index.fs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> page <span style="color:#f92672">=</span> doctypeHtml <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    head <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        meta <span style="color:#f92672">{</span> attr<span style="color:#f92672">.</span>charset <span style="color:#e6db74">&#34;UTF-8&#34;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        meta <span style="color:#f92672">{</span> attr<span style="color:#f92672">.</span>name <span style="color:#e6db74">&#34;viewport&#34;</span><span style="color:#f92672">;</span> attr<span style="color:#f92672">.</span>content <span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        title <span style="color:#f92672">{</span> <span style="color:#e6db74">&#34;Bolero Application&#34;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        ``base`` <span style="color:#f92672">{</span> attr<span style="color:#f92672">.</span>href <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        link <span style="color:#f92672">{</span> attr<span style="color:#f92672">.</span>rel <span style="color:#e6db74">&#34;stylesheet&#34;</span><span style="color:#f92672">;</span> attr<span style="color:#f92672">.</span>href <span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css&#34;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        link <span style="color:#f92672">{</span> attr<span style="color:#f92672">.</span>rel <span style="color:#e6db74">&#34;stylesheet&#34;</span><span style="color:#f92672">;</span> attr<span style="color:#f92672">.</span>href <span style="color:#e6db74">&#34;css/index.css&#34;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    body <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        nav <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            attr<span style="color:#f92672">.</span>``class`` <span style="color:#e6db74">&#34;navbar is-dark&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;role&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;navigation&#34;</span>
+</span></span><span style="display:flex;"><span>            attr<span style="color:#f92672">.</span>aria <span style="color:#e6db74">&#34;label&#34;</span> <span style="color:#e6db74">&#34;main navigation&#34;</span>
+</span></span><span style="display:flex;"><span>            div <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                attr<span style="color:#f92672">.</span>``class`` <span style="color:#e6db74">&#34;navbar-brand&#34;</span>
+</span></span><span style="display:flex;"><span>                a <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                    attr<span style="color:#f92672">.</span>``class`` <span style="color:#e6db74">&#34;navbar-item has-text-weight-bold is-size-5&#34;</span>
+</span></span><span style="display:flex;"><span>                    attr<span style="color:#f92672">.</span>href <span style="color:#e6db74">&#34;https://fsbolero.io&#34;</span>
+</span></span><span style="display:flex;"><span>                    img <span style="color:#f92672">{</span> attr<span style="color:#f92672">.</span>style <span style="color:#e6db74">&#34;height:40px&#34;</span><span style="color:#f92672">;</span> attr<span style="color:#f92672">.</span>src <span style="color:#e6db74">&#34;https://github.com/fsbolero/website/raw/master/src/Website/img/wasm-fsharp.png&#34;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#e6db74">&#34;  Bolero&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        div <span style="color:#f92672">{</span> attr<span style="color:#f92672">.</span>id <span style="color:#e6db74">&#34;main&#34;</span><span style="color:#f92672">;</span> comp<span style="color:#f92672">&lt;</span>Client.Main.MyApp<span style="color:#f92672">&gt;</span> <span style="color:#f92672">}</span> <span style="color:#75715e">// rootComp
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        boleroScript
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>But how would you go about if you also want to put this into a html template?</p>
+<p>You could replace the above code with a html template <code>index.html</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Bolero Application&lt;/<span style="color:#f92672">title</span>&gt;&lt;<span style="color:#f92672">base</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;css/index.css&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">nav</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar is-dark&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navigation&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main navigation&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-brand&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;navbar-item has-text-weight-bold is-size-5&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fsbolero.io&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;height:40px&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://github.com/fsbolero/website/raw/master/src/Website/img/wasm-fsharp.png&#34;</span>/&gt;&amp;#xA0; Bolero&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">nav</span>&gt;
+</span></span><span style="display:flex;"><span>    ${Body}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_framework/blazor.webassembly.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>and then call it inside <code>index.fs</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fsharp" data-lang="fsharp"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">IndexTemplate</span> <span style="color:#f92672">=</span> Bolero.Template<span style="color:#f92672">&lt;</span><span style="color:#e6db74">&#34;index.html&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> page <span style="color:#f92672">=</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> node <span style="color:#f92672">=</span> 
+</span></span><span style="display:flex;"><span>        div <span style="color:#f92672">{</span> attr<span style="color:#f92672">.</span>id <span style="color:#e6db74">&#34;main&#34;</span><span style="color:#f92672">;</span> comp<span style="color:#f92672">&lt;</span>Client.Main.MyApp<span style="color:#f92672">&gt;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    IndexTemplate()
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span>Body<span style="color:#f92672">(</span>node<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span>Elt()
+</span></span></code></pre></div><p>Note that the <code>fsproj</code> file has to be changed also:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>  <span style="color:#f92672">&lt;ItemGroup&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;Content</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;index.html&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;CopyToOutputDirectory&gt;</span>PreserveNewest<span style="color:#f92672">&lt;/CopyToOutputDirectory&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/Content&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;Compile</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Index.fs&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;Compile</span> <span style="color:#a6e22e">Include=</span><span style="color:#e6db74">&#34;Startup.fs&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/ItemGroup&gt;</span>
+</span></span></code></pre></div><p>If you now try to run in, you will get the following error:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csh" data-lang="csh"><span style="display:flex;"><span>Now listening on: http://localhost:5000
+</span></span><span style="display:flex;"><span>Application started. Press Ctrl+C to shut down.
+</span></span><span style="display:flex;"><span>warn: Bolero.Templating.Server.Impl.Watcher<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>      Bolero HotReload: failed to reload /Users/mmgreiner/Projects/Scrap/BoloeroStaticApp/src/BoloeroStaticApp.Client/index.html
+</span></span></code></pre></div><p>We therefore also have to adjust <code>Startup.fs</code> to add the new template also to hot reload:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fsharp" data-lang="fsharp"><span style="display:flex;"><span><span style="color:#75715e">#if</span> DEBUG
+</span></span><span style="display:flex;"><span>            .AddHotReload<span style="color:#f92672">(</span>templateDir <span style="color:#f92672">=</span> <span style="color:#f92672">__</span>SOURCE_DIRECTORY__ <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/../BoloeroStaticApp.Client&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">.</span>AddHotReload<span style="color:#f92672">(</span>templateDir <span style="color:#f92672">=</span> <span style="color:#f92672">__</span>SOURCE_DIRECTORY__ <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/../BoloeroStaticApp.Server&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#endif</span>
+</span></span></code></pre></div><h2 id="input-files">Input files<a hidden class="anchor" aria-hidden="true" href="#input-files">#</a></h2>
+<p>You develop <a href="https://fsharp.org">F#</a> code for the client side (inside the browser), which is compiled into <a href="https://webassembly.org/">WebAssembly</a>. The views are either F# codes or Html templates.</p>
+<p>The client contains predefined <code>&lt;input&gt;</code> types for text, numbers and booleans, but not for file uploads. How can this be done?</p>
+<p>There are two potential approaches:</p>
+<ol>
+<li>
+<p>Upload a file to the client and use the file&rsquo;s data on the client.</p>
+</li>
+<li>
+<p>Upload a file to the client and pass it on to the server for more complex file data procedures.</p>
+</li>
+</ol>
+<h3 id="simple-example">Simple example<a hidden class="anchor" aria-hidden="true" href="#simple-example">#</a></h3>
+<p>It contains predefined <code>&lt;input&gt;</code> types for text, numbers and booleans, but not for file uploads. How can this be done?</p>
+<h4 id="client-side">Client side<a hidden class="anchor" aria-hidden="true" href="#client-side">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fsharp" data-lang="fsharp"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Model</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> Name<span style="color:#f92672">:</span> <span style="color:#66d9ef">string</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> init <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> Name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Message</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">|</span> SetName <span style="color:#66d9ef">of</span> <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> update message model <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">match</span> message <span style="color:#66d9ef">with</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">|</span> SetName n <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">{</span> model <span style="color:#66d9ef">with</span> Name <span style="color:#f92672">=</span> n <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> viewInput modelData setValue <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    input <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        attr<span style="color:#f92672">.</span>value modelData
+</span></span><span style="display:flex;"><span>        on<span style="color:#f92672">.</span>change <span style="color:#f92672">(</span><span style="color:#66d9ef">fun</span> e <span style="color:#f92672">-&gt;</span> setValue <span style="color:#f92672">(</span>unbox e<span style="color:#f92672">.</span>Value<span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> view model dispatch <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    div <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        input <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            attr<span style="color:#f92672">.</span>value <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>Name
+</span></span><span style="display:flex;"><span>            on<span style="color:#f92672">.</span>change <span style="color:#f92672">(</span><span style="color:#66d9ef">fun</span> e <span style="color:#f92672">-&gt;</span> dispatch <span style="color:#f92672">(</span>SetName <span style="color:#f92672">(</span>unbox e<span style="color:#f92672">.</span>Value<span style="color:#f92672">)))</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">$</span><span style="color:#e6db74">&#34;Hallo, {model.Name}!&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>Now the problem is, that there exist views for <code>&lt;input&gt;</code> types string, numbers and booleans, but not for file input.</p>
+<h3 id="using-blazor-component">Using Blazor component<a hidden class="anchor" aria-hidden="true" href="#using-blazor-component">#</a></h3>
+<ul>
+<li>[] TBD</li>
+</ul>
+<h3 id="further-information">Further information<a hidden class="anchor" aria-hidden="true" href="#further-information">#</a></h3>
+<p>See <a href="https://procodeguide.com/programming/file-upload-in-aspnet-core/">https://procodeguide.com/programming/file-upload-in-aspnet-core/</a> for an example how to implement file upload in Asp.Net Core 6.0.</p>
+<h2 id="further-tips">Further tips<a hidden class="anchor" aria-hidden="true" href="#further-tips">#</a></h2>
+<h3 id="deploying-to-iis">Deploying to IIS<a hidden class="anchor" aria-hidden="true" href="#deploying-to-iis">#</a></h3>
+<p>If you deploy your <a href="https://fsbolero.io/docs/">Bolero</a> app to IIS, and particularely to an IFS with a subfolder, your starting path will not be recognized. I ended up implementing this as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fsharp" data-lang="fsharp"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> page <span style="color:#f92672">(</span>env<span style="color:#f92672">:</span> IWebHostEnvironment<span style="color:#f92672">)</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> root <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> env<span style="color:#f92672">.</span>ContentRootPath<span style="color:#f92672">.</span>Contains<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;inetpub&#34;</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> s <span style="color:#f92672">=</span> env<span style="color:#f92672">.</span>ContentRootPath<span style="color:#f92672">.</span>Split<span style="color:#f92672">(</span>IO.Path.DirectorySeparatorChar<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#f92672">+</span> s<span style="color:#f92672">.[</span>s<span style="color:#f92672">.</span>Length<span style="color:#f92672">-</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;/&#34;</span>
+</span></span></code></pre></div><p>And in the html template:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">base</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${Root}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span></code></pre></div><h3 id="calling-javascript">Calling JavaScript<a hidden class="anchor" aria-hidden="true" href="#calling-javascript">#</a></h3>
+<p>How to call JavaScript is somewhat hidden in the documentation, you can find it under <a href="https://fsbolero.io/docs/Blazor#javascript-interoperability">Bolero-Blazor</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/F%23/">F#</a></li>
+      <li><a href="http://localhost:1313/tags/bolero/">Bolero</a></li>
+      <li><a href="http://localhost:1313/tags/file-upload/">File-Upload</a></li>
+      <li><a href="http://localhost:1313/tags/dotnet/">Dotnet</a></li>
+      <li><a href="http://localhost:1313/tags/template/">Template</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://localhost:1313/">Küse&#39;s Codes</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

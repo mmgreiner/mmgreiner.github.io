@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Miscellaneous | Küse&#39;s Codes</title>
+<meta name="keywords" content="jekyll, F#, pandoc, unix">
+<meta name="description" content="This is a list of reminders and open questions I still wanted to look at in more detail.
+CSV conversion Next to FSharp.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/post/2023-03-18-miscellaneous/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/2023-03-18-miscellaneous/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
+
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Küse&#39;s Codes (Alt + H)">Küse&#39;s Codes</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/post" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/draft" title="Drafts">
+                    <span>Drafts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/post/">Küse&#39;s Code</a></div>
+    <h1 class="post-title">
+      Miscellaneous
+    </h1>
+    <div class="post-meta"><span title='2023-03-18 00:00:00 +0000 UTC'>March 18, 2023</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#csv-conversion" aria-label="CSV conversion">CSV conversion</a><ul>
+                        
+                <li>
+                    <a href="#stress-tests-of-csv" aria-label="Stress tests of CSV">Stress tests of CSV</a></li></ul>
+                </li>
+                <li>
+                    <a href="#writing-scientific-papers" aria-label="Writing scientific papers">Writing scientific papers</a></li>
+                <li>
+                    <a href="#print-markdown-with-pandoc" aria-label="Print Markdown with pandoc">Print Markdown with pandoc</a></li>
+                <li>
+                    <a href="#humanizer" aria-label="Humanizer">Humanizer</a></li>
+                <li>
+                    <a href="#yaml" aria-label="Yaml">Yaml</a></li>
+                <li>
+                    <a href="#markdown" aria-label="Markdown">Markdown</a><ul>
+                        
+                <li>
+                    <a href="#mvc-razor-razor-pages-mvc-and-blazor" aria-label="MVC, Razor, Razor Pages, MVC, and Blazor">MVC, Razor, Razor Pages, MVC, and Blazor</a></li></ul>
+                </li>
+                <li>
+                    <a href="#unix-stuff" aria-label="Unix stuff">Unix stuff</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>This is a list of reminders and open questions I still wanted to look at in more detail.</p>
+<h2 id="csv-conversion">CSV conversion<a hidden class="anchor" aria-hidden="true" href="#csv-conversion">#</a></h2>
+<p>Next to <a href="https://fsprojects.github.io/FSharp.Data/">FSharp.Data</a> there is <a href="https://joshclose.github.io/CsvHelper/">CSVHelper</a>. However, it does not support FSharp types intrinsically. A <a href="https://stackoverflow.com/questions/66401283/how-do-you-use-csvhelper-csvwriter-with-f-option-types">stackoverflow</a> article describes the details.</p>
+<p>I have concluded that to read CSV files, <a href="https://fsprojects.github.io/FSharp.Data/">FSharp.Data</a> is the best. To easily write CSV files, use <a href="https://joshclose.github.io/CsvHelper/">CSVHelper</a>.</p>
+<p>The configuration is set like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fsharp" data-lang="fsharp"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> csvStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> IO.StreamWriter<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;woCancelled.csv&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> culture <span style="color:#f92672">=</span> System.Globalization.CultureInfo.InvariantCulture
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> config <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CsvHelper.Configuration.CsvConfiguration<span style="color:#f92672">(</span>culture<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span>Delimiter <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> csvWriter <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CsvHelper.CsvWriter<span style="color:#f92672">(</span>csvStream<span style="color:#f92672">,</span> config<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>csvWriter<span style="color:#f92672">.</span>WriteRecords<span style="color:#f92672">(</span>data<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="stress-tests-of-csv">Stress tests of CSV<a hidden class="anchor" aria-hidden="true" href="#stress-tests-of-csv">#</a></h3>
+<p>There are several stress tests for CSV reading and writing:</p>
+<ul>
+<li><a href="https://github.com/maxogden/csv-spectrum">https://github.com/maxogden/csv-spectrum</a></li>
+<li><a href="https://github.com/wireservice/csvkit/tree/master/examples">https://github.com/wireservice/csvkit/tree/master/examples</a></li>
+<li><a href="https://discourse.julialang.org/t/csv-reader-benchmarks-julia-reads-csvs-10-20x-faster-than-python-and-r/41974">https://discourse.julialang.org/t/csv-reader-benchmarks-julia-reads-csvs-10-20x-faster-than-python-and-r/41974</a></li>
+<li><a href="https://data.world/datasets/csv">https://data.world/datasets/csv</a></li>
+</ul>
+<h2 id="writing-scientific-papers">Writing scientific papers<a hidden class="anchor" aria-hidden="true" href="#writing-scientific-papers">#</a></h2>
+<p>see <a href="https://jaantollander.com/post/scientific-writing-with-markdown/">https://jaantollander.com/post/scientific-writing-with-markdown/</a></p>
+<p>See with more detail:
+<a href="https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown">https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown</a></p>
+<h2 id="print-markdown-with-pandoc">Print Markdown with pandoc<a hidden class="anchor" aria-hidden="true" href="#print-markdown-with-pandoc">#</a></h2>
+<p><a href="https://pandoc.org">pandoc</a> is a tool to convert markdown to all kinds of formats. It states:</p>
+<blockquote>
+<p>If you need to convert files from one markup format into another, pandoc is your swiss-army knife.</p>
+</blockquote>
+<p>You can use the yaml header in a markdown file to tell pandoc how to print it. For instance:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#ae81ff">My Title</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">author</span>: <span style="color:#ae81ff">Markus Greiner</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2024-01-18</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">fontsize</span>: <span style="color:#ae81ff">12pt</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">papersize</span>: <span style="color:#ae81ff">a4</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">geometry</span>: <span style="color:#ae81ff">margin=2cm</span>
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p>This will use paper size <code>A4</code> and font <code>12pt</code> when converting to pandoc, and will set the margin to 2 cm. If you want to print it landscape, do:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">geometry</span>: <span style="color:#ae81ff">landscape</span>
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p>The conversion to pdf is done as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csh" data-lang="csh"><span style="display:flex;"><span>% pandoc *.md -o mydoc.pdf
+</span></span></code></pre></div><h2 id="humanizer">Humanizer<a hidden class="anchor" aria-hidden="true" href="#humanizer">#</a></h2>
+<blockquote>
+<p><a href="https://github.com/Humanizr/Humanizer">Humanizer</a> meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities. It is part of the <a href="https://www.dotnetfoundation.org/">.NET Foundation</a>, and operates under their <a href="https://www.dotnetfoundation.org/code-of-conduct">code of conduct</a>.</p>
+</blockquote>
+<p><a href="https://github.com/Humanizr/Humanizer">Humanizer</a> is an amazing library to do string conversions from programming strings to human readable strings. For instance, it handles all the PascalCase, camelCase, etc renaming, shortening of strings, even creating <code>[Display(&quot;Family Name&quot;)]</code> attribute handling.</p>
+<h2 id="yaml">Yaml<a hidden class="anchor" aria-hidden="true" href="#yaml">#</a></h2>
+<p>Use <a href="https://github.com/aaubry/YamlDotNet">YamlDotNet</a>.</p>
+<h2 id="markdown">Markdown<a hidden class="anchor" aria-hidden="true" href="#markdown">#</a></h2>
+<p>Use <a href="https://github.com/xoofx/markdig">Markdig</a>.</p>
+<p>## datatools</p>
+<blockquote>
+<p><a href="https://github.com/caltechlibrary/datatools/">datatools</a> is a rich collection of command line programs targetting data conversion, cleanup and analysis directly from your favorite POSIX shell. It has proven useful for data collaberations where individual members of a project may prefer different toolsets in their analysis (e.g. Julia, R, Python) but want to work from a common baseline. It also has been used intensively for internal reporting from various Caltech Library metadata sources.</p>
+</blockquote>
+<h3 id="mvc-razor-razor-pages-mvc-and-blazor">MVC, Razor, Razor Pages, MVC, and Blazor<a hidden class="anchor" aria-hidden="true" href="#mvc-razor-razor-pages-mvc-and-blazor">#</a></h3>
+<p>I found a good article explaining all of this on <a href="https://www.telerik.com/blogs/difference-between-blazor-vs-razor">Progress Telerik</a></p>
+<h2 id="unix-stuff">Unix stuff<a hidden class="anchor" aria-hidden="true" href="#unix-stuff">#</a></h2>
+<p>To only grep on stderr, do:</p>
+<pre><code>go run . 2&gt;&amp;1 &gt;/dev/null | grep MyPattern
+</code></pre>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/jekyll/">Jekyll</a></li>
+      <li><a href="http://localhost:1313/tags/F%23/">F#</a></li>
+      <li><a href="http://localhost:1313/tags/pandoc/">Pandoc</a></li>
+      <li><a href="http://localhost:1313/tags/unix/">Unix</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://localhost:1313/">Küse&#39;s Codes</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
