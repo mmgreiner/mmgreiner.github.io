@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
 <title>A vertical responsive menu with PureCSS | Küse&#39;s Codes</title>
-<meta name="keywords" content="html, purecss">
+<meta name="keywords" content="html, purecss, fontawesome">
 <meta name="description" content="I have been using Pure.css in most of my applications since it is really simple to use.
 This is a small code sample that uses Pure.">
 <meta name="author" content="">
@@ -151,7 +151,29 @@ This is a small code sample that uses Pure.">
     <div class="post-meta"><span title='2024-07-27 00:00:00 +0000 UTC'>July 27, 2024</span>
 
 </div>
-  </header> 
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#submenus" aria-label="Submenus">Submenus</a></li>
+                <li>
+                    <a href="#responsive-vertical-menu" aria-label="Responsive vertical menu">Responsive vertical menu</a></li>
+                <li>
+                    <a href="#caveats" aria-label="Caveats">Caveats</a></li>
+                <li>
+                    <a href="#usage" aria-label="Usage">Usage</a></li>
+                <li>
+                    <a href="#fontawesome" aria-label="FontAwesome">FontAwesome</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
   <div class="post-content"><p>I have been using <a href="https://purecss.io/">Pure.css</a> in most of my applications since it is really simple to use.</p>
 <p>This is a small code sample that uses <a href="https://purecss.io/">Pure.css</a> with a responsive, vertical menu with hamburger and a submenu.</p>
 <p>So it posed two challenges:</p>
@@ -179,7 +201,12 @@ This is a small code sample that uses Pure.">
 <h2 id="caveats">Caveats<a hidden class="anchor" aria-hidden="true" href="#caveats">#</a></h2>
 <p>I noticed that the style sheet sets the width of the vertical menu to <code>150px</code>. Just changing the width is not so simple, because then suddenly the hamburger disappears. This restricts the length of the menu texts, but I ended up not changing this.</p>
 <h2 id="usage">Usage<a hidden class="anchor" aria-hidden="true" href="#usage">#</a></h2>
-<p>Just download the three files and open <code>simple_index_vertical_menu.html</code> in your favorite browser.</p>
+<p>Just download the three files from <a href="https://github.com/mmgreiner/vertical-responsive-menu">github</a> and open <code>simple_index_vertical_menu.html</code> in your favorite browser.</p>
+<h2 id="fontawesome">FontAwesome<a hidden class="anchor" aria-hidden="true" href="#fontawesome">#</a></h2>
+<p><a href="https://fontawesome.com/">Font Awesome</a> is a good source for any kind of icons. However, they have hidden their CDN, since they prefer that you log in to get more information.</p>
+<p>The CDN is here:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span> <span style="color:#a6e22e">referrerpolicy</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no-referrer&#34;</span> /&gt;
+</span></span></code></pre></div><p>And the free icons can be found here: <a href="https://fontawesome.com/search?o=r&amp;m=free">Font Awesome free icons</a>.</p>
 
 
   </div>
@@ -188,6 +215,7 @@ This is a small code sample that uses Pure.">
     <ul class="post-tags">
       <li><a href="http://localhost:1313/tags/html/">Html</a></li>
       <li><a href="http://localhost:1313/tags/purecss/">Purecss</a></li>
+      <li><a href="http://localhost:1313/tags/fontawesome/">Fontawesome</a></li>
     </ul>
   </footer>
 </article>

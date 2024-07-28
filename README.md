@@ -13,10 +13,10 @@ hugo server
 ~~~
 
 
-To generate them locally, use:
+To generate them locally including the drafts (`-D`), use:
 
 ~~~
-hugo --destination ~/Sites/mypages --baseURL http://localhost/~mmgreiner/mypages
+hugo -D --destination ~/Sites/mypages --baseURL http://localhost/~mmgreiner/mypages
 ~~~
 
 You can browse it at <http://localhost/~mmgreiner/mypages>

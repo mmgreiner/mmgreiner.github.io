@@ -8,7 +8,7 @@ tags:
 - purecss
 - fontawesome
 title: A vertical responsive menu with PureCSS
-showToc: false
+showToc: true
 ---
 
 I have been using [Pure.css] in most of my applications since it is really simple to use.
