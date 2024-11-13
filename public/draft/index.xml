@@ -24,11 +24,7 @@
       <pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/draft/20240522-pdf/</guid>
-      <description>&lt;h2 id=&#34;pdf-to-text-conversion&#34;&gt;PDF to text conversion&lt;/h2&gt;
-&lt;p&gt;See &lt;a href=&#34;https://superuser.com/questions/286961/pdf-to-text-convertor&#34;&gt;https://superuser.com/questions/286961/pdf-to-text-convertor&lt;/a&gt;. It is part of &lt;a href=&#34;http://foolabs.com/xpdf/download.html&#34;&gt;xpdf&lt;/a&gt;, and can be installed using:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;brew install xpdf
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Another option according to above is &lt;a href=&#34;http://foolabs.com/xpdf/download.html&#34;&gt;poppler&lt;/a&gt;:&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -185,15 +181,6 @@ year          = &amp;quot;1968&amp;quot;
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&#34;https://b-p-i.blogspot.com/2012/08/cite-iso-standard-bibtex.html&#34;&gt;https://b-p-i.blogspot.com/2012/08/cite-iso-standard-bibtex.html&lt;/a&gt; recommends &lt;code&gt;techreport&lt;/code&gt;:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>PDF converter in dotnet</title>
-      <link>http://localhost:1313/draft/2022-12-01-pdf-converter/</link>
-      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/2022-12-01-pdf-converter/</guid>
-      <description>&lt;p&gt;There is once in a while the need to extract pure text from PDF files. This blog shows some attempts to do it with dot, and also with &lt;a href=&#34;https://www.ruby-lang.org/en/&#34;&gt;ruby&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>

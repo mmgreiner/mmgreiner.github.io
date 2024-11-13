@@ -19,12 +19,12 @@
     </item>
     
     <item>
-      <title>PDF converter in dotnet and ruby</title>
+      <title>PDF to text conversion</title>
       <link>http://localhost:1313/post/2022-12-01-pdf-converter/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-12-01-pdf-converter/</guid>
-      <description>&lt;p&gt;There is once in a while the need to extract pure text from PDF files. This blog shows some attempts to do it with dot, and also with &lt;a href=&#34;https://www.ruby-lang.org/en/&#34;&gt;ruby&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;There is once in a while the need to extract pure text from PDF files. This blog shows some attempts to do it with dot, with &lt;a href=&#34;https://www.ruby-lang.org/en/&#34;&gt;ruby&lt;/a&gt;, and with command line utitilites.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -7,11 +7,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>PDF utilities | Küse&#39;s Codes</title>
 <meta name="keywords" content="pdf">
-<meta name="description" content="PDF to text conversion
-See https://superuser.com/questions/286961/pdf-to-text-convertor. It is part of xpdf, and can be installed using:
-brew install xpdf
-
-Another option according to above is poppler:">
+<meta name="description" content="PDF utilities - Küse&#39;s Codes">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/draft/20240522-pdf/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
@@ -154,87 +150,8 @@ Another option according to above is poppler:">
     <div class="post-meta"><span title='2024-05-22 00:00:00 +0000 UTC'>May 22, 2024</span>
 
 </div>
-  </header> <div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
+  </header> 
 
-        <div class="inner"><ul>
-                <li>
-                    <a href="#pdf-to-text-conversion" aria-label="PDF to text conversion">PDF to text conversion</a><ul>
-                        
-                <li>
-                    <a href="#xpdf" aria-label="xpdf">xpdf</a>
-                </li>
-            </ul>
-            </li>
-            </ul>
-        </div>
-    </details>
-</div>
-
-  <div class="post-content"><h2 id="pdf-to-text-conversion">PDF to text conversion<a hidden class="anchor" aria-hidden="true" href="#pdf-to-text-conversion">#</a></h2>
-<p>See <a href="https://superuser.com/questions/286961/pdf-to-text-convertor">https://superuser.com/questions/286961/pdf-to-text-convertor</a>. It is part of <a href="http://foolabs.com/xpdf/download.html">xpdf</a>, and can be installed using:</p>
-<pre><code>brew install xpdf
-</code></pre>
-<p>Another option according to above is <a href="http://foolabs.com/xpdf/download.html">poppler</a>:</p>
-<pre><code>brew install poppler
-</code></pre>
-<p>Poppler is a library, not a command line utility.</p>
-<p>I haven&rsquo;t tried either so far.</p>
-<h3 id="xpdf">xpdf<a hidden class="anchor" aria-hidden="true" href="#xpdf">#</a></h3>
-<p>xpdf installs the followint command line tools:</p>
-<ul>
-<li><strong>xpdf</strong>: PDF viewer (<a href="http://www.xpdfreader.com/img/screenshot.png">click for a screenshot</a>)</li>
-<li><strong>pdftotext</strong>: converts PDF to text</li>
-<li><strong>pdftops</strong>: converts PDF to PostScript</li>
-<li><strong>pdftoppm</strong>: converts PDF pages to netpbm (PPM/PGM/PBM) image files</li>
-<li><strong>pdftopng</strong>: converts PDF pages to PNG image files</li>
-<li><strong>pdftohtml</strong>: converts PDF to HTML</li>
-<li><strong>pdfinfo</strong>: extracts PDF metadata</li>
-<li><strong>pdfimages</strong>: extracts raw images from PDF files</li>
-<li><strong>pdffonts</strong>: lists fonts used in PDF files</li>
-<li><strong>pdfdetach</strong>: extracts attached files from PDF files</li>
-</ul>
-<pre tabindex="0"><code>% pdftotext -h
-pdftotext version 4.05 [www.xpdfreader.com]
-Copyright 1996-2024 Glyph &amp; Cog, LLC
-Usage: pdftotext [options] &lt;PDF-file&gt; [&lt;text-file&gt;]
-  -f &lt;int&gt;               : first page to convert
-  -l &lt;int&gt;               : last page to convert
-  -layout                : maintain original physical layout
-  -simple                : simple one-column page layout
-  -simple2               : simple one-column page layout, version 2
-  -table                 : similar to -layout, but optimized for tables
-  -lineprinter           : use strict fixed-pitch/height layout
-  -raw                   : keep strings in content stream order
-  -fixed &lt;number&gt;        : assume fixed-pitch (or tabular) text
-  -linespacing &lt;number&gt;  : fixed line spacing for LinePrinter mode
-  -clip                  : separate clipped text
-  -nodiag                : discard diagonal text
-  -enc &lt;string&gt;          : output text encoding name
-  -eol &lt;string&gt;          : output end-of-line convention (unix, dos, or mac)
-  -nopgbrk               : don&#39;t insert a page break at the end of each page
-  -bom                   : insert a Unicode BOM at the start of the text file
-  -marginl &lt;number&gt;      : left page margin
-  -marginr &lt;number&gt;      : right page margin
-  -margint &lt;number&gt;      : top page margin
-  -marginb &lt;number&gt;      : bottom page margin
-  -opw &lt;string&gt;          : owner password (for encrypted files)
-  -upw &lt;string&gt;          : user password (for encrypted files)
-  -verbose               : print per-page status information
-  -q                     : don&#39;t print any messages or errors
-  -cfg &lt;string&gt;          : configuration file to use in place of .xpdfrc
-  -listencodings         : list all available output text encodings
-  -v                     : print copyright and version info
-  -h                     : print usage information
-  -help                  : print usage information
-  --help                 : print usage information
-  -?                     : print usage information
-</code></pre>
-
-  </div>
 
   <footer class="post-footer">
     <ul class="post-tags">

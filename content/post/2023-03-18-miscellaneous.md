@@ -2,7 +2,6 @@
 title: Miscellaneous
 categories:
 - programming
-- jekyll
 - publishing
 date: "2023-03-18T00:00:00Z"
 mermaid: true

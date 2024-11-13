@@ -6,7 +6,16 @@
     <description>Recent content in Küse&#39;s Code on Küse&#39;s Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ruby on Rails ticks and trips</title>
+      <link>http://localhost:1313/post/2024-11-12-rails-tips/</link>
+      <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-11-12-rails-tips/</guid>
+      <description>Ruby on Rails with bulma, haml, etc.</description>
+    </item>
+    
     <item>
       <title>A vertical responsive menu with PureCSS</title>
       <link>http://localhost:1313/post/2024-07-27-purecss-menu/</link>
@@ -34,11 +43,7 @@
       <pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/draft/20240522-pdf/</guid>
-      <description>&lt;h2 id=&#34;pdf-to-text-conversion&#34;&gt;PDF to text conversion&lt;/h2&gt;
-&lt;p&gt;See &lt;a href=&#34;https://superuser.com/questions/286961/pdf-to-text-convertor&#34;&gt;https://superuser.com/questions/286961/pdf-to-text-convertor&lt;/a&gt;. It is part of &lt;a href=&#34;http://foolabs.com/xpdf/download.html&#34;&gt;xpdf&lt;/a&gt;, and can be installed using:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;brew install xpdf
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Another option according to above is &lt;a href=&#34;http://foolabs.com/xpdf/download.html&#34;&gt;poppler&lt;/a&gt;:&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
@@ -420,12 +425,12 @@ year          = &amp;quot;1968&amp;quot;
     </item>
     
     <item>
-      <title>PDF converter in dotnet</title>
-      <link>http://localhost:1313/draft/2022-12-01-pdf-converter/</link>
+      <title>PDF to text conversion</title>
+      <link>http://localhost:1313/post/2022-12-01-pdf-converter/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/draft/2022-12-01-pdf-converter/</guid>
-      <description>&lt;p&gt;There is once in a while the need to extract pure text from PDF files. This blog shows some attempts to do it with dot, and also with &lt;a href=&#34;https://www.ruby-lang.org/en/&#34;&gt;ruby&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/post/2022-12-01-pdf-converter/</guid>
+      <description>&lt;p&gt;There is once in a while the need to extract pure text from PDF files. This blog shows some attempts to do it with dot, with &lt;a href=&#34;https://www.ruby-lang.org/en/&#34;&gt;ruby&lt;/a&gt;, and with command line utitilites.&lt;/p&gt;</description>
     </item>
     
     <item>
