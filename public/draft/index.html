@@ -160,18 +160,6 @@ gh issue list --state all | tr &#39;\t&#39; &#39;,&#39; &gt; bugreports/issues-2
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>PDF utilities<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p></p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-22 00:00:00 +0000 UTC'>May 22, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to PDF utilities" href="http://localhost:1313/draft/20240522-pdf/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
     <h2>Compiler with antlr and llvm<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
     </h2>
   </header>
@@ -267,17 +255,34 @@ This was the programming language used for the Voyager.
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Bulma hints<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    <h2>Command line parsing<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
     </h2>
   </header>
   <div class="entry-content">
-    <p>Give the simplest possible bulma html with two columns and a decent margin.
-See Bulma
-&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34;&gt; &lt;title&gt;Hello Bulma!&lt;/title&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css&#34;&gt; &lt;/head&gt; &lt;body&gt; &lt;section class=&#34;section&#34;&gt; &lt;div class=&#34;content&#34;&gt; &lt;h1 class=&#34;title&#34;&gt; Hello World &lt;/h1&gt; &lt;p class=&#34;subtitle&#34;&gt; My first website with &lt;strong&gt;Bulma&lt;/strong&gt;! &lt;/p&gt; &lt;/div&gt; &lt;/section&gt; &lt;/body&gt; &lt;/html&gt; Questions:
+    <p>CommandLineParser https://github.com/commandlineparser/commandline
+https://www.nuget.org/packages/CommandLineParser.FSharp/
+https://github.com/commandlineparser/commandline/wiki
+type options = { [&lt;Option(&#39;r&#39;, &#34;read&#34;, Required = true, HelpText = &#34;Input files.&#34;)&gt;] files : seq&lt;string&gt;; [&lt;Option(HelpText = &#34;Prints all messages to standard output.&#34;)&gt;] verbose : bool; [&lt;Option(Default = &#34;русский&#34;, HelpText = &#34;Content language.&#34;)&gt;] language : string; [&lt;Value(0, MetaName=&#34;offset&#34;, HelpText = &#34;File offset.&#34;)&gt;] offset : int64 option; } let main argv = let result = CommandLine.Parser.Default.ParseArguments&lt;options&gt;(argv) match result with | :? Parsed&lt;options&gt; as parsed -&gt; run parsed.Value | :? NotParsed&lt;options&gt; as notParsed -&gt; fail notParsed.Errors Argu https://fsprojects.github.io/Argu/
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2023-02-01 00:00:00 +0000 UTC'>February 1, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Bulma hints" href="http://localhost:1313/draft/2023-02-01-bulma/"></a>
+  <a class="entry-link" aria-label="post link to Command line parsing" href="http://localhost:1313/draft/2023-02-01-command-line-parsing/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Authentication<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Collect information about authentication.
+AspNet.Security.OAuth.Providers Good samples of aspnet MVC with google, twitter, Apple-ID:
+https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers
+AspNet.Security.OAuth.Providers is a collection of security middleware that you can use in your ASP.NET Coreapplication to support social authentication providers like GitHub, Foursquare or Dropbox. It is directly inspired by Jerrie Pelser’s initiative, Owin.Security.Providers.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-01-01 00:00:00 +0000 UTC'>January 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Authentication" href="http://localhost:1313/draft/2023-01-01-authentication/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

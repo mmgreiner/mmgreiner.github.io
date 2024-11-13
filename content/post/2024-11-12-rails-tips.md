@@ -98,6 +98,20 @@ Obviously, if you want to make forms look nicer you have to change the auto-gene
 
 This gives some tips and trick for Ruby on Rails.
 
+## Enums
+
+There are many sites explaining how to use [enums in rails](), but all of them describe the use case where the enum is stored as an integer in the database. 
+
+My much more frequent use case is using strings in the database. I found this on [stackoverflow](https://stackoverflow.com/questions/32938729/how-to-store-enum-as-string-to-database-in-rails) which gives a good way to do it:
+
+~~~~ruby
+class Work < ApplicationRecord
+  ALL_STATES = %w[canceled offering running payment rating done].freeze
+  enum status: ALL_STATES.zip(ALL_STATES).to_h
+end
+~~~~
+
+
 ## Quick reference
 
 I found an excellent quick reference guide to Ruby on [zenspider][quickref].

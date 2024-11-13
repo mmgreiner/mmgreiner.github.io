@@ -147,38 +147,6 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Command line parsing<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>CommandLineParser https://github.com/commandlineparser/commandline
-https://www.nuget.org/packages/CommandLineParser.FSharp/
-https://github.com/commandlineparser/commandline/wiki
-type options = { [&lt;Option(&#39;r&#39;, &#34;read&#34;, Required = true, HelpText = &#34;Input files.&#34;)&gt;] files : seq&lt;string&gt;; [&lt;Option(HelpText = &#34;Prints all messages to standard output.&#34;)&gt;] verbose : bool; [&lt;Option(Default = &#34;русский&#34;, HelpText = &#34;Content language.&#34;)&gt;] language : string; [&lt;Value(0, MetaName=&#34;offset&#34;, HelpText = &#34;File offset.&#34;)&gt;] offset : int64 option; } let main argv = let result = CommandLine.Parser.Default.ParseArguments&lt;options&gt;(argv) match result with | :? Parsed&lt;options&gt; as parsed -&gt; run parsed.Value | :? NotParsed&lt;options&gt; as notParsed -&gt; fail notParsed.Errors Argu https://fsprojects.github.io/Argu/
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-02-01 00:00:00 +0000 UTC'>February 1, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Command line parsing" href="http://localhost:1313/draft/2023-02-01-command-line-parsing/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Authentication<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Collect information about authentication.
-AspNet.Security.OAuth.Providers Good samples of aspnet MVC with google, twitter, Apple-ID:
-https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers
-AspNet.Security.OAuth.Providers is a collection of security middleware that you can use in your ASP.NET Coreapplication to support social authentication providers like GitHub, Foursquare or Dropbox. It is directly inspired by Jerrie Pelser’s initiative, Owin.Security.Providers.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-01-01 00:00:00 +0000 UTC'>January 1, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Authentication" href="http://localhost:1313/draft/2023-01-01-authentication/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
     <h2>Bibliographies and citations - More info<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
     </h2>
   </header>
