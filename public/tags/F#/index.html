@@ -147,11 +147,25 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>Dependency Injection in dotnet<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Dependency injection
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-10 00:00:00 +0000 UTC'>August 10, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Dependency Injection in dotnet" href="http://localhost:1313/draft/2023-08-10-dependency-injection/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>Bolero hosting Razor page
     </h2>
   </header>
   <div class="entry-content">
-    <p>In this post we investigate how to use Razor pages on the host and Bolero WebAssembly on the client side. The final code can be found on My github - Tutorials - BoleroAppRazor....</p>
+    <p>In this post we investigate how to use Razor pages on the host and Bolero WebAssembly on the client side. The final code can be found on My github - Tutorials - BoleroAppRazor.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-04-11 00:00:00 +0000 UTC'>April 11, 2023</span></footer>
   <a class="entry-link" aria-label="post link to Bolero hosting Razor page" href="http://localhost:1313/post/2023-04-11-bolero-razor/"></a>
@@ -164,7 +178,8 @@
   </header>
   <div class="entry-content">
     <p>This is a list of reminders and open questions I still wanted to look at in more detail.
-CSV conversion Next to FSharp....</p>
+CSV conversion Next to FSharp.Data there is CSVHelper. However, it does not support FSharp types intrinsically. A stackoverflow article describes the details.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-03-18 00:00:00 +0000 UTC'>March 18, 2023</span></footer>
   <a class="entry-link" aria-label="post link to Miscellaneous" href="http://localhost:1313/post/2023-03-18-miscellaneous/"></a>
@@ -178,7 +193,8 @@ CSV conversion Next to FSharp....</p>
   <div class="entry-content">
     <p>This contains some thoughts how to implement RESTful APIs.
 Background tbd
-Best practices A search for RESTful API best practices reveals many sites:...</p>
+Best practices A search for RESTful API best practices reveals many sites:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-03-15 00:00:00 +0000 UTC'>March 15, 2023</span></footer>
   <a class="entry-link" aria-label="post link to RESTful API" href="http://localhost:1313/post/2023-03-15-RESTApi/"></a>
@@ -191,10 +207,55 @@ Best practices A search for RESTful API best practices reveals many sites:...</p
   </header>
   <div class="entry-content">
     <p>Some of my codes are documented on my Github with description in the readme files. Take a look there.
-Github Description BoleroApp A simple Bolero app with file upload and data repository using dependency injection StringAlgorithms Some string algorithms in F# to measure string similarity WebAPI A net7....</p>
+Github Description BoleroApp A simple Bolero app with file upload and data repository using dependency injection StringAlgorithms Some string algorithms in F# to measure string similarity WebAPI A net7.0 based RestAPI in F# DependencyInjection simple attempts at dependency injection in F# MinimalAPI Minimal API with a file upload example BoleroAppRazor Bolero App, but using Razor pages on the server </p>
   </div>
   <footer class="entry-footer"><span title='2023-02-10 00:00:00 +0000 UTC'>February 10, 2023</span></footer>
   <a class="entry-link" aria-label="post link to Github resources" href="http://localhost:1313/post/2023-02-10-github-fsharp/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Command line parsing<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>CommandLineParser https://github.com/commandlineparser/commandline
+https://www.nuget.org/packages/CommandLineParser.FSharp/
+https://github.com/commandlineparser/commandline/wiki
+type options = { [&lt;Option(&#39;r&#39;, &#34;read&#34;, Required = true, HelpText = &#34;Input files.&#34;)&gt;] files : seq&lt;string&gt;; [&lt;Option(HelpText = &#34;Prints all messages to standard output.&#34;)&gt;] verbose : bool; [&lt;Option(Default = &#34;русский&#34;, HelpText = &#34;Content language.&#34;)&gt;] language : string; [&lt;Value(0, MetaName=&#34;offset&#34;, HelpText = &#34;File offset.&#34;)&gt;] offset : int64 option; } let main argv = let result = CommandLine.Parser.Default.ParseArguments&lt;options&gt;(argv) match result with | :? Parsed&lt;options&gt; as parsed -&gt; run parsed.Value | :? NotParsed&lt;options&gt; as notParsed -&gt; fail notParsed.Errors Argu https://fsprojects.github.io/Argu/
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-02-01 00:00:00 +0000 UTC'>February 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Command line parsing" href="http://localhost:1313/draft/2023-02-01-command-line-parsing/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Authentication<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Collect information about authentication.
+AspNet.Security.OAuth.Providers Good samples of aspnet MVC with google, twitter, Apple-ID:
+https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers
+AspNet.Security.OAuth.Providers is a collection of security middleware that you can use in your ASP.NET Coreapplication to support social authentication providers like GitHub, Foursquare or Dropbox. It is directly inspired by Jerrie Pelser’s initiative, Owin.Security.Providers.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-01-01 00:00:00 +0000 UTC'>January 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Authentication" href="http://localhost:1313/draft/2023-01-01-authentication/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>PDF converter in dotnet<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>There is once in a while the need to extract pure text from PDF files. This blog shows some attempts to do it with dot, and also with ruby.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-01 00:00:00 +0000 UTC'>December 1, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to PDF converter in dotnet" href="http://localhost:1313/draft/2022-12-01-pdf-converter/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
@@ -203,7 +264,8 @@ Github Description BoleroApp A simple Bolero app with file upload and data repos
     </h2>
   </header>
   <div class="entry-content">
-    <p>Bolero is a set of free and open-source libraries and tools to write web applications in F#. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance....</p>
+    <p> Bolero is a set of free and open-source libraries and tools to write web applications in F#. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2022-10-20 00:00:00 +0000 UTC'>October 20, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Input file element with Bolero" href="http://localhost:1313/post/2022-10-20-input-file/"></a>
@@ -211,65 +273,16 @@ Github Description BoleroApp A simple Bolero app with file upload and data repos
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Static templating with handlebars, liquid and others
+    <h2>Json Serialization<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
     </h2>
   </header>
   <div class="entry-content">
-    <p>Templating is an proofen method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time....</p>
+    <p>Best help: FSharp.System.TextJson
+#r &#34;nuget: FSharp.SystemTextJson&#34;;; open System.Text.Json open System.Text.Json.Serialization let options = JsonSerializerOptions() options.Converters.Add(JsonFSharpConverter()) let me = {| MiddleName = Some &#34;Max&#34;; Birtday = System.DateTime(1965, 11, 10) |} let you = {| MiddleName = Option&lt;string&gt;.None; Birtday = System.DateTime(1980, 1, 31) |} JsonSerializer.Serialize(me, options) // val it: string = &#34;{&#34;Birtday&#34;:&#34;1965-11-10T00:00:00&#34;,&#34;MiddleName&#34;:&#34;Max&#34;}&#34; JsonSerializer.Serialize(you, options) // val it: string = &#34;{&#34;Birtday&#34;:&#34;1980-01-31T00:00:00&#34;,&#34;MiddleName&#34;:null}&#34; Json serialization with Bolero tbd
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-08-29 00:00:00 +0000 UTC'>August 29, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Static templating with handlebars, liquid and others" href="http://localhost:1313/post/2022-08-29-static-templating/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Bolero Hints
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This blog contains some experiences working with Bolero.
-Bolero is a set of free and open-source libraries and tools to write web applications in F#....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-08-21 00:00:00 +0000 UTC'>August 21, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Bolero Hints" href="http://localhost:1313/post/2022-08-21-Bolero/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Machine Learning with ML.NET
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Machine learning with ML.NET is documented in a confusing way, in particular when it comes to F#.
-Some resources I found are:...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-04-08 00:00:00 +0000 UTC'>April 8, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Machine Learning with ML.NET" href="http://localhost:1313/post/2022-04-08-machine-learning/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Mathe Uffzgi
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Once in a while, I’m supporting Lea with her math homework (Swiss: Uffzgi). Here are some tools that help me (remember, that I prefer F# to other languages....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-04-02 00:00:00 +0000 UTC'>April 2, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Mathe Uffzgi" href="http://localhost:1313/post/2022-04-02-mathe-uffzgi/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>WebSharper simple inputs
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This post shows various ways to handle input using WebSharper.
-Client side There are two basic approaches: using HTML templates or using Websharper’s HTML....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to WebSharper simple inputs" href="http://localhost:1313/post/2022-03-17-Simple-Inputs/"></a>
+  <footer class="entry-footer"><span title='2022-10-01 00:00:00 +0000 UTC'>October 1, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Json Serialization" href="http://localhost:1313/draft/2022-10-01-JsonSerialization/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

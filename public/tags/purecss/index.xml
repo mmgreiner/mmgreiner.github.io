@@ -13,8 +13,8 @@
       <pubDate>Sat, 27 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2024-07-27-purecss-menu/</guid>
-      <description>I have been using Pure.css in most of my applications since it is really simple to use.
-This is a small code sample that uses Pure.</description>
+      <description>&lt;p&gt;I have been using &lt;a href=&#34;https://purecss.io/&#34;&gt;Pure.css&lt;/a&gt; in most of my applications since it is really simple to use.&lt;/p&gt;
+&lt;p&gt;This is a small code sample that uses &lt;a href=&#34;https://purecss.io/&#34;&gt;Pure.css&lt;/a&gt; with a responsive, vertical menu with hamburger and a submenu.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,8 +23,8 @@ This is a small code sample that uses Pure.</description>
       <pubDate>Sat, 03 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2024-02-03-purecss/</guid>
-      <description>Pure.css is a css framework that does not include JavaScript like other frameworks such as Vue, bootstrap, &amp;hellip;
-In contrast to those frameworks:</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://purecss.io&#34;&gt;Pure.css&lt;/a&gt; is a css framework that does not include JavaScript like other frameworks such as Vue, bootstrap, &amp;hellip;&lt;/p&gt;
+&lt;p&gt;In contrast to those frameworks:&lt;/p&gt;</description>
     </item>
     
   </channel>

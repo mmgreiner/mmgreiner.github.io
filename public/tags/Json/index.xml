@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Json on Küse&#39;s Codes</title>
+    <link>http://localhost:1313/tags/Json/</link>
+    <description>Recent content in Json on Küse&#39;s Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/Json/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Json Serialization</title>
+      <link>http://localhost:1313/draft/2022-10-01-JsonSerialization/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2022-10-01-JsonSerialization/</guid>
+      <description>&lt;p&gt;Best help: &lt;a href=&#34;https://github.com/Tarmil/FSharp.SystemTextJson&#34;&gt;FSharp.System.TextJson&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fsharp&#34; data-lang=&#34;fsharp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#r&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nuget: FSharp.SystemTextJson&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;open&lt;/span&gt; System.Text.Json
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;open&lt;/span&gt; System.Text.Json.Serialization
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; options &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; JsonSerializerOptions()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Converters&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Add&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;JsonFSharpConverter()&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; me &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{|&lt;/span&gt; MiddleName &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Some &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Max&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; Birtday &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; System.DateTime&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;1965&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 11&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 10&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; you &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{|&lt;/span&gt; MiddleName &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Option&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;.&lt;/span&gt;None&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; Birtday &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; System.DateTime&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;1980&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 31&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;JsonSerializer.Serialize&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;me&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; options&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// val it: string = &amp;#34;{&amp;#34;Birtday&amp;#34;:&amp;#34;1965-11-10T00:00:00&amp;#34;,&amp;#34;MiddleName&amp;#34;:&amp;#34;Max&amp;#34;}&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;JsonSerializer.Serialize&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;you&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; options&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// val it: string = &amp;#34;{&amp;#34;Birtday&amp;#34;:&amp;#34;1980-01-31T00:00:00&amp;#34;,&amp;#34;MiddleName&amp;#34;:null}&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;json-serialization-with-bolero&#34;&gt;Json serialization with Bolero&lt;/h2&gt;
+&lt;p&gt;tbd&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

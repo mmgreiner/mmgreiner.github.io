@@ -13,8 +13,8 @@
       <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-04-08-machine-learning/</guid>
-      <description>Machine learning with ML.NET is documented in a confusing way, in particular when it comes to F#.
-Some resources I found are:</description>
+      <description>&lt;p&gt;Machine learning with &lt;a href=&#34;https://dotnet.microsoft.com/en-us/learn/ml-dotnet&#34;&gt;ML.NET&lt;/a&gt; is documented in a confusing way, in particular when it comes to F#.&lt;/p&gt;
+&lt;p&gt;Some resources I found are:&lt;/p&gt;</description>
     </item>
     
   </channel>

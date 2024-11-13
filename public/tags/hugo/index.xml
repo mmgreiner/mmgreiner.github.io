@@ -13,8 +13,9 @@
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-11-27-hugo-tricks/</guid>
-      <description>This page describes my experiences with the static web site publishing tool Hugo.
-Open link in new tab There is a discussion which describes How to open links in a new tab.</description>
+      <description>&lt;p&gt;This page describes my experiences with the static web site publishing tool &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;open-link-in-new-tab&#34;&gt;Open link in new tab&lt;/h2&gt;
+&lt;p&gt;There is a discussion which describes &lt;a href=&#34;https://discourse.gohugo.io/t/how-to-open-plain-url-links-in-a-new-tab/25523/3&#34;&gt;How to open links in a new tab&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,7 +24,17 @@ Open link in new tab There is a discussion which describes How to open links in 
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-10-01-local-server/</guid>
-      <description>Running build-in tomcat server It is possible to deploy Jekyll sites locally, because OSX has a build-in Apache tomcat server. The local sites reside under ~/Sites.</description>
+      <description>&lt;h2 id=&#34;running-build-in-tomcat-server&#34;&gt;Running build-in tomcat server&lt;/h2&gt;
+&lt;p&gt;It is possible to deploy &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; sites locally, because OSX has a build-in &lt;a href=&#34;https://tomcat.apache.org&#34;&gt;Apache tomcat server&lt;/a&gt;. The local sites reside under &lt;code&gt;~/Sites&lt;/code&gt;. However, the setup of this server often changes with new versions of OSX.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Static web app with authentication</title>
+      <link>http://localhost:1313/draft/2023-09-24-azure-hugo/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-09-24-azure-hugo/</guid>
+      <description>&lt;p&gt;We will try to create a &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; static web app that for some sub-pages uses authentication and authorization on azure to restrict access. The example builds on &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/static-web-apps/publish-hugo&#34;&gt;publish hugo&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,7 +43,8 @@ Open link in new tab There is a discussion which describes How to open links in 
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-08-05-mermaid/</guid>
-      <description>Mermaid is a JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://mermaid-js.github.io/mermaid/#/&#34;&gt;Mermaid&lt;/a&gt; is a JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,7 +53,8 @@ Open link in new tab There is a discussion which describes How to open links in 
       <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-04-02-math-static-sites/</guid>
-      <description>Mathematical formulas While working on post Mathe Uffzig, I stumbled upon the problem of displaying mathematical formulas in the Jekyll markdown templating engine Liquid.</description>
+      <description>&lt;h2 id=&#34;mathematical-formulas&#34;&gt;Mathematical formulas&lt;/h2&gt;
+&lt;p&gt;While working on post &lt;a href=&#34;http://localhost:1313/post/2022-04-02-mathe-uffzgi/&#34;&gt;Mathe Uffzig&lt;/a&gt;, I stumbled upon the problem of displaying mathematical formulas in the &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; markdown templating engine &lt;a href=&#34;liquid&#34;&gt;Liquid&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

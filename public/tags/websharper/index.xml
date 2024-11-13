@@ -13,8 +13,11 @@
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-17-Simple-Inputs/</guid>
-      <description>This post shows various ways to handle input using WebSharper.
-Client side There are two basic approaches: using HTML templates or using Websharper&amp;rsquo;s HTML.</description>
+      <description>&lt;p&gt;This post shows various ways to handle input using &lt;a href=&#34;
+https://developers.websharper.com/docs/v4.x/fs/
+&#34;&gt;WebSharper&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;client-side&#34;&gt;Client side&lt;/h2&gt;
+&lt;p&gt;There are two basic approaches: using HTML templates or using Websharper&amp;rsquo;s HTML.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,9 +26,13 @@ Client side There are two basic approaches: using HTML templates or using Websha
       <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-14-Websharper-osx/</guid>
-      <description>Installing WebSharper I&amp;rsquo;m developing web applications using WebSharper on macOS Monterey.
-To install the the templates, use:
-% dotnet new -i WebSharper.</description>
+      <description>&lt;h2 id=&#34;installing-websharper&#34;&gt;Installing WebSharper&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m developing web applications using &lt;a href=&#34;
+https://developers.websharper.com/docs/v4.x/fs/
+&#34;&gt;WebSharper&lt;/a&gt; on macOS Monterey.&lt;/p&gt;
+&lt;p&gt;To install the the templates, use:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% dotnet new -i WebSharper.Templates
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The following templates are installed:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -34,8 +41,15 @@ To install the the templates, use:
       <pubDate>Sun, 13 Mar 2022 13:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-13-websharper-templates/</guid>
-      <description>WebSharper allows several ways to instatiate HTML, and It took me some thinking to get these terms right:
-ws-replace ws-hole ws-template ws-template-children Replace Replace the given node with the provided string or list of docs.</description>
+      <description>&lt;p&gt;WebSharper allows several ways to instatiate HTML, and It took me some thinking to get these terms right:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ws-replace&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ws-hole&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ws-template&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ws-template-children&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;replace&#34;&gt;Replace&lt;/h2&gt;
+&lt;p&gt;Replace the given node with the provided string or list of docs.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -44,7 +58,8 @@ ws-replace ws-hole ws-template ws-template-children Replace Replace the given no
       <pubDate>Sun, 13 Mar 2022 10:41:39 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-13-websharper-shopping-cart/</guid>
-      <description>Websharper Shopping cart I found an interesting article from 2020 by Adam Granizc on the implementation of a WebSharper shopping cart in WebSharper Shopping Cart</description>
+      <description>&lt;h2 id=&#34;websharper-shopping-cart&#34;&gt;Websharper Shopping cart&lt;/h2&gt;
+&lt;p&gt;I found an interesting article from 2020 by Adam Granizc on the implementation of a WebSharper shopping cart in &lt;a href=&#34;https://github.com/intellifactory/blogs/blob/master/user/granicz/20201231-variations-for-a-websharper-shopping-cart.md&#34;&gt;WebSharper Shopping Cart&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -53,7 +68,7 @@ ws-replace ws-hole ws-template ws-template-children Replace Replace the given no
       <pubDate>Sat, 12 Mar 2022 19:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-12-using-jekyll/</guid>
-      <description>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes.</description>
+      <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -13,8 +13,41 @@
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-02-10-github-fsharp/</guid>
-      <description>Some of my codes are documented on my Github with description in the readme files. Take a look there.
-Github Description BoleroApp A simple Bolero app with file upload and data repository using dependency injection StringAlgorithms Some string algorithms in F# to measure string similarity WebAPI A net7.</description>
+      <description>&lt;p&gt;Some of my codes are documented on my &lt;a href=&#34;https://github.com/mmgreiner&#34;&gt;Github&lt;/a&gt; with description in the readme files. Take a look there.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Github&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/BoleroApp&#34;&gt;BoleroApp&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;A simple &lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; app with file upload and data repository using dependency injection&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/StringAlgorithms&#34;&gt;StringAlgorithms&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Some string algorithms in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt; to measure string similarity&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/WebAPI&#34;&gt;WebAPI&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;A net7.0 based RestAPI in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/dependencyInjection&#34;&gt;DependencyInjection&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;simple attempts at dependency injection in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/Tutorials/tree/master/MinimalApiPost&#34;&gt;MinimalAPI&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Minimal API with a file upload example&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/Tutorials/tree/master/BoleroAppRazor&#34;&gt;BoleroAppRazor&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; App, but using Razor pages on the server&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
     
   </channel>

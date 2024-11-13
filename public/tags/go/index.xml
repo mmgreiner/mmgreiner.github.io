@@ -2,18 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Go on Küse&#39;s Codes</title>
-    <link>http://localhost:1313/tags/go/</link>
+    <link>http://localhost:1313/tags/Go/</link>
     <description>Recent content in Go on Küse&#39;s Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/Go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compiler with antlr and llvm</title>
+      <link>http://localhost:1313/draft/compiler-antlr/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/compiler-antlr/</guid>
+      <description>&lt;p&gt;Good small example: &lt;a href=&#34;https://theantlrguy.atlassian.net/wiki/spaces/ANTLR3/pages/2687062/LLVM&#34;&gt;https://theantlrguy.atlassian.net/wiki/spaces/ANTLR3/pages/2687062/LLVM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.gopheracademy.com/advent-2017/parsing-with-antlr4-and-go/&#34;&gt;https://blog.gopheracademy.com/advent-2017/parsing-with-antlr4-and-go/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>How to work with modules and packages in Go</title>
       <link>http://localhost:1313/post/2023-07-30-go-modules/</link>
       <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-07-30-go-modules/</guid>
-      <description>I had to practice a long time to understand the go concepts of modules, packages, and how to publish them to github.</description>
+      <description>&lt;p&gt;I had to practice a long time to understand the &lt;a href=&#34;https://go.dev&#34;&gt;go&lt;/a&gt; concepts of modules, packages, and how to publish them to &lt;a href=&#34;https://github.com&#34;&gt;github&lt;/a&gt;. Here are my learnings.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HAL-S Compiler</title>
+      <link>http://localhost:1313/draft/2023-07-01-hal-s-compiler/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-07-01-hal-s-compiler/</guid>
+      <description>&lt;p&gt;The idea is to write a compiler for the HAL-S language.&lt;/p&gt;
+&lt;p&gt;This was the programming language used for the Voyager.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,7 +42,7 @@
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-02-01-golang/</guid>
-      <description>In 2023, I became interested in the programming language Go. It is a C derivates without all the nil pointer exceptions, and has a very solid infrastructure and libraries to compile across different operating systems.</description>
+      <description>&lt;p&gt;In 2023, I became interested in the programming language &lt;a href=&#34;https://go.dev&#34;&gt;Go&lt;/a&gt;. It is a C derivates without all the nil pointer exceptions, and has a very solid infrastructure and libraries to compile across different operating systems.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -31,7 +51,9 @@
       <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-01-13-swig-c-interfacer/</guid>
-      <description>SWIG SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.</description>
+      <description>&lt;h2 id=&#34;swig&#34;&gt;SWIG&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://swig.org/index.html&#34;&gt;SWIG&lt;/a&gt; is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages. SWIG is used with different types of target languages including common scripting languages such as Javascript, Perl, PHP, Python, Tcl and Ruby.&lt;/p&gt;</description>
     </item>
     
   </channel>

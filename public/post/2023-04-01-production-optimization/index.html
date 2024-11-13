@@ -7,8 +7,43 @@
 <meta name="robots" content="noindex, nofollow">
 <title>General production optimization | Küse&#39;s Codes</title>
 <meta name="keywords" content="jekyll, math, OR">
-<meta name="description" content="Optimization General production structure capacited multi-level lot-sizing model PochetWolsey, page 45
-$1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared resources with limited capacity $1 \le t \le n$: time periods until final period n $p_t$: unit production cost $q_t$: fixed production cost $h_t$: unit inventory cost $d_t^i$: demand for item i to be satisified at period t $M_t$: large positive number, expressing an upper bound on the maximum lot size iin period t $L_t^k$: available capacity of resource k during period t $\alpha^{i k}, \beta^{i k}$: amount of capacity of resource k consumed $1 \le j \le m$: items $D(i)$ set of direct successors of part i in the BOM, i.">
+<meta name="description" content="Optimization
+General production structure capacited multi-level lot-sizing model PochetWolsey, page 45
+
+$1 \le i \le m$: set of items to be produced
+$1 \le k \le K$: set of shared resources with limited capacity
+$1 \le t \le n$: time periods until final period n
+$p_t$: unit production cost
+$q_t$: fixed production cost
+$h_t$: unit inventory cost
+$d_t^i$: demand for item i to be satisified at period t
+$M_t$: large positive number, expressing an upper bound on the maximum lot size iin period t
+$L_t^k$: available capacity of resource k during period t
+$\alpha^{i k}, \beta^{i k}$: amount of capacity of resource k consumed
+$1 \le j \le m$: items
+$D(i)$ set of direct successors of part i in the BOM, i.e. the items consuming some amount of item i when they are produced
+$r^{i j}$: the amount of item i required to make one unit of item j.
+r is the dependent demand, and $d_t^i$ is the independent demand
+$\gamma^i$: lead-time to produce or deliver an lot of i
+$x_t^i$: the size of product or purchase order of item i launched in period t, and delivered in period $t &#43; \gamma^i$.
+Decision variables:
+
+$x_t$: production lot size in period t
+$y_t$: binary variable indicating wether there is a positive production in period t
+$s_t$:inventory at the end of period t
+
+
+
+Objective Function
+$$
+\begin{aligned}
+\text{min} \sum_i \sum_t (p_t^i x_t^i &#43; q_t^i y_t^i &#43; h_t^i s_t^i) \cr
+\text{subject to} \cr
+s_{t-1}^i &#43; x_{t-\gamma^i}^i &amp; = [d_t^i &#43; \sum_{j \in D(i)} r^{i j} x_t^j] &#43; s_t^i \cr
+x_t^i &amp; \le  M_t^i y_t^i \cr
+\sum_i \alpha^{i k} x_t^i &#43; \sum_t \beta^{i k} y_t^i &amp; \le L_t^k \cr
+\end{aligned}
+$$">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/post/2023-04-01-production-optimization/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">

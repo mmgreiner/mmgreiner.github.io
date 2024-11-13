@@ -13,7 +13,7 @@
       <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-03-26-mixed-integer-linear-optimization/</guid>
-      <description>This blog contains formulas which can be used to optimize the supply chain with multiple suppliers, and a general production planning formula, taken from the book POCHET, Yves und WOLSEY, Laurence A.</description>
+      <description>&lt;p&gt;This blog contains formulas which can be used to optimize the supply chain with multiple suppliers, and a general production planning formula, taken from the book &lt;a href=&#34;https://dl.acm.org/doi/book/10.5555/1202598&#34;&gt;POCHET, Yves und WOLSEY, Laurence A.: &lt;em&gt;Production planning by mixed integer programming&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

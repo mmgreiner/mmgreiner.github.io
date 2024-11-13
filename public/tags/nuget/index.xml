@@ -13,8 +13,11 @@
       <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-10-16-nuget-local/</guid>
-      <description>Had some problems creating a local nuget repository. This is how I succeeded:
-Create a local nuget repository / source $ cli nuget add source ~/.</description>
+      <description>&lt;p&gt;Had some problems creating a local nuget repository. This is how I succeeded:&lt;/p&gt;
+&lt;h2 id=&#34;create-a-local-nuget-repository--source&#34;&gt;Create a local nuget repository / source&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ cli nuget add source ~/.mynuget
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This leads to these changes in the configuration file:&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -147,127 +147,142 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>How to work with modules and packages in Go
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I had to practice a long time to understand the go concepts of modules, packages, and how to publish them to github. Here are my learnings.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-07-30 00:00:00 +0000 UTC'>July 30, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to How to work with modules and packages in Go" href="http://localhost:1313/post/2023-07-30-go-modules/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>HAL-S Compiler<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The idea is to write a compiler for the HAL-S language.
+This was the programming language used for the Voyager.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-07-01 00:00:00 +0000 UTC'>July 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to HAL-S Compiler" href="http://localhost:1313/draft/2023-07-01-hal-s-compiler/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Bolero hosting Razor page
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>In this post we investigate how to use Razor pages on the host and Bolero WebAssembly on the client side. The final code can be found on My github - Tutorials - BoleroAppRazor.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-04-11 00:00:00 +0000 UTC'>April 11, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Bolero hosting Razor page" href="http://localhost:1313/post/2023-04-11-bolero-razor/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>General production optimization
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Optimization General production structure capacited multi-level lot-sizing model PochetWolsey, page 45
+$1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared resources with limited capacity $1 \le t \le n$: time periods until final period n $p_t$: unit production cost $q_t$: fixed production cost $h_t$: unit inventory cost $d_t^i$: demand for item i to be satisified at period t $M_t$: large positive number, expressing an upper bound on the maximum lot size iin period t $L_t^k$: available capacity of resource k during period t $\alpha^{i k}, \beta^{i k}$: amount of capacity of resource k consumed $1 \le j \le m$: items $D(i)$ set of direct successors of part i in the BOM, i.e. the items consuming some amount of item i when they are produced $r^{i j}$: the amount of item i required to make one unit of item j. r is the dependent demand, and $d_t^i$ is the independent demand $\gamma^i$: lead-time to produce or deliver an lot of i $x_t^i$: the size of product or purchase order of item i launched in period t, and delivered in period $t &#43; \gamma^i$. Decision variables: $x_t$: production lot size in period t $y_t$: binary variable indicating wether there is a positive production in period t $s_t$:inventory at the end of period t Objective Function $$ \begin{aligned} \text{min} \sum_i \sum_t (p_t^i x_t^i &#43; q_t^i y_t^i &#43; h_t^i s_t^i) \cr \text{subject to} \cr s_{t-1}^i &#43; x_{t-\gamma^i}^i &amp; = [d_t^i &#43; \sum_{j \in D(i)} r^{i j} x_t^j] &#43; s_t^i \cr x_t^i &amp; \le M_t^i y_t^i \cr \sum_i \alpha^{i k} x_t^i &#43; \sum_t \beta^{i k} y_t^i &amp; \le L_t^k \cr \end{aligned} $$
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-04-01 00:00:00 +0000 UTC'>April 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to General production optimization" href="http://localhost:1313/post/2023-04-01-production-optimization/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Miscellaneous
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is a list of reminders and open questions I still wanted to look at in more detail.
+CSV conversion Next to FSharp.Data there is CSVHelper. However, it does not support FSharp types intrinsically. A stackoverflow article describes the details.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-03-18 00:00:00 +0000 UTC'>March 18, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Miscellaneous" href="http://localhost:1313/post/2023-03-18-miscellaneous/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>RESTful API
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This contains some thoughts how to implement RESTful APIs.
+Background tbd
+Best practices A search for RESTful API best practices reveals many sites:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-03-15 00:00:00 +0000 UTC'>March 15, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to RESTful API" href="http://localhost:1313/post/2023-03-15-RESTApi/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Github resources
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Some of my codes are documented on my Github with description in the readme files. Take a look there.
+Github Description BoleroApp A simple Bolero app with file upload and data repository using dependency injection StringAlgorithms Some string algorithms in F# to measure string similarity WebAPI A net7.0 based RestAPI in F# DependencyInjection simple attempts at dependency injection in F# MinimalAPI Minimal API with a file upload example BoleroAppRazor Bolero App, but using Razor pages on the server </p>
+  </div>
+  <footer class="entry-footer"><span title='2023-02-10 00:00:00 +0000 UTC'>February 10, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Github resources" href="http://localhost:1313/post/2023-02-10-github-fsharp/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Bulma hints<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Give the simplest possible bulma html with two columns and a decent margin.
+See Bulma
+&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34;&gt; &lt;title&gt;Hello Bulma!&lt;/title&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css&#34;&gt; &lt;/head&gt; &lt;body&gt; &lt;section class=&#34;section&#34;&gt; &lt;div class=&#34;content&#34;&gt; &lt;h1 class=&#34;title&#34;&gt; Hello World &lt;/h1&gt; &lt;p class=&#34;subtitle&#34;&gt; My first website with &lt;strong&gt;Bulma&lt;/strong&gt;! &lt;/p&gt; &lt;/div&gt; &lt;/section&gt; &lt;/body&gt; &lt;/html&gt; Questions:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-02-01 00:00:00 +0000 UTC'>February 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Bulma hints" href="http://localhost:1313/draft/2023-02-01-bulma/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Command line parsing<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>CommandLineParser https://github.com/commandlineparser/commandline
+https://www.nuget.org/packages/CommandLineParser.FSharp/
+https://github.com/commandlineparser/commandline/wiki
+type options = { [&lt;Option(&#39;r&#39;, &#34;read&#34;, Required = true, HelpText = &#34;Input files.&#34;)&gt;] files : seq&lt;string&gt;; [&lt;Option(HelpText = &#34;Prints all messages to standard output.&#34;)&gt;] verbose : bool; [&lt;Option(Default = &#34;русский&#34;, HelpText = &#34;Content language.&#34;)&gt;] language : string; [&lt;Value(0, MetaName=&#34;offset&#34;, HelpText = &#34;File offset.&#34;)&gt;] offset : int64 option; } let main argv = let result = CommandLine.Parser.Default.ParseArguments&lt;options&gt;(argv) match result with | :? Parsed&lt;options&gt; as parsed -&gt; run parsed.Value | :? NotParsed&lt;options&gt; as notParsed -&gt; fail notParsed.Errors Argu https://fsprojects.github.io/Argu/
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-02-01 00:00:00 +0000 UTC'>February 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Command line parsing" href="http://localhost:1313/draft/2023-02-01-command-line-parsing/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>Go tricks &amp; tips
     </h2>
   </header>
   <div class="entry-content">
-    <p>In 2023, I became interested in the programming language Go. It is a C derivates without all the nil pointer exceptions, and has a very solid infrastructure and libraries to compile across different operating systems....</p>
+    <p>In 2023, I became interested in the programming language Go. It is a C derivates without all the nil pointer exceptions, and has a very solid infrastructure and libraries to compile across different operating systems.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-02-01 00:00:00 +0000 UTC'>February 1, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Go tricks &amp; tips" href="http://localhost:1313/post/2023-02-01-golang/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>SWIG - interface for C and C&#43;&#43;
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>SWIG SWIG is a software development tool that connects programs written in C and C&#43;&#43; with a variety of high-level programming languages....</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-01-13 00:00:00 +0000 UTC'>January 13, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to SWIG - interface for C and C&#43;&#43;" href="http://localhost:1313/post/2023-01-13-swig-c-interfacer/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Operation research
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Operation Research is defined in Wikipedia as
-Operations research (British English: operational research) … , often shortened to the initialism OR, is a discipline that deals with the development and application of analytical methods to improve decision-making....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-12-31 00:00:00 +0000 UTC'>December 31, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Operation research" href="http://localhost:1313/post/2022-12-31-operation-research/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Input file element with Bolero
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Bolero is a set of free and open-source libraries and tools to write web applications in F#. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-10-20 00:00:00 +0000 UTC'>October 20, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Input file element with Bolero" href="http://localhost:1313/post/2022-10-20-input-file/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Using local NuGet source / repository
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Had some problems creating a local nuget repository. This is how I succeeded:
-Create a local nuget repository / source $ cli nuget add source ~/....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-10-16 00:00:00 +0000 UTC'>October 16, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Using local NuGet source / repository" href="http://localhost:1313/post/2022-10-16-nuget-local/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Bibliographies, citations and dotnet programming
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Helping out a friend to get a Matura thesis completed, I stumbled onto the topics of citations and bibliographies. In the end, I wanted to get a handle on bibliographies using dotnet code....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-10-13 00:00:00 +0000 UTC'>October 13, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Bibliographies, citations and dotnet programming" href="http://localhost:1313/post/2022-10-13-bibliography/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Static templating with handlebars, liquid and others
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Templating is an proofen method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-08-29 00:00:00 +0000 UTC'>August 29, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Static templating with handlebars, liquid and others" href="http://localhost:1313/post/2022-08-29-static-templating/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Bolero Hints
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This blog contains some experiences working with Bolero.
-Bolero is a set of free and open-source libraries and tools to write web applications in F#....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-08-21 00:00:00 +0000 UTC'>August 21, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Bolero Hints" href="http://localhost:1313/post/2022-08-21-Bolero/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Machine Learning with ML.NET
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Machine learning with ML.NET is documented in a confusing way, in particular when it comes to F#.
-Some resources I found are:...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-04-08 00:00:00 +0000 UTC'>April 8, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Machine Learning with ML.NET" href="http://localhost:1313/post/2022-04-08-machine-learning/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>WebSharper simple inputs
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This post shows various ways to handle input using WebSharper.
-Client side There are two basic approaches: using HTML templates or using Websharper’s HTML....</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to WebSharper simple inputs" href="http://localhost:1313/post/2022-03-17-Simple-Inputs/"></a>
+  <a class="entry-link" aria-label="post link to Go tricks & tips" href="http://localhost:1313/post/2023-02-01-golang/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

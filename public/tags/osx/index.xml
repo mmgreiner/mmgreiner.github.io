@@ -13,9 +13,13 @@
       <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-14-Websharper-osx/</guid>
-      <description>Installing WebSharper I&amp;rsquo;m developing web applications using WebSharper on macOS Monterey.
-To install the the templates, use:
-% dotnet new -i WebSharper.</description>
+      <description>&lt;h2 id=&#34;installing-websharper&#34;&gt;Installing WebSharper&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m developing web applications using &lt;a href=&#34;
+https://developers.websharper.com/docs/v4.x/fs/
+&#34;&gt;WebSharper&lt;/a&gt; on macOS Monterey.&lt;/p&gt;
+&lt;p&gt;To install the the templates, use:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% dotnet new -i WebSharper.Templates
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The following templates are installed:&lt;/p&gt;</description>
     </item>
     
   </channel>

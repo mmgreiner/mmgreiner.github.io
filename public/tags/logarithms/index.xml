@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Logarithms on Küse&#39;s Codes</title>
+    <link>http://localhost:1313/tags/logarithms/</link>
+    <description>Recent content in Logarithms on Küse&#39;s Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/logarithms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Potenzen und Logarithmen</title>
+      <link>http://localhost:1313/draft/2023-02-15-math-exponentials/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-02-15-math-exponentials/</guid>
+      <description>&lt;p&gt;This is a paper (written in German) which was written by Lea Schmidt, student at &lt;a href=&#34;https://altekanti.ch&#34;&gt;Alte Kantonsschule Aarau&lt;/a&gt; to have a quick overview of exponential and logarithmic functions.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

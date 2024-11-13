@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Drafts | Küse&#39;s Codes</title>
+<meta name="keywords" content="">
+<meta name="description" content="Drafts - Küse&#39;s Codes">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/draft/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/draft/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/draft/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+
+
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Küse&#39;s Codes (Alt + H)">Küse&#39;s Codes</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/post" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/draft" title="Drafts">
+                    <span class="active">Drafts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+  <h1>
+    Drafts
+  </h1>
+</header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Command line parsing<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>CommandLineParser https://github.com/commandlineparser/commandline
+https://www.nuget.org/packages/CommandLineParser.FSharp/
+https://github.com/commandlineparser/commandline/wiki
+type options = { [&lt;Option(&#39;r&#39;, &#34;read&#34;, Required = true, HelpText = &#34;Input files.&#34;)&gt;] files : seq&lt;string&gt;; [&lt;Option(HelpText = &#34;Prints all messages to standard output.&#34;)&gt;] verbose : bool; [&lt;Option(Default = &#34;русский&#34;, HelpText = &#34;Content language.&#34;)&gt;] language : string; [&lt;Value(0, MetaName=&#34;offset&#34;, HelpText = &#34;File offset.&#34;)&gt;] offset : int64 option; } let main argv = let result = CommandLine.Parser.Default.ParseArguments&lt;options&gt;(argv) match result with | :? Parsed&lt;options&gt; as parsed -&gt; run parsed.Value | :? NotParsed&lt;options&gt; as notParsed -&gt; fail notParsed.Errors Argu https://fsprojects.github.io/Argu/
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-02-01 00:00:00 +0000 UTC'>February 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Command line parsing" href="http://localhost:1313/draft/2023-02-01-command-line-parsing/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Authentication<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Collect information about authentication.
+AspNet.Security.OAuth.Providers Good samples of aspnet MVC with google, twitter, Apple-ID:
+https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers
+AspNet.Security.OAuth.Providers is a collection of security middleware that you can use in your ASP.NET Coreapplication to support social authentication providers like GitHub, Foursquare or Dropbox. It is directly inspired by Jerrie Pelser’s initiative, Owin.Security.Providers.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-01-01 00:00:00 +0000 UTC'>January 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Authentication" href="http://localhost:1313/draft/2023-01-01-authentication/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Bibliographies and citations - More info<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How to handle a standard?
+citation-guide recommends manual.
+@manual{standard_1968, title = &#34;Letter Symbols for Quantities&#34;, howpublished = &#34;ANSI Standard Y10.5&#34;, year = &#34;1968&#34; } https://b-p-i.blogspot.com/2012/08/cite-iso-standard-bibtex.html recommends techreport:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-01 00:00:00 +0000 UTC'>December 1, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Bibliographies and citations - More info" href="http://localhost:1313/draft/2022-12-01-bibliographies2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>PDF converter in dotnet<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>There is once in a while the need to extract pure text from PDF files. This blog shows some attempts to do it with dot, and also with ruby.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-01 00:00:00 +0000 UTC'>December 1, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to PDF converter in dotnet" href="http://localhost:1313/draft/2022-12-01-pdf-converter/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>BibTeX for standards<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How to handle a standard?
+citation-guide recommends manual.
+@manual{standard_1968, title = &#34;Letter Symbols for Quantities&#34;, howpublished = &#34;ANSI Standard Y10.5&#34;, year = &#34;1968&#34; } This Blogspot recommends techreport:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-10-16 00:00:00 +0000 UTC'>October 16, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to BibTeX for standards" href="http://localhost:1313/draft/2022-10-16-citation-standard/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>JavaScript copy to clipboard<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Links:
+Good explanation: How-to-copy-to-clipboard
+Sample code:
+function copyRichTextToClipboard(content) { const blob = new Blob([content], { type: &#34;text/html&#34; }); const richTextInput = new ClipboardItem({ &#34;text/html&#34;: blob }); //navigator.clipboard.write([richTextInput]).then(() =&gt; { alert(&#34;Copied rich:&#34; &#43; content)}); navigator.clipboard.write([richTextInput]).then( () =&gt; { }, () =&gt; { console.log(&#34;failed to copy &#34; &#43; content); } ); } Sample usage:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-10-01 00:00:00 +0000 UTC'>October 1, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to JavaScript copy to clipboard" href="http://localhost:1313/draft/2022-10-01-CopyClipboard/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Json Serialization<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Best help: FSharp.System.TextJson
+#r &#34;nuget: FSharp.SystemTextJson&#34;;; open System.Text.Json open System.Text.Json.Serialization let options = JsonSerializerOptions() options.Converters.Add(JsonFSharpConverter()) let me = {| MiddleName = Some &#34;Max&#34;; Birtday = System.DateTime(1965, 11, 10) |} let you = {| MiddleName = Option&lt;string&gt;.None; Birtday = System.DateTime(1980, 1, 31) |} JsonSerializer.Serialize(me, options) // val it: string = &#34;{&#34;Birtday&#34;:&#34;1965-11-10T00:00:00&#34;,&#34;MiddleName&#34;:&#34;Max&#34;}&#34; JsonSerializer.Serialize(you, options) // val it: string = &#34;{&#34;Birtday&#34;:&#34;1980-01-31T00:00:00&#34;,&#34;MiddleName&#34;:null}&#34; Json serialization with Bolero tbd
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-10-01 00:00:00 +0000 UTC'>October 1, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Json Serialization" href="http://localhost:1313/draft/2022-10-01-JsonSerialization/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Using CSV Helper to write CSV files<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Usage of CsvHelper CsvHelper is a dotnet C# library for reading and wrinting CSV files.
+It is defined for C#, so there are some things you have to think about for F#.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-08-01 00:00:00 +0000 UTC'>August 1, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Using CSV Helper to write CSV files" href="http://localhost:1313/draft/2022-08-01-csvhelper/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Install phpmyadmin with brew ==&gt; Pouring phpmyadmin--5.2.1.sonoma.bottle.tar.gz ==&gt; Caveats To enable phpMyAdmin in Apache, add the following to httpd.conf and restart Apache: Alias /phpmyadmin /usr/local/share/phpmyadmin &lt;Directory /usr/local/share/phpmyadmin/&gt; Options Indexes FollowSymLinks MultiViews AllowOverride All &lt;IfModule mod_authz_core.c&gt; Require all granted &lt;/IfModule&gt; &lt;IfModule !mod_authz_core.c&gt; Order allow,deny Allow from all &lt;/IfModule&gt; &lt;/Directory&gt; Then open http://localhost/phpmyadmin The configuration file is /usr/local/etc/phpmyadmin.config.inc.php ==&gt; Summary 🍺 /usr/local/Cellar/phpmyadmin/5.2.1: 4,191 files, 48.1MB ==&gt; Running `brew cleanup phpmyadmin`... Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP. Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`). Where is httpd.conf?
+...</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/draft/2023-12-18-wordpress/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>EDI middleware Comparisons https://www.g2.com/categories/electronic-data-interchange-edi
+https://michaelachrisco.github.io/Electronic-Interchange-Github-Resources/
+https://datainterchange.com/edifacts-standards-explained/
+Antlr An Antlr implementation: https://github.com/aaronhuggins/js-edi/tree/main/grammars/fact
+// Special token for discovering the position of control characters for a given EDI document. ControlChar: Special { this.isCtlCharPos }? { this.handleControlChars(EdiFactLexer) } | CR LF { this.isCtlCharPos }? { this.handleControlChars(EdiFactLexer) } | CR { this.isCtlCharPos }? { this.handleControlChars(EdiFactLexer) } | LF { this.isCtlCharPos }? { this.handleControlChars(EdiFactLexer) } | AsciiControl { this.isCtlCharPos }? { this.handleControlChars(EdiFactLexer) }; // All valid printable characters. Char: Letter | Number | Special { !this.isCtlCharPos }? { this.handleControlChars(EdiFactLexer) }; // Reserved segment tags. SvcStringAdvice: &#39;UNA&#39; { this.handleUNA() }; InterchangeHeader: &#39;UNB&#39;; InterchangeTrailer: &#39;UNZ&#39;; GroupHeader: &#39;UNG&#39;; GroupTrailer: &#39;UNE&#39;; MessageHeader: &#39;UNH&#39;; MessageTrailer: &#39;UNT&#39;; TextSegment: &#39;TXT&#39;; SectionControl: &#39;UNS&#39;; Go Omniparser is a general purpose parser written in Go:
+...</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/draft/20240530-EDI/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/draft/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://localhost:1313/">Küse&#39;s Codes</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

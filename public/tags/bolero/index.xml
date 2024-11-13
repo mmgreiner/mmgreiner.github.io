@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Bolero on Küse&#39;s Codes</title>
-    <link>http://localhost:1313/tags/bolero/</link>
+    <link>http://localhost:1313/tags/Bolero/</link>
     <description>Recent content in Bolero on Küse&#39;s Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/bolero/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/Bolero/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bolero hosting Razor page</title>
       <link>http://localhost:1313/post/2023-04-11-bolero-razor/</link>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-04-11-bolero-razor/</guid>
-      <description>In this post we investigate how to use Razor pages on the host and Bolero WebAssembly on the client side. The final code can be found on My github - Tutorials - BoleroAppRazor.</description>
+      <description>&lt;p&gt;In this post we investigate how to use Razor pages on the host and &lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; WebAssembly on the client side. The final code can be found on &lt;a href=&#34;https://github.com/mmgreiner/Tutorials&#34;&gt;My github - Tutorials - BoleroAppRazor&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,8 +22,55 @@
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-02-10-github-fsharp/</guid>
-      <description>Some of my codes are documented on my Github with description in the readme files. Take a look there.
-Github Description BoleroApp A simple Bolero app with file upload and data repository using dependency injection StringAlgorithms Some string algorithms in F# to measure string similarity WebAPI A net7.</description>
+      <description>&lt;p&gt;Some of my codes are documented on my &lt;a href=&#34;https://github.com/mmgreiner&#34;&gt;Github&lt;/a&gt; with description in the readme files. Take a look there.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Github&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/BoleroApp&#34;&gt;BoleroApp&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;A simple &lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; app with file upload and data repository using dependency injection&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/StringAlgorithms&#34;&gt;StringAlgorithms&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Some string algorithms in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt; to measure string similarity&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/WebAPI&#34;&gt;WebAPI&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;A net7.0 based RestAPI in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/dependencyInjection&#34;&gt;DependencyInjection&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;simple attempts at dependency injection in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/Tutorials/tree/master/MinimalApiPost&#34;&gt;MinimalAPI&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Minimal API with a file upload example&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/Tutorials/tree/master/BoleroAppRazor&#34;&gt;BoleroAppRazor&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; App, but using Razor pages on the server&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    
+    <item>
+      <title>Authentication</title>
+      <link>http://localhost:1313/draft/2023-01-01-authentication/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-01-01-authentication/</guid>
+      <description>&lt;p&gt;Collect information about authentication.&lt;/p&gt;
+&lt;h3 id=&#34;aspnetsecurityoauthproviders&#34;&gt;AspNet.Security.OAuth.Providers&lt;/h3&gt;
+&lt;p&gt;Good samples of aspnet MVC with google, twitter, Apple-ID:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers&#34;&gt;https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;AspNet.Security.OAuth.Providers&lt;/strong&gt; is a &lt;strong&gt;collection of security middleware&lt;/strong&gt; that you can use in your &lt;strong&gt;ASP.NET Core&lt;/strong&gt;application to support social authentication providers like &lt;strong&gt;&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href=&#34;https://foursquare.com/&#34;&gt;Foursquare&lt;/a&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;a href=&#34;https://www.dropbox.com/&#34;&gt;Dropbox&lt;/a&gt;&lt;/strong&gt;. It is directly inspired by &lt;strong&gt;&lt;a href=&#34;https://github.com/jerriep&#34;&gt;Jerrie Pelser&lt;/a&gt;&lt;/strong&gt;&amp;rsquo;s initiative, &lt;strong&gt;&lt;a href=&#34;https://github.com/RockstarLabs/OwinOAuthProviders&#34;&gt;Owin.Security.Providers&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,7 +79,8 @@ Github Description BoleroApp A simple Bolero app with file upload and data repos
       <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-10-20-input-file/</guid>
-      <description>Bolero is a set of free and open-source libraries and tools to write web applications in F#. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; is a set of free and open-source libraries and tools to write web applications in &lt;a href=&#34;https://fsharp.org/&#34;&gt;F#&lt;/a&gt;. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,8 +89,9 @@ Github Description BoleroApp A simple Bolero app with file upload and data repos
       <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-08-21-Bolero/</guid>
-      <description>This blog contains some experiences working with Bolero.
-Bolero is a set of free and open-source libraries and tools to write web applications in F#.</description>
+      <description>&lt;p&gt;This blog contains some experiences working with &lt;a href=&#34;https://fsbolero.io/docs/&#34;&gt;Bolero&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bolero is a set of free and open-source libraries and tools to write web applications in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.&lt;/p&gt;</description>
     </item>
     
   </channel>

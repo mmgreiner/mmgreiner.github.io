@@ -13,8 +13,9 @@
       <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-04-03-jekyll-tips/</guid>
-      <description>This post covers some more Jekyll tips and tricks like searching a web page.
-Searching a Jekyll page Web pages based on databases such as WordPress search the data in the underlying database.</description>
+      <description>&lt;p&gt;This post covers some more Jekyll tips and tricks like searching a web page.&lt;/p&gt;
+&lt;h2 id=&#34;searching-a-jekyll-page&#34;&gt;Searching a Jekyll page&lt;/h2&gt;
+&lt;p&gt;Web pages based on databases such as &lt;a href=&#34;https://wordpress.com&#34;&gt;WordPress&lt;/a&gt; search the data in the underlying database. Static web sites based on &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; however don&amp;rsquo;t have this database but only files.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -13,8 +13,9 @@
       <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-08-21-Bolero/</guid>
-      <description>This blog contains some experiences working with Bolero.
-Bolero is a set of free and open-source libraries and tools to write web applications in F#.</description>
+      <description>&lt;p&gt;This blog contains some experiences working with &lt;a href=&#34;https://fsbolero.io/docs/&#34;&gt;Bolero&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bolero is a set of free and open-source libraries and tools to write web applications in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -13,8 +13,42 @@
       <pubDate>Sat, 27 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2024-07-27-purecss-menu/</guid>
-      <description>I have been using Pure.css in most of my applications since it is really simple to use.
-This is a small code sample that uses Pure.</description>
+      <description>&lt;p&gt;I have been using &lt;a href=&#34;https://purecss.io/&#34;&gt;Pure.css&lt;/a&gt; in most of my applications since it is really simple to use.&lt;/p&gt;
+&lt;p&gt;This is a small code sample that uses &lt;a href=&#34;https://purecss.io/&#34;&gt;Pure.css&lt;/a&gt; with a responsive, vertical menu with hamburger and a submenu.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Working with Github</title>
+      <link>http://localhost:1313/draft/20240523-github/</link>
+      <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/20240523-github/</guid>
+      <description>&lt;p&gt;How to get a list of all the issues into a csv, see &lt;a href=&#34;https://stackoverflow.com/questions/41369365/how-can-i-export-github-issues-to-excel&#34;&gt;stackoverflow&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;gh issue list --state all | tr &#39;\t&#39; &#39;,&#39; &amp;gt; bugreports/issues-24-05-23.csv
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>PDF utilities</title>
+      <link>http://localhost:1313/draft/20240522-pdf/</link>
+      <pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/20240522-pdf/</guid>
+      <description>&lt;h2 id=&#34;pdf-to-text-conversion&#34;&gt;PDF to text conversion&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;https://superuser.com/questions/286961/pdf-to-text-convertor&#34;&gt;https://superuser.com/questions/286961/pdf-to-text-convertor&lt;/a&gt;. It is part of &lt;a href=&#34;http://foolabs.com/xpdf/download.html&#34;&gt;xpdf&lt;/a&gt;, and can be installed using:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;brew install xpdf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Another option according to above is &lt;a href=&#34;http://foolabs.com/xpdf/download.html&#34;&gt;poppler&lt;/a&gt;:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Compiler with antlr and llvm</title>
+      <link>http://localhost:1313/draft/compiler-antlr/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/compiler-antlr/</guid>
+      <description>&lt;p&gt;Good small example: &lt;a href=&#34;https://theantlrguy.atlassian.net/wiki/spaces/ANTLR3/pages/2687062/LLVM&#34;&gt;https://theantlrguy.atlassian.net/wiki/spaces/ANTLR3/pages/2687062/LLVM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.gopheracademy.com/advent-2017/parsing-with-antlr4-and-go/&#34;&gt;https://blog.gopheracademy.com/advent-2017/parsing-with-antlr4-and-go/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,8 +57,19 @@ This is a small code sample that uses Pure.</description>
       <pubDate>Sat, 03 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2024-02-03-purecss/</guid>
-      <description>Pure.css is a css framework that does not include JavaScript like other frameworks such as Vue, bootstrap, &amp;hellip;
-In contrast to those frameworks:</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://purecss.io&#34;&gt;Pure.css&lt;/a&gt; is a css framework that does not include JavaScript like other frameworks such as Vue, bootstrap, &amp;hellip;&lt;/p&gt;
+&lt;p&gt;In contrast to those frameworks:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MacOS Tips and trick</title>
+      <link>http://localhost:1313/draft/mac-tricks/</link>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/mac-tricks/</guid>
+      <description>&lt;h2 id=&#34;creating-a-background-daemon&#34;&gt;Creating a background daemon&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;https://www.maketecheasier.com/use-launchd-run-scripts-on-schedule-macos/&#34;&gt;https://www.maketecheasier.com/use-launchd-run-scripts-on-schedule-macos/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See also &lt;a href=&#34;https://launchd.info&#34;&gt;https://launchd.info&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -33,8 +78,9 @@ In contrast to those frameworks:</description>
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2024-01-28-ruby-rails-hints/</guid>
-      <description>This gives some tips and trick for Ruby on Rails.
-Quickref I found an excellent quick reference guide to Ruby on zenspider.</description>
+      <description>&lt;p&gt;This gives some tips and trick for Ruby on Rails.&lt;/p&gt;
+&lt;h1 id=&#34;quickref&#34;&gt;Quickref&lt;/h1&gt;
+&lt;p&gt;I found an excellent quick reference guide to Ruby on &lt;a href=&#34;https://www.zenspider.com/ruby/quickref.html#types&#34;&gt;zenspider&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -52,8 +98,9 @@ Quickref I found an excellent quick reference guide to Ruby on zenspider.</descr
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-11-27-hugo-tricks/</guid>
-      <description>This page describes my experiences with the static web site publishing tool Hugo.
-Open link in new tab There is a discussion which describes How to open links in a new tab.</description>
+      <description>&lt;p&gt;This page describes my experiences with the static web site publishing tool &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;open-link-in-new-tab&#34;&gt;Open link in new tab&lt;/h2&gt;
+&lt;p&gt;There is a discussion which describes &lt;a href=&#34;https://discourse.gohugo.io/t/how-to-open-plain-url-links-in-a-new-tab/25523/3&#34;&gt;How to open links in a new tab&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -62,7 +109,26 @@ Open link in new tab There is a discussion which describes How to open links in 
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-10-01-local-server/</guid>
-      <description>Running build-in tomcat server It is possible to deploy Jekyll sites locally, because OSX has a build-in Apache tomcat server. The local sites reside under ~/Sites.</description>
+      <description>&lt;h2 id=&#34;running-build-in-tomcat-server&#34;&gt;Running build-in tomcat server&lt;/h2&gt;
+&lt;p&gt;It is possible to deploy &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; sites locally, because OSX has a build-in &lt;a href=&#34;https://tomcat.apache.org&#34;&gt;Apache tomcat server&lt;/a&gt;. The local sites reside under &lt;code&gt;~/Sites&lt;/code&gt;. However, the setup of this server often changes with new versions of OSX.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Static web app with authentication</title>
+      <link>http://localhost:1313/draft/2023-09-24-azure-hugo/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-09-24-azure-hugo/</guid>
+      <description>&lt;p&gt;We will try to create a &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; static web app that for some sub-pages uses authentication and authorization on azure to restrict access. The example builds on &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/static-web-apps/publish-hugo&#34;&gt;publish hugo&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dependency Injection in dotnet</title>
+      <link>http://localhost:1313/draft/2023-08-10-dependency-injection/</link>
+      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-08-10-dependency-injection/</guid>
+      <description>&lt;p&gt;Dependency injection&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -71,7 +137,8 @@ Open link in new tab There is a discussion which describes How to open links in 
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-08-05-mermaid/</guid>
-      <description>Mermaid is a JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://mermaid-js.github.io/mermaid/#/&#34;&gt;Mermaid&lt;/a&gt; is a JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -80,7 +147,17 @@ Open link in new tab There is a discussion which describes How to open links in 
       <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-07-30-go-modules/</guid>
-      <description>I had to practice a long time to understand the go concepts of modules, packages, and how to publish them to github.</description>
+      <description>&lt;p&gt;I had to practice a long time to understand the &lt;a href=&#34;https://go.dev&#34;&gt;go&lt;/a&gt; concepts of modules, packages, and how to publish them to &lt;a href=&#34;https://github.com&#34;&gt;github&lt;/a&gt;. Here are my learnings.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HAL-S Compiler</title>
+      <link>http://localhost:1313/draft/2023-07-01-hal-s-compiler/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-07-01-hal-s-compiler/</guid>
+      <description>&lt;p&gt;The idea is to write a compiler for the HAL-S language.&lt;/p&gt;
+&lt;p&gt;This was the programming language used for the Voyager.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -89,7 +166,7 @@ Open link in new tab There is a discussion which describes How to open links in 
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-04-11-bolero-razor/</guid>
-      <description>In this post we investigate how to use Razor pages on the host and Bolero WebAssembly on the client side. The final code can be found on My github - Tutorials - BoleroAppRazor.</description>
+      <description>&lt;p&gt;In this post we investigate how to use Razor pages on the host and &lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; WebAssembly on the client side. The final code can be found on &lt;a href=&#34;https://github.com/mmgreiner/Tutorials&#34;&gt;My github - Tutorials - BoleroAppRazor&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -98,8 +175,43 @@ Open link in new tab There is a discussion which describes How to open links in 
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-04-01-production-optimization/</guid>
-      <description>Optimization General production structure capacited multi-level lot-sizing model PochetWolsey, page 45
-$1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared resources with limited capacity $1 \le t \le n$: time periods until final period n $p_t$: unit production cost $q_t$: fixed production cost $h_t$: unit inventory cost $d_t^i$: demand for item i to be satisified at period t $M_t$: large positive number, expressing an upper bound on the maximum lot size iin period t $L_t^k$: available capacity of resource k during period t $\alpha^{i k}, \beta^{i k}$: amount of capacity of resource k consumed $1 \le j \le m$: items $D(i)$ set of direct successors of part i in the BOM, i.</description>
+      <description>&lt;h2 id=&#34;optimization&#34;&gt;Optimization&lt;/h2&gt;
+&lt;p&gt;General production structure capacited multi-level lot-sizing model &lt;a href=&#34;https://dl.acm.org/doi/book/10.5555/1202598&#34;&gt;PochetWolsey&lt;/a&gt;, page 45&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$1 \le i \le m$: set of items to be produced&lt;/li&gt;
+&lt;li&gt;$1 \le k \le K$: set of shared resources with limited capacity&lt;/li&gt;
+&lt;li&gt;$1 \le t \le n$: time periods until final period &lt;em&gt;n&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$p_t$: unit production cost&lt;/li&gt;
+&lt;li&gt;$q_t$: fixed production cost&lt;/li&gt;
+&lt;li&gt;$h_t$: unit inventory cost&lt;/li&gt;
+&lt;li&gt;$d_t^i$: demand for item &lt;em&gt;i&lt;/em&gt; to be satisified at period &lt;em&gt;t&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$M_t$: large positive number, expressing an upper bound on the maximum lot size iin period &lt;em&gt;t&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$L_t^k$: available capacity of resource k during period &lt;em&gt;t&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$\alpha^{i k}, \beta^{i k}$: amount of capacity of resource &lt;em&gt;k&lt;/em&gt; consumed&lt;/li&gt;
+&lt;li&gt;$1 \le j \le m$: items&lt;/li&gt;
+&lt;li&gt;$D(i)$ set of direct successors of part &lt;em&gt;i&lt;/em&gt; in the BOM, i.e. the items consuming some amount of item &lt;em&gt;i&lt;/em&gt; when they are produced&lt;/li&gt;
+&lt;li&gt;$r^{i j}$: the amount of item &lt;em&gt;i&lt;/em&gt; required to make one unit of item &lt;em&gt;j&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;r&lt;/em&gt; is the dependent demand, and $d_t^i$ is the independent demand&lt;/li&gt;
+&lt;li&gt;$\gamma^i$: lead-time to produce or deliver an lot of &lt;em&gt;i&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$x_t^i$: the size of product or purchase order of item &lt;em&gt;i&lt;/em&gt; launched in period &lt;em&gt;t&lt;/em&gt;, and delivered in period $t + \gamma^i$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Decision variables&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;$x_t$: production lot size in period &lt;em&gt;t&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$y_t$: binary variable indicating wether there is a positive production in period &lt;em&gt;t&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$s_t$:inventory at the end of period &lt;em&gt;t&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;objective-function&#34;&gt;Objective Function&lt;/h3&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\text{min} \sum_i \sum_t (p_t^i x_t^i + q_t^i y_t^i + h_t^i s_t^i) \cr
+\text{subject to} \cr
+s_{t-1}^i + x_{t-\gamma^i}^i &amp;amp; = [d_t^i + \sum_{j \in D(i)} r^{i j} x_t^j] + s_t^i \cr
+x_t^i &amp;amp; \le  M_t^i y_t^i \cr
+\sum_i \alpha^{i k} x_t^i + \sum_t \beta^{i k} y_t^i &amp;amp; \le L_t^k \cr
+\end{aligned}
+$$&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -108,7 +220,7 @@ $1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared reso
       <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-03-26-mixed-integer-linear-optimization/</guid>
-      <description>This blog contains formulas which can be used to optimize the supply chain with multiple suppliers, and a general production planning formula, taken from the book POCHET, Yves und WOLSEY, Laurence A.</description>
+      <description>&lt;p&gt;This blog contains formulas which can be used to optimize the supply chain with multiple suppliers, and a general production planning formula, taken from the book &lt;a href=&#34;https://dl.acm.org/doi/book/10.5555/1202598&#34;&gt;POCHET, Yves und WOLSEY, Laurence A.: &lt;em&gt;Production planning by mixed integer programming&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -117,8 +229,9 @@ $1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared reso
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-03-18-miscellaneous/</guid>
-      <description>This is a list of reminders and open questions I still wanted to look at in more detail.
-CSV conversion Next to FSharp.</description>
+      <description>&lt;p&gt;This is a list of reminders and open questions I still wanted to look at in more detail.&lt;/p&gt;
+&lt;h2 id=&#34;csv-conversion&#34;&gt;CSV conversion&lt;/h2&gt;
+&lt;p&gt;Next to &lt;a href=&#34;https://fsprojects.github.io/FSharp.Data/&#34;&gt;FSharp.Data&lt;/a&gt; there is &lt;a href=&#34;https://joshclose.github.io/CsvHelper/&#34;&gt;CSVHelper&lt;/a&gt;. However, it does not support FSharp types intrinsically. A &lt;a href=&#34;https://stackoverflow.com/questions/66401283/how-do-you-use-csvhelper-csvwriter-with-f-option-types&#34;&gt;stackoverflow&lt;/a&gt; article describes the details.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -127,9 +240,20 @@ CSV conversion Next to FSharp.</description>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-03-15-RESTApi/</guid>
-      <description>This contains some thoughts how to implement RESTful APIs.
-Background tbd
-Best practices A search for RESTful API best practices reveals many sites:</description>
+      <description>&lt;p&gt;This contains some thoughts how to implement RESTful APIs.&lt;/p&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;tbd&lt;/p&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best practices&lt;/h2&gt;
+&lt;p&gt;A search for RESTful API best practices reveals many sites:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Potenzen und Logarithmen</title>
+      <link>http://localhost:1313/draft/2023-02-15-math-exponentials/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-02-15-math-exponentials/</guid>
+      <description>&lt;p&gt;This is a paper (written in German) which was written by Lea Schmidt, student at &lt;a href=&#34;https://altekanti.ch&#34;&gt;Alte Kantonsschule Aarau&lt;/a&gt; to have a quick overview of exponential and logarithmic functions.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -138,8 +262,99 @@ Best practices A search for RESTful API best practices reveals many sites:</desc
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-02-10-github-fsharp/</guid>
-      <description>Some of my codes are documented on my Github with description in the readme files. Take a look there.
-Github Description BoleroApp A simple Bolero app with file upload and data repository using dependency injection StringAlgorithms Some string algorithms in F# to measure string similarity WebAPI A net7.</description>
+      <description>&lt;p&gt;Some of my codes are documented on my &lt;a href=&#34;https://github.com/mmgreiner&#34;&gt;Github&lt;/a&gt; with description in the readme files. Take a look there.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Github&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/BoleroApp&#34;&gt;BoleroApp&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;A simple &lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; app with file upload and data repository using dependency injection&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/StringAlgorithms&#34;&gt;StringAlgorithms&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Some string algorithms in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt; to measure string similarity&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/WebAPI&#34;&gt;WebAPI&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;A net7.0 based RestAPI in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/dependencyInjection&#34;&gt;DependencyInjection&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;simple attempts at dependency injection in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/Tutorials/tree/master/MinimalApiPost&#34;&gt;MinimalAPI&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Minimal API with a file upload example&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/Tutorials/tree/master/BoleroAppRazor&#34;&gt;BoleroAppRazor&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; App, but using Razor pages on the server&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bulma hints</title>
+      <link>http://localhost:1313/draft/2023-02-01-bulma/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-02-01-bulma/</guid>
+      <description>&lt;p&gt;Give the simplest possible bulma html with two columns and a decent margin.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://bulma.io&#34;&gt;Bulma&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;viewport&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;Hello Bulma!&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;link&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rel&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;section&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;section&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        Hello World
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        My first website with &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;Bulma&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;!
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;section&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Questions:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Command line parsing</title>
+      <link>http://localhost:1313/draft/2023-02-01-command-line-parsing/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-02-01-command-line-parsing/</guid>
+      <description>&lt;h2 id=&#34;commandlineparser&#34;&gt;CommandLineParser&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/commandlineparser/commandline&#34;&gt;https://github.com/commandlineparser/commandline&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nuget.org/packages/CommandLineParser.FSharp/&#34;&gt;https://www.nuget.org/packages/CommandLineParser.FSharp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/commandlineparser/commandline/wiki&#34;&gt;https://github.com/commandlineparser/commandline/wiki&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fsharp&#34; data-lang=&#34;fsharp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;options&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;[&amp;lt;&lt;/span&gt;Option&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;r&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;read&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; Required &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; HelpText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Input files.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&amp;gt;]&lt;/span&gt; files &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; seq&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;[&amp;lt;&lt;/span&gt;Option&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;HelpText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Prints all messages to standard output.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&amp;gt;]&lt;/span&gt; verbose &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;bool&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;[&amp;lt;&lt;/span&gt;Option&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Default &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;русский&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; HelpText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Content language.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&amp;gt;]&lt;/span&gt; language &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;[&amp;lt;&lt;/span&gt;Value&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; MetaName&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;offset&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; HelpText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;File offset.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&amp;gt;]&lt;/span&gt; offset &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int64&lt;/span&gt; option&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; main argv &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; CommandLine.Parser.Default.ParseArguments&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;(&lt;/span&gt;argv&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;match&lt;/span&gt; result &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:?&lt;/span&gt; Parsed&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; parsed &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; run parsed&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Value
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:?&lt;/span&gt; NotParsed&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; notParsed &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; fail notParsed&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Errors
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;argu&#34;&gt;Argu&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://fsprojects.github.io/Argu/&#34;&gt;https://fsprojects.github.io/Argu/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -148,7 +363,7 @@ Github Description BoleroApp A simple Bolero app with file upload and data repos
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-02-01-golang/</guid>
-      <description>In 2023, I became interested in the programming language Go. It is a C derivates without all the nil pointer exceptions, and has a very solid infrastructure and libraries to compile across different operating systems.</description>
+      <description>&lt;p&gt;In 2023, I became interested in the programming language &lt;a href=&#34;https://go.dev&#34;&gt;Go&lt;/a&gt;. It is a C derivates without all the nil pointer exceptions, and has a very solid infrastructure and libraries to compile across different operating systems.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -157,7 +372,23 @@ Github Description BoleroApp A simple Bolero app with file upload and data repos
       <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-01-13-swig-c-interfacer/</guid>
-      <description>SWIG SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.</description>
+      <description>&lt;h2 id=&#34;swig&#34;&gt;SWIG&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://swig.org/index.html&#34;&gt;SWIG&lt;/a&gt; is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages. SWIG is used with different types of target languages including common scripting languages such as Javascript, Perl, PHP, Python, Tcl and Ruby.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Authentication</title>
+      <link>http://localhost:1313/draft/2023-01-01-authentication/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-01-01-authentication/</guid>
+      <description>&lt;p&gt;Collect information about authentication.&lt;/p&gt;
+&lt;h3 id=&#34;aspnetsecurityoauthproviders&#34;&gt;AspNet.Security.OAuth.Providers&lt;/h3&gt;
+&lt;p&gt;Good samples of aspnet MVC with google, twitter, Apple-ID:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers&#34;&gt;https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;AspNet.Security.OAuth.Providers&lt;/strong&gt; is a &lt;strong&gt;collection of security middleware&lt;/strong&gt; that you can use in your &lt;strong&gt;ASP.NET Core&lt;/strong&gt;application to support social authentication providers like &lt;strong&gt;&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href=&#34;https://foursquare.com/&#34;&gt;Foursquare&lt;/a&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;a href=&#34;https://www.dropbox.com/&#34;&gt;Dropbox&lt;/a&gt;&lt;/strong&gt;. It is directly inspired by &lt;strong&gt;&lt;a href=&#34;https://github.com/jerriep&#34;&gt;Jerrie Pelser&lt;/a&gt;&lt;/strong&gt;&amp;rsquo;s initiative, &lt;strong&gt;&lt;a href=&#34;https://github.com/RockstarLabs/OwinOAuthProviders&#34;&gt;Owin.Security.Providers&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -166,8 +397,35 @@ Github Description BoleroApp A simple Bolero app with file upload and data repos
       <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-12-31-operation-research/</guid>
-      <description>Operation Research is defined in Wikipedia as
-Operations research (British English: operational research) &amp;hellip; , often shortened to the initialism OR, is a discipline that deals with the development and application of analytical methods to improve decision-making.</description>
+      <description>&lt;p&gt;Operation Research is defined in &lt;a href=&#34;https://en.wikipedia.org/wiki/Operations_research&#34;&gt;Wikipedia&lt;/a&gt; as&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Operations research (British English: operational research) &amp;hellip; , often shortened to the initialism OR, is a discipline that deals with the development and application of analytical methods to improve decision-making. It is considered to be a subfield of mathematical sciences.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bibliographies and citations - More info</title>
+      <link>http://localhost:1313/draft/2022-12-01-bibliographies2/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2022-12-01-bibliographies2/</guid>
+      <description>&lt;p&gt;How to handle a standard?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://libguides.nps.edu/citation/ieee-bibtex&#34;&gt;citation-guide&lt;/a&gt; recommends &lt;code&gt;manual&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@manual{standard_1968,
+title         = &amp;quot;Letter Symbols for Quantities&amp;quot;,
+howpublished  = &amp;quot;ANSI Standard Y10.5&amp;quot;,
+year          = &amp;quot;1968&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://b-p-i.blogspot.com/2012/08/cite-iso-standard-bibtex.html&#34;&gt;https://b-p-i.blogspot.com/2012/08/cite-iso-standard-bibtex.html&lt;/a&gt; recommends &lt;code&gt;techreport&lt;/code&gt;:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PDF converter in dotnet</title>
+      <link>http://localhost:1313/draft/2022-12-01-pdf-converter/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2022-12-01-pdf-converter/</guid>
+      <description>&lt;p&gt;There is once in a while the need to extract pure text from PDF files. This blog shows some attempts to do it with dot, and also with &lt;a href=&#34;https://www.ruby-lang.org/en/&#34;&gt;ruby&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -176,7 +434,25 @@ Operations research (British English: operational research) &amp;hellip; , often
       <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-10-20-input-file/</guid>
-      <description>Bolero is a set of free and open-source libraries and tools to write web applications in F#. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; is a set of free and open-source libraries and tools to write web applications in &lt;a href=&#34;https://fsharp.org/&#34;&gt;F#&lt;/a&gt;. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>BibTeX for standards</title>
+      <link>http://localhost:1313/draft/2022-10-16-citation-standard/</link>
+      <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2022-10-16-citation-standard/</guid>
+      <description>&lt;p&gt;How to handle a standard?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://libguides.nps.edu/citation/ieee-bibtex&#34;&gt;citation-guide&lt;/a&gt; recommends &lt;code&gt;manual&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@manual{standard_1968,
+title         = &amp;quot;Letter Symbols for Quantities&amp;quot;,
+howpublished  = &amp;quot;ANSI Standard Y10.5&amp;quot;,
+year          = &amp;quot;1968&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This &lt;a href=&#34;https://b-p-i.blogspot.com/2012/08/cite-iso-standard-bibtex.html&#34;&gt;Blogspot&lt;/a&gt; recommends &lt;code&gt;techreport&lt;/code&gt;:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -185,8 +461,11 @@ Operations research (British English: operational research) &amp;hellip; , often
       <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-10-16-nuget-local/</guid>
-      <description>Had some problems creating a local nuget repository. This is how I succeeded:
-Create a local nuget repository / source $ cli nuget add source ~/.</description>
+      <description>&lt;p&gt;Had some problems creating a local nuget repository. This is how I succeeded:&lt;/p&gt;
+&lt;h2 id=&#34;create-a-local-nuget-repository--source&#34;&gt;Create a local nuget repository / source&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ cli nuget add source ~/.mynuget
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This leads to these changes in the configuration file:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -195,7 +474,52 @@ Create a local nuget repository / source $ cli nuget add source ~/.</description
       <pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-10-13-bibliography/</guid>
-      <description>Helping out a friend to get a Matura thesis completed, I stumbled onto the topics of citations and bibliographies. In the end, I wanted to get a handle on bibliographies using dotnet code.</description>
+      <description>&lt;p&gt;Helping out a friend to get a Matura thesis completed, I stumbled onto the topics of citations and bibliographies. In the end, I wanted to get a handle on bibliographies using dotnet code.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JavaScript copy to clipboard</title>
+      <link>http://localhost:1313/draft/2022-10-01-CopyClipboard/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2022-10-01-CopyClipboard/</guid>
+      <description>&lt;p&gt;Links:&lt;/p&gt;
+&lt;p&gt;Good explanation: &lt;a href=&#34;https://stackabuse.com/how-to-copy-to-clipboard-in-javascript-with-the-clipboard-api/&#34;&gt;How-to-copy-to-clipboard&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sample code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;copyRichTextToClipboard&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;blob&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Blob&lt;/span&gt;([&lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;], { &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/html&amp;#34;&lt;/span&gt; });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;richTextInput&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ClipboardItem&lt;/span&gt;({ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/html&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;blob&lt;/span&gt; });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//navigator.clipboard.write([richTextInput]).then(() =&amp;gt; { alert(&amp;#34;Copied rich:&amp;#34; + content)});
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;navigator&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;clipboard&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;write&lt;/span&gt;([&lt;span style=&#34;color:#a6e22e&#34;&gt;richTextInput&lt;/span&gt;]).&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        () =&amp;gt; { }, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        () =&amp;gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;failed to copy &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;); }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    );
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Sample usage:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Json Serialization</title>
+      <link>http://localhost:1313/draft/2022-10-01-JsonSerialization/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2022-10-01-JsonSerialization/</guid>
+      <description>&lt;p&gt;Best help: &lt;a href=&#34;https://github.com/Tarmil/FSharp.SystemTextJson&#34;&gt;FSharp.System.TextJson&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fsharp&#34; data-lang=&#34;fsharp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#r&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nuget: FSharp.SystemTextJson&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;open&lt;/span&gt; System.Text.Json
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;open&lt;/span&gt; System.Text.Json.Serialization
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; options &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; JsonSerializerOptions()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Converters&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Add&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;JsonFSharpConverter()&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; me &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{|&lt;/span&gt; MiddleName &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Some &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Max&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; Birtday &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; System.DateTime&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;1965&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 11&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 10&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; you &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{|&lt;/span&gt; MiddleName &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Option&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;.&lt;/span&gt;None&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; Birtday &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; System.DateTime&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;1980&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 31&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;JsonSerializer.Serialize&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;me&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; options&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// val it: string = &amp;#34;{&amp;#34;Birtday&amp;#34;:&amp;#34;1965-11-10T00:00:00&amp;#34;,&amp;#34;MiddleName&amp;#34;:&amp;#34;Max&amp;#34;}&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;JsonSerializer.Serialize&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;you&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; options&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// val it: string = &amp;#34;{&amp;#34;Birtday&amp;#34;:&amp;#34;1980-01-31T00:00:00&amp;#34;,&amp;#34;MiddleName&amp;#34;:null}&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;json-serialization-with-bolero&#34;&gt;Json serialization with Bolero&lt;/h2&gt;
+&lt;p&gt;tbd&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -204,7 +528,7 @@ Create a local nuget repository / source $ cli nuget add source ~/.</description
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-08-29-static-templating/</guid>
-      <description>Templating is an proofen method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time.</description>
+      <description>&lt;p&gt;Templating is an proofen method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time. Well-known templating languages are &lt;a href=&#34;https://shopify.github.io/liquid/&#34;&gt;Liquid&lt;/a&gt;, which is written in ruby and used by &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt;, and &lt;a href=&#34;https://handlebarsjs.com&#34;&gt;Handlebars&lt;/a&gt;, which calls itself &lt;em&gt;minimal templating on steroids&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -213,8 +537,20 @@ Create a local nuget repository / source $ cli nuget add source ~/.</description
       <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-08-21-Bolero/</guid>
-      <description>This blog contains some experiences working with Bolero.
-Bolero is a set of free and open-source libraries and tools to write web applications in F#.</description>
+      <description>&lt;p&gt;This blog contains some experiences working with &lt;a href=&#34;https://fsbolero.io/docs/&#34;&gt;Bolero&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bolero is a set of free and open-source libraries and tools to write web applications in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using CSV Helper to write CSV files</title>
+      <link>http://localhost:1313/draft/2022-08-01-csvhelper/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2022-08-01-csvhelper/</guid>
+      <description>&lt;h2 id=&#34;usage-of-csvhelper&#34;&gt;Usage of CsvHelper&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://joshclose.github.io/CsvHelper/&#34;&gt;CsvHelper&lt;/a&gt; is a dotnet C# library for reading and wrinting CSV files.&lt;/p&gt;
+&lt;p&gt;It is defined for C#, so there are some things you have to think about for &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -223,8 +559,8 @@ Bolero is a set of free and open-source libraries and tools to write web applica
       <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-04-08-machine-learning/</guid>
-      <description>Machine learning with ML.NET is documented in a confusing way, in particular when it comes to F#.
-Some resources I found are:</description>
+      <description>&lt;p&gt;Machine learning with &lt;a href=&#34;https://dotnet.microsoft.com/en-us/learn/ml-dotnet&#34;&gt;ML.NET&lt;/a&gt; is documented in a confusing way, in particular when it comes to F#.&lt;/p&gt;
+&lt;p&gt;Some resources I found are:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -233,8 +569,9 @@ Some resources I found are:</description>
       <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-04-03-jekyll-tips/</guid>
-      <description>This post covers some more Jekyll tips and tricks like searching a web page.
-Searching a Jekyll page Web pages based on databases such as WordPress search the data in the underlying database.</description>
+      <description>&lt;p&gt;This post covers some more Jekyll tips and tricks like searching a web page.&lt;/p&gt;
+&lt;h2 id=&#34;searching-a-jekyll-page&#34;&gt;Searching a Jekyll page&lt;/h2&gt;
+&lt;p&gt;Web pages based on databases such as &lt;a href=&#34;https://wordpress.com&#34;&gt;WordPress&lt;/a&gt; search the data in the underlying database. Static web sites based on &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; however don&amp;rsquo;t have this database but only files.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -243,7 +580,8 @@ Searching a Jekyll page Web pages based on databases such as WordPress search th
       <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-04-02-math-static-sites/</guid>
-      <description>Mathematical formulas While working on post Mathe Uffzig, I stumbled upon the problem of displaying mathematical formulas in the Jekyll markdown templating engine Liquid.</description>
+      <description>&lt;h2 id=&#34;mathematical-formulas&#34;&gt;Mathematical formulas&lt;/h2&gt;
+&lt;p&gt;While working on post &lt;a href=&#34;http://localhost:1313/post/2022-04-02-mathe-uffzgi/&#34;&gt;Mathe Uffzig&lt;/a&gt;, I stumbled upon the problem of displaying mathematical formulas in the &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; markdown templating engine &lt;a href=&#34;liquid&#34;&gt;Liquid&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -252,7 +590,7 @@ Searching a Jekyll page Web pages based on databases such as WordPress search th
       <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-04-02-mathe-uffzgi/</guid>
-      <description>Once in a while, I&amp;rsquo;m supporting Lea with her math homework (Swiss: Uffzgi). Here are some tools that help me (remember, that I prefer F# to other languages.</description>
+      <description>&lt;p&gt;Once in a while, I&amp;rsquo;m supporting Lea with her math homework (Swiss: &lt;em&gt;Uffzgi&lt;/em&gt;). Here are some tools that help me (remember, that I prefer &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt; to other languages. Whenever possible, I use interactive Notebooks and make them available on &lt;a href=&#34;https://github.com/mmgreiner/Notebook&#34;&gt;github Notebooks&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -261,8 +599,11 @@ Searching a Jekyll page Web pages based on databases such as WordPress search th
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-17-Simple-Inputs/</guid>
-      <description>This post shows various ways to handle input using WebSharper.
-Client side There are two basic approaches: using HTML templates or using Websharper&amp;rsquo;s HTML.</description>
+      <description>&lt;p&gt;This post shows various ways to handle input using &lt;a href=&#34;
+https://developers.websharper.com/docs/v4.x/fs/
+&#34;&gt;WebSharper&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;client-side&#34;&gt;Client side&lt;/h2&gt;
+&lt;p&gt;There are two basic approaches: using HTML templates or using Websharper&amp;rsquo;s HTML.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -271,9 +612,13 @@ Client side There are two basic approaches: using HTML templates or using Websha
       <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-14-Websharper-osx/</guid>
-      <description>Installing WebSharper I&amp;rsquo;m developing web applications using WebSharper on macOS Monterey.
-To install the the templates, use:
-% dotnet new -i WebSharper.</description>
+      <description>&lt;h2 id=&#34;installing-websharper&#34;&gt;Installing WebSharper&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m developing web applications using &lt;a href=&#34;
+https://developers.websharper.com/docs/v4.x/fs/
+&#34;&gt;WebSharper&lt;/a&gt; on macOS Monterey.&lt;/p&gt;
+&lt;p&gt;To install the the templates, use:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% dotnet new -i WebSharper.Templates
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The following templates are installed:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -282,8 +627,15 @@ To install the the templates, use:
       <pubDate>Sun, 13 Mar 2022 13:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-13-websharper-templates/</guid>
-      <description>WebSharper allows several ways to instatiate HTML, and It took me some thinking to get these terms right:
-ws-replace ws-hole ws-template ws-template-children Replace Replace the given node with the provided string or list of docs.</description>
+      <description>&lt;p&gt;WebSharper allows several ways to instatiate HTML, and It took me some thinking to get these terms right:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ws-replace&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ws-hole&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ws-template&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ws-template-children&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;replace&#34;&gt;Replace&lt;/h2&gt;
+&lt;p&gt;Replace the given node with the provided string or list of docs.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -292,7 +644,8 @@ ws-replace ws-hole ws-template ws-template-children Replace Replace the given no
       <pubDate>Sun, 13 Mar 2022 10:41:39 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-13-websharper-shopping-cart/</guid>
-      <description>Websharper Shopping cart I found an interesting article from 2020 by Adam Granizc on the implementation of a WebSharper shopping cart in WebSharper Shopping Cart</description>
+      <description>&lt;h2 id=&#34;websharper-shopping-cart&#34;&gt;Websharper Shopping cart&lt;/h2&gt;
+&lt;p&gt;I found an interesting article from 2020 by Adam Granizc on the implementation of a WebSharper shopping cart in &lt;a href=&#34;https://github.com/intellifactory/blogs/blob/master/user/granicz/20201231-variations-for-a-websharper-shopping-cart.md&#34;&gt;WebSharper Shopping Cart&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -301,7 +654,7 @@ ws-replace ws-hole ws-template ws-template-children Replace Replace the given no
       <pubDate>Sat, 12 Mar 2022 19:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-12-using-jekyll/</guid>
-      <description>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes.</description>
+      <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -310,8 +663,10 @@ ws-replace ws-hole ws-template ws-template-children Replace Replace the given no
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/about/</guid>
-      <description>A Swiss nick name for Markus is Küse, and since I love alliterations, this blog is called Küse’s Code.
-It contains a collection of code snippets, and demonstrates my various interest, starting with functional programming in F# and Go, and web programming in WebSharper or Bolero, and Elm.</description>
+      <description>&lt;p&gt;A Swiss nick name for Markus is Küse, and since I love alliterations, this blog is called Küse’s Code.&lt;/p&gt;
+&lt;p&gt;It contains a collection of code snippets, and demonstrates my various interest, starting with functional programming
+in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;, and web programming
+in &lt;a href=&#34;https://developers.websharper.com/docs/v4.x/fs/&#34;&gt;WebSharper&lt;/a&gt; or &lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt;, and &lt;a href=&#34;https://elm-lang.org/&#34;&gt;Elm&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -320,7 +675,31 @@ It contains a collection of code snippets, and demonstrates my various interest,
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/draft/2023-12-18-wordpress/</guid>
-      <description>Install phpmyadmin with brew ==&amp;gt; Pouring phpmyadmin--5.2.1.sonoma.bottle.tar.gz ==&amp;gt; Caveats To enable phpMyAdmin in Apache, add the following to httpd.conf and restart Apache: Alias /phpmyadmin /usr/local/share/phpmyadmin &amp;lt;Directory /usr/local/share/phpmyadmin/&amp;gt; Options Indexes FollowSymLinks MultiViews AllowOverride All &amp;lt;IfModule mod_authz_core.</description>
+      <description>&lt;h2 id=&#34;install-phpmyadmin-with-brew&#34;&gt;Install phpmyadmin with brew&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;==&amp;gt; Pouring phpmyadmin--5.2.1.sonoma.bottle.tar.gz
+==&amp;gt; Caveats
+To enable phpMyAdmin in Apache, add the following to httpd.conf and
+restart Apache:
+    Alias /phpmyadmin /usr/local/share/phpmyadmin
+    &amp;lt;Directory /usr/local/share/phpmyadmin/&amp;gt;
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride All
+        &amp;lt;IfModule mod_authz_core.c&amp;gt;
+            Require all granted
+        &amp;lt;/IfModule&amp;gt;
+        &amp;lt;IfModule !mod_authz_core.c&amp;gt;
+            Order allow,deny
+            Allow from all
+        &amp;lt;/IfModule&amp;gt;
+    &amp;lt;/Directory&amp;gt;
+Then open http://localhost/phpmyadmin
+The configuration file is /usr/local/etc/phpmyadmin.config.inc.php
+==&amp;gt; Summary
+🍺  /usr/local/Cellar/phpmyadmin/5.2.1: 4,191 files, 48.1MB
+==&amp;gt; Running `brew cleanup phpmyadmin`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Where is httpd.conf?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -329,11 +708,39 @@ It contains a collection of code snippets, and demonstrates my various interest,
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/draft/20240530-EDI/</guid>
-      <description>EDI middleware Comparisons https://www.g2.com/categories/electronic-data-interchange-edi
-https://michaelachrisco.github.io/Electronic-Interchange-Github-Resources/
-https://datainterchange.com/edifacts-standards-explained/
-Antlr An Antlr implementation: https://github.com/aaronhuggins/js-edi/tree/main/grammars/fact
-// Special token for discovering the position of control characters for a given EDI document.</description>
+      <description>&lt;h1 id=&#34;edi-middleware&#34;&gt;EDI middleware&lt;/h1&gt;
+&lt;h2 id=&#34;comparisons&#34;&gt;Comparisons&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.g2.com/categories/electronic-data-interchange-edi&#34;&gt;https://www.g2.com/categories/electronic-data-interchange-edi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://michaelachrisco.github.io/Electronic-Interchange-Github-Resources/&#34;&gt;https://michaelachrisco.github.io/Electronic-Interchange-Github-Resources/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://datainterchange.com/edifacts-standards-explained/&#34;&gt;https://datainterchange.com/edifacts-standards-explained/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;antlr&#34;&gt;Antlr&lt;/h2&gt;
+&lt;p&gt;An Antlr implementation: &lt;a href=&#34;https://github.com/aaronhuggins/js-edi/tree/main/grammars/fact&#34;&gt;https://github.com/aaronhuggins/js-edi/tree/main/grammars/fact&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-antlr&#34; data-lang=&#34;antlr&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Special token for discovering the position of control characters for a given EDI document.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ControlChar:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;Special&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CR&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;LF&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CR&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;LF&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;AsciiControl&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// All valid printable characters.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Char:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;Letter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Number&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Special&lt;/span&gt; { !this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Reserved segment tags.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SvcStringAdvice: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNA&amp;#39;&lt;/span&gt; { this.handleUNA() };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;InterchangeHeader: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNB&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;InterchangeTrailer: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNZ&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GroupHeader: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNG&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GroupTrailer: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNE&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MessageHeader: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNH&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MessageTrailer: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNT&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;TextSegment: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TXT&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SectionControl: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNS&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;go&#34;&gt;Go&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/jf-tech/omniparser&#34;&gt;Omniparser&lt;/a&gt; is a general purpose parser written in Go:&lt;/p&gt;</description>
     </item>
     
     

@@ -44,6 +44,15 @@
     </item>
     
     <item>
+      <title>Authoring</title>
+      <link>http://localhost:1313/categories/authoring/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/authoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Template</title>
       <link>http://localhost:1313/categories/template/</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>

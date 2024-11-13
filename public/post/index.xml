@@ -13,8 +13,8 @@
       <pubDate>Sat, 27 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2024-07-27-purecss-menu/</guid>
-      <description>I have been using Pure.css in most of my applications since it is really simple to use.
-This is a small code sample that uses Pure.</description>
+      <description>&lt;p&gt;I have been using &lt;a href=&#34;https://purecss.io/&#34;&gt;Pure.css&lt;/a&gt; in most of my applications since it is really simple to use.&lt;/p&gt;
+&lt;p&gt;This is a small code sample that uses &lt;a href=&#34;https://purecss.io/&#34;&gt;Pure.css&lt;/a&gt; with a responsive, vertical menu with hamburger and a submenu.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,8 +23,8 @@ This is a small code sample that uses Pure.</description>
       <pubDate>Sat, 03 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2024-02-03-purecss/</guid>
-      <description>Pure.css is a css framework that does not include JavaScript like other frameworks such as Vue, bootstrap, &amp;hellip;
-In contrast to those frameworks:</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://purecss.io&#34;&gt;Pure.css&lt;/a&gt; is a css framework that does not include JavaScript like other frameworks such as Vue, bootstrap, &amp;hellip;&lt;/p&gt;
+&lt;p&gt;In contrast to those frameworks:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -33,8 +33,9 @@ In contrast to those frameworks:</description>
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2024-01-28-ruby-rails-hints/</guid>
-      <description>This gives some tips and trick for Ruby on Rails.
-Quickref I found an excellent quick reference guide to Ruby on zenspider.</description>
+      <description>&lt;p&gt;This gives some tips and trick for Ruby on Rails.&lt;/p&gt;
+&lt;h1 id=&#34;quickref&#34;&gt;Quickref&lt;/h1&gt;
+&lt;p&gt;I found an excellent quick reference guide to Ruby on &lt;a href=&#34;https://www.zenspider.com/ruby/quickref.html#types&#34;&gt;zenspider&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -43,8 +44,9 @@ Quickref I found an excellent quick reference guide to Ruby on zenspider.</descr
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-11-27-hugo-tricks/</guid>
-      <description>This page describes my experiences with the static web site publishing tool Hugo.
-Open link in new tab There is a discussion which describes How to open links in a new tab.</description>
+      <description>&lt;p&gt;This page describes my experiences with the static web site publishing tool &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;open-link-in-new-tab&#34;&gt;Open link in new tab&lt;/h2&gt;
+&lt;p&gt;There is a discussion which describes &lt;a href=&#34;https://discourse.gohugo.io/t/how-to-open-plain-url-links-in-a-new-tab/25523/3&#34;&gt;How to open links in a new tab&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -53,7 +55,8 @@ Open link in new tab There is a discussion which describes How to open links in 
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-10-01-local-server/</guid>
-      <description>Running build-in tomcat server It is possible to deploy Jekyll sites locally, because OSX has a build-in Apache tomcat server. The local sites reside under ~/Sites.</description>
+      <description>&lt;h2 id=&#34;running-build-in-tomcat-server&#34;&gt;Running build-in tomcat server&lt;/h2&gt;
+&lt;p&gt;It is possible to deploy &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; sites locally, because OSX has a build-in &lt;a href=&#34;https://tomcat.apache.org&#34;&gt;Apache tomcat server&lt;/a&gt;. The local sites reside under &lt;code&gt;~/Sites&lt;/code&gt;. However, the setup of this server often changes with new versions of OSX.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -62,7 +65,8 @@ Open link in new tab There is a discussion which describes How to open links in 
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-08-05-mermaid/</guid>
-      <description>Mermaid is a JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://mermaid-js.github.io/mermaid/#/&#34;&gt;Mermaid&lt;/a&gt; is a JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -71,7 +75,7 @@ Open link in new tab There is a discussion which describes How to open links in 
       <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-07-30-go-modules/</guid>
-      <description>I had to practice a long time to understand the go concepts of modules, packages, and how to publish them to github.</description>
+      <description>&lt;p&gt;I had to practice a long time to understand the &lt;a href=&#34;https://go.dev&#34;&gt;go&lt;/a&gt; concepts of modules, packages, and how to publish them to &lt;a href=&#34;https://github.com&#34;&gt;github&lt;/a&gt;. Here are my learnings.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -80,7 +84,7 @@ Open link in new tab There is a discussion which describes How to open links in 
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-04-11-bolero-razor/</guid>
-      <description>In this post we investigate how to use Razor pages on the host and Bolero WebAssembly on the client side. The final code can be found on My github - Tutorials - BoleroAppRazor.</description>
+      <description>&lt;p&gt;In this post we investigate how to use Razor pages on the host and &lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; WebAssembly on the client side. The final code can be found on &lt;a href=&#34;https://github.com/mmgreiner/Tutorials&#34;&gt;My github - Tutorials - BoleroAppRazor&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -89,8 +93,43 @@ Open link in new tab There is a discussion which describes How to open links in 
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-04-01-production-optimization/</guid>
-      <description>Optimization General production structure capacited multi-level lot-sizing model PochetWolsey, page 45
-$1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared resources with limited capacity $1 \le t \le n$: time periods until final period n $p_t$: unit production cost $q_t$: fixed production cost $h_t$: unit inventory cost $d_t^i$: demand for item i to be satisified at period t $M_t$: large positive number, expressing an upper bound on the maximum lot size iin period t $L_t^k$: available capacity of resource k during period t $\alpha^{i k}, \beta^{i k}$: amount of capacity of resource k consumed $1 \le j \le m$: items $D(i)$ set of direct successors of part i in the BOM, i.</description>
+      <description>&lt;h2 id=&#34;optimization&#34;&gt;Optimization&lt;/h2&gt;
+&lt;p&gt;General production structure capacited multi-level lot-sizing model &lt;a href=&#34;https://dl.acm.org/doi/book/10.5555/1202598&#34;&gt;PochetWolsey&lt;/a&gt;, page 45&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$1 \le i \le m$: set of items to be produced&lt;/li&gt;
+&lt;li&gt;$1 \le k \le K$: set of shared resources with limited capacity&lt;/li&gt;
+&lt;li&gt;$1 \le t \le n$: time periods until final period &lt;em&gt;n&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$p_t$: unit production cost&lt;/li&gt;
+&lt;li&gt;$q_t$: fixed production cost&lt;/li&gt;
+&lt;li&gt;$h_t$: unit inventory cost&lt;/li&gt;
+&lt;li&gt;$d_t^i$: demand for item &lt;em&gt;i&lt;/em&gt; to be satisified at period &lt;em&gt;t&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$M_t$: large positive number, expressing an upper bound on the maximum lot size iin period &lt;em&gt;t&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$L_t^k$: available capacity of resource k during period &lt;em&gt;t&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$\alpha^{i k}, \beta^{i k}$: amount of capacity of resource &lt;em&gt;k&lt;/em&gt; consumed&lt;/li&gt;
+&lt;li&gt;$1 \le j \le m$: items&lt;/li&gt;
+&lt;li&gt;$D(i)$ set of direct successors of part &lt;em&gt;i&lt;/em&gt; in the BOM, i.e. the items consuming some amount of item &lt;em&gt;i&lt;/em&gt; when they are produced&lt;/li&gt;
+&lt;li&gt;$r^{i j}$: the amount of item &lt;em&gt;i&lt;/em&gt; required to make one unit of item &lt;em&gt;j&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;r&lt;/em&gt; is the dependent demand, and $d_t^i$ is the independent demand&lt;/li&gt;
+&lt;li&gt;$\gamma^i$: lead-time to produce or deliver an lot of &lt;em&gt;i&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$x_t^i$: the size of product or purchase order of item &lt;em&gt;i&lt;/em&gt; launched in period &lt;em&gt;t&lt;/em&gt;, and delivered in period $t + \gamma^i$.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Decision variables&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;$x_t$: production lot size in period &lt;em&gt;t&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$y_t$: binary variable indicating wether there is a positive production in period &lt;em&gt;t&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;$s_t$:inventory at the end of period &lt;em&gt;t&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;objective-function&#34;&gt;Objective Function&lt;/h3&gt;
+&lt;p&gt;$$
+\begin{aligned}
+\text{min} \sum_i \sum_t (p_t^i x_t^i + q_t^i y_t^i + h_t^i s_t^i) \cr
+\text{subject to} \cr
+s_{t-1}^i + x_{t-\gamma^i}^i &amp;amp; = [d_t^i + \sum_{j \in D(i)} r^{i j} x_t^j] + s_t^i \cr
+x_t^i &amp;amp; \le  M_t^i y_t^i \cr
+\sum_i \alpha^{i k} x_t^i + \sum_t \beta^{i k} y_t^i &amp;amp; \le L_t^k \cr
+\end{aligned}
+$$&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -99,7 +138,7 @@ $1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared reso
       <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-03-26-mixed-integer-linear-optimization/</guid>
-      <description>This blog contains formulas which can be used to optimize the supply chain with multiple suppliers, and a general production planning formula, taken from the book POCHET, Yves und WOLSEY, Laurence A.</description>
+      <description>&lt;p&gt;This blog contains formulas which can be used to optimize the supply chain with multiple suppliers, and a general production planning formula, taken from the book &lt;a href=&#34;https://dl.acm.org/doi/book/10.5555/1202598&#34;&gt;POCHET, Yves und WOLSEY, Laurence A.: &lt;em&gt;Production planning by mixed integer programming&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -108,8 +147,9 @@ $1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared reso
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-03-18-miscellaneous/</guid>
-      <description>This is a list of reminders and open questions I still wanted to look at in more detail.
-CSV conversion Next to FSharp.</description>
+      <description>&lt;p&gt;This is a list of reminders and open questions I still wanted to look at in more detail.&lt;/p&gt;
+&lt;h2 id=&#34;csv-conversion&#34;&gt;CSV conversion&lt;/h2&gt;
+&lt;p&gt;Next to &lt;a href=&#34;https://fsprojects.github.io/FSharp.Data/&#34;&gt;FSharp.Data&lt;/a&gt; there is &lt;a href=&#34;https://joshclose.github.io/CsvHelper/&#34;&gt;CSVHelper&lt;/a&gt;. However, it does not support FSharp types intrinsically. A &lt;a href=&#34;https://stackoverflow.com/questions/66401283/how-do-you-use-csvhelper-csvwriter-with-f-option-types&#34;&gt;stackoverflow&lt;/a&gt; article describes the details.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -118,9 +158,11 @@ CSV conversion Next to FSharp.</description>
       <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-03-15-RESTApi/</guid>
-      <description>This contains some thoughts how to implement RESTful APIs.
-Background tbd
-Best practices A search for RESTful API best practices reveals many sites:</description>
+      <description>&lt;p&gt;This contains some thoughts how to implement RESTful APIs.&lt;/p&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;tbd&lt;/p&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best practices&lt;/h2&gt;
+&lt;p&gt;A search for RESTful API best practices reveals many sites:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -129,8 +171,41 @@ Best practices A search for RESTful API best practices reveals many sites:</desc
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-02-10-github-fsharp/</guid>
-      <description>Some of my codes are documented on my Github with description in the readme files. Take a look there.
-Github Description BoleroApp A simple Bolero app with file upload and data repository using dependency injection StringAlgorithms Some string algorithms in F# to measure string similarity WebAPI A net7.</description>
+      <description>&lt;p&gt;Some of my codes are documented on my &lt;a href=&#34;https://github.com/mmgreiner&#34;&gt;Github&lt;/a&gt; with description in the readme files. Take a look there.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Github&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/BoleroApp&#34;&gt;BoleroApp&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;A simple &lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; app with file upload and data repository using dependency injection&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/StringAlgorithms&#34;&gt;StringAlgorithms&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Some string algorithms in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt; to measure string similarity&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/WebAPI&#34;&gt;WebAPI&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;A net7.0 based RestAPI in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/dependencyInjection&#34;&gt;DependencyInjection&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;simple attempts at dependency injection in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/Tutorials/tree/master/MinimalApiPost&#34;&gt;MinimalAPI&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;Minimal API with a file upload example&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/mmgreiner/Tutorials/tree/master/BoleroAppRazor&#34;&gt;BoleroAppRazor&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; App, but using Razor pages on the server&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
     
     <item>
@@ -139,7 +214,7 @@ Github Description BoleroApp A simple Bolero app with file upload and data repos
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-02-01-golang/</guid>
-      <description>In 2023, I became interested in the programming language Go. It is a C derivates without all the nil pointer exceptions, and has a very solid infrastructure and libraries to compile across different operating systems.</description>
+      <description>&lt;p&gt;In 2023, I became interested in the programming language &lt;a href=&#34;https://go.dev&#34;&gt;Go&lt;/a&gt;. It is a C derivates without all the nil pointer exceptions, and has a very solid infrastructure and libraries to compile across different operating systems.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -148,7 +223,9 @@ Github Description BoleroApp A simple Bolero app with file upload and data repos
       <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-01-13-swig-c-interfacer/</guid>
-      <description>SWIG SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.</description>
+      <description>&lt;h2 id=&#34;swig&#34;&gt;SWIG&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://swig.org/index.html&#34;&gt;SWIG&lt;/a&gt; is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages. SWIG is used with different types of target languages including common scripting languages such as Javascript, Perl, PHP, Python, Tcl and Ruby.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -157,8 +234,18 @@ Github Description BoleroApp A simple Bolero app with file upload and data repos
       <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-12-31-operation-research/</guid>
-      <description>Operation Research is defined in Wikipedia as
-Operations research (British English: operational research) &amp;hellip; , often shortened to the initialism OR, is a discipline that deals with the development and application of analytical methods to improve decision-making.</description>
+      <description>&lt;p&gt;Operation Research is defined in &lt;a href=&#34;https://en.wikipedia.org/wiki/Operations_research&#34;&gt;Wikipedia&lt;/a&gt; as&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Operations research (British English: operational research) &amp;hellip; , often shortened to the initialism OR, is a discipline that deals with the development and application of analytical methods to improve decision-making. It is considered to be a subfield of mathematical sciences.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PDF converter in dotnet and ruby</title>
+      <link>http://localhost:1313/post/2022-12-01-pdf-converter/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2022-12-01-pdf-converter/</guid>
+      <description>&lt;p&gt;There is once in a while the need to extract pure text from PDF files. This blog shows some attempts to do it with dot, and also with &lt;a href=&#34;https://www.ruby-lang.org/en/&#34;&gt;ruby&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -167,7 +254,8 @@ Operations research (British English: operational research) &amp;hellip; , often
       <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-10-20-input-file/</guid>
-      <description>Bolero is a set of free and open-source libraries and tools to write web applications in F#. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; is a set of free and open-source libraries and tools to write web applications in &lt;a href=&#34;https://fsharp.org/&#34;&gt;F#&lt;/a&gt;. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -176,8 +264,11 @@ Operations research (British English: operational research) &amp;hellip; , often
       <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-10-16-nuget-local/</guid>
-      <description>Had some problems creating a local nuget repository. This is how I succeeded:
-Create a local nuget repository / source $ cli nuget add source ~/.</description>
+      <description>&lt;p&gt;Had some problems creating a local nuget repository. This is how I succeeded:&lt;/p&gt;
+&lt;h2 id=&#34;create-a-local-nuget-repository--source&#34;&gt;Create a local nuget repository / source&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ cli nuget add source ~/.mynuget
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This leads to these changes in the configuration file:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -186,7 +277,7 @@ Create a local nuget repository / source $ cli nuget add source ~/.</description
       <pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-10-13-bibliography/</guid>
-      <description>Helping out a friend to get a Matura thesis completed, I stumbled onto the topics of citations and bibliographies. In the end, I wanted to get a handle on bibliographies using dotnet code.</description>
+      <description>&lt;p&gt;Helping out a friend to get a Matura thesis completed, I stumbled onto the topics of citations and bibliographies. In the end, I wanted to get a handle on bibliographies using dotnet code.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -195,7 +286,7 @@ Create a local nuget repository / source $ cli nuget add source ~/.</description
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-08-29-static-templating/</guid>
-      <description>Templating is an proofen method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time.</description>
+      <description>&lt;p&gt;Templating is an proofen method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time. Well-known templating languages are &lt;a href=&#34;https://shopify.github.io/liquid/&#34;&gt;Liquid&lt;/a&gt;, which is written in ruby and used by &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt;, and &lt;a href=&#34;https://handlebarsjs.com&#34;&gt;Handlebars&lt;/a&gt;, which calls itself &lt;em&gt;minimal templating on steroids&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -204,8 +295,9 @@ Create a local nuget repository / source $ cli nuget add source ~/.</description
       <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-08-21-Bolero/</guid>
-      <description>This blog contains some experiences working with Bolero.
-Bolero is a set of free and open-source libraries and tools to write web applications in F#.</description>
+      <description>&lt;p&gt;This blog contains some experiences working with &lt;a href=&#34;https://fsbolero.io/docs/&#34;&gt;Bolero&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bolero is a set of free and open-source libraries and tools to write web applications in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -214,8 +306,8 @@ Bolero is a set of free and open-source libraries and tools to write web applica
       <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-04-08-machine-learning/</guid>
-      <description>Machine learning with ML.NET is documented in a confusing way, in particular when it comes to F#.
-Some resources I found are:</description>
+      <description>&lt;p&gt;Machine learning with &lt;a href=&#34;https://dotnet.microsoft.com/en-us/learn/ml-dotnet&#34;&gt;ML.NET&lt;/a&gt; is documented in a confusing way, in particular when it comes to F#.&lt;/p&gt;
+&lt;p&gt;Some resources I found are:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -224,8 +316,9 @@ Some resources I found are:</description>
       <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-04-03-jekyll-tips/</guid>
-      <description>This post covers some more Jekyll tips and tricks like searching a web page.
-Searching a Jekyll page Web pages based on databases such as WordPress search the data in the underlying database.</description>
+      <description>&lt;p&gt;This post covers some more Jekyll tips and tricks like searching a web page.&lt;/p&gt;
+&lt;h2 id=&#34;searching-a-jekyll-page&#34;&gt;Searching a Jekyll page&lt;/h2&gt;
+&lt;p&gt;Web pages based on databases such as &lt;a href=&#34;https://wordpress.com&#34;&gt;WordPress&lt;/a&gt; search the data in the underlying database. Static web sites based on &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; however don&amp;rsquo;t have this database but only files.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -234,7 +327,8 @@ Searching a Jekyll page Web pages based on databases such as WordPress search th
       <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-04-02-math-static-sites/</guid>
-      <description>Mathematical formulas While working on post Mathe Uffzig, I stumbled upon the problem of displaying mathematical formulas in the Jekyll markdown templating engine Liquid.</description>
+      <description>&lt;h2 id=&#34;mathematical-formulas&#34;&gt;Mathematical formulas&lt;/h2&gt;
+&lt;p&gt;While working on post &lt;a href=&#34;http://localhost:1313/post/2022-04-02-mathe-uffzgi/&#34;&gt;Mathe Uffzig&lt;/a&gt;, I stumbled upon the problem of displaying mathematical formulas in the &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; markdown templating engine &lt;a href=&#34;liquid&#34;&gt;Liquid&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -243,7 +337,7 @@ Searching a Jekyll page Web pages based on databases such as WordPress search th
       <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-04-02-mathe-uffzgi/</guid>
-      <description>Once in a while, I&amp;rsquo;m supporting Lea with her math homework (Swiss: Uffzgi). Here are some tools that help me (remember, that I prefer F# to other languages.</description>
+      <description>&lt;p&gt;Once in a while, I&amp;rsquo;m supporting Lea with her math homework (Swiss: &lt;em&gt;Uffzgi&lt;/em&gt;). Here are some tools that help me (remember, that I prefer &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt; to other languages. Whenever possible, I use interactive Notebooks and make them available on &lt;a href=&#34;https://github.com/mmgreiner/Notebook&#34;&gt;github Notebooks&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -252,8 +346,11 @@ Searching a Jekyll page Web pages based on databases such as WordPress search th
       <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-17-Simple-Inputs/</guid>
-      <description>This post shows various ways to handle input using WebSharper.
-Client side There are two basic approaches: using HTML templates or using Websharper&amp;rsquo;s HTML.</description>
+      <description>&lt;p&gt;This post shows various ways to handle input using &lt;a href=&#34;
+https://developers.websharper.com/docs/v4.x/fs/
+&#34;&gt;WebSharper&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;client-side&#34;&gt;Client side&lt;/h2&gt;
+&lt;p&gt;There are two basic approaches: using HTML templates or using Websharper&amp;rsquo;s HTML.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -262,9 +359,13 @@ Client side There are two basic approaches: using HTML templates or using Websha
       <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-14-Websharper-osx/</guid>
-      <description>Installing WebSharper I&amp;rsquo;m developing web applications using WebSharper on macOS Monterey.
-To install the the templates, use:
-% dotnet new -i WebSharper.</description>
+      <description>&lt;h2 id=&#34;installing-websharper&#34;&gt;Installing WebSharper&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m developing web applications using &lt;a href=&#34;
+https://developers.websharper.com/docs/v4.x/fs/
+&#34;&gt;WebSharper&lt;/a&gt; on macOS Monterey.&lt;/p&gt;
+&lt;p&gt;To install the the templates, use:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% dotnet new -i WebSharper.Templates
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The following templates are installed:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -273,8 +374,15 @@ To install the the templates, use:
       <pubDate>Sun, 13 Mar 2022 13:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-13-websharper-templates/</guid>
-      <description>WebSharper allows several ways to instatiate HTML, and It took me some thinking to get these terms right:
-ws-replace ws-hole ws-template ws-template-children Replace Replace the given node with the provided string or list of docs.</description>
+      <description>&lt;p&gt;WebSharper allows several ways to instatiate HTML, and It took me some thinking to get these terms right:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ws-replace&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ws-hole&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ws-template&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ws-template-children&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;replace&#34;&gt;Replace&lt;/h2&gt;
+&lt;p&gt;Replace the given node with the provided string or list of docs.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -283,7 +391,8 @@ ws-replace ws-hole ws-template ws-template-children Replace Replace the given no
       <pubDate>Sun, 13 Mar 2022 10:41:39 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-13-websharper-shopping-cart/</guid>
-      <description>Websharper Shopping cart I found an interesting article from 2020 by Adam Granizc on the implementation of a WebSharper shopping cart in WebSharper Shopping Cart</description>
+      <description>&lt;h2 id=&#34;websharper-shopping-cart&#34;&gt;Websharper Shopping cart&lt;/h2&gt;
+&lt;p&gt;I found an interesting article from 2020 by Adam Granizc on the implementation of a WebSharper shopping cart in &lt;a href=&#34;https://github.com/intellifactory/blogs/blob/master/user/granicz/20201231-variations-for-a-websharper-shopping-cart.md&#34;&gt;WebSharper Shopping Cart&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -292,7 +401,7 @@ ws-replace ws-hole ws-template ws-template-children Replace Replace the given no
       <pubDate>Sat, 12 Mar 2022 19:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-03-12-using-jekyll/</guid>
-      <description>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes.</description>
+      <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;</description>
     </item>
     
   </channel>

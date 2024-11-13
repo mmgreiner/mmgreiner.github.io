@@ -152,7 +152,8 @@
   </header>
   <div class="entry-content">
     <p>Optimization General production structure capacited multi-level lot-sizing model PochetWolsey, page 45
-$1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared resources with limited capacity $1 \le t \le n$: time periods until final period n $p_t$: unit production cost $q_t$: fixed production cost $h_t$: unit inventory cost $d_t^i$: demand for item i to be satisified at period t $M_t$: large positive number, expressing an upper bound on the maximum lot size iin period t $L_t^k$: available capacity of resource k during period t $\alpha^{i k}, \beta^{i k}$: amount of capacity of resource k consumed $1 \le j \le m$: items $D(i)$ set of direct successors of part i in the BOM, i....</p>
+$1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared resources with limited capacity $1 \le t \le n$: time periods until final period n $p_t$: unit production cost $q_t$: fixed production cost $h_t$: unit inventory cost $d_t^i$: demand for item i to be satisified at period t $M_t$: large positive number, expressing an upper bound on the maximum lot size iin period t $L_t^k$: available capacity of resource k during period t $\alpha^{i k}, \beta^{i k}$: amount of capacity of resource k consumed $1 \le j \le m$: items $D(i)$ set of direct successors of part i in the BOM, i.e. the items consuming some amount of item i when they are produced $r^{i j}$: the amount of item i required to make one unit of item j. r is the dependent demand, and $d_t^i$ is the independent demand $\gamma^i$: lead-time to produce or deliver an lot of i $x_t^i$: the size of product or purchase order of item i launched in period t, and delivered in period $t &#43; \gamma^i$. Decision variables: $x_t$: production lot size in period t $y_t$: binary variable indicating wether there is a positive production in period t $s_t$:inventory at the end of period t Objective Function $$ \begin{aligned} \text{min} \sum_i \sum_t (p_t^i x_t^i &#43; q_t^i y_t^i &#43; h_t^i s_t^i) \cr \text{subject to} \cr s_{t-1}^i &#43; x_{t-\gamma^i}^i &amp; = [d_t^i &#43; \sum_{j \in D(i)} r^{i j} x_t^j] &#43; s_t^i \cr x_t^i &amp; \le M_t^i y_t^i \cr \sum_i \alpha^{i k} x_t^i &#43; \sum_t \beta^{i k} y_t^i &amp; \le L_t^k \cr \end{aligned} $$
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-04-01 00:00:00 +0000 UTC'>April 1, 2023</span></footer>
   <a class="entry-link" aria-label="post link to General production optimization" href="http://localhost:1313/post/2023-04-01-production-optimization/"></a>
@@ -164,10 +165,24 @@ $1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared reso
     </h2>
   </header>
   <div class="entry-content">
-    <p>This blog contains formulas which can be used to optimize the supply chain with multiple suppliers, and a general production planning formula, taken from the book POCHET, Yves und WOLSEY, Laurence A....</p>
+    <p>This blog contains formulas which can be used to optimize the supply chain with multiple suppliers, and a general production planning formula, taken from the book POCHET, Yves und WOLSEY, Laurence A.: Production planning by mixed integer programming.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-03-26 00:00:00 +0000 UTC'>March 26, 2023</span></footer>
   <a class="entry-link" aria-label="post link to Mixed integer linear optimiziation for supply chain and production" href="http://localhost:1313/post/2023-03-26-mixed-integer-linear-optimization/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Potenzen und Logarithmen<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is a paper (written in German) which was written by Lea Schmidt, student at Alte Kantonsschule Aarau to have a quick overview of exponential and logarithmic functions.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-02-15 00:00:00 +0000 UTC'>February 15, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Potenzen und Logarithmen" href="http://localhost:1313/draft/2023-02-15-math-exponentials/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
@@ -176,7 +191,8 @@ $1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared reso
     </h2>
   </header>
   <div class="entry-content">
-    <p>Mathematical formulas While working on post Mathe Uffzig, I stumbled upon the problem of displaying mathematical formulas in the Jekyll markdown templating engine Liquid....</p>
+    <p>Mathematical formulas While working on post Mathe Uffzig, I stumbled upon the problem of displaying mathematical formulas in the Jekyll markdown templating engine Liquid.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2022-04-02 00:00:00 +0000 UTC'>April 2, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Math formulas and static web site generators" href="http://localhost:1313/post/2022-04-02-math-static-sites/"></a>
@@ -188,7 +204,8 @@ $1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared reso
     </h2>
   </header>
   <div class="entry-content">
-    <p>Once in a while, I’m supporting Lea with her math homework (Swiss: Uffzgi). Here are some tools that help me (remember, that I prefer F# to other languages....</p>
+    <p>Once in a while, I’m supporting Lea with her math homework (Swiss: Uffzgi). Here are some tools that help me (remember, that I prefer F# to other languages. Whenever possible, I use interactive Notebooks and make them available on github Notebooks.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2022-04-02 00:00:00 +0000 UTC'>April 2, 2022</span></footer>
   <a class="entry-link" aria-label="post link to Mathe Uffzgi" href="http://localhost:1313/post/2022-04-02-mathe-uffzgi/"></a>

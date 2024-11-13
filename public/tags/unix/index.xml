@@ -13,7 +13,8 @@
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-10-01-local-server/</guid>
-      <description>Running build-in tomcat server It is possible to deploy Jekyll sites locally, because OSX has a build-in Apache tomcat server. The local sites reside under ~/Sites.</description>
+      <description>&lt;h2 id=&#34;running-build-in-tomcat-server&#34;&gt;Running build-in tomcat server&lt;/h2&gt;
+&lt;p&gt;It is possible to deploy &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; sites locally, because OSX has a build-in &lt;a href=&#34;https://tomcat.apache.org&#34;&gt;Apache tomcat server&lt;/a&gt;. The local sites reside under &lt;code&gt;~/Sites&lt;/code&gt;. However, the setup of this server often changes with new versions of OSX.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,8 +23,9 @@
       <pubDate>Sat, 18 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-03-18-miscellaneous/</guid>
-      <description>This is a list of reminders and open questions I still wanted to look at in more detail.
-CSV conversion Next to FSharp.</description>
+      <description>&lt;p&gt;This is a list of reminders and open questions I still wanted to look at in more detail.&lt;/p&gt;
+&lt;h2 id=&#34;csv-conversion&#34;&gt;CSV conversion&lt;/h2&gt;
+&lt;p&gt;Next to &lt;a href=&#34;https://fsprojects.github.io/FSharp.Data/&#34;&gt;FSharp.Data&lt;/a&gt; there is &lt;a href=&#34;https://joshclose.github.io/CsvHelper/&#34;&gt;CSVHelper&lt;/a&gt;. However, it does not support FSharp types intrinsically. A &lt;a href=&#34;https://stackoverflow.com/questions/66401283/how-do-you-use-csvhelper-csvwriter-with-f-option-types&#34;&gt;stackoverflow&lt;/a&gt; article describes the details.&lt;/p&gt;</description>
     </item>
     
   </channel>

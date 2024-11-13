@@ -13,7 +13,7 @@
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-04-11-bolero-razor/</guid>
-      <description>In this post we investigate how to use Razor pages on the host and Bolero WebAssembly on the client side. The final code can be found on My github - Tutorials - BoleroAppRazor.</description>
+      <description>&lt;p&gt;In this post we investigate how to use Razor pages on the host and &lt;a href=&#34;https://fsbolero.io&#34;&gt;Bolero&lt;/a&gt; WebAssembly on the client side. The final code can be found on &lt;a href=&#34;https://github.com/mmgreiner/Tutorials&#34;&gt;My github - Tutorials - BoleroAppRazor&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-10-13-bibliography/</guid>
-      <description>Helping out a friend to get a Matura thesis completed, I stumbled onto the topics of citations and bibliographies. In the end, I wanted to get a handle on bibliographies using dotnet code.</description>
+      <description>&lt;p&gt;Helping out a friend to get a Matura thesis completed, I stumbled onto the topics of citations and bibliographies. In the end, I wanted to get a handle on bibliographies using dotnet code.&lt;/p&gt;</description>
     </item>
     
   </channel>

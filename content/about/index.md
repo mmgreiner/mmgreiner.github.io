@@ -8,8 +8,10 @@ draft: false
 A Swiss nick name for Markus is Küse, and since I love alliterations, this blog is called Küse’s Code.
 
 It contains a collection of code snippets, and demonstrates my various interest, starting with functional programming
-in [F#] and [Go]({{< param "go_link" >}}), and web programming 
-in [WebSharper]({{< param "websharper_link" >}}) or [Bolero]({{< param "bolero_link" >}}), and Elm.
+in [F#], and web programming 
+in [WebSharper]({{< param "websharper_link" >}}) or [Bolero]({{< param "bolero_link" >}}), and [Elm].
+
+Lately, I have added the programming languages [Go] and [Ruby] to my portfolio and [Ruby on Rails][Rails] for web development.
 
 This blog was originally written as a static HTML site using [Jekyll]({{< param "jekyll_link" >}}), and later moved 
 to [Hugo]({{<param "hugo_link">}}).
@@ -20,3 +22,7 @@ These posts are stored at [GitHub](https://github.com/mmgreiner/mmgreiner.github
 
 
 [F#]: {{< param "fsharp_link" >}}
+[Elm]: https://elm-lang.org/
+[Go]: {{< param "go_link" >}}
+[Ruby]: ruby-lang.org/en
+[Rails]: https://rubyonrails.org/

@@ -35,6 +35,51 @@
     </item>
     
     <item>
+      <title>Github</title>
+      <link>http://localhost:1313/tags/github/</link>
+      <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pdf</title>
+      <link>http://localhost:1313/tags/pdf/</link>
+      <pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/pdf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Antlr</title>
+      <link>http://localhost:1313/tags/antlr/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/antlr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compiler</title>
+      <link>http://localhost:1313/tags/compiler/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/compiler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>http://localhost:1313/tags/Go/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/Go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Css Framework</title>
       <link>http://localhost:1313/tags/css-framework/</link>
       <pubDate>Sat, 03 Feb 2024 00:00:00 +0000</pubDate>
@@ -49,6 +94,15 @@
       <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Macos</title>
+      <link>http://localhost:1313/tags/macos/</link>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/macos/</guid>
       <description></description>
     </item>
     
@@ -125,6 +179,42 @@
     </item>
     
     <item>
+      <title>Azure</title>
+      <link>http://localhost:1313/tags/azure/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>http://localhost:1313/tags/git/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Render</title>
+      <link>http://localhost:1313/tags/render/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/render/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>F#</title>
+      <link>http://localhost:1313/tags/F%23/</link>
+      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/F%23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mermaid</title>
       <link>http://localhost:1313/tags/mermaid/</link>
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>
@@ -134,29 +224,11 @@
     </item>
     
     <item>
-      <title>Github</title>
-      <link>http://localhost:1313/tags/github/</link>
-      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go</title>
-      <link>http://localhost:1313/tags/go/</link>
-      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Bolero</title>
-      <link>http://localhost:1313/tags/bolero/</link>
+      <link>http://localhost:1313/tags/Bolero/</link>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/bolero/</guid>
+      <guid>http://localhost:1313/tags/Bolero/</guid>
       <description></description>
     </item>
     
@@ -175,15 +247,6 @@
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/C%23/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>F#</title>
-      <link>http://localhost:1313/tags/F%23/</link>
-      <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/F%23/</guid>
       <description></description>
     </item>
     
@@ -224,6 +287,24 @@
     </item>
     
     <item>
+      <title>Exponentials</title>
+      <link>http://localhost:1313/tags/exponentials/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/exponentials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logarithms</title>
+      <link>http://localhost:1313/tags/logarithms/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/logarithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Aspnet</title>
       <link>http://localhost:1313/tags/aspnet/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
@@ -251,11 +332,47 @@
     </item>
     
     <item>
+      <title>Apple-Id</title>
+      <link>http://localhost:1313/tags/Apple-Id/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/Apple-Id/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft Login</title>
+      <link>http://localhost:1313/tags/Microsoft-login/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/Microsoft-login/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>OR-Tools</title>
       <link>http://localhost:1313/tags/OR-Tools/</link>
       <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/OR-Tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BibTeX</title>
+      <link>http://localhost:1313/tags/bibTeX/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/bibTeX/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dotnet</title>
+      <link>http://localhost:1313/tags/dotnet/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/dotnet/</guid>
       <description></description>
     </item>
     
@@ -274,15 +391,6 @@
       <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/input/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dotnet</title>
-      <link>http://localhost:1313/tags/dotnet/</link>
-      <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/dotnet/</guid>
       <description></description>
     </item>
     
@@ -332,6 +440,24 @@
     </item>
     
     <item>
+      <title>JavaScript</title>
+      <link>http://localhost:1313/tags/JavaScript/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/JavaScript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Json</title>
+      <link>http://localhost:1313/tags/Json/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/Json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Fluid</title>
       <link>http://localhost:1313/tags/fluid/</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
@@ -373,6 +499,15 @@
       <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/template/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fsharp</title>
+      <link>http://localhost:1313/tags/fsharp/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/fsharp/</guid>
       <description></description>
     </item>
     

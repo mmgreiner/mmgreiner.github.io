@@ -147,12 +147,68 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Working with Github<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How to get a list of all the issues into a csv, see stackoverflow
+gh issue list --state all | tr &#39;\t&#39; &#39;,&#39; &gt; bugreports/issues-24-05-23.csv </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-23 00:00:00 +0000 UTC'>May 23, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Working with Github" href="http://localhost:1313/draft/20240523-github/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>PDF utilities<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>PDF to text conversion See https://superuser.com/questions/286961/pdf-to-text-convertor. It is part of xpdf, and can be installed using:
+brew install xpdf Another option according to above is poppler:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-22 00:00:00 +0000 UTC'>May 22, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to PDF utilities" href="http://localhost:1313/draft/20240522-pdf/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Compiler with antlr and llvm<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Good small example: https://theantlrguy.atlassian.net/wiki/spaces/ANTLR3/pages/2687062/LLVM
+https://blog.gopheracademy.com/advent-2017/parsing-with-antlr4-and-go/
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-28 00:00:00 +0000 UTC'>February 28, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Compiler with antlr and llvm" href="http://localhost:1313/draft/compiler-antlr/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>MacOS Tips and trick<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Creating a background daemon See https://www.maketecheasier.com/use-launchd-run-scripts-on-schedule-macos/
+See also https://launchd.info
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-28 00:00:00 +0000 UTC'>January 28, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to MacOS Tips and trick" href="http://localhost:1313/draft/mac-tricks/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Protobuf and programming languages
     </h2>
   </header>
   <div class="entry-content">
     <p>Idea Protocoll buffers are a standard data exchange protocol defined and heavily used by Google.
-Protocol Buffers are language-neutral, platform-neutral extensible mechanisms for serializing structured data....</p>
+Protocol Buffers are language-neutral, platform-neutral extensible mechanisms for serializing structured data.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-12-26 00:00:00 +0000 UTC'>December 26, 2023</span></footer>
   <a class="entry-link" aria-label="post link to Protobuf and programming languages" href="http://localhost:1313/draft/2023-12-26-protobuf/"></a>
@@ -160,31 +216,77 @@ Protocol Buffers are language-neutral, platform-neutral extensible mechanisms fo
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>
+    <h2>Static web app with authentication<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
     </h2>
   </header>
   <div class="entry-content">
-    <p>Install phpmyadmin with brew ==&gt; Pouring phpmyadmin--5.2.1.sonoma.bottle.tar.gz ==&gt; Caveats To enable phpMyAdmin in Apache, add the following to httpd.conf and restart Apache: Alias /phpmyadmin /usr/local/share/phpmyadmin &lt;Directory /usr/local/share/phpmyadmin/&gt; Options Indexes FollowSymLinks MultiViews AllowOverride All &lt;IfModule mod_authz_core....</p>
+    <p>We will try to create a Hugo static web app that for some sub-pages uses authentication and authorization on azure to restrict access. The example builds on publish hugo.
+...</p>
   </div>
-  <footer class="entry-footer"></footer>
-  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/draft/2023-12-18-wordpress/"></a>
+  <footer class="entry-footer"><span title='2023-09-24 00:00:00 +0000 UTC'>September 24, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Static web app with authentication" href="http://localhost:1313/draft/2023-09-24-azure-hugo/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>
+    <h2>Dependency Injection in dotnet<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
     </h2>
   </header>
   <div class="entry-content">
-    <p>EDI middleware Comparisons https://www.g2.com/categories/electronic-data-interchange-edi
-https://michaelachrisco.github.io/Electronic-Interchange-Github-Resources/
-https://datainterchange.com/edifacts-standards-explained/
-Antlr An Antlr implementation: https://github.com/aaronhuggins/js-edi/tree/main/grammars/fact
-// Special token for discovering the position of control characters for a given EDI document....</p>
+    <p>Dependency injection
+</p>
   </div>
-  <footer class="entry-footer"></footer>
-  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/draft/20240530-EDI/"></a>
+  <footer class="entry-footer"><span title='2023-08-10 00:00:00 +0000 UTC'>August 10, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Dependency Injection in dotnet" href="http://localhost:1313/draft/2023-08-10-dependency-injection/"></a>
 </article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>HAL-S Compiler<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The idea is to write a compiler for the HAL-S language.
+This was the programming language used for the Voyager.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-07-01 00:00:00 +0000 UTC'>July 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to HAL-S Compiler" href="http://localhost:1313/draft/2023-07-01-hal-s-compiler/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Potenzen und Logarithmen<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is a paper (written in German) which was written by Lea Schmidt, student at Alte Kantonsschule Aarau to have a quick overview of exponential and logarithmic functions.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-02-15 00:00:00 +0000 UTC'>February 15, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Potenzen und Logarithmen" href="http://localhost:1313/draft/2023-02-15-math-exponentials/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Bulma hints<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Give the simplest possible bulma html with two columns and a decent margin.
+See Bulma
+&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34;&gt; &lt;title&gt;Hello Bulma!&lt;/title&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css&#34;&gt; &lt;/head&gt; &lt;body&gt; &lt;section class=&#34;section&#34;&gt; &lt;div class=&#34;content&#34;&gt; &lt;h1 class=&#34;title&#34;&gt; Hello World &lt;/h1&gt; &lt;p class=&#34;subtitle&#34;&gt; My first website with &lt;strong&gt;Bulma&lt;/strong&gt;! &lt;/p&gt; &lt;/div&gt; &lt;/section&gt; &lt;/body&gt; &lt;/html&gt; Questions:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-02-01 00:00:00 +0000 UTC'>February 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Bulma hints" href="http://localhost:1313/draft/2023-02-01-bulma/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="http://localhost:1313/draft/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
     </main>
     
 <footer class="footer">

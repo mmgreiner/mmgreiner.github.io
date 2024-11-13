@@ -13,7 +13,7 @@
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2022-08-29-static-templating/</guid>
-      <description>Templating is an proofen method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time.</description>
+      <description>&lt;p&gt;Templating is an proofen method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time. Well-known templating languages are &lt;a href=&#34;https://shopify.github.io/liquid/&#34;&gt;Liquid&lt;/a&gt;, which is written in ruby and used by &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt;, and &lt;a href=&#34;https://handlebarsjs.com&#34;&gt;Handlebars&lt;/a&gt;, which calls itself &lt;em&gt;minimal templating on steroids&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

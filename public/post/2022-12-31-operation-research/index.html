@@ -8,7 +8,8 @@
 <title>Operation research | Küse&#39;s Codes</title>
 <meta name="keywords" content="OR, OR-Tools">
 <meta name="description" content="Operation Research is defined in Wikipedia as
-Operations research (British English: operational research) &hellip; , often shortened to the initialism OR, is a discipline that deals with the development and application of analytical methods to improve decision-making.">
+
+Operations research (British English: operational research) &hellip; , often shortened to the initialism OR, is a discipline that deals with the development and application of analytical methods to improve decision-making. It is considered to be a subfield of mathematical sciences.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/post/2022-12-31-operation-research/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
@@ -566,22 +567,22 @@ trains = 60
 <p>I wanted to take the data directly from the web page to avoid any typing errors when copying the values. There are two tables of interests: one for the nutrients and one for the commodities. The get the data, the package <a href="">FSharp.Data</a> is used. It generates a dynamic type from the given URL and tables can be parsed row by row</p>
 <p>The nutrient table looks like this:</p>
 <table>
-<thead>
-<tr>
-<th>Nutrient</th>
-<th>Daily Recommended Intake</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Calories</td>
-<td>3,000 calories</td>
-</tr>
-<tr>
-<td>Protein</td>
-<td>70 grams</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Nutrient</th>
+          <th>Daily Recommended Intake</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Calories</td>
+          <td>3,000 calories</td>
+      </tr>
+      <tr>
+          <td>Protein</td>
+          <td>70 grams</td>
+      </tr>
+  </tbody>
 </table>
 <p>So we also have to extract the pure number from the second colum with the function <code>extractFloat</code>. In addition, calories and vitamin A have to be divided by 1000, since with commodities they are given as kilos.</p>
 <p>The nutrients will give us the boundaries, and the commodities the coefficients. Each commodity corresponds to a variable.</p>

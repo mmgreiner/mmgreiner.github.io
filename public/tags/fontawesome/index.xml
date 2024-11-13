@@ -13,8 +13,8 @@
       <pubDate>Sat, 27 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2024-07-27-purecss-menu/</guid>
-      <description>I have been using Pure.css in most of my applications since it is really simple to use.
-This is a small code sample that uses Pure.</description>
+      <description>&lt;p&gt;I have been using &lt;a href=&#34;https://purecss.io/&#34;&gt;Pure.css&lt;/a&gt; in most of my applications since it is really simple to use.&lt;/p&gt;
+&lt;p&gt;This is a small code sample that uses &lt;a href=&#34;https://purecss.io/&#34;&gt;Pure.css&lt;/a&gt; with a responsive, vertical menu with hamburger and a submenu.&lt;/p&gt;</description>
     </item>
     
   </channel>
