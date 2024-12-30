@@ -61,7 +61,7 @@ I later moved all the [Jekyll] pages to [Hugo]. To publish and deploy the [Hugo]
 hugo --destination ~/Sites/mypages --baseURL http://localhost/~mmgreiner/mypages
 ~~~
 
-Make sure that the destination directory name corresponds to the last name of the `baseURL`, in this case `mypages-hugo`.
+Make sure that the destination directory name corresponds to the last name of the `baseURL`, in this case `mypages`.
 
 You should now see your pages at <http://localhost/~mmgreiner/mypages/>.
 
