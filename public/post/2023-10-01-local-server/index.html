@@ -154,14 +154,24 @@ It is possible to deploy Jekyll sites locally, because OSX has a build-in Apache
   </header> 
   <div class="post-content"><h2 id="running-build-in-tomcat-server">Running build-in tomcat server<a hidden class="anchor" aria-hidden="true" href="#running-build-in-tomcat-server">#</a></h2>
 <p>It is possible to deploy <a href="https://jekyllrb.com">Jekyll</a> sites locally, because OSX has a build-in <a href="https://tomcat.apache.org">Apache tomcat server</a>. The local sites reside under <code>~/Sites</code>. However, the setup of this server often changes with new versions of OSX.</p>
-<p>John does a great job on documenting how to do this on <a href="https://discussions.apple.com/docs/DOC-3083">Apple Community</a>. For the latest version Sonoma 14.0, these instructions can be seen <a href="https://discussions.apple.com/docs/DOC-250007792">here</a>.</p>
+<p>John does a great job on documenting how to do this on <a href="https://discussions.apple.com/docs/DOC-3083">Apple Community</a>. For the version <strong>Sonoma 14.0</strong>, these instructions can be seen <a href="https://discussions.apple.com/docs/DOC-250007792">here</a>.</p>
+<p>For <strong>Ventura</strong>, the instructions can be found <a href="https://discussions.apple.com/docs/DOC-250008906">here</a>.</p>
 <p>If you follow these instructions, you should be able to run <a href="http://localhost/">http://localhost/</a>, and it should respond with:</p>
 <pre><code>It works!
 </code></pre>
 <p>If you browse to <a href="http://localhost/~mmgreiner/">http://localhost/~mmgreiner/</a>, you should see the files:</p>
 <pre><code>Index of ~/mmgreiner
 </code></pre>
-<h2 id="deploying-jekyll-static-site-locally">Deploying Jekyll static site locally<a hidden class="anchor" aria-hidden="true" href="#deploying-jekyll-static-site-locally">#</a></h2>
+<p>Or, if you have enabled the english language in <code>/etc/apache2/users/mmgreiner.conf</code> with</p>
+<pre><code>AddLanguage en .en
+</code></pre>
+<p>you should see the content of the file <code>~/Sites/index.html.en</code>, which could be:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">h1</span>&gt;My site works. File at /Users/mmgreiner/Sites &lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h2 id="deploying-jekyll-static-site-locally">Deploying Jekyll static site locally<a hidden class="anchor" aria-hidden="true" href="#deploying-jekyll-static-site-locally">#</a></h2>
 <p>To deploy your <a href="https://jekyllrb.com">Jekyll</a> generated static sites locally, use</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csh" data-lang="csh"><span style="display:flex;"><span>jekyll build --drafts -d ~/Sites/mypages --baseurl <span style="color:#e6db74">&#34;~mmgreiner/mypages&#34;</span>
 </span></span></code></pre></div><p>If you now browse to <a href="http://localhost/~mmgreiner/mypages/">http://localhost/~mmgreiner/mypages/</a>, you should see your <a href="https://jekyllrb.com">Jekyll</a> sites.</p>

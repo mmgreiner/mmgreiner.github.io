@@ -17,7 +17,9 @@ showshowToc: true
 
 It is possible to deploy [Jekyll] sites locally, because OSX has a build-in [Apache tomcat server][tomcat]. The local sites reside under `~/Sites`. However, the setup of this server often changes with new versions of OSX.
 
-John does a great job on documenting how to do this on [Apple Community](https://discussions.apple.com/docs/DOC-3083). For the latest version Sonoma 14.0, these instructions can be seen [here](https://discussions.apple.com/docs/DOC-250007792).
+John does a great job on documenting how to do this on [Apple Community](https://discussions.apple.com/docs/DOC-3083). For the version **Sonoma 14.0**, these instructions can be seen [here](https://discussions.apple.com/docs/DOC-250007792).
+
+For **Ventura**, the instructions can be found [here](https://discussions.apple.com/docs/DOC-250008906).
 
 If you follow these instructions, you should be able to run <http://localhost/>, and it should respond with:
 
@@ -26,6 +28,20 @@ If you follow these instructions, you should be able to run <http://localhost/>,
 If you browse to <http://localhost/~mmgreiner/>, you should see the files:
 
     Index of ~/mmgreiner
+
+Or, if you have enabled the english language in `/etc/apache2/users/mmgreiner.conf` with 
+
+    AddLanguage en .en
+
+you should see the content of the file `~/Sites/index.html.en`, which could be:
+
+~~~html
+<html>
+    <body>
+        <h1>My site works. File at /Users/mmgreiner/Sites </h1>
+    </body>
+</html>
+~~~
 
 ## Deploying Jekyll static site locally
 
@@ -46,6 +62,8 @@ hugo --destination ~/Sites/mypages --baseURL http://localhost/~mmgreiner/mypages
 ~~~
 
 Make sure that the destination directory name corresponds to the last name of the `baseURL`, in this case `mypages-hugo`.
+
+You should now see your pages at <http://localhost/~mmgreiner/mypages/>.
 
 ## Potential problems
 

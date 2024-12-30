@@ -6,7 +6,16 @@
     <description>Recent content in Programming on Küse&#39;s Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ruby on Rails ticks and trips</title>
+      <link>http://localhost:1313/post/2024-11-12-rails-tips/</link>
+      <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2024-11-12-rails-tips/</guid>
+      <description>Ruby on Rails with bulma, haml, etc.</description>
+    </item>
+    
     <item>
       <title>A vertical responsive menu with PureCSS</title>
       <link>http://localhost:1313/post/2024-07-27-purecss-menu/</link>
@@ -15,40 +24,6 @@
       <guid>http://localhost:1313/post/2024-07-27-purecss-menu/</guid>
       <description>&lt;p&gt;I have been using &lt;a href=&#34;https://purecss.io/&#34;&gt;Pure.css&lt;/a&gt; in most of my applications since it is really simple to use.&lt;/p&gt;
 &lt;p&gt;This is a small code sample that uses &lt;a href=&#34;https://purecss.io/&#34;&gt;Pure.css&lt;/a&gt; with a responsive, vertical menu with hamburger and a submenu.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Working with Github</title>
-      <link>http://localhost:1313/draft/20240523-github/</link>
-      <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/20240523-github/</guid>
-      <description>&lt;p&gt;How to get a list of all the issues into a csv, see &lt;a href=&#34;https://stackoverflow.com/questions/41369365/how-can-i-export-github-issues-to-excel&#34;&gt;stackoverflow&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;gh issue list --state all | tr &#39;\t&#39; &#39;,&#39; &amp;gt; bugreports/issues-24-05-23.csv
-&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>PDF utilities</title>
-      <link>http://localhost:1313/draft/20240522-pdf/</link>
-      <pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/20240522-pdf/</guid>
-      <description>&lt;h2 id=&#34;pdf-to-text-conversion&#34;&gt;PDF to text conversion&lt;/h2&gt;
-&lt;p&gt;See &lt;a href=&#34;https://superuser.com/questions/286961/pdf-to-text-convertor&#34;&gt;https://superuser.com/questions/286961/pdf-to-text-convertor&lt;/a&gt;. It is part of &lt;a href=&#34;http://foolabs.com/xpdf/download.html&#34;&gt;xpdf&lt;/a&gt;, and can be installed using:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;brew install xpdf
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Another option according to above is &lt;a href=&#34;http://foolabs.com/xpdf/download.html&#34;&gt;poppler&lt;/a&gt;:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Compiler with antlr and llvm</title>
-      <link>http://localhost:1313/draft/compiler-antlr/</link>
-      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/compiler-antlr/</guid>
-      <description>&lt;p&gt;Good small example: &lt;a href=&#34;https://theantlrguy.atlassian.net/wiki/spaces/ANTLR3/pages/2687062/LLVM&#34;&gt;https://theantlrguy.atlassian.net/wiki/spaces/ANTLR3/pages/2687062/LLVM&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://blog.gopheracademy.com/advent-2017/parsing-with-antlr4-and-go/&#34;&gt;https://blog.gopheracademy.com/advent-2017/parsing-with-antlr4-and-go/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -62,28 +37,6 @@
     </item>
     
     <item>
-      <title>MacOS Tips and trick</title>
-      <link>http://localhost:1313/draft/mac-tricks/</link>
-      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/mac-tricks/</guid>
-      <description>&lt;h2 id=&#34;creating-a-background-daemon&#34;&gt;Creating a background daemon&lt;/h2&gt;
-&lt;p&gt;See &lt;a href=&#34;https://www.maketecheasier.com/use-launchd-run-scripts-on-schedule-macos/&#34;&gt;https://www.maketecheasier.com/use-launchd-run-scripts-on-schedule-macos/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;See also &lt;a href=&#34;https://launchd.info&#34;&gt;https://launchd.info&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Ruby on Rails Tips and Tricks</title>
-      <link>http://localhost:1313/post/2024-01-28-ruby-rails-hints/</link>
-      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/2024-01-28-ruby-rails-hints/</guid>
-      <description>&lt;p&gt;This gives some tips and trick for Ruby on Rails.&lt;/p&gt;
-&lt;h1 id=&#34;quickref&#34;&gt;Quickref&lt;/h1&gt;
-&lt;p&gt;I found an excellent quick reference guide to Ruby on &lt;a href=&#34;https://www.zenspider.com/ruby/quickref.html#types&#34;&gt;zenspider&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Serving static pages locally</title>
       <link>http://localhost:1313/post/2023-10-01-local-server/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
@@ -94,40 +47,12 @@
     </item>
     
     <item>
-      <title>Static web app with authentication</title>
-      <link>http://localhost:1313/draft/2023-09-24-azure-hugo/</link>
-      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/2023-09-24-azure-hugo/</guid>
-      <description>&lt;p&gt;We will try to create a &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; static web app that for some sub-pages uses authentication and authorization on azure to restrict access. The example builds on &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/static-web-apps/publish-hugo&#34;&gt;publish hugo&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Dependency Injection in dotnet</title>
-      <link>http://localhost:1313/draft/2023-08-10-dependency-injection/</link>
-      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/2023-08-10-dependency-injection/</guid>
-      <description>&lt;p&gt;Dependency injection&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>How to work with modules and packages in Go</title>
       <link>http://localhost:1313/post/2023-07-30-go-modules/</link>
       <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/post/2023-07-30-go-modules/</guid>
       <description>&lt;p&gt;I had to practice a long time to understand the &lt;a href=&#34;https://go.dev&#34;&gt;go&lt;/a&gt; concepts of modules, packages, and how to publish them to &lt;a href=&#34;https://github.com&#34;&gt;github&lt;/a&gt;. Here are my learnings.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>HAL-S Compiler</title>
-      <link>http://localhost:1313/draft/2023-07-01-hal-s-compiler/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/2023-07-01-hal-s-compiler/</guid>
-      <description>&lt;p&gt;The idea is to write a compiler for the HAL-S language.&lt;/p&gt;
-&lt;p&gt;This was the programming language used for the Voyager.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -252,64 +177,6 @@ $$&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Bulma hints</title>
-      <link>http://localhost:1313/draft/2023-02-01-bulma/</link>
-      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/2023-02-01-bulma/</guid>
-      <description>&lt;p&gt;Give the simplest possible bulma html with two columns and a decent margin.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;https://bulma.io&#34;&gt;Bulma&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;viewport&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;Hello Bulma!&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;link&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rel&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css&amp;#34;&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;section&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;section&amp;#34;&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        Hello World
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitle&amp;#34;&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        My first website with &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;Bulma&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;!
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;section&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Questions:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Command line parsing</title>
-      <link>http://localhost:1313/draft/2023-02-01-command-line-parsing/</link>
-      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/2023-02-01-command-line-parsing/</guid>
-      <description>&lt;h2 id=&#34;commandlineparser&#34;&gt;CommandLineParser&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/commandlineparser/commandline&#34;&gt;https://github.com/commandlineparser/commandline&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.nuget.org/packages/CommandLineParser.FSharp/&#34;&gt;https://www.nuget.org/packages/CommandLineParser.FSharp/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/commandlineparser/commandline/wiki&#34;&gt;https://github.com/commandlineparser/commandline/wiki&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fsharp&#34; data-lang=&#34;fsharp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;options&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;[&amp;lt;&lt;/span&gt;Option&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;r&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;read&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; Required &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; HelpText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Input files.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&amp;gt;]&lt;/span&gt; files &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; seq&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;[&amp;lt;&lt;/span&gt;Option&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;HelpText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Prints all messages to standard output.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&amp;gt;]&lt;/span&gt; verbose &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;bool&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;[&amp;lt;&lt;/span&gt;Option&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Default &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;русский&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; HelpText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Content language.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&amp;gt;]&lt;/span&gt; language &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;[&amp;lt;&lt;/span&gt;Value&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; MetaName&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;offset&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; HelpText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;File offset.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&amp;gt;]&lt;/span&gt; offset &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int64&lt;/span&gt; option&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; main argv &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; CommandLine.Parser.Default.ParseArguments&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;(&lt;/span&gt;argv&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;match&lt;/span&gt; result &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:?&lt;/span&gt; Parsed&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; parsed &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; run parsed&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Value
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:?&lt;/span&gt; NotParsed&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; notParsed &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; fail notParsed&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Errors
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;argu&#34;&gt;Argu&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://fsprojects.github.io/Argu/&#34;&gt;https://fsprojects.github.io/Argu/&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Go tricks &amp; tips</title>
       <link>http://localhost:1313/post/2023-02-01-golang/</link>
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
@@ -330,20 +197,6 @@ $$&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Authentication</title>
-      <link>http://localhost:1313/draft/2023-01-01-authentication/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/2023-01-01-authentication/</guid>
-      <description>&lt;p&gt;Collect information about authentication.&lt;/p&gt;
-&lt;h3 id=&#34;aspnetsecurityoauthproviders&#34;&gt;AspNet.Security.OAuth.Providers&lt;/h3&gt;
-&lt;p&gt;Good samples of aspnet MVC with google, twitter, Apple-ID:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers&#34;&gt;https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;AspNet.Security.OAuth.Providers&lt;/strong&gt; is a &lt;strong&gt;collection of security middleware&lt;/strong&gt; that you can use in your &lt;strong&gt;ASP.NET Core&lt;/strong&gt;application to support social authentication providers like &lt;strong&gt;&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href=&#34;https://foursquare.com/&#34;&gt;Foursquare&lt;/a&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;a href=&#34;https://www.dropbox.com/&#34;&gt;Dropbox&lt;/a&gt;&lt;/strong&gt;. It is directly inspired by &lt;strong&gt;&lt;a href=&#34;https://github.com/jerriep&#34;&gt;Jerrie Pelser&lt;/a&gt;&lt;/strong&gt;&amp;rsquo;s initiative, &lt;strong&gt;&lt;a href=&#34;https://github.com/RockstarLabs/OwinOAuthProviders&#34;&gt;Owin.Security.Providers&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Operation research</title>
       <link>http://localhost:1313/post/2022-12-31-operation-research/</link>
       <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
@@ -355,12 +208,12 @@ $$&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>PDF converter in dotnet</title>
-      <link>http://localhost:1313/draft/2022-12-01-pdf-converter/</link>
+      <title>PDF to text conversion</title>
+      <link>http://localhost:1313/post/2022-12-01-pdf-converter/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/draft/2022-12-01-pdf-converter/</guid>
-      <description>&lt;p&gt;There is once in a while the need to extract pure text from PDF files. This blog shows some attempts to do it with dot, and also with &lt;a href=&#34;https://www.ruby-lang.org/en/&#34;&gt;ruby&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/post/2022-12-01-pdf-converter/</guid>
+      <description>&lt;p&gt;There is once in a while the need to extract pure text from PDF files. This blog shows some attempts to do it with dot, with &lt;a href=&#34;https://www.ruby-lang.org/en/&#34;&gt;ruby&lt;/a&gt;, and with command line utitilites.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -396,51 +249,6 @@ $$&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>JavaScript copy to clipboard</title>
-      <link>http://localhost:1313/draft/2022-10-01-CopyClipboard/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/2022-10-01-CopyClipboard/</guid>
-      <description>&lt;p&gt;Links:&lt;/p&gt;
-&lt;p&gt;Good explanation: &lt;a href=&#34;https://stackabuse.com/how-to-copy-to-clipboard-in-javascript-with-the-clipboard-api/&#34;&gt;How-to-copy-to-clipboard&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Sample code:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;copyRichTextToClipboard&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;) {
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;blob&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Blob&lt;/span&gt;([&lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;], { &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/html&amp;#34;&lt;/span&gt; });
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;richTextInput&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ClipboardItem&lt;/span&gt;({ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/html&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;blob&lt;/span&gt; });
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//navigator.clipboard.write([richTextInput]).then(() =&amp;gt; { alert(&amp;#34;Copied rich:&amp;#34; + content)});
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;navigator&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;clipboard&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;write&lt;/span&gt;([&lt;span style=&#34;color:#a6e22e&#34;&gt;richTextInput&lt;/span&gt;]).&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        () =&amp;gt; { }, 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        () =&amp;gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;failed to copy &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;); }
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    );
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Sample usage:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Json Serialization</title>
-      <link>http://localhost:1313/draft/2022-10-01-JsonSerialization/</link>
-      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/2022-10-01-JsonSerialization/</guid>
-      <description>&lt;p&gt;Best help: &lt;a href=&#34;https://github.com/Tarmil/FSharp.SystemTextJson&#34;&gt;FSharp.System.TextJson&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fsharp&#34; data-lang=&#34;fsharp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#r&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nuget: FSharp.SystemTextJson&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;;&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;open&lt;/span&gt; System.Text.Json
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;open&lt;/span&gt; System.Text.Json.Serialization
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; options &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; JsonSerializerOptions()
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Converters&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Add&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;JsonFSharpConverter()&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; me &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{|&lt;/span&gt; MiddleName &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Some &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Max&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; Birtday &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; System.DateTime&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;1965&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 11&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 10&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; you &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{|&lt;/span&gt; MiddleName &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Option&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;.&lt;/span&gt;None&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; Birtday &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; System.DateTime&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;1980&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 31&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;JsonSerializer.Serialize&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;me&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; options&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// val it: string = &amp;#34;{&amp;#34;Birtday&amp;#34;:&amp;#34;1965-11-10T00:00:00&amp;#34;,&amp;#34;MiddleName&amp;#34;:&amp;#34;Max&amp;#34;}&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;JsonSerializer.Serialize&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;you&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; options&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// val it: string = &amp;#34;{&amp;#34;Birtday&amp;#34;:&amp;#34;1980-01-31T00:00:00&amp;#34;,&amp;#34;MiddleName&amp;#34;:null}&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;json-serialization-with-bolero&#34;&gt;Json serialization with Bolero&lt;/h2&gt;
-&lt;p&gt;tbd&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Static templating with handlebars, liquid and others</title>
       <link>http://localhost:1313/post/2022-08-29-static-templating/</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
@@ -458,17 +266,6 @@ $$&lt;/p&gt;</description>
       <description>&lt;p&gt;This blog contains some experiences working with &lt;a href=&#34;https://fsbolero.io/docs/&#34;&gt;Bolero&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Bolero is a set of free and open-source libraries and tools to write web applications in &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Using CSV Helper to write CSV files</title>
-      <link>http://localhost:1313/draft/2022-08-01-csvhelper/</link>
-      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/2022-08-01-csvhelper/</guid>
-      <description>&lt;h2 id=&#34;usage-of-csvhelper&#34;&gt;Usage of CsvHelper&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://joshclose.github.io/CsvHelper/&#34;&gt;CsvHelper&lt;/a&gt; is a dotnet C# library for reading and wrinting CSV files.&lt;/p&gt;
-&lt;p&gt;It is defined for C#, so there are some things you have to think about for &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>

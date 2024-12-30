@@ -147,43 +147,16 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Working with Github<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    <h2>Docker, Sinatra and Azure
     </h2>
   </header>
   <div class="entry-content">
-    <p>How to get a list of all the issues into a csv, see stackoverflow
-gh issue list --state all | tr &#39;\t&#39; &#39;,&#39; &gt; bugreports/issues-24-05-23.csv </p>
+    <p>This describes the most simple way to create a Docker container of a Sinatra app and deploying it to Azure.
+Sinatra Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-05-23 00:00:00 +0000 UTC'>May 23, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Working with Github" href="http://localhost:1313/draft/20240523-github/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Compiler with antlr and llvm<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Good small example: https://theantlrguy.atlassian.net/wiki/spaces/ANTLR3/pages/2687062/LLVM
-https://blog.gopheracademy.com/advent-2017/parsing-with-antlr4-and-go/
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-02-28 00:00:00 +0000 UTC'>February 28, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to Compiler with antlr and llvm" href="http://localhost:1313/draft/compiler-antlr/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>MacOS Tips and trick<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Creating a background daemon See https://www.maketecheasier.com/use-launchd-run-scripts-on-schedule-macos/
-See also https://launchd.info
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-28 00:00:00 +0000 UTC'>January 28, 2024</span></footer>
-  <a class="entry-link" aria-label="post link to MacOS Tips and trick" href="http://localhost:1313/draft/mac-tricks/"></a>
+  <footer class="entry-footer"><span title='2024-12-28 00:00:00 +0000 UTC'>December 28, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Docker, Sinatra and Azure" href="http://localhost:1313/draft/2024-12-28-Dockerize-Sinatra-Azure/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -202,94 +175,16 @@ Protocol Buffers are language-neutral, platform-neutral extensible mechanisms fo
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Static web app with authentication<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    <h2>
     </h2>
   </header>
   <div class="entry-content">
-    <p>We will try to create a Hugo static web app that for some sub-pages uses authentication and authorization on azure to restrict access. The example builds on publish hugo.
+    <p>Install phpmyadmin with brew ==&gt; Pouring phpmyadmin--5.2.1.sonoma.bottle.tar.gz ==&gt; Caveats To enable phpMyAdmin in Apache, add the following to httpd.conf and restart Apache: Alias /phpmyadmin /usr/local/share/phpmyadmin &lt;Directory /usr/local/share/phpmyadmin/&gt; Options Indexes FollowSymLinks MultiViews AllowOverride All &lt;IfModule mod_authz_core.c&gt; Require all granted &lt;/IfModule&gt; &lt;IfModule !mod_authz_core.c&gt; Order allow,deny Allow from all &lt;/IfModule&gt; &lt;/Directory&gt; Then open http://localhost/phpmyadmin The configuration file is /usr/local/etc/phpmyadmin.config.inc.php ==&gt; Summary 🍺 /usr/local/Cellar/phpmyadmin/5.2.1: 4,191 files, 48.1MB ==&gt; Running `brew cleanup phpmyadmin`... Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP. Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`). Where is httpd.conf?
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2023-09-24 00:00:00 +0000 UTC'>September 24, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Static web app with authentication" href="http://localhost:1313/draft/2023-09-24-azure-hugo/"></a>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/draft/2023-12-18-wordpress/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Dependency Injection in dotnet<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Dependency injection
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-08-10 00:00:00 +0000 UTC'>August 10, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Dependency Injection in dotnet" href="http://localhost:1313/draft/2023-08-10-dependency-injection/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>HAL-S Compiler<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The idea is to write a compiler for the HAL-S language.
-This was the programming language used for the Voyager.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-07-01 00:00:00 +0000 UTC'>July 1, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to HAL-S Compiler" href="http://localhost:1313/draft/2023-07-01-hal-s-compiler/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Potenzen und Logarithmen<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This is a paper (written in German) which was written by Lea Schmidt, student at Alte Kantonsschule Aarau to have a quick overview of exponential and logarithmic functions.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-02-15 00:00:00 +0000 UTC'>February 15, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Potenzen und Logarithmen" href="http://localhost:1313/draft/2023-02-15-math-exponentials/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Command line parsing<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>CommandLineParser https://github.com/commandlineparser/commandline
-https://www.nuget.org/packages/CommandLineParser.FSharp/
-https://github.com/commandlineparser/commandline/wiki
-type options = { [&lt;Option(&#39;r&#39;, &#34;read&#34;, Required = true, HelpText = &#34;Input files.&#34;)&gt;] files : seq&lt;string&gt;; [&lt;Option(HelpText = &#34;Prints all messages to standard output.&#34;)&gt;] verbose : bool; [&lt;Option(Default = &#34;русский&#34;, HelpText = &#34;Content language.&#34;)&gt;] language : string; [&lt;Value(0, MetaName=&#34;offset&#34;, HelpText = &#34;File offset.&#34;)&gt;] offset : int64 option; } let main argv = let result = CommandLine.Parser.Default.ParseArguments&lt;options&gt;(argv) match result with | :? Parsed&lt;options&gt; as parsed -&gt; run parsed.Value | :? NotParsed&lt;options&gt; as notParsed -&gt; fail notParsed.Errors Argu https://fsprojects.github.io/Argu/
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-02-01 00:00:00 +0000 UTC'>February 1, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Command line parsing" href="http://localhost:1313/draft/2023-02-01-command-line-parsing/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>Authentication<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Collect information about authentication.
-AspNet.Security.OAuth.Providers Good samples of aspnet MVC with google, twitter, Apple-ID:
-https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers
-AspNet.Security.OAuth.Providers is a collection of security middleware that you can use in your ASP.NET Coreapplication to support social authentication providers like GitHub, Foursquare or Dropbox. It is directly inspired by Jerrie Pelser’s initiative, Owin.Security.Providers.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-01-01 00:00:00 +0000 UTC'>January 1, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Authentication" href="http://localhost:1313/draft/2023-01-01-authentication/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="next" href="http://localhost:1313/draft/page/2/">Next&nbsp;&nbsp;»
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">

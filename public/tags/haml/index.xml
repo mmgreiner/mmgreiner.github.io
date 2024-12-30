@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/haml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ruby on Rails ticks and trips</title>
-      <link>http://localhost:1313/draft/2024-11-12-rails-tips/</link>
+      <link>http://localhost:1313/post/2024-11-12-rails-tips/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/draft/2024-11-12-rails-tips/</guid>
+      <guid>http://localhost:1313/post/2024-11-12-rails-tips/</guid>
       <description>Ruby on Rails with bulma, haml, etc.</description>
     </item>
     

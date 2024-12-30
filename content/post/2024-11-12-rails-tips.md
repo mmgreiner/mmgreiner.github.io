@@ -106,15 +106,150 @@ My much more frequent use case is using strings in the database. I found this on
 
 ~~~~ruby
 class Work < ApplicationRecord
-  ALL_STATES = %w[canceled offering running payment rating done].freeze
-  enum status: ALL_STATES.zip(ALL_STATES).to_h
+  enum status: %i[canceled offering running payment rating done].index_with(&:to_s)
 end
 ~~~~
+
+Then, in the view, you can use:
+
+~~~~ruby
+form.select :status, Work::stati    # or statuses?
+~~~~
+
 
 
 ## Quick reference
 
 I found an excellent quick reference guide to Ruby on [zenspider][quickref].
+
+## More complex associations
+
+I asked this to chatGPT:
+
+> Using ruby active record, how can I model the following situation:
+> An order has a supplier of class BusinessPartner, and a producer also of class BusinessPartner. How is the ruby code for the model and for the database migrations
+
+I got the following response
+
+To model this scenario in Ruby on Rails using Active Record, where an `Order` has both a `supplier` and a `producer`, each of which belongs to the same class `BusinessPartner`, you can use the concept of **self-referential associations** with polymorphic-like relationships. This allows you to associate the `BusinessPartner` model in two different roles within the `Order` model.
+
+### Step 1: Database Migrations
+
+You'll need to set up your database tables to accommodate these associations. Here's how you can create the necessary migrations.
+
+#### 1.1 Create the `BusinessPartner` model and migration:
+
+```bash
+rails generate model BusinessPartner name:string
+```
+
+This will generate a migration file. Make sure it looks like this:
+
+```ruby
+# db/migrate/20241113000001_create_business_partners.rb
+class CreateBusinessPartners < ActiveRecord::Migration[7.0]
+  def change
+    create_table :business_partners do |t|
+      t.string :name, null: false
+      t.timestamps
+    end
+  end
+end
+```
+
+#### 1.2 Create the `Order` model and migration:
+
+```bash
+rails generate model Order supplier_id:integer producer_id:integer
+```
+
+This will generate another migration file. Update it as follows:
+
+```ruby
+# db/migrate/20241113000002_create_orders.rb
+class CreateOrders < ActiveRecord::Migration[7.0]
+  def change
+    create_table :orders do |t|
+      t.references :supplier, null: false, foreign_key: { to_table: :business_partners }
+      t.references :producer, null: false, foreign_key: { to_table: :business_partners }
+      t.timestamps
+    end
+  end
+end
+```
+
+#### 1.3 Run the Migrations
+
+Run the migrations to create the tables:
+
+```bash
+rails db:migrate
+```
+
+### Step 2: Model Setup
+
+Now, let's set up the Ruby models to reflect this relationship.
+
+#### 2.1 BusinessPartner Model
+
+```ruby
+# app/models/business_partner.rb
+class BusinessPartner < ApplicationRecord
+  has_many :supplied_orders, class_name: 'Order', foreign_key: 'supplier_id'
+  has_many :produced_orders, class_name: 'Order', foreign_key: 'producer_id'
+end
+```
+
+#### 2.2 Order Model
+
+```ruby
+# app/models/order.rb
+class Order < ApplicationRecord
+  belongs_to :supplier, class_name: 'BusinessPartner'
+  belongs_to :producer, class_name: 'BusinessPartner'
+end
+```
+
+### Step 3: Using the Models
+
+Now that the models and migrations are set up, you can create `BusinessPartner` records and associate them with `Order` records:
+
+#### 3.1 Creating Business Partners
+
+```ruby
+supplier = BusinessPartner.create(name: 'Supplier Co.')
+producer = BusinessPartner.create(name: 'Producer Ltd.')
+```
+
+#### 3.2 Creating an Order
+
+```ruby
+order = Order.create(supplier: supplier, producer: producer)
+```
+
+#### 3.3 Querying the Data
+
+```ruby
+# Fetch the supplier for an order
+order.supplier
+
+# Fetch the producer for an order
+order.producer
+
+# List all orders supplied by a specific business partner
+supplier.supplied_orders
+
+# List all orders produced by a specific business partner
+producer.produced_orders
+```
+
+### Explanation
+
+- The `Order` model has two foreign keys, `supplier_id` and `producer_id`, both referencing the `BusinessPartner` model.
+- The `belongs_to` association in the `Order` model specifies `class_name: 'BusinessPartner'` to indicate that these associations point to the `BusinessPartner` model.
+- The `BusinessPartner` model includes `has_many` associations with customized foreign keys, allowing you to fetch orders where the partner is either a supplier or a producer.
+
+This approach is clean and efficient, leveraging Rails' built-in association features without requiring polymorphic associations since both `supplier` and `producer` are of the same type (`BusinessPartner`).
 
 
 ## ActiveRecords associations
@@ -345,6 +480,10 @@ B.find(3).a
 </tbody>
 </table>
 
+## One-liners
+
+A very interesting blog on using ruby one-lines, mainly with text files,
+was found under [Ruby One.liners](https://learnbyexample.github.io/learn_ruby_oneliners/cover.html).
 
 
 ## Instance variables and class instance variables
