@@ -48,7 +48,8 @@ params:
     Title: Küse's Codes
     Content: >
       A Swiss nick name for Markus is Küse, and since I love alliterations, 
-      this blog is called Küse’s Code (although this is a really terrible alliteration)
+      this blog is called Küse’s Code (although this is a really terrible alliteration).
+      This blog is available on [GitHub Pages](https://mmgreiner.github.io) and [locally](http://localhost/~mmgreiner/mypages/).
 
   socialIcons: # optional
     - name: github

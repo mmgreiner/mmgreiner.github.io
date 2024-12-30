@@ -37,15 +37,6 @@
     </item>
     
     <item>
-      <title>Protobuf and programming languages</title>
-      <link>http://localhost:1313/draft/2023-12-26-protobuf/</link>
-      <pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/2023-12-26-protobuf/</guid>
-      <description>Protobuf and programming languages</description>
-    </item>
-    
-    <item>
       <title>Hugo tips and tricks</title>
       <link>http://localhost:1313/post/2023-11-27-hugo-tricks/</link>
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
@@ -454,47 +445,6 @@ The configuration file is /usr/local/etc/phpmyadmin.config.inc.php
 Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
 Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Where is httpd.conf?&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/draft/20240530-EDI/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/20240530-EDI/</guid>
-      <description>&lt;h1 id=&#34;edi-middleware&#34;&gt;EDI middleware&lt;/h1&gt;
-&lt;h2 id=&#34;comparisons&#34;&gt;Comparisons&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.g2.com/categories/electronic-data-interchange-edi&#34;&gt;https://www.g2.com/categories/electronic-data-interchange-edi&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://michaelachrisco.github.io/Electronic-Interchange-Github-Resources/&#34;&gt;https://michaelachrisco.github.io/Electronic-Interchange-Github-Resources/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://datainterchange.com/edifacts-standards-explained/&#34;&gt;https://datainterchange.com/edifacts-standards-explained/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;antlr&#34;&gt;Antlr&lt;/h2&gt;
-&lt;p&gt;An Antlr implementation: &lt;a href=&#34;https://github.com/aaronhuggins/js-edi/tree/main/grammars/fact&#34;&gt;https://github.com/aaronhuggins/js-edi/tree/main/grammars/fact&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-antlr&#34; data-lang=&#34;antlr&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Special token for discovering the position of control characters for a given EDI document.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ControlChar:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;Special&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) }
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CR&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;LF&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) }
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CR&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) }
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;LF&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) }
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;AsciiControl&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) };
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// All valid printable characters.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Char:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;Letter&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Number&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Special&lt;/span&gt; { !this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) };
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Reserved segment tags.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SvcStringAdvice: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNA&amp;#39;&lt;/span&gt; { this.handleUNA() };
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;InterchangeHeader: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNB&amp;#39;&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;InterchangeTrailer: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNZ&amp;#39;&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GroupHeader: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNG&amp;#39;&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GroupTrailer: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNE&amp;#39;&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MessageHeader: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNH&amp;#39;&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MessageTrailer: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNT&amp;#39;&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;TextSegment: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TXT&amp;#39;&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SectionControl: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNS&amp;#39;&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;go&#34;&gt;Go&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/jf-tech/omniparser&#34;&gt;Omniparser&lt;/a&gt; is a general purpose parser written in Go:&lt;/p&gt;</description>
     </item>
     
     

@@ -53,9 +53,6 @@
     <loc>http://localhost:1313/post/2024-02-03-purecss/</loc>
     <lastmod>2024-02-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/draft/2023-12-26-protobuf/</loc>
-    <lastmod>2023-12-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2023-11-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -282,8 +279,6 @@
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/draft/2023-12-18-wordpress/</loc>
-  </url><url>
-    <loc>http://localhost:1313/draft/20240530-EDI/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
   </url>
