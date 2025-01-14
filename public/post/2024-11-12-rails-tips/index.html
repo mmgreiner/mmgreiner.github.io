@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
 <title>Ruby on Rails ticks and trips | Küse&#39;s Codes</title>
-<meta name="keywords" content="ruby, rails, haml, bulma">
+<meta name="keywords" content="ruby, rails, haml, bulma, simple.css, slim">
 <meta name="description" content="Ruby on Rails with bulma, haml, etc.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/post/2024-11-12-rails-tips/">
@@ -163,9 +163,25 @@
                 <li>
                     <a href="#haml" aria-label="Haml">Haml</a></li>
                 <li>
+                    <a href="#slim" aria-label="Slim">Slim</a></li>
+                <li>
                     <a href="#bulma" aria-label="Bulma">Bulma</a></li>
                 <li>
+                    <a href="#simplecss" aria-label="Simple.css">Simple.css</a></li>
+                <li>
+                    <a href="#mimimum-application" aria-label="Mimimum application">Mimimum application</a></li>
+                <li>
                     <a href="#enums" aria-label="Enums">Enums</a></li>
+                <li>
+                    <a href="#database-views" aria-label="Database views">Database views</a><ul>
+                        
+                <li>
+                    <a href="#create-migration" aria-label="Create Migration">Create Migration</a></li>
+                <li>
+                    <a href="#create-model" aria-label="Create model">Create model</a></li>
+                <li>
+                    <a href="#create-controller-and-views" aria-label="Create controller and views">Create controller and views</a></li></ul>
+                </li>
                 <li>
                     <a href="#quick-reference" aria-label="Quick reference">Quick reference</a></li>
                 <li>
@@ -246,7 +262,18 @@
 <pre><code>$ rails haml:erb2haml
 </code></pre>
 <p>This will also ask you if you want to delete all the <em>erb</em> files.</p>
-<h2 id="bulma">Bulma<a hidden class="anchor" aria-hidden="true" href="#bulma">#</a></h2>
+<h2 id="slim">Slim<a hidden class="anchor" aria-hidden="true" href="#slim">#</a></h2>
+<p>After <a href="https://github.com/haml/haml-rails">haml</a> I moved on to using <a href="https://slim-template.github.io/">slim</a>, which is even more precise. You can add it to the Gemfile <code>bundle add slim-rails</code>, and then start using it. Basically, it is like haml without the <code>%</code> for html tags.</p>
+<p>To always use it when generating views, create the project as follows:</p>
+<pre tabindex="0"><code>% rails new my_project --template-engine=slim
+</code></pre><p>For an existing rails application, you can change the configuration in <code>config/application.rb</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">module</span> MyProject
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Application</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">Rails</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Application</span>
+</span></span><span style="display:flex;"><span>    config<span style="color:#f92672">.</span>generators<span style="color:#f92672">.</span>template_engine <span style="color:#f92672">=</span> <span style="color:#e6db74">:slim</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Other configuration settings...</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><h2 id="bulma">Bulma<a hidden class="anchor" aria-hidden="true" href="#bulma">#</a></h2>
 <p>I picked <a href="https://bulma.io/">bulma</a> as the css framework after many years of working with <a href="https://pure-css.github.io/">purecss</a> mainly becouse <a href="https://bulma.io/">bulma</a> offered better responsive designs, particularly when it came to responsive navigation menus.</p>
 <p>To use <a href="https://bulma.io/">bulma</a> with <a href="https://guides.rubyonrails.org/index.html">rails</a>, you have to do the following modifications:</p>
 <p>Add the stylesheet to the  header:</p>
@@ -263,7 +290,13 @@
 </code></pre><p>That&rsquo;s it. Now you have the default fonts and colors of <a href="https://bulma.io/">bulma</a>.</p>
 <p>Obviously, if you want to make forms look nicer you have to change the auto-generated erb / haml files. A good guide is at the <a href="https://bulma.io/documentation/form/general/">bulma forms</a> documentation.</p>
 <p>This gives some tips and trick for Ruby on Rails.</p>
-<h2 id="enums">Enums<a hidden class="anchor" aria-hidden="true" href="#enums">#</a></h2>
+<h2 id="simplecss">Simple.css<a hidden class="anchor" aria-hidden="true" href="#simplecss">#</a></h2>
+<p>After using <a href="https://bulma.io/">bulma</a> for some time, I moved on to an even easier framework, called <a href="https://simplecss.org/">Simple.css</a>. All you have to do is to include it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.simplecss.org/simple.min.css&#34;</span>&gt;
+</span></span></code></pre></div><h2 id="mimimum-application">Mimimum application<a hidden class="anchor" aria-hidden="true" href="#mimimum-application">#</a></h2>
+<p>Create a minimum application which uses <em>sqlite3</em> as database (default since rails 8.0) and <a href="https://slim-template.github.io/">slim</a> as templating engine and without javascript, mailboxes, etc.</p>
+<pre tabindex="0"><code>rails new my-app -M -C -A -J --template=slim
+</code></pre><h2 id="enums">Enums<a hidden class="anchor" aria-hidden="true" href="#enums">#</a></h2>
 <p>There are many sites explaining how to use <a href="">enums in rails</a>, but all of them describe the use case where the enum is stored as an integer in the database.</p>
 <p>My much more frequent use case is using strings in the database. I found this on <a href="https://stackoverflow.com/questions/32938729/how-to-store-enum-as-string-to-database-in-rails">stackoverflow</a> which gives a good way to do it:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Work</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ApplicationRecord</span>
@@ -271,7 +304,41 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
 </span></span></code></pre></div><p>Then, in the view, you can use:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>form<span style="color:#f92672">.</span>select <span style="color:#e6db74">:status</span>, <span style="color:#66d9ef">Work</span><span style="color:#f92672">::</span>stati    <span style="color:#75715e"># or statuses?</span>
-</span></span></code></pre></div><h2 id="quick-reference">Quick reference<a hidden class="anchor" aria-hidden="true" href="#quick-reference">#</a></h2>
+</span></span></code></pre></div><h2 id="database-views">Database views<a hidden class="anchor" aria-hidden="true" href="#database-views">#</a></h2>
+<p>Often, database views are an easy way to increase performance. This is how you create views.</p>
+<h3 id="create-migration">Create Migration<a hidden class="anchor" aria-hidden="true" href="#create-migration">#</a></h3>
+<p>Create a migration <code>rails g migration CreateView</code> and change it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CreateMyView</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ActiveRecord</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Migration</span><span style="color:#f92672">[</span><span style="color:#ae81ff">6</span><span style="color:#f92672">.</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">up</span>
+</span></span><span style="display:flex;"><span>    execute <span style="color:#e6db74">&lt;&lt;-SQL
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>      <span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">VIEW</span> my_view <span style="color:#66d9ef">AS</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">SELECT</span> column1, column2, column3
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">FROM</span> table1
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">JOIN</span> table2 <span style="color:#66d9ef">ON</span> table1<span style="color:#f92672">.</span>id <span style="color:#f92672">=</span> table2<span style="color:#f92672">.</span>table1_id
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">WHERE</span> condition1 <span style="color:#66d9ef">AND</span> condition2
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SQL</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">down</span>
+</span></span><span style="display:flex;"><span>    execute <span style="color:#e6db74">&lt;&lt;-SQL
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>      <span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">VIEW</span> my_view
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">SQL</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>and then run the migration <code>rails db:migrate</code>.</p>
+<h3 id="create-model">Create model<a hidden class="anchor" aria-hidden="true" href="#create-model">#</a></h3>
+<p>The model will look something like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyView</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ApplicationRecord</span>
+</span></span><span style="display:flex;"><span>  self<span style="color:#f92672">.</span>table_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;my_view&#39;</span>
+</span></span><span style="display:flex;"><span>  self<span style="color:#f92672">.</span>inheritance_column <span style="color:#f92672">=</span> <span style="color:#66d9ef">nil</span>   <span style="color:#75715e"># necessary for Single-table-inheritance STI</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">readonly?</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><h3 id="create-controller-and-views">Create controller and views<a hidden class="anchor" aria-hidden="true" href="#create-controller-and-views">#</a></h3>
+<p>Now you have to create the controller and the views, but not the model.</p>
+<pre tabindex="0"><code>rails g scaffold_controller MyView
+</code></pre><h2 id="quick-reference">Quick reference<a hidden class="anchor" aria-hidden="true" href="#quick-reference">#</a></h2>
 <p>I found an excellent quick reference guide to Ruby on <a href="https://www.zenspider.com/ruby/quickref.html#types">zenspider</a>.</p>
 <h2 id="more-complex-associations">More complex associations<a hidden class="anchor" aria-hidden="true" href="#more-complex-associations">#</a></h2>
 <p>I asked this to chatGPT:</p>
@@ -524,13 +591,15 @@ was found under <a href="https://learnbyexample.github.io/learn_ruby_oneliners/c
       <li><a href="http://localhost:1313/tags/rails/">Rails</a></li>
       <li><a href="http://localhost:1313/tags/haml/">Haml</a></li>
       <li><a href="http://localhost:1313/tags/bulma/">Bulma</a></li>
+      <li><a href="http://localhost:1313/tags/simple.css/">Simple.css</a></li>
+      <li><a href="http://localhost:1313/tags/slim/">Slim</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="http://localhost:1313/">Küse&#39;s Codes</a></span>
+    <span>&copy; 2025 <a href="http://localhost:1313/">Küse&#39;s Codes</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

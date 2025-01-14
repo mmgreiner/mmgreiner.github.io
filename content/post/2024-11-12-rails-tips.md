@@ -9,6 +9,8 @@ tags:
 - rails
 - haml
 - bulma
+- simple.css
+- slim
 showToc: true
 ---
 
@@ -59,6 +61,28 @@ Finally, you have to remove the `application.html.erb` file. Or, you can convert
 
 This will also ask you if you want to delete all the *erb* files.
 
+## Slim
+
+After [haml] I moved on to using [slim], which is even more precise. You can add it to the Gemfile `bundle add slim-rails`, and then start using it. Basically, it is like haml without the `%` for html tags.
+
+To always use it when generating views, create the project as follows:
+
+~~~~
+% rails new my_project --template-engine=slim
+~~~~
+
+For an existing rails application, you can change the configuration in `config/application.rb`:
+
+~~~ruby
+module MyProject
+  class Application < Rails::Application
+    config.generators.template_engine = :slim
+    # Other configuration settings...
+  end
+end
+~~~
+
+[slim]: https://slim-template.github.io/
 
 ## Bulma
 
@@ -95,8 +119,26 @@ Obviously, if you want to make forms look nicer you have to change the auto-gene
 [bulma]: https://bulma.io/
 
 
-
 This gives some tips and trick for Ruby on Rails.
+
+
+## Simple.css
+
+After using [bulma] for some time, I moved on to an even easier framework, called [Simple.css]. All you have to do is to include it:
+
+~~~html
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+~~~
+
+[Simple.css]: https://simplecss.org/
+
+## Mimimum application
+
+Create a minimum application which uses *sqlite3* as database (default since rails 8.0) and [slim] as templating engine and without javascript, mailboxes, etc.
+
+~~~
+rails new my-app -M -C -A -J --template=slim
+~~~
 
 ## Enums
 
@@ -117,6 +159,57 @@ form.select :status, Work::stati    # or statuses?
 ~~~~
 
 
+## Database views
+
+Often, database views are an easy way to increase performance. This is how you create views.
+
+### Create Migration
+
+Create a migration `rails g migration CreateView` and change it:
+
+~~~ruby
+class CreateMyView < ActiveRecord::Migration[6.1]
+  def up
+    execute <<-SQL
+      CREATE VIEW my_view AS
+      SELECT column1, column2, column3
+      FROM table1
+      JOIN table2 ON table1.id = table2.table1_id
+      WHERE condition1 AND condition2
+    SQL
+  end
+
+  def down
+    execute <<-SQL
+      DROP VIEW my_view
+    SQL
+  end
+end
+~~~
+
+and then run the migration `rails db:migrate`. 
+
+### Create model
+
+The model will look something like this:
+
+~~~ruby
+class MyView < ApplicationRecord
+  self.table_name = 'my_view'
+  self.inheritance_column = nil   # necessary for Single-table-inheritance STI
+  def readonly?
+    true
+  end
+end
+~~~
+
+### Create controller and views
+
+Now you have to create the controller and the views, but not the model. 
+
+~~~
+rails g scaffold_controller MyView
+~~~
 
 ## Quick reference
 
