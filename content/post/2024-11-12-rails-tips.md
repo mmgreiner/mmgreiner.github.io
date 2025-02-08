@@ -19,7 +19,11 @@ I have been using [Ruby on Rails][rails] quite a lot lately due to its extremely
 
 However, I'm typically using [haml] for the view templates, and [bulma] as css framework.
 
-## Haml
+## Templating
+
+Template engines are used to create the html for the views. The standard rails templating engine in [ERB](https://guides.rubyonrails.org/action_view_overview.html#templates), the **E**mbedded **R**u**B**y templating engine. However, there are other templating engines which are more concise. 
+
+### Haml
 
 [haml](https://haml.info/) is a templating engine with the goal:
 
@@ -62,9 +66,9 @@ Finally, you have to remove the `application.html.erb` file. Or, you can convert
 
 This will also ask you if you want to delete all the *erb* files.
 
-## Slim
+### Slim
 
-After [haml] I moved on to using [slim], which is even more precise. You can add it to the Gemfile `bundle add slim-rails`, and then start using it. Basically, it is like haml without the `%` for html tags.
+After [haml] I moved on to using [slim], which is even more concise. You can add it to the Gemfile `bundle add slim-rails`, and then start using it. Basically, it is like haml without the `%` for html tags.
 
 To always use it when generating views, create the project as follows:
 
@@ -85,7 +89,9 @@ end
 
 [slim]: https://slim-template.github.io/
 
-## Bulma
+## CSS Frameworks
+
+### Bulma
 
 I picked [bulma] as the css framework after many years of working with [purecss](https://pure-css.github.io/) mainly becouse [bulma] offered better responsive designs, particularly when it came to responsive navigation menus.
 
@@ -120,8 +126,7 @@ Obviously, if you want to make forms look nicer you have to change the auto-gene
 
 This gives some tips and trick for Ruby on Rails.
 
-
-## Simple.css
+### Simple.css
 
 After Bulma, I moved to [Simple.css]. For more information, see the [post on Simple.css]({{< ref "2025-01-01-simplecss" >}}).
 
@@ -233,6 +238,10 @@ Now you have to create the controller and the views, but not the model.
 ```
 rails g scaffold_controller MyView
 ```
+
+## Useful things with the console
+
+I found this helpful article [Useful thinkgs you can do with the rails console](https://impactahead.com/dev/useful-things-you-can-do-with-rails-console). 
 
 ## Quick reference
 
