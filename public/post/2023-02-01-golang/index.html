@@ -171,18 +171,18 @@
 </ul>
 <p>Some standard layouts are useful (taken from <a href="https://gosamples.dev/date-time-format-cheatsheet/">Go Samples</a>)</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> (
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// YYYY-MM-DD: 2022-03-23
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">YYYYMMDD</span> = <span style="color:#e6db74">&#34;2006-01-02&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 24h hh:mm:ss: 14:23:20
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">HHMMSS24h</span> = <span style="color:#e6db74">&#34;15:04:05&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 12h hh:mm:ss: 2:23:20 PM
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">HHMMSS12h</span> = <span style="color:#e6db74">&#34;3:04:05 PM&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// text date: March 23, 2022
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">TextDate</span> = <span style="color:#e6db74">&#34;January 2, 2006&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// text date with weekday: Wednesday, March 23, 2022
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">TextDateWithWeekday</span> = <span style="color:#e6db74">&#34;Monday, January 2, 2006&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// abbreviated text date: Mar 23 Wed
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">AbbrTextDate</span> = <span style="color:#e6db74">&#34;Jan 2 Mon&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// YYYY-MM-DD: 2022-03-23</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">YYYYMMDD</span> = <span style="color:#e6db74">&#34;2006-01-02&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 24h hh:mm:ss: 14:23:20</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">HHMMSS24h</span> = <span style="color:#e6db74">&#34;15:04:05&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// 12h hh:mm:ss: 2:23:20 PM</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">HHMMSS12h</span> = <span style="color:#e6db74">&#34;3:04:05 PM&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// text date: March 23, 2022</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">TextDate</span> = <span style="color:#e6db74">&#34;January 2, 2006&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// text date with weekday: Wednesday, March 23, 2022</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">TextDateWithWeekday</span> = <span style="color:#e6db74">&#34;Monday, January 2, 2006&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// abbreviated text date: Mar 23 Wed</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">AbbrTextDate</span> = <span style="color:#e6db74">&#34;Jan 2 Mon&#34;</span>
 </span></span><span style="display:flex;"><span>)
 </span></span></code></pre></div><h2 id="enum-types">Enum types<a hidden class="anchor" aria-hidden="true" href="#enum-types">#</a></h2>
 <p><a href="https://go.dev">Go</a> does not support enum types, but they can be simulated. Again, take a look at <a href="https://gosamples.dev/enum/">Gosamples enum</a> for a good overview.</p>
@@ -201,8 +201,8 @@
 <h2 id="embedding">Embedding<a hidden class="anchor" aria-hidden="true" href="#embedding">#</a></h2>
 <p>Files can be embedded in the generated binary. See &lt;&gt;.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#a6e22e">embed</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">//go:embed: myfiles
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">res</span> <span style="color:#a6e22e">embed</span>.<span style="color:#a6e22e">FS</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//go:embed: myfiles</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">res</span> <span style="color:#a6e22e">embed</span>.<span style="color:#a6e22e">FS</span>
 </span></span></code></pre></div><p>If you use file embedding with templates, proceed as follows to embed files in the sub-folder <code>templates</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">import</span> (
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;embed&#34;</span>
@@ -211,8 +211,8 @@
 </span></span><span style="display:flex;"><span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> (
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//go:embed templates/*
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">templFolder</span> <span style="color:#a6e22e">embed</span>.<span style="color:#a6e22e">FS</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//go:embed templates/*</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">templFolder</span> <span style="color:#a6e22e">embed</span>.<span style="color:#a6e22e">FS</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">tmplFiles</span> = <span style="color:#a6e22e">template</span>.<span style="color:#a6e22e">Must</span>(<span style="color:#a6e22e">template</span>.<span style="color:#a6e22e">ParseFS</span>(<span style="color:#a6e22e">templFolder</span>, <span style="color:#e6db74">&#34;templates/index.html&#34;</span>, <span style="color:#e6db74">&#34;templates/jobinfo.html&#34;</span>, <span style="color:#e6db74">&#34;templates/jobinfo.md&#34;</span>))
 </span></span><span style="display:flex;"><span>)
 </span></span><span style="display:flex;"><span>
@@ -229,8 +229,8 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="code-generation">Code generation<a hidden class="anchor" aria-hidden="true" href="#code-generation">#</a></h2>
 <p>Code can be generated during a go build. See <a href="https://go.dev/blog/generate">Go generate</a>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">//go:generate goyacc -o gopher.go -p parser gopher.y
-</span></span></span></code></pre></div><h2 id="swagger">Swagger<a hidden class="anchor" aria-hidden="true" href="#swagger">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">//go:generate goyacc -o gopher.go -p parser gopher.y</span>
+</span></span></code></pre></div><h2 id="swagger">Swagger<a hidden class="anchor" aria-hidden="true" href="#swagger">#</a></h2>
 <p><a href="https://swagger.io">Swagger</a> is a standardized way to document REST APIs. In <a href="https://go.dev">Go</a> is is supported by <a href="https://github.com/swaggo/swag">swaggo/swag</a>. A good documentation and example can be found at <a href="https://blog.logrocket.com/documenting-go-web-apis-with-swag/">LogRocket</a>.</p>
 <p><a href="https://github.com/swaggo/swag">swaggo/swag</a> supports either generating <a href="https://go.dev">Go</a> code from swagger specifications, or annotating Go code with special documentation tags and generate the Swagger interface from the code.</p>
 <h2 id="functional-language">Functional language<a hidden class="anchor" aria-hidden="true" href="#functional-language">#</a></h2>
@@ -250,7 +250,7 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/go/">Go</a></li>
+      <li><a href="http://localhost:1313/tags/Go/">Go</a></li>
     </ul>
   </footer>
 </article>

@@ -7,6 +7,7 @@ tags:
 - html
 - purecss
 - fontawesome
+- "css framework"
 title: A vertical responsive menu with PureCSS
 showToc: true
 ---

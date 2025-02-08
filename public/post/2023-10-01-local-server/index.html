@@ -193,8 +193,7 @@ Code signing error - not loading module at: /usr/local/opt/php/lib/httpd/modules
 </code></pre><p>Basically, this may happen after you have upgraded <code>apachectl</code>. The code needs to be signed again, which is a complex procedure.</p>
 <p>From <a href="https://stackoverflow.com/questions/72787369/unable-to-code-sign-the-apache-modules-in-mac">stackoverflow</a>:</p>
 <blockquote>
-<p>To fix the above problem, I created Certificate Authority in mac machine by following - <a href="https://www.simplified.guide/macos/keychain-ca-code-signing-create">https://www.simplified.guide/macos/keychain-ca-code-signing-create</a> and trying to codesign to sign the AEM Dispatcher module with below command</p>
-</blockquote>
+<p>To fix the above problem, I created Certificate Authority in mac machine by following - <a href="https://www.simplified.guide/macos/keychain-ca-code-signing-create">https://www.simplified.guide/macos/keychain-ca-code-signing-create</a> and trying to codesign to sign the AEM Dispatcher module with below command</p></blockquote>
 <p>Only once, you have to create yourself a certificate. This is in detail described in <a href="https://www.simplified.guide/macos/keychain-cert-code-signing-create">https://www.simplified.guide/macos/keychain-cert-code-signing-create</a></p>
 <p>Everytime <code>php</code> is updated, for instance through a <code>brew update</code> command, the <code>libphp.so</code> file needs to be signed again.</p>
 <ul>

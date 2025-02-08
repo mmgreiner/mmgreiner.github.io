@@ -95,6 +95,17 @@ $$&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Using CSV Helper to write CSV files</title>
+      <link>http://localhost:1313/draft/2022-08-01-csvhelper/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2022-08-01-csvhelper/</guid>
+      <description>&lt;h2 id=&#34;usage-of-csvhelper&#34;&gt;Usage of CsvHelper&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://joshclose.github.io/CsvHelper/&#34;&gt;CsvHelper&lt;/a&gt; is a dotnet C# library for reading and wrinting CSV files.&lt;/p&gt;
+&lt;p&gt;It is defined for C#, so there are some things you have to think about for &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Jekyll Tips &amp; Tricks</title>
       <link>http://localhost:1313/post/2022-04-03-jekyll-tips/</link>
       <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>

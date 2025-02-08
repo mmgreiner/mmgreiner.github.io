@@ -147,6 +147,61 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>Ruby tricks and tips
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I have been using ruby for over a year now and collected some tricks I would like to share.
+Ruby weekly newsletter Often, I consult the Ruby weekly newsletter. These are some interesting articles I found there.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-12 00:00:00 +0000 UTC'>January 12, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Ruby tricks and tips" href="http://localhost:1313/draft/ruby-hints/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Simple.css framework<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>After using bulma for some time, I moved on to an even easier framework, called Simple.css. All you have to do is to include it:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-01 00:00:00 +0000 UTC'>January 1, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Simple.css framework" href="http://localhost:1313/post/2025-01-01-simplecss/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Authentication with Entra-ID<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Azure First, set up in Azure. see:
+(taken from ChatGPT): Make sure you’ve already registered your application in the Azure portal:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-28 00:00:00 +0000 UTC'>December 28, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Authentication with Entra-ID" href="http://localhost:1313/draft/2024-12-28-Entra-ID-authentication/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Docker, Sinatra and Azure<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This describes the most simple way to create a Docker container of a Sinatra app and deploying it to Azure.
+Sinatra Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-28 00:00:00 +0000 UTC'>December 28, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Docker, Sinatra and Azure" href="http://localhost:1313/draft/2024-12-28-Dockerize-Sinatra-Azure/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>Ruby on Rails ticks and trips
     </h2>
   </header>
@@ -174,6 +229,50 @@ This is a small code sample that uses Pure.css with a responsive, vertical menu 
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>EDI Middlewware<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>EDI middleware Comparisons https://www.g2.com/categories/electronic-data-interchange-edi
+https://michaelachrisco.github.io/Electronic-Interchange-Github-Resources/
+https://datainterchange.com/edifacts-standards-explained/
+Antlr An Antlr implementation: https://github.com/aaronhuggins/js-edi/tree/main/grammars/fact
+// Special token for discovering the position of control characters for a given EDI document. ControlChar: Special { this.isCtlCharPos }? { this.handleControlChars(EdiFactLexer) } | CR LF { this.isCtlCharPos }? { this.handleControlChars(EdiFactLexer) } | CR { this.isCtlCharPos }? { this.handleControlChars(EdiFactLexer) } | LF { this.isCtlCharPos }? { this.handleControlChars(EdiFactLexer) } | AsciiControl { this.isCtlCharPos }? { this.handleControlChars(EdiFactLexer) }; // All valid printable characters. Char: Letter | Number | Special { !this.isCtlCharPos }? { this.handleControlChars(EdiFactLexer) }; // Reserved segment tags. SvcStringAdvice: &#39;UNA&#39; { this.handleUNA() }; InterchangeHeader: &#39;UNB&#39;; InterchangeTrailer: &#39;UNZ&#39;; GroupHeader: &#39;UNG&#39;; GroupTrailer: &#39;UNE&#39;; MessageHeader: &#39;UNH&#39;; MessageTrailer: &#39;UNT&#39;; TextSegment: &#39;TXT&#39;; SectionControl: &#39;UNS&#39;; Go Omniparser is a general purpose parser written in Go:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-30 00:00:00 +0000 UTC'>May 30, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to EDI Middlewware" href="http://localhost:1313/draft/20240530-EDI/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Working with Github<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How to get a list of all the issues into a csv, see stackoverflow
+gh issue list --state all | tr &#39;\t&#39; &#39;,&#39; &gt; bugreports/issues-24-05-23.csv </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-23 00:00:00 +0000 UTC'>May 23, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Working with Github" href="http://localhost:1313/draft/20240523-github/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Compiler with antlr and llvm<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Good small example: https://theantlrguy.atlassian.net/wiki/spaces/ANTLR3/pages/2687062/LLVM
+https://blog.gopheracademy.com/advent-2017/parsing-with-antlr4-and-go/
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-28 00:00:00 +0000 UTC'>February 28, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Compiler with antlr and llvm" href="http://localhost:1313/draft/compiler-antlr/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>Pure.css framework
     </h2>
   </header>
@@ -184,101 +283,6 @@ In contrast to those frameworks:
   </div>
   <footer class="entry-footer"><span title='2024-02-03 00:00:00 +0000 UTC'>February 3, 2024</span></footer>
   <a class="entry-link" aria-label="post link to Pure.css framework" href="http://localhost:1313/post/2024-02-03-purecss/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Serving static pages locally
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Running build-in tomcat server It is possible to deploy Jekyll sites locally, because OSX has a build-in Apache tomcat server. The local sites reside under ~/Sites. However, the setup of this server often changes with new versions of OSX.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-10-01 00:00:00 +0000 UTC'>October 1, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Serving static pages locally" href="http://localhost:1313/post/2023-10-01-local-server/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>How to work with modules and packages in Go
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I had to practice a long time to understand the go concepts of modules, packages, and how to publish them to github. Here are my learnings.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-07-30 00:00:00 +0000 UTC'>July 30, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to How to work with modules and packages in Go" href="http://localhost:1313/post/2023-07-30-go-modules/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Bolero hosting Razor page
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>In this post we investigate how to use Razor pages on the host and Bolero WebAssembly on the client side. The final code can be found on My github - Tutorials - BoleroAppRazor.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-04-11 00:00:00 +0000 UTC'>April 11, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Bolero hosting Razor page" href="http://localhost:1313/post/2023-04-11-bolero-razor/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>General production optimization
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Optimization General production structure capacited multi-level lot-sizing model PochetWolsey, page 45
-$1 \le i \le m$: set of items to be produced $1 \le k \le K$: set of shared resources with limited capacity $1 \le t \le n$: time periods until final period n $p_t$: unit production cost $q_t$: fixed production cost $h_t$: unit inventory cost $d_t^i$: demand for item i to be satisified at period t $M_t$: large positive number, expressing an upper bound on the maximum lot size iin period t $L_t^k$: available capacity of resource k during period t $\alpha^{i k}, \beta^{i k}$: amount of capacity of resource k consumed $1 \le j \le m$: items $D(i)$ set of direct successors of part i in the BOM, i.e. the items consuming some amount of item i when they are produced $r^{i j}$: the amount of item i required to make one unit of item j. r is the dependent demand, and $d_t^i$ is the independent demand $\gamma^i$: lead-time to produce or deliver an lot of i $x_t^i$: the size of product or purchase order of item i launched in period t, and delivered in period $t &#43; \gamma^i$. Decision variables: $x_t$: production lot size in period t $y_t$: binary variable indicating wether there is a positive production in period t $s_t$:inventory at the end of period t Objective Function $$ \begin{aligned} \text{min} \sum_i \sum_t (p_t^i x_t^i &#43; q_t^i y_t^i &#43; h_t^i s_t^i) \cr \text{subject to} \cr s_{t-1}^i &#43; x_{t-\gamma^i}^i &amp; = [d_t^i &#43; \sum_{j \in D(i)} r^{i j} x_t^j] &#43; s_t^i \cr x_t^i &amp; \le M_t^i y_t^i \cr \sum_i \alpha^{i k} x_t^i &#43; \sum_t \beta^{i k} y_t^i &amp; \le L_t^k \cr \end{aligned} $$
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-04-01 00:00:00 +0000 UTC'>April 1, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to General production optimization" href="http://localhost:1313/post/2023-04-01-production-optimization/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Miscellaneous
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This is a list of reminders and open questions I still wanted to look at in more detail.
-CSV conversion Next to FSharp.Data there is CSVHelper. However, it does not support FSharp types intrinsically. A stackoverflow article describes the details.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-03-18 00:00:00 +0000 UTC'>March 18, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Miscellaneous" href="http://localhost:1313/post/2023-03-18-miscellaneous/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>RESTful API
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This contains some thoughts how to implement RESTful APIs.
-Background tbd
-Best practices A search for RESTful API best practices reveals many sites:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-03-15 00:00:00 +0000 UTC'>March 15, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to RESTful API" href="http://localhost:1313/post/2023-03-15-RESTApi/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Github resources
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Some of my codes are documented on my Github with description in the readme files. Take a look there.
-Github Description BoleroApp A simple Bolero app with file upload and data repository using dependency injection StringAlgorithms Some string algorithms in F# to measure string similarity WebAPI A net7.0 based RestAPI in F# DependencyInjection simple attempts at dependency injection in F# MinimalAPI Minimal API with a file upload example BoleroAppRazor Bolero App, but using Razor pages on the server </p>
-  </div>
-  <footer class="entry-footer"><span title='2023-02-10 00:00:00 +0000 UTC'>February 10, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Github resources" href="http://localhost:1313/post/2023-02-10-github-fsharp/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

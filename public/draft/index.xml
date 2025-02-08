@@ -6,7 +6,286 @@
     <description>Recent content in Drafts on Küse&#39;s Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/draft/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/draft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ruby tricks and tips</title>
+      <link>http://localhost:1313/draft/ruby-hints/</link>
+      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/ruby-hints/</guid>
+      <description>Various tips and trick I learned about ruby</description>
+    </item>
+    
+    <item>
+      <title>Authentication with Entra-ID</title>
+      <link>http://localhost:1313/draft/2024-12-28-Entra-ID-authentication/</link>
+      <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2024-12-28-Entra-ID-authentication/</guid>
+      <description>&lt;h2 id=&#34;azure&#34;&gt;Azure&lt;/h2&gt;
+&lt;p&gt;First, set up in Azure. see:&lt;/p&gt;
+&lt;p&gt;(taken from ChatGPT):
+Make sure you’ve already registered your application in the Azure portal:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker, Sinatra and Azure</title>
+      <link>http://localhost:1313/draft/2024-12-28-Dockerize-Sinatra-Azure/</link>
+      <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2024-12-28-Dockerize-Sinatra-Azure/</guid>
+      <description>Dockerize a Sinatra App and Deploy it to Azure</description>
+    </item>
+    
+    <item>
+      <title>EDI Middlewware</title>
+      <link>http://localhost:1313/draft/20240530-EDI/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/20240530-EDI/</guid>
+      <description>&lt;h1 id=&#34;edi-middleware&#34;&gt;EDI middleware&lt;/h1&gt;
+&lt;h2 id=&#34;comparisons&#34;&gt;Comparisons&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.g2.com/categories/electronic-data-interchange-edi&#34;&gt;https://www.g2.com/categories/electronic-data-interchange-edi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://michaelachrisco.github.io/Electronic-Interchange-Github-Resources/&#34;&gt;https://michaelachrisco.github.io/Electronic-Interchange-Github-Resources/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://datainterchange.com/edifacts-standards-explained/&#34;&gt;https://datainterchange.com/edifacts-standards-explained/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;antlr&#34;&gt;Antlr&lt;/h2&gt;
+&lt;p&gt;An Antlr implementation: &lt;a href=&#34;https://github.com/aaronhuggins/js-edi/tree/main/grammars/fact&#34;&gt;https://github.com/aaronhuggins/js-edi/tree/main/grammars/fact&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-antlr&#34; data-lang=&#34;antlr&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Special token for discovering the position of control characters for a given EDI document.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ControlChar:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;Special&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CR&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;LF&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;CR&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;LF&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;AsciiControl&lt;/span&gt; { this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// All valid printable characters.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Char:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;Letter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Number&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Special&lt;/span&gt; { !this.isCtlCharPos }&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; { this.handleControlChars(EdiFactLexer) };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Reserved segment tags.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SvcStringAdvice: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNA&amp;#39;&lt;/span&gt; { this.handleUNA() };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;InterchangeHeader: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNB&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;InterchangeTrailer: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNZ&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GroupHeader: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNG&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GroupTrailer: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNE&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MessageHeader: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNH&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MessageTrailer: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNT&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;TextSegment: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TXT&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SectionControl: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNS&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;go&#34;&gt;Go&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/jf-tech/omniparser&#34;&gt;Omniparser&lt;/a&gt; is a general purpose parser written in Go:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Working with Github</title>
+      <link>http://localhost:1313/draft/20240523-github/</link>
+      <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/20240523-github/</guid>
+      <description>&lt;p&gt;How to get a list of all the issues into a csv, see &lt;a href=&#34;https://stackoverflow.com/questions/41369365/how-can-i-export-github-issues-to-excel&#34;&gt;stackoverflow&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;gh issue list --state all | tr &#39;\t&#39; &#39;,&#39; &amp;gt; bugreports/issues-24-05-23.csv
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Compiler with antlr and llvm</title>
+      <link>http://localhost:1313/draft/compiler-antlr/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/compiler-antlr/</guid>
+      <description>&lt;p&gt;Good small example: &lt;a href=&#34;https://theantlrguy.atlassian.net/wiki/spaces/ANTLR3/pages/2687062/LLVM&#34;&gt;https://theantlrguy.atlassian.net/wiki/spaces/ANTLR3/pages/2687062/LLVM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.gopheracademy.com/advent-2017/parsing-with-antlr4-and-go/&#34;&gt;https://blog.gopheracademy.com/advent-2017/parsing-with-antlr4-and-go/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MacOS Tips and trick</title>
+      <link>http://localhost:1313/draft/mac-tricks/</link>
+      <pubDate>Sun, 28 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/mac-tricks/</guid>
+      <description>&lt;h2 id=&#34;creating-a-background-daemon&#34;&gt;Creating a background daemon&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;https://www.maketecheasier.com/use-launchd-run-scripts-on-schedule-macos/&#34;&gt;https://www.maketecheasier.com/use-launchd-run-scripts-on-schedule-macos/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See also &lt;a href=&#34;https://launchd.info&#34;&gt;https://launchd.info&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Protobuf and programming languages</title>
+      <link>http://localhost:1313/draft/2023-12-26-protobuf/</link>
+      <pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-12-26-protobuf/</guid>
+      <description>Protobuf and programming languages</description>
+    </item>
+    
+    <item>
+      <title>Static web app with authentication</title>
+      <link>http://localhost:1313/draft/2023-09-24-azure-hugo/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-09-24-azure-hugo/</guid>
+      <description>&lt;p&gt;We will try to create a &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; static web app that for some sub-pages uses authentication and authorization on azure to restrict access. The example builds on &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/static-web-apps/publish-hugo&#34;&gt;publish hugo&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dependency Injection in dotnet</title>
+      <link>http://localhost:1313/draft/2023-08-10-dependency-injection/</link>
+      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-08-10-dependency-injection/</guid>
+      <description>&lt;p&gt;Dependency injection&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HAL-S Compiler</title>
+      <link>http://localhost:1313/draft/2023-07-01-hal-s-compiler/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-07-01-hal-s-compiler/</guid>
+      <description>&lt;p&gt;The idea is to write a compiler for the HAL-S language.&lt;/p&gt;
+&lt;p&gt;This was the programming language used for the Voyager.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Potenzen und Logarithmen</title>
+      <link>http://localhost:1313/draft/2023-02-15-math-exponentials/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-02-15-math-exponentials/</guid>
+      <description>&lt;p&gt;This is a paper (written in German) which was written by Lea Schmidt, student at &lt;a href=&#34;https://altekanti.ch&#34;&gt;Alte Kantonsschule Aarau&lt;/a&gt; to have a quick overview of exponential and logarithmic functions.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Command line parsing</title>
+      <link>http://localhost:1313/draft/2023-02-01-command-line-parsing/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-02-01-command-line-parsing/</guid>
+      <description>&lt;h2 id=&#34;commandlineparser&#34;&gt;CommandLineParser&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/commandlineparser/commandline&#34;&gt;https://github.com/commandlineparser/commandline&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nuget.org/packages/CommandLineParser.FSharp/&#34;&gt;https://www.nuget.org/packages/CommandLineParser.FSharp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/commandlineparser/commandline/wiki&#34;&gt;https://github.com/commandlineparser/commandline/wiki&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fsharp&#34; data-lang=&#34;fsharp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;options&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;[&amp;lt;&lt;/span&gt;Option&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;r&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;read&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; Required &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; HelpText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Input files.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&amp;gt;]&lt;/span&gt; files &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; seq&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;[&amp;lt;&lt;/span&gt;Option&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;HelpText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Prints all messages to standard output.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&amp;gt;]&lt;/span&gt; verbose &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;bool&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;[&amp;lt;&lt;/span&gt;Option&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Default &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;русский&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; HelpText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Content language.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&amp;gt;]&lt;/span&gt; language &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;[&amp;lt;&lt;/span&gt;Value&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; MetaName&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;offset&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; HelpText &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;File offset.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&amp;gt;]&lt;/span&gt; offset &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int64&lt;/span&gt; option&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; main argv &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; CommandLine.Parser.Default.ParseArguments&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;(&lt;/span&gt;argv&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;match&lt;/span&gt; result &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:?&lt;/span&gt; Parsed&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; parsed &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; run parsed&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Value
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:?&lt;/span&gt; NotParsed&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; notParsed &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; fail notParsed&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Errors
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;argu&#34;&gt;Argu&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://fsprojects.github.io/Argu/&#34;&gt;https://fsprojects.github.io/Argu/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Authentication</title>
+      <link>http://localhost:1313/draft/2023-01-01-authentication/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-01-01-authentication/</guid>
+      <description>&lt;p&gt;Collect information about authentication.&lt;/p&gt;
+&lt;h3 id=&#34;aspnetsecurityoauthproviders&#34;&gt;AspNet.Security.OAuth.Providers&lt;/h3&gt;
+&lt;p&gt;Good samples of aspnet MVC with google, twitter, Apple-ID:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers&#34;&gt;https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;AspNet.Security.OAuth.Providers&lt;/strong&gt; is a &lt;strong&gt;collection of security middleware&lt;/strong&gt; that you can use in your &lt;strong&gt;ASP.NET Core&lt;/strong&gt;application to support social authentication providers like &lt;strong&gt;&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href=&#34;https://foursquare.com/&#34;&gt;Foursquare&lt;/a&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;a href=&#34;https://www.dropbox.com/&#34;&gt;Dropbox&lt;/a&gt;&lt;/strong&gt;. It is directly inspired by &lt;strong&gt;&lt;a href=&#34;https://github.com/jerriep&#34;&gt;Jerrie Pelser&lt;/a&gt;&lt;/strong&gt;&amp;rsquo;s initiative, &lt;strong&gt;&lt;a href=&#34;https://github.com/RockstarLabs/OwinOAuthProviders&#34;&gt;Owin.Security.Providers&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bibliographies and citations - More info</title>
+      <link>http://localhost:1313/draft/2022-12-01-bibliographies2/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2022-12-01-bibliographies2/</guid>
+      <description>&lt;p&gt;How to handle a standard?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://libguides.nps.edu/citation/ieee-bibtex&#34;&gt;citation-guide&lt;/a&gt; recommends &lt;code&gt;manual&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@manual{standard_1968,
+title         = &amp;quot;Letter Symbols for Quantities&amp;quot;,
+howpublished  = &amp;quot;ANSI Standard Y10.5&amp;quot;,
+year          = &amp;quot;1968&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://b-p-i.blogspot.com/2012/08/cite-iso-standard-bibtex.html&#34;&gt;https://b-p-i.blogspot.com/2012/08/cite-iso-standard-bibtex.html&lt;/a&gt; recommends &lt;code&gt;techreport&lt;/code&gt;:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>BibTeX for standards</title>
+      <link>http://localhost:1313/draft/2022-10-16-citation-standard/</link>
+      <pubDate>Sun, 16 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2022-10-16-citation-standard/</guid>
+      <description>&lt;p&gt;How to handle a standard?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://libguides.nps.edu/citation/ieee-bibtex&#34;&gt;citation-guide&lt;/a&gt; recommends &lt;code&gt;manual&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@manual{standard_1968,
+title         = &amp;quot;Letter Symbols for Quantities&amp;quot;,
+howpublished  = &amp;quot;ANSI Standard Y10.5&amp;quot;,
+year          = &amp;quot;1968&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This &lt;a href=&#34;https://b-p-i.blogspot.com/2012/08/cite-iso-standard-bibtex.html&#34;&gt;Blogspot&lt;/a&gt; recommends &lt;code&gt;techreport&lt;/code&gt;:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JavaScript copy to clipboard</title>
+      <link>http://localhost:1313/draft/2022-10-01-CopyClipboard/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2022-10-01-CopyClipboard/</guid>
+      <description>&lt;p&gt;Links:&lt;/p&gt;
+&lt;p&gt;Good explanation: &lt;a href=&#34;https://stackabuse.com/how-to-copy-to-clipboard-in-javascript-with-the-clipboard-api/&#34;&gt;How-to-copy-to-clipboard&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sample code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;copyRichTextToClipboard&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;blob&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Blob&lt;/span&gt;([&lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;], { &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/html&amp;#34;&lt;/span&gt; });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;richTextInput&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ClipboardItem&lt;/span&gt;({ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/html&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;blob&lt;/span&gt; });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//navigator.clipboard.write([richTextInput]).then(() =&amp;gt; { alert(&amp;#34;Copied rich:&amp;#34; + content)});
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;navigator&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;clipboard&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;write&lt;/span&gt;([&lt;span style=&#34;color:#a6e22e&#34;&gt;richTextInput&lt;/span&gt;]).&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        () =&amp;gt; { }, 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        () =&amp;gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;failed to copy &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;); }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    );
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Sample usage:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Json Serialization</title>
+      <link>http://localhost:1313/draft/2022-10-01-JsonSerialization/</link>
+      <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2022-10-01-JsonSerialization/</guid>
+      <description>&lt;p&gt;Best help: &lt;a href=&#34;https://github.com/Tarmil/FSharp.SystemTextJson&#34;&gt;FSharp.System.TextJson&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fsharp&#34; data-lang=&#34;fsharp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#r&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nuget: FSharp.SystemTextJson&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;open&lt;/span&gt; System.Text.Json
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;open&lt;/span&gt; System.Text.Json.Serialization
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; options &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; JsonSerializerOptions()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Converters&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Add&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;JsonFSharpConverter()&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; me &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{|&lt;/span&gt; MiddleName &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Some &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Max&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; Birtday &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; System.DateTime&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;1965&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 11&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 10&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; you &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{|&lt;/span&gt; MiddleName &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Option&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;.&lt;/span&gt;None&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; Birtday &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; System.DateTime&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;1980&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 31&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;JsonSerializer.Serialize&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;me&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; options&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// val it: string = &amp;#34;{&amp;#34;Birtday&amp;#34;:&amp;#34;1965-11-10T00:00:00&amp;#34;,&amp;#34;MiddleName&amp;#34;:&amp;#34;Max&amp;#34;}&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;JsonSerializer.Serialize&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;you&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; options&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// val it: string = &amp;#34;{&amp;#34;Birtday&amp;#34;:&amp;#34;1980-01-31T00:00:00&amp;#34;,&amp;#34;MiddleName&amp;#34;:null}&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;json-serialization-with-bolero&#34;&gt;Json serialization with Bolero&lt;/h2&gt;
+&lt;p&gt;tbd&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using CSV Helper to write CSV files</title>
+      <link>http://localhost:1313/draft/2022-08-01-csvhelper/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2022-08-01-csvhelper/</guid>
+      <description>&lt;h2 id=&#34;usage-of-csvhelper&#34;&gt;Usage of CsvHelper&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://joshclose.github.io/CsvHelper/&#34;&gt;CsvHelper&lt;/a&gt; is a dotnet C# library for reading and wrinting CSV files.&lt;/p&gt;
+&lt;p&gt;It is defined for C#, so there are some things you have to think about for &lt;a href=&#34;https://fsharp.org&#34;&gt;F#&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title></title>
       <link>http://localhost:1313/draft/2023-12-18-wordpress/</link>

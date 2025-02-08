@@ -147,6 +147,49 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>JavaScript copy to clipboard<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Links:
+Good explanation: How-to-copy-to-clipboard
+Sample code:
+function copyRichTextToClipboard(content) { const blob = new Blob([content], { type: &#34;text/html&#34; }); const richTextInput = new ClipboardItem({ &#34;text/html&#34;: blob }); //navigator.clipboard.write([richTextInput]).then(() =&gt; { alert(&#34;Copied rich:&#34; &#43; content)}); navigator.clipboard.write([richTextInput]).then( () =&gt; { }, () =&gt; { console.log(&#34;failed to copy &#34; &#43; content); } ); } Sample usage:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-10-01 00:00:00 +0000 UTC'>October 1, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to JavaScript copy to clipboard" href="http://localhost:1313/draft/2022-10-01-CopyClipboard/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Json Serialization<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Best help: FSharp.System.TextJson
+#r &#34;nuget: FSharp.SystemTextJson&#34;;; open System.Text.Json open System.Text.Json.Serialization let options = JsonSerializerOptions() options.Converters.Add(JsonFSharpConverter()) let me = {| MiddleName = Some &#34;Max&#34;; Birtday = System.DateTime(1965, 11, 10) |} let you = {| MiddleName = Option&lt;string&gt;.None; Birtday = System.DateTime(1980, 1, 31) |} JsonSerializer.Serialize(me, options) // val it: string = &#34;{&#34;Birtday&#34;:&#34;1965-11-10T00:00:00&#34;,&#34;MiddleName&#34;:&#34;Max&#34;}&#34; JsonSerializer.Serialize(you, options) // val it: string = &#34;{&#34;Birtday&#34;:&#34;1980-01-31T00:00:00&#34;,&#34;MiddleName&#34;:null}&#34; Json serialization with Bolero tbd
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-10-01 00:00:00 +0000 UTC'>October 1, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Json Serialization" href="http://localhost:1313/draft/2022-10-01-JsonSerialization/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Static templating with handlebars, liquid and others
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Templating is an proofen method to create static web pages. Typically, you write your html pages and fill in some parameters at page assembly time. Well-known templating languages are Liquid, which is written in ruby and used by Jekyll, and Handlebars, which calls itself minimal templating on steroids.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-08-29 00:00:00 +0000 UTC'>August 29, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Static templating with handlebars, liquid and others" href="http://localhost:1313/post/2022-08-29-static-templating/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>Bolero Hints
     </h2>
   </header>
@@ -252,7 +295,7 @@ ws-replace ws-hole ws-template ws-template-children Replace Replace the given no
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="http://localhost:1313/">Küse&#39;s Codes</a></span>
+    <span>&copy; 2025 <a href="http://localhost:1313/">Küse&#39;s Codes</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

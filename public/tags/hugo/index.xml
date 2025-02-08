@@ -29,6 +29,15 @@
     </item>
     
     <item>
+      <title>Static web app with authentication</title>
+      <link>http://localhost:1313/draft/2023-09-24-azure-hugo/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/2023-09-24-azure-hugo/</guid>
+      <description>&lt;p&gt;We will try to create a &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; static web app that for some sub-pages uses authentication and authorization on azure to restrict access. The example builds on &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/static-web-apps/publish-hugo&#34;&gt;publish hugo&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Mermaid</title>
       <link>http://localhost:1313/post/2023-08-05-mermaid/</link>
       <pubDate>Sat, 05 Aug 2023 00:00:00 +0000</pubDate>

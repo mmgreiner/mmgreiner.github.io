@@ -147,63 +147,147 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>WebSharper simple inputs
+    <h2>Github resources
     </h2>
   </header>
   <div class="entry-content">
-    <p>This post shows various ways to handle input using WebSharper.
-Client side There are two basic approaches: using HTML templates or using Websharper’s HTML.
-...</p>
+    <p>Some of my codes are documented on my Github with description in the readme files. Take a look there.
+Github Description BoleroApp A simple Bolero app with file upload and data repository using dependency injection StringAlgorithms Some string algorithms in F# to measure string similarity WebAPI A net7.0 based RestAPI in F# DependencyInjection simple attempts at dependency injection in F# MinimalAPI Minimal API with a file upload example BoleroAppRazor Bolero App, but using Razor pages on the server </p>
   </div>
-  <footer class="entry-footer"><span title='2022-03-17 00:00:00 +0000 UTC'>March 17, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to WebSharper simple inputs" href="http://localhost:1313/post/2022-03-17-Simple-Inputs/"></a>
+  <footer class="entry-footer"><span title='2023-02-10 00:00:00 +0000 UTC'>February 10, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Github resources" href="http://localhost:1313/post/2023-02-10-github-fsharp/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>Websharper OSX
+    <h2>Command line parsing<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
     </h2>
   </header>
   <div class="entry-content">
-    <p>Installing WebSharper I’m developing web applications using WebSharper on macOS Monterey.
-To install the the templates, use:
-% dotnet new -i WebSharper.Templates The following templates are installed:
+    <p>CommandLineParser https://github.com/commandlineparser/commandline
+https://www.nuget.org/packages/CommandLineParser.FSharp/
+https://github.com/commandlineparser/commandline/wiki
+type options = { [&lt;Option(&#39;r&#39;, &#34;read&#34;, Required = true, HelpText = &#34;Input files.&#34;)&gt;] files : seq&lt;string&gt;; [&lt;Option(HelpText = &#34;Prints all messages to standard output.&#34;)&gt;] verbose : bool; [&lt;Option(Default = &#34;русский&#34;, HelpText = &#34;Content language.&#34;)&gt;] language : string; [&lt;Value(0, MetaName=&#34;offset&#34;, HelpText = &#34;File offset.&#34;)&gt;] offset : int64 option; } let main argv = let result = CommandLine.Parser.Default.ParseArguments&lt;options&gt;(argv) match result with | :? Parsed&lt;options&gt; as parsed -&gt; run parsed.Value | :? NotParsed&lt;options&gt; as notParsed -&gt; fail notParsed.Errors Argu https://fsprojects.github.io/Argu/
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-03-14 00:00:00 +0000 UTC'>March 14, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Websharper OSX" href="http://localhost:1313/post/2022-03-14-Websharper-osx/"></a>
+  <footer class="entry-footer"><span title='2023-02-01 00:00:00 +0000 UTC'>February 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Command line parsing" href="http://localhost:1313/draft/2023-02-01-command-line-parsing/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>WebSharper templates
+    <h2>Go tricks &amp; tips
     </h2>
   </header>
   <div class="entry-content">
-    <p>WebSharper allows several ways to instatiate HTML, and It took me some thinking to get these terms right:
-ws-replace ws-hole ws-template ws-template-children Replace Replace the given node with the provided string or list of docs.
+    <p>In 2023, I became interested in the programming language Go. It is a C derivates without all the nil pointer exceptions, and has a very solid infrastructure and libraries to compile across different operating systems.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-03-13 13:00:00 +0000 UTC'>March 13, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to WebSharper templates" href="http://localhost:1313/post/2022-03-13-websharper-templates/"></a>
+  <footer class="entry-footer"><span title='2023-02-01 00:00:00 +0000 UTC'>February 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Go tricks & tips" href="http://localhost:1313/post/2023-02-01-golang/"></a>
 </article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2>WebSharper shopping cart
+    <h2>SWIG - interface for C and C&#43;&#43;
     </h2>
   </header>
   <div class="entry-content">
-    <p>Websharper Shopping cart I found an interesting article from 2020 by Adam Granizc on the implementation of a WebSharper shopping cart in WebSharper Shopping Cart
+    <p>SWIG SWIG is a software development tool that connects programs written in C and C&#43;&#43; with a variety of high-level programming languages. SWIG is used with different types of target languages including common scripting languages such as Javascript, Perl, PHP, Python, Tcl and Ruby.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2022-03-13 10:41:39 +0000 UTC'>March 13, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to WebSharper shopping cart" href="http://localhost:1313/post/2022-03-13-websharper-shopping-cart/"></a>
+  <footer class="entry-footer"><span title='2023-01-13 00:00:00 +0000 UTC'>January 13, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to SWIG - interface for C and C&#43;&#43;" href="http://localhost:1313/post/2023-01-13-swig-c-interfacer/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Authentication<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Collect information about authentication.
+AspNet.Security.OAuth.Providers Good samples of aspnet MVC with google, twitter, Apple-ID:
+https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers
+AspNet.Security.OAuth.Providers is a collection of security middleware that you can use in your ASP.NET Coreapplication to support social authentication providers like GitHub, Foursquare or Dropbox. It is directly inspired by Jerrie Pelser’s initiative, Owin.Security.Providers.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-01-01 00:00:00 +0000 UTC'>January 1, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Authentication" href="http://localhost:1313/draft/2023-01-01-authentication/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Operation research
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Operation Research is defined in Wikipedia as
+Operations research (British English: operational research) … , often shortened to the initialism OR, is a discipline that deals with the development and application of analytical methods to improve decision-making. It is considered to be a subfield of mathematical sciences.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-31 00:00:00 +0000 UTC'>December 31, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Operation research" href="http://localhost:1313/post/2022-12-31-operation-research/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>PDF to text conversion
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>There is once in a while the need to extract pure text from PDF files. This blog shows some attempts to do it with dot, with ruby, and with command line utitilites.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-12-01 00:00:00 +0000 UTC'>December 1, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to PDF to text conversion" href="http://localhost:1313/post/2022-12-01-pdf-converter/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Input file element with Bolero
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Bolero is a set of free and open-source libraries and tools to write web applications in F#. With it, you can write fully dynamic client-side web applications from the comfort of a strongly-typed functional language, all with great performance.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-10-20 00:00:00 +0000 UTC'>October 20, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Input file element with Bolero" href="http://localhost:1313/post/2022-10-20-input-file/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Using local NuGet source / repository
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Had some problems creating a local nuget repository. This is how I succeeded:
+Create a local nuget repository / source $ cli nuget add source ~/.mynuget This leads to these changes in the configuration file:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-10-16 00:00:00 +0000 UTC'>October 16, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Using local NuGet source / repository" href="http://localhost:1313/post/2022-10-16-nuget-local/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Bibliographies, citations and dotnet programming
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Helping out a friend to get a Matura thesis completed, I stumbled onto the topics of citations and bibliographies. In the end, I wanted to get a handle on bibliographies using dotnet code.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-10-13 00:00:00 +0000 UTC'>October 13, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Bibliographies, citations and dotnet programming" href="http://localhost:1313/post/2022-10-13-bibliography/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/categories/programming/page/2/">
       «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/categories/programming/page/4/">Next&nbsp;&nbsp;»
     </a>
   </nav>
 </footer>

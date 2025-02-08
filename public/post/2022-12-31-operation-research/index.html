@@ -224,8 +224,7 @@ Operations research (British English: operational research) &hellip; , often sho
 
   <div class="post-content"><p>Operation Research is defined in <a href="https://en.wikipedia.org/wiki/Operations_research">Wikipedia</a> as</p>
 <blockquote>
-<p>Operations research (British English: operational research) &hellip; , often shortened to the initialism OR, is a discipline that deals with the development and application of analytical methods to improve decision-making. It is considered to be a subfield of mathematical sciences.</p>
-</blockquote>
+<p>Operations research (British English: operational research) &hellip; , often shortened to the initialism OR, is a discipline that deals with the development and application of analytical methods to improve decision-making. It is considered to be a subfield of mathematical sciences.</p></blockquote>
 <p>Typical problems of OR are:</p>
 <ul>
 <li>production or assembly optimization</li>
@@ -454,8 +453,7 @@ x5 = 1.000000
 <blockquote>
 <p>A toy company makes two types of toys: toy soldiers and trains. Each toy is produced in two stages, first it is constructed in a carpentry shop, and then it is sent to a finishing shop, where it is varnished, vaxed, and polished. To make one toy soldier costs €10 for raw materials and €14 for labor; it takes 1 hour in the carpentry shop, and 2 hours for finishing. To make one train costs €9 for raw materials and €10 for labor; it takes 1 hour in the carpentry shop, and 1 hour for finishing.</p>
 <p>There are 80 hours available each week in the carpentry shop, and 100 hours for finishing. Each toy soldier is sold for €27 while each train for €21. Due to decreased demand for toy soldiers, the company plans to make and sell at most 40 toy soldiers; the number of trains is not restriced in any way.</p>
-<p>What is the optimum (best) product mix (i.e., what quantities of which products to make) that maximizes the profit (assuming all toys produced will be sold)?</p>
-</blockquote>
+<p>What is the optimum (best) product mix (i.e., what quantities of which products to make) that maximizes the profit (assuming all toys produced will be sold)?</p></blockquote>
 <p>Our variables are <code>trains</code> and <code>soldiers</code>, both being integers. What is the objective function? We want to maximize the profit, so what are the costs. The manufacturing costs are:</p>
 <ul>
 <li><strong>toy soldier</strong>: €27 sales price - €10 for raw material + €14 for labor = €3 profit</li>
@@ -558,9 +556,7 @@ trains = 60
 <blockquote>
 <p>The Stigler diet is an optimization problem named for George Stigler, a 1982 Nobel Laureate in economics, who posed the following problem:</p>
 <blockquote>
-<p>For a moderately active man weighing 154 pounds, how much of each of 77 foods should be eaten on a daily basis so that the man’s intake of nine nutrients will be at least equal to the recommended dietary allowances (RDAs) suggested by the National Research Council in 1943, with the cost of the diet being minimal?</p>
-</blockquote>
-</blockquote>
+<p>For a moderately active man weighing 154 pounds, how much of each of 77 foods should be eaten on a daily basis so that the man’s intake of nine nutrients will be at least equal to the recommended dietary allowances (RDAs) suggested by the National Research Council in 1943, with the cost of the diet being minimal?</p></blockquote></blockquote>
 <p>(Taken from <a href="https://en.wikipedia.org/wiki/Stigler_diet">Wikipedia</a>).</p>
 <p>It is also one of the <a href="https://developers.google.com/optimization/lp/stigler_diet">OR-Tools examples</a> for linear optimization. <a href="https://developers.google.com/optimization">OR-Tools</a> contains a full example in C#, but here the challenge was to turn it into <a href="https://fsharp.org">F#</a>.</p>
 <h3 id="getting-the-data">Getting the data<a hidden class="anchor" aria-hidden="true" href="#getting-the-data">#</a></h3>
@@ -663,8 +659,7 @@ trains = 60
 <p>TBD</p>
 <h2 id="flips">Flips<a hidden class="anchor" aria-hidden="true" href="#flips">#</a></h2>
 <blockquote>
-<p><a href="https://github.com/fslaborg/flips">Flips</a> is an F# library for modeling and solving Linear Programming (LP) and Mixed-Integer Programming (MIP) problems. It is inspired by the work of the PuLP library for Python and the excellent Gurobi Python library. It builds on the work of the outstanding Google OR-Tools library and the OPTANO library.</p>
-</blockquote>
+<p><a href="https://github.com/fslaborg/flips">Flips</a> is an F# library for modeling and solving Linear Programming (LP) and Mixed-Integer Programming (MIP) problems. It is inspired by the work of the PuLP library for Python and the excellent Gurobi Python library. It builds on the work of the outstanding Google OR-Tools library and the OPTANO library.</p></blockquote>
 <p>For me, it turned out that <a href="https://github.com/fslaborg/flips">Flips</a> is much more suited for <a href="https://fsharp.org">F#</a> programming of optimization problems that <a href="https://developers.google.com/optimization">OR-Tools</a>, which is not designed to be used with functional, strongly typed programming languages.</p>
 <h2 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h2>
 <ul>

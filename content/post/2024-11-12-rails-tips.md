@@ -11,6 +11,7 @@ tags:
 - bulma
 - simple.css
 - slim
+- "css framework"
 showToc: true
 ---
 
@@ -26,7 +27,7 @@ However, I'm typically using [haml] for the view templates, and [bulma] as css f
 
 It replaces HTML templates like:
 
-~~~~html
+```html
 <section class="container">
   <h1><%= post.title %></h1>
   <h2><%= post.subtitle %></h2>
@@ -34,17 +35,17 @@ It replaces HTML templates like:
     <%= post.content %>
   </div>
 </section>
-~~~~
+```
 
 with 
 
-~~~~haml
+```haml
 %section.container
   %h1= post.title
   %h2= post.subtitle
   .content
     = post.content
-~~~~
+```
 
 The [haml] gem is quite well documented. To use it in rails, first, install it and the helper tool:
 
@@ -67,20 +68,20 @@ After [haml] I moved on to using [slim], which is even more precise. You can add
 
 To always use it when generating views, create the project as follows:
 
-~~~~
+```
 % rails new my_project --template-engine=slim
-~~~~
+```
 
 For an existing rails application, you can change the configuration in `config/application.rb`:
 
-~~~ruby
+```ruby
 module MyProject
   class Application < Rails::Application
     config.generators.template_engine = :slim
     # Other configuration settings...
   end
 end
-~~~
+```
 
 [slim]: https://slim-template.github.io/
 
@@ -92,43 +93,37 @@ To use [bulma] with [rails], you have to do the following modifications:
 
 Add the stylesheet to the  header:
 
-~~~~haml
+```haml
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     ...
     = stylesheet_link_tag "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
-~~~~
+```
 
 Then use `container` and apply it to all the elements of the body:
 
-~~~~haml
+```haml
 %body
 %section.section        # added
   .container            # added
     = yield
-~~~~
+```
 
 That's it. Now you have the default fonts and colors of [bulma].
 
 Obviously, if you want to make forms look nicer you have to change the auto-generated erb / haml files. A good guide is at the [bulma forms](https://bulma.io/documentation/form/general/) documentation.
 
-
 [rails]: https://guides.rubyonrails.org/index.html
 [haml]: https://github.com/haml/haml-rails
 [bulma]: https://bulma.io/
-
 
 This gives some tips and trick for Ruby on Rails.
 
 
 ## Simple.css
 
-After using [bulma] for some time, I moved on to an even easier framework, called [Simple.css]. All you have to do is to include it:
-
-~~~html
-<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
-~~~
+After Bulma, I moved to [Simple.css]. For more information, see the [post on Simple.css]({{< ref "2025-01-01-simplecss" >}}).
 
 [Simple.css]: https://simplecss.org/
 
@@ -136,28 +131,56 @@ After using [bulma] for some time, I moved on to an even easier framework, calle
 
 Create a minimum application which uses *sqlite3* as database (default since rails 8.0) and [slim] as templating engine and without javascript, mailboxes, etc.
 
-~~~
-rails new my-app -M -C -A -J --template=slim
-~~~
+```
+rails new my-app -M -C -A -J --template-engine=slim
+```
 
 ## Enums
 
 There are many sites explaining how to use [enums in rails](), but all of them describe the use case where the enum is stored as an integer in the database. 
 
-My much more frequent use case is using strings in the database. I found this on [stackoverflow](https://stackoverflow.com/questions/32938729/how-to-store-enum-as-string-to-database-in-rails) which gives a good way to do it:
+My much more frequent use case is using strings in the database. I found this on [stackoverflow](https://stackoverflow.com/questions/32938729/how-to-store-enum-as-string-to-database-in-rails) which gives a good way to do it.
 
-~~~~ruby
+```ruby
 class Work < ApplicationRecord
   enum status: %i[canceled offering running payment rating done].index_with(&:to_s)
 end
-~~~~
+```
 
-Then, in the view, you can use:
+The method `index_with` is part of `enum` and converts an enum into a hash. Then, in the view, you can use:
 
-~~~~ruby
+```ruby
 form.select :status, Work::stati    # or statuses?
-~~~~
+```
 
+### Multi-value enums
+
+If you need enums which can contain multiple values, you should not use `enum` but work with stored arrays and `serialize`.
+
+```ruby
+serialize :categories, coder: JSON
+CATEGORIES = %w[news sports entertainment politics technology]
+validate :categories_must_be_valid
+
+private
+
+def categories_must_be_valid
+  puts "inside validator"
+  invalid_categories = categories - CATEGORIES
+  errors.add(:categories, "contain invalid categories: #{invalid_categories.join(', ')}") if invalid_categories.any?
+end
+```
+
+You can now assign the values:
+
+```ruby
+article.categories = [ "news", "sports" ]
+article.categories << "politics"
+```
+
+## Various tricks
+
+Hit <http://localhost:3000/rails/info/routes> to get a list of all routes.
 
 ## Database views
 
@@ -167,7 +190,7 @@ Often, database views are an easy way to increase performance. This is how you c
 
 Create a migration `rails g migration CreateView` and change it:
 
-~~~ruby
+```ruby
 class CreateMyView < ActiveRecord::Migration[6.1]
   def up
     execute <<-SQL
@@ -185,7 +208,7 @@ class CreateMyView < ActiveRecord::Migration[6.1]
     SQL
   end
 end
-~~~
+```
 
 and then run the migration `rails db:migrate`. 
 
@@ -193,7 +216,7 @@ and then run the migration `rails db:migrate`.
 
 The model will look something like this:
 
-~~~ruby
+```ruby
 class MyView < ApplicationRecord
   self.table_name = 'my_view'
   self.inheritance_column = nil   # necessary for Single-table-inheritance STI
@@ -201,15 +224,15 @@ class MyView < ApplicationRecord
     true
   end
 end
-~~~
+```
 
 ### Create controller and views
 
 Now you have to create the controller and the views, but not the model. 
 
-~~~
+```
 rails g scaffold_controller MyView
-~~~
+```
 
 ## Quick reference
 
@@ -344,7 +367,6 @@ producer.produced_orders
 
 This approach is clean and efficient, leveraging Rails' built-in association features without requiring polymorphic associations since both `supplier` and `producer` are of the same type (`BusinessPartner`).
 
-
 ## ActiveRecords associations
 
 I have for the longest time been confused about how the associations are mapped to the database tables. 
@@ -352,7 +374,6 @@ I have for the longest time been confused about how the associations are mapped 
 A fairly good documentation can be found in the [ActiveRecord documentation](https://apidock.com/rails/ActiveRecord/Associations/ClassMethods).
 
 For my own help I created this table, the shows how the migrations, the generated models, and the sql statements fit together.
-
 
 <table>
 <thead>
@@ -367,22 +388,23 @@ For my own help I created this table, the shows how the migrations, the generate
   <td>Migration</td>
   <td>
 
-~~~
+```
 bin/rails g model A title:string
-~~~
-  </td>
-  <td>
-  
-~~~
-bin/rails g model B title:string a:references
-~~~
+```
 
-  </td>
+</td>
+  <td>
+
+```
+bin/rails g model B title:string a:references
+```
+
+</td>
 <tr>
   <td>Migration code</td>
   <td>
 
-~~~ruby
+```ruby
 class CreateAs < ActiveRecord::Migration[7.1]
   def change
     create_table :as do |t|
@@ -392,11 +414,12 @@ class CreateAs < ActiveRecord::Migration[7.1]
     end
   end
 end
-~~~
-  </td>
+```
+
+</td>
   <td>
 
-~~~ruby
+```ruby
 class CreateBs < ActiveRecord::Migration[7.1]
   def change
     create_table :bs do |t|
@@ -407,44 +430,48 @@ class CreateBs < ActiveRecord::Migration[7.1]
     end
   end
 end
-~~~
-  </td>
+```
+
+</td>
 
 <tr>
   <td>Models</td>
   <td>
 
-~~~ruby
+```ruby
 class A < ApplicationRecord
     has_one :b
 end
-~~~
-  </td>
+```
+
+</td>
   <td>
 
-~~~ruby
+```ruby
 class B < ApplicationRecord
   belongs_to :a 
 end
-~~~
-  </td>
+```
+
+</td>
 </tr>
 
 <tr>
 <td>Schema</td>
 <td>
 
-~~~ruby
+```ruby
 create_table "as", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
 end
-~~~
+```
+
 </td>
 <td>
 
-~~~ruby
+```ruby
 create_table "bs", force: :cascade do |t|
     t.string "title"
     t.integer "a_id", null: false
@@ -454,7 +481,8 @@ create_table "bs", force: :cascade do |t|
 end
 
 add_foreign_key "bs", "as"
-~~~
+```
+
 </td>
 
 </tr>
@@ -463,16 +491,17 @@ add_foreign_key "bs", "as"
 <td>Database</td>
 <td>
 
-~~~sql
+```sql
 CREATE TABLE IF NOT EXISTS "as" 
 ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, 
 "title" varchar, "created_at" datetime(6) NOT NULL,
 "updated_at" datetime(6) NOT NULL);
-~~~
+```
+
 </td>
 <td>
 
-~~~sql
+```sql
 CREATE TABLE IF NOT EXISTS "bs" 
 ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
 "title" varchar, "a_id" integer NOT NULL, 
@@ -483,7 +512,7 @@ FOREIGN KEY ("a_id")
   REFERENCES "as" ("id")
 );
 CREATE INDEX "index_bs_on_a_id" ON "bs" ("a_id");
-~~~
+```
 
 The foreign key index is generated on the `belongs_to` class.
 
@@ -493,27 +522,28 @@ The foreign key index is generated on the `belongs_to` class.
 <td>Creating</td>
 <td>
 
-~~~ruby
+```ruby
 a = A.new(title: 'hallo A')
 a.save!
 ==> INSERT INTO "as" ("title", "created_at", "updated_at") 
 VALUES (?, ?, ?) RETURNING "id"  [["title", "hallo A"], 
 ["created_at", "2024-03-16 08:20:14.170060"], 
 ["updated_at", "2024-03-16 08:20:14.170060"]]
-~~~
+```
+
 </td>
 <td>
 
-~~~ruby
+```ruby
 b = B.new(title: 'hallo B')
 b.save!
 ==> `raise_validation_error': Validation failed: 
 A must exist (ActiveRecord::RecordInvalid)
-~~~
+```
 
 b must have an association to a when saving.
 
-~~~ruby
+```ruby
 b = B.new(title: 'hallo B', a: a)
 b.save!
 TRANSACTION (0.1ms)  begin transaction
@@ -523,9 +553,10 @@ RETURNING "id"  [["title", "hallo B"], ["a_id", 4],
 ["created_at", "2024-03-16 08:25:29.621566"], 
 ["updated_at", "2024-03-16 08:25:29.621566"]]
 TRANSACTION (0.9ms)  commit transaction
-~~~
+```
 
 This creates a and the associated b.
+
 </td>
 </tr>
 
@@ -535,25 +566,27 @@ This creates a and the associated b.
 
 Access to the reference via the foreign key:
 
-~~~ruby
+```ruby
 A.find(4).b
   A Load (0.2ms)  SELECT "as".* FROM "as" WHERE "as"."id" = ? 
   LIMIT ?  [["id", 4], ["LIMIT", 1]]
   B Load (0.2ms)  SELECT "bs".* FROM "bs" WHERE "bs"."a_id" = ? 
   LIMIT ?  [["a_id", 4], ["LIMIT", 1]]
-~~~
+```
+
 </td>
 <td>
 
 Access with two sequential selects.
 
-~~~ruby
+```ruby
 B.find(3).a
   B Load (0.2ms)  SELECT "bs".* FROM "bs" WHERE "bs"."id" = ? 
   LIMIT ?  [["id", 3], ["LIMIT", 1]]
   A Load (0.1ms)  SELECT "as".* FROM "as" WHERE "as"."id" = ? 
   LIMIT ?  [["id", 4], ["LIMIT", 1]]
-~~~
+```
+
 </td>
 </tr>
 
@@ -561,13 +594,17 @@ B.find(3).a
 <td>what</td>
 <td>
 
-~~~ruby
-~~~
+```ruby
+
+```
+
 </td>
 <td>
 
-~~~ruby
-~~~
+```ruby
+
+```
+
 </td>
 </tr>
 </tbody>
@@ -578,10 +615,8 @@ B.find(3).a
 A very interesting blog on using ruby one-lines, mainly with text files,
 was found under [Ruby One.liners](https://learnbyexample.github.io/learn_ruby_oneliners/cover.html).
 
-
 ## Instance variables and class instance variables
 
 This is totally confusing when coming from another programming language. I found a fairly good explanation of instance variables and class instance variables [here](https://fernandobasso.dev/ruby/classes-and-objects.html).
-
 
 [quickref]: https://www.zenspider.com/ruby/quickref.html#types

@@ -6,7 +6,16 @@
     <description>Recent content in Küse&#39;s Code on Küse&#39;s Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple.css framework</title>
+      <link>http://localhost:1313/post/2025-01-01-simplecss/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2025-01-01-simplecss/</guid>
+      <description>&lt;p&gt;After using &lt;a href=&#34;https://bulma.io/&#34;&gt;bulma&lt;/a&gt; for some time, I moved on to an even easier framework, called &lt;a href=&#34;https://simplecss.org/&#34;&gt;Simple.css&lt;/a&gt;. All you have to do is to include it:&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Ruby on Rails ticks and trips</title>
       <link>http://localhost:1313/post/2024-11-12-rails-tips/</link>
