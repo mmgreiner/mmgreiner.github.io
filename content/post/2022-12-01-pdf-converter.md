@@ -83,7 +83,7 @@ The docmentation of [pdf-reader] is quite good, it worked successfully for me to
 
 [ruby]: https://www.ruby-lang.org/en/
 
-## Command line utities
+## Command line utilities
 
 [xpdf]: http://foolabs.com/xpdf
 [poppler]: https://poppler.freedesktop.org/
