@@ -8,6 +8,7 @@ tags:
 - Apple-Id
 - Bolero
 - F#
+- authentication
 title: Authentication
 showToc: true
 ---
@@ -188,15 +189,4 @@ This is a good explanation of how to use EF Core also with [F#]:
 
 ## Rails 8
 
-https://guides.rubyonrails.org/security.html
-
-Does not explain the sign-in:
-https://jetthoughts.com/blog/rails-8-introducing-built-in-authentication-generator-ruby/
-
-
-https://medium.com/@azzenabidi/how-to-setup-authentication-in-rails-8-33295a31c356
-````
-rails g authentiation
-rails db:migrate
-rails g controller home
-````
+See the post [Rails Authentication with Entra-ID]({{< ref "entra-id-authentication" >}}) for more information.

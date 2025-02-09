@@ -161,6 +161,8 @@
 
         <div class="inner"><ul>
                 <li>
+                    <a href="#dotenv" aria-label="Dotenv">Dotenv</a></li>
+                <li>
                     <a href="#templating" aria-label="Templating">Templating</a><ul>
                         
                 <li>
@@ -247,8 +249,25 @@
 </div>
 
   <div class="post-content"><p>I have been using <a href="https://guides.rubyonrails.org/index.html">Ruby on Rails</a> quite a lot lately due to its extremely rapid way to build proof of concepts for web applications.</p>
-<p>However, I&rsquo;m typically using <a href="https://github.com/haml/haml-rails">haml</a> for the view templates, and <a href="https://bulma.io/">bulma</a> as css framework.</p>
-<h2 id="templating">Templating<a hidden class="anchor" aria-hidden="true" href="#templating">#</a></h2>
+<p>This post collects some of my experience, also using diffeent templating engines and css frameworks.</p>
+<h2 id="dotenv">Dotenv<a hidden class="anchor" aria-hidden="true" href="#dotenv">#</a></h2>
+<p>Often it is the case that you rely on some parameters that are set in environment variables. This allows you to use different configuration during development, testing, and production.</p>
+<p>The gem <a href="https://github.com/bkeepers/dotenv">dotenv-rails</a> is ideal for this. First, add it to the Gemfile:</p>
+<p>% bundle add dotenv-rails &ndash;group=development,test</p>
+<p>Now create a <code>.env</code> file in the root directory. Make sure that this file is ignored by git, since you may keep confidential keys here.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>MY_URL=http://localhost:3000
+</span></span></code></pre></div><p>Inside your rails application, you can now access the value like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>my_url <span style="color:#f92672">=</span> <span style="color:#66d9ef">ENV</span><span style="color:#f92672">[</span><span style="color:#e6db74">&#34;MY_URL&#34;</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>Dotenv should automatically load when the Rails app boots. If this doesn&rsquo;t work, load it inside the configuration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e"># config/application.rb</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Load .env file in development and test environments</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">Rails</span><span style="color:#f92672">.</span>env<span style="color:#f92672">.</span>development? <span style="color:#f92672">||</span> <span style="color:#66d9ef">Rails</span><span style="color:#f92672">.</span>env<span style="color:#f92672">.</span>test?
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">Dotenv</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Railtie</span><span style="color:#f92672">.</span>load
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p><strong>Note</strong>: in rake tasks, you may have to include:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>require <span style="color:#e6db74">&#34;dotenv/load&#34;</span>
+</span></span></code></pre></div><h2 id="templating">Templating<a hidden class="anchor" aria-hidden="true" href="#templating">#</a></h2>
 <p>Template engines are used to create the html for the views. The standard rails templating engine in <a href="https://guides.rubyonrails.org/action_view_overview.html#templates">ERB</a>, the <strong>E</strong>mbedded <strong>R</strong>u<strong>B</strong>y templating engine. However, there are other templating engines which are more concise.</p>
 <h3 id="haml">Haml<a hidden class="anchor" aria-hidden="true" href="#haml">#</a></h3>
 <p><a href="https://haml.info/">haml</a> is a templating engine with the goal:</p>

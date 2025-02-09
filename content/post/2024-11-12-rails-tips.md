@@ -2,6 +2,7 @@
 title: Ruby on Rails ticks and trips
 description: Ruby on Rails with bulma, haml, etc.
 date: 2024-11-12
+draft: false
 categories:
 - programming
 tags:
@@ -17,7 +18,44 @@ showToc: true
 
 I have been using [Ruby on Rails][rails] quite a lot lately due to its extremely rapid way to build proof of concepts for web applications.
 
-However, I'm typically using [haml] for the view templates, and [bulma] as css framework.
+This post collects some of my experience, also using diffeent templating engines and css frameworks.
+
+## Dotenv
+
+Often it is the case that you rely on some parameters that are set in environment variables. This allows you to use different configuration during development, testing, and production.
+
+The gem [dotenv-rails](https://github.com/bkeepers/dotenv) is ideal for this. First, add it to the Gemfile:
+
+  % bundle add dotenv-rails --group=development,test
+
+Now create a `.env` file in the root directory. Make sure that this file is ignored by git, since you may keep confidential keys here.
+
+~~~~text
+MY_URL=http://localhost:3000
+~~~~ 
+
+Inside your rails application, you can now access the value like this:
+
+~~~~ruby
+my_url = ENV["MY_URL"]
+~~~~
+
+Dotenv should automatically load when the Rails app boots. If this doesn't work, load it inside the configuration:
+
+~~~ruby
+# config/application.rb
+
+# Load .env file in development and test environments
+if Rails.env.development? || Rails.env.test?
+  Dotenv::Railtie.load
+end
+~~~
+
+**Note**: in rake tasks, you may have to include:
+
+~~~~ruby
+require "dotenv/load"
+~~~~
 
 ## Templating
 
