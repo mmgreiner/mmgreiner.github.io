@@ -1,3 +1,14 @@
+---
+categories:
+- publishing
+date: "2023-12-18"
+draft: true
+tags:
+- php
+- wordpress
+title: Using PHP and Wordpress locally
+showToc: false
+---
 
 ## Install phpmyadmin with brew
 
