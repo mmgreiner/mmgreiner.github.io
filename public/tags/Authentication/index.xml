@@ -19,18 +19,6 @@
     </item>
     
     <item>
-      <title>Authentication with Entra-ID</title>
-      <link>http://localhost:1313/draft/2024-12-28-Entra-ID-authentication/</link>
-      <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/2024-12-28-Entra-ID-authentication/</guid>
-      <description>&lt;h2 id=&#34;azure&#34;&gt;Azure&lt;/h2&gt;
-&lt;p&gt;First, set up in Azure. see:&lt;/p&gt;
-&lt;p&gt;(taken from ChatGPT):
-Make sure you’ve already registered your application in the Azure portal:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Authentication</title>
       <link>http://localhost:1313/draft/2023-01-01-authentication/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>

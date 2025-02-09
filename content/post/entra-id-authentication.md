@@ -6,13 +6,14 @@ categories:
 - programming
 tags:
 - rails
+- ruby
 - authentication
 - Entra-ID
 - Azure
 showToc: true
 ---
 
-This post demonstrates how to use Azure Entra-ID for authentication. According to [What is Microsoft Entra ID?](https://learn.microsoft.com/en-us/entra/fundamentals/whatis), 
+This post [^1] demonstrates how to use Azure Entra-ID for authentication. According to [What is Microsoft Entra ID?](https://learn.microsoft.com/en-us/entra/fundamentals/whatis), 
 
 > Microsoft Entra ID is a cloud-based identity and access management service that your employees can use to access external resources. 
 
@@ -25,6 +26,8 @@ In this example, we will be using Azure Entra-ID, and the [omniauth] library wit
 [omniauth]: https://github.com/omniauth/omniauth
 
 [omniauth-entra-id]: https://github.com/RIPAGlobal/omniauth-entra-id
+
+[^1]: Part of text was adopted and corrected from a ChatGPT prompt answer 
 
 The following steps show how to use **Entra ID** and **Omniauth** for authentication with a rails application.
 
@@ -61,7 +64,7 @@ bundle add dotenv-rails --group=development,test
 
 Run `bundle install` to install the gems.
 
-### Step 3: Configure OmniAuth with Entra ID
+## Step 3: Configure OmniAuth with Entra ID
 
 Create a new OmniAuth initializer for Entra ID configuration.
 
@@ -95,7 +98,7 @@ AZURE_CLIENT_SECRET_VALUE=your-client-secret
 AZURE_TENANT_ID=your-tenant-id
 ```
 
-### Step 4: Set Up the Sessions Controller
+## Step 4: Set Up the Sessions Controller
 
 Next, let's set up a `SessionsController` to handle login and logout. We’ll use OmniAuth to handle the OAuth2 authentication flow.
 
@@ -133,7 +136,7 @@ class SessionsController < ApplicationController
 end
 ```
 
-### Step 5: Add Routes for Authentication
+## Step 5: Add Routes for Authentication
 
 Update your `config/routes.rb` to handle the authentication routes:
 
@@ -148,7 +151,7 @@ Rails.application.routes.draw do
 end
 ```
 
-### Step 6: Create a Simple Home Controller
+## Step 6: Create a Simple Home Controller
 
 For simplicity, let's show a home page where the user can log in and log out based on their session.
 
@@ -178,7 +181,7 @@ In `app/views/home/index.html.erb`, add the following to display login/logout li
 <% end %>
 ```
 
-### Step 7: Create the User Model
+## Step 7: Create the User Model
 
 If you don't have a `User` model to store the authenticated users, create one. Run the following:
 
@@ -195,7 +198,7 @@ class User < ApplicationRecord
 end
 ```
 
-### Step 8: Run the Application
+## Step 8: Run the Application
 
 Now, you should be ready to test your Entra ID authentication. Run the Rails server:
 
@@ -205,7 +208,7 @@ rails server
 
 Go to <http://localhost:3000>, and you should see a "Sign in with Entra ID" link. Click the link, and after authentication via Entra ID, you should be redirected back to the home page and see your name (if authenticated).
 
-### Additional Configuration (Optional)
+## Additional Configuration (Optional)
 
 1. **Handle Authentication Failures**: You can define an `omniauth_failure` method in your `SessionsController` to handle errors:
 
