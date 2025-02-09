@@ -147,7 +147,7 @@ Rails.application.routes.draw do
   root to: 'home#index'
   
   # Entra authentication routes
-  get '/auth/:provider', to: 'sessions#new', as: "login"
+  get '/auth/:provider', to: 'sessions#new'
   get '/auth/:provider/callback', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy', as: "logout"
 end
@@ -179,7 +179,7 @@ In `app/views/home/index.html.erb`, add the following to display login/logout li
   <p>Welcome, <%= User.find(session[:user_id]).name %>!</p>
   <%= link_to 'Sign Out', logout_path, method: :delete %>
 <% else %>
-  <%= link_to 'Sign in with Entra ID', login_path %>
+  <%= link_to 'Sign in with Entra ID', "/auth/entra-id" %>
 <% end %>
 ```
 
