@@ -28,20 +28,11 @@
     </item>
     
     <item>
-      <title>Docker, Sinatra and Azure</title>
-      <link>http://localhost:1313/draft/2024-12-28-Dockerize-Sinatra-Azure/</link>
-      <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/2024-12-28-Dockerize-Sinatra-Azure/</guid>
-      <description>Dockerize a Sinatra App and Deploy it to Azure</description>
-    </item>
-    
-    <item>
       <title>Ruby on Rails ticks and trips</title>
-      <link>http://localhost:1313/post/2024-11-12-rails-tips/</link>
+      <link>http://localhost:1313/post/rails-tips/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2024-11-12-rails-tips/</guid>
+      <guid>http://localhost:1313/post/rails-tips/</guid>
       <description>Ruby on Rails with bulma, haml, etc.</description>
     </item>
     

@@ -127,6 +127,31 @@ end
 
 [slim]: https://slim-template.github.io/
 
+
+### Markdown
+
+Sometimes, particularely if you want to view larger texts, you may have the need for markdown rendering.
+
+I have found this [article](https://www.writesoftwarewell.com/how-to-render-markdown-views-in-rails/) which explains the steps.
+
+1. Install the gem `bundle add  redcarpet`.
+
+2. Add an initializer `config/initializers/markdown.rb`
+
+~~~ruby
+require "redcarpet"
+
+ActionView::Template.register_template_handler :md, lambda { |template, source|
+  renderer = Redcarpet::Render::HTML.new
+  markdown = Redcarpet::Markdown.new(renderer, extensions = {})
+  "#{markdown.render(source).inspect}.html_safe"
+}
+~~~
+
+3. Restart the server `rails server`.
+
+4. Write Views with `.html.md` extensions. They will automatically be rendered. 
+
 ## CSS Frameworks
 
 ### Bulma
@@ -190,10 +215,23 @@ class Work < ApplicationRecord
 end
 ```
 
-The method `index_with` is part of `enum` and converts an enum into a hash. Then, in the view, you can use:
+The method `index_with` is part of `enum` and converts an enum into a hash. You can check this:
+
+~~~ruby
+Person.statuses
+=> 
+{"canceled" => "canceled",
+ "offering" => "offerng",
+ "running" => "running",
+ "payment" => "payment",
+ "rating" => "rating",
+ "done" => "done"}
+~~~
+
+Then, in the view, you can use:
 
 ```ruby
-form.select :status, Work::stati    # or statuses?
+form.select :status, Work::statuses
 ```
 
 ### Multi-value enums
@@ -220,6 +258,15 @@ You can now assign the values:
 article.categories = [ "news", "sports" ]
 article.categories << "politics"
 ```
+
+In the view, you would use:
+
+~~~html
+= form.collection_check_boxes :categories, XY::CATEGORIES.map{ [_1, _1]}, :first, :first, include_hidden: false
+~~~
+
+The `include_hidden: false` parameter is needed, otherwise the returned parameters would contains an empty `""` first value which would break validation.
+
 
 ## Various tricks
 

@@ -6,18 +6,7 @@
     <description>Recent content in Github on Küse&#39;s Codes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Working with Github</title>
-      <link>http://localhost:1313/draft/20240523-github/</link>
-      <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/draft/20240523-github/</guid>
-      <description>&lt;p&gt;How to get a list of all the issues into a csv, see &lt;a href=&#34;https://stackoverflow.com/questions/41369365/how-can-i-export-github-issues-to-excel&#34;&gt;stackoverflow&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;gh issue list --state all | tr &#39;\t&#39; &#39;,&#39; &amp;gt; bugreports/issues-24-05-23.csv
-&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
+    <lastBuildDate>Sun, 30 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to work with modules and packages in Go</title>
       <link>http://localhost:1313/post/2023-07-30-go-modules/</link>
