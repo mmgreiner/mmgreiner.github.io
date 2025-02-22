@@ -38,7 +38,11 @@ Inside your rails application, you can now access the value like this:
 
 ~~~~ruby
 my_url = ENV["MY_URL"]
+# or
+my_url = ENV.fetch "MY_URL"
 ~~~~
+
+`fetch` throws an error, if the value is not defined, which may be helpful if you are unsure about the environment.
 
 Dotenv should automatically load when the Rails app boots. If this doesn't work, load it inside the configuration:
 
@@ -51,11 +55,17 @@ if Rails.env.development? || Rails.env.test?
 end
 ~~~
 
-**Note**: in rake tasks, you may have to include:
+**Note 1**: in rake tasks, you may have to include:
 
 ~~~~ruby
 require "dotenv/load"
 ~~~~
+
+**Note 2**: if you want to test production environment on your local machine before deployment, you can load the environment variables like this:
+
+    dotenv -f .env rails server
+
+
 
 ## Templating
 
