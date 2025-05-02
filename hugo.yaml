@@ -2,7 +2,7 @@ baseURL: http://example.org/
 disablePathToLower: true
 languageCode: en-us
 title: Küse's Codes
-theme: PaperMod # hugo-theme-relearn   #hugo-pure    # ananke
+theme: [ "PaperMod" ] # hugo-theme-relearn   #hugo-pure    # ananke
 
 #sectionPagesMenu: "main"
 show_reading_time: true
