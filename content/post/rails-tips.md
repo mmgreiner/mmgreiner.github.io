@@ -213,6 +213,17 @@ Create a minimum application which uses *sqlite3* as database (default since rai
 rails new my-app -M -C -A -J --template-engine=slim
 ```
 
+The flags have the following meanings:
+
+- `-G` Skip git init, .gitignore and .gitattributes
+- `-M` Skip Action Mailer files
+- `-O` Skip Active Record files
+- `-C` Skip Action Cable files
+- `-A` Indicates when to generate skip asset pipeline
+- `-J` Skip JavaScript files
+- `-T` Skip test files
+
+
 ## Enums
 
 There are many sites explaining how to use [enums in rails](), but all of them describe the use case where the enum is stored as an integer in the database. 
