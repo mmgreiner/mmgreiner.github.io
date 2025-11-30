@@ -53,8 +53,17 @@ A typical `application.html.erb` page would look like this:
 The standard template has a quite large margin. To reduce this margin, you can use:
 
 ```html
-
+<style>
+  :root {
+    --reading-width: min(45rem, 90%);
+  }
+  body {
+    grid-template-columns: 1fr 98% 1fr;
+  }
+</style>
 ```
+
+Note that `fr` stands for fraction.
 
 [Simple.css]: https://simplecss.org/
 [bulma]: https://bulma.io/
