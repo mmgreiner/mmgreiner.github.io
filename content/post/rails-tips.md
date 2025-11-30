@@ -1,5 +1,5 @@
 ---
-title: Ruby on Rails ticks and trips
+title: Ruby on Rails tips and tricks
 description: Ruby on Rails with bulma, haml, etc.
 date: 2024-11-12
 draft: false
@@ -205,12 +205,12 @@ After Bulma, I moved to [Simple.css]. For more information, see the [post on Sim
 
 [Simple.css]: https://simplecss.org/
 
-## Mimimum application
+## Minimal application
 
-Create a minimum application which uses *sqlite3* as database (default since rails 8.0) and [slim] as templating engine and without javascript, mailboxes, etc.
+Create a minimal application which uses *sqlite3* as database (default since rails 8.0) and [slim] as templating engine and without javascript, mailboxes, etc.
 
-```
-rails new my-app -M -C -A -J --template-engine=slim
+```sh
+rails new my-app -M -C -A -J
 ```
 
 The flags have the following meanings:
@@ -223,6 +223,11 @@ The flags have the following meanings:
 - `-J` Skip JavaScript files
 - `-T` Skip test files
 
+Further flags are:
+
+- `--api`: create an API only rails application
+
+If you want to have a fast way to use [slim] and [Simple.css], please take a look at the [Greiner generators](https://github.com/mmgreiner/greiner_gens).
 
 ## Enums
 
@@ -287,6 +292,60 @@ In the view, you would use:
 ~~~
 
 The `include_hidden: false` parameter is needed, otherwise the returned parameters would contains an empty `""` first value which would break validation.
+
+
+## Pagination
+
+I am using the [kaminari](https://github.com/kaminari/kaminari) gem to do pagination. After installation it requires minimum additional code.
+
+
+Installation:
+
+~~~~sh
+% rails g kaminari:config  
+~~~~
+
+In your controller:
+
+~~~~ruby
+@users = User.order(:name).page params[:page]
+~~~~
+
+In your view:
+
+~~~~ruby
+<%= paginate @users %>
+~~~~
+
+
+## Search
+
+For searching, the view (normally the index view) can be extended as follows:
+
+~~~slim
+# apps/views/users/index.html.slim
+= form_with url: users_path, method: :get, local: true do |form|
+  = form.label :search, "Search by Name, City or Zip:"
+  = form.text_field :search, value: params[:search]
+  = form.submit "Search"
+  = link_to "Clear", users_path if params[:search].present?
+~~~
+
+In the controller, the search parameter is treated like this:
+
+~~~~rb
+# GET /tax_statements
+def index
+  if params[:search].present?
+    search = "%" + params[:search].strip + "%"
+    @users = User.where("first_name LIKE ? OR last_name LIKE ? OR zip LIKE ? OR city LIKE ?",
+      search, search, search, search).pluck(:id)
+  else
+    @users = User 
+  end
+  @users = @users.order("last_name").page(params[:page])
+end
+~~~~
 
 
 ## Various tricks

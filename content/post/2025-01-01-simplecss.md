@@ -48,5 +48,13 @@ A typical `application.html.erb` page would look like this:
 </html>
 ```
 
+## Reduce margin
+
+The standard template has a quite large margin. To reduce this margin, you can use:
+
+```html
+
+```
+
 [Simple.css]: https://simplecss.org/
 [bulma]: https://bulma.io/
