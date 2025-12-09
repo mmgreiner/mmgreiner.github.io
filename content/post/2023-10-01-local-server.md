@@ -106,3 +106,174 @@ Restart the server with:
 [tomcat]: https://tomcat.apache.org
 [Jekyll]: {{< param "jekyll_link" >}}
 [Hugo]: {{< param "hugo_link" >}}
+
+
+## nginx server
+
+Starting several years ago, the apache web server is no longer active by default.
+
+After asking *ChatGPT*, it advised to use `nginx` as a web server.
+
+### ChatGPT Answer
+
+Here’s the simplest, cleanest way to configure **nginx (Homebrew version)** on macOS to serve files from your **~/Sites** directory.
+
+---
+
+### ✅ Step-by-step: Configure nginx to use `~/Sites` as the web root
+
+#### **1. Install nginx with Homebrew (if not installed)**
+
+```sh
+brew install nginx
+```
+
+Start nginx:
+
+```sh
+brew services start nginx
+```
+
+Check status:
+
+```sh
+brew services info nginx
+```
+
+---
+
+### ✅ 2. Find the nginx config directory
+
+Homebrew installs nginx configs here:
+
+```
+/opt/homebrew/etc/nginx/
+```
+
+(Main config file is `nginx.conf`)
+
+---
+
+# ✅ 3. Create a server block that points to `~/Sites`
+
+### Create a new config file:
+
+```sh
+nano /opt/homebrew/etc/nginx/servers/sites.conf
+```
+
+(If `servers/` does not exist, create it.)
+
+Add this:
+
+```
+server {
+    listen 8080;   # avoid port 80 permissions
+    server_name localhost;
+
+    root /Users/YOURUSERNAME/Sites;
+    index index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+
+Replace:
+
+```
+/Users/YOURUSERNAME/Sites
+```
+
+with your actual username.
+
+You can find your username with:
+
+```sh
+whoami
+```
+
+---
+
+### ✅ 4. Make sure the `servers` directory is included in nginx.conf
+
+Open:
+
+```sh
+nano /opt/homebrew/etc/nginx/nginx.conf
+```
+
+Look for a block like:
+
+```
+include servers/*;
+```
+
+If missing, add it inside the `http { ... }` block:
+
+```
+http {
+    ...
+    include servers/*;
+}
+```
+
+Save & quit.
+
+---
+
+### ✅ 5. Test configuration
+
+```sh
+nginx -t
+```
+
+If you see:
+
+```
+syntax is ok
+test is successful
+```
+
+you’re good.
+
+---
+
+### ✅ 6. Restart nginx
+
+```sh
+brew services restart nginx
+```
+
+---
+
+### ✅ 7. Test in the browser
+
+Visit <http://localhost:8080>.
+
+You should now see files served from: `~/Sites`.
+
+---
+
+### Optional: Serve on port 80
+
+macOS protects port 80, so you'd need sudo:
+
+```sh
+sudo /opt/homebrew/bin/nginx
+```
+
+OR update `nginx.conf` to:
+
+```
+listen 80;
+```
+
+But usually it’s easier to stick with `8080`.
+
+---
+
+### Results
+
+I have not yet tested the results.
