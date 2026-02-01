@@ -13,11 +13,14 @@ showToc: false
 
 ## Introduction
 
-The podcast [The Rest is Politics - Leading]() always brings longer interviews with persons from politics, social sciences, even sports. The episode just before christmas was called: [Faith, Depression, and Finding Calm in the Chaos (Professor Mark Williams)][Episode 167]. 
+The podcast [The Rest is Politics - Leading][TRIP-Leading] always brings longer interviews with persons from politics, social sciences, even sports. The episode just before christmas was called: [Faith, Depression, and Finding Calm in the Chaos (Professor Mark Williams)][Episode 167]. 
 
 > From Parliament to Prison, how can people find calm in chaotic environments? How does one cope with grief during the festive period? What are some successful ways to combat depression? 
 >
-> Rory and Alastair are joined by clinical psychologist and ordained Minister, Mark Williams, to answer all these questions and more. 
+> Rory and Alastair are joined by clinical psychologist and ordained Minister, [Mark Williams](https://en.wikipedia.org/wiki/J._Mark_G._Williams), to answer all these questions and more. 
+
+[Episode 167]: https://podcasts.apple.com/ch/podcast/the-rest-is-politics-leading/id1665265193?l=en-GB&i=1000741997268
+[TRIP-Leading]: https://podcasts.apple.com/ch/podcast/the-rest-is-politics-leading/id1665265193?l=en-GB
 
 ## Meditations
 
@@ -78,5 +81,3 @@ Once a day:
 
 ### Practice for Week 8
 
-[Episode 167]: https://www.globalplayer.com/podcasts/episodes/7DrvqWE/
-[TRIP-Leading]: https://www.globalplayer.com/podcasts/42KuYR/
