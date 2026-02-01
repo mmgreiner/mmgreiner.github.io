@@ -11,7 +11,7 @@ showToc: true
 
 *Note*: adopted from Claude answer.
 
-## Issue
+## Issue
 
 If you are developing a ruby wrapper for a python package, the question is how to name this gem.
 

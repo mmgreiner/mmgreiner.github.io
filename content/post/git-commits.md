@@ -1,13 +1,19 @@
+---
+title: Git commit conventions
+description: Conventions for Git commits
+date: 2026-02-01
+categories:
+- programming
+tags:
+- git
+- github
+showToc: false
+---
 
 ## Using conventions in Github commits
 
-Taken from ChatGPT
+This content was adopted from [ChatGPT](https://chatgpt.com/).
 
-Absolutely — **`conventional-changelog`** is a great tool to understand if you care about **automatic changelog generation** and **consistent commit messages**.
-
-Let’s go step by step 👇
-
----
 
 ## 🧩 What is `conventional-changelog`?
 
@@ -15,11 +21,7 @@ Let’s go step by step 👇
 
 It was originally built by the Angular team and is now widely used in many ecosystems.
 
----
-
-## 🧠 What are “Conventional Commits”?
-
-They’re commit messages that follow a simple, structured convention:
+*Conventional Commits* are commit messages that follow a simple, structured convention:
 
 ```
 <type>(<optional scope>): <short summary>
@@ -49,9 +51,8 @@ chore(deps): update Rails to 7.1
 
 This structure allows tools to **parse commits automatically**.
 
----
 
-## ⚙️ How `conventional-changelog` works
+## How `conventional-changelog` works
 
 It parses your git history and generates a changelog (typically a `CHANGELOG.md` file), grouping commits by type and optionally bumping versions automatically.
 
@@ -62,19 +63,18 @@ It parses your git history and generates a changelog (typically a `CHANGELOG.md`
 
 ## [1.2.0] - 2025-10-22
 
-### 🚀 Features
+### Features
 - Add login with Google (#45)
 
-### 🐛 Bug Fixes
+### Bug Fixes
 - Handle 500 errors properly (#48)
 
-### 🧰 Maintenance
+### Maintenance
 - Update Rails to 7.1 (#50)
 ```
 
----
 
-## 🔧 How to use it
+## How to use it
 
 ### 1. Install it
 
@@ -96,9 +96,8 @@ conventional-changelog -p angular -i CHANGELOG.md -s
 
 Run this command each time you release.
 
----
 
-## 🪄 Automating it
+## Automating it
 
 You can add a script to your `package.json`:
 
@@ -114,9 +113,8 @@ Then just run:
 npm run changelog
 ```
 
----
 
-## ⚡ Related Tools in the Same Ecosystem
+## Related Tools in the Same Ecosystem
 
 | Tool                            | Purpose                                                     |
 | ------------------------------- | ----------------------------------------------------------- |
@@ -125,9 +123,8 @@ npm run changelog
 | **standard-version**            | Automates version bumping + changelog                       |
 | **semantic-release**            | Fully automates release + changelog + tagging on GitHub/npm |
 
----
 
-## 🧮 Comparison with Similar Tools
+## Comparison with Similar Tools
 
 | Tool                       | Based on Commits | Based on PRs | Auto version bump | Auto release to GitHub/npm |
 | -------------------------- | ---------------- | ------------ | ----------------- | -------------------------- |
@@ -141,8 +138,4 @@ So:
 * Use **`conventional-changelog`** if you just want to **generate changelogs**.
 * Use **`standard-version`** if you want **changelog + version bumping**.
 * Use **`semantic-release`** if you want **fully automated publishing**.
-
----
-
-Would you like me to show how to integrate `conventional-changelog` (or `standard-version`) into a **Rails project’s release workflow**, even though it’s not a Node app? (It’s possible and works well with CI/CD setups.)
 
