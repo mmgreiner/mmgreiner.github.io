@@ -14,6 +14,9 @@ tags:
 - slim
 - "css framework"
 showToc: true
+menu:
+  main:
+    name: Rails
 ---
 
 I have been using [Ruby on Rails][rails] quite a lot lately due to its extremely rapid way to build proof of concepts for web applications.
@@ -161,6 +164,10 @@ ActionView::Template.register_template_handler :md, lambda { |template, source|
 3. Restart the server `rails server`.
 
 4. Write Views with `.html.md` extensions. They will automatically be rendered. 
+
+### Generator
+
+I have also worked on a little [rails] generator which supports changing to [slim] and [Simple.css] in one shot. See [github ](https://github.com/mmgreiner/greiner_gens) for more information.
 
 ## CSS Frameworks
 
@@ -403,10 +410,6 @@ Now you have to create the controller and the views, but not the model.
 ```
 rails g scaffold_controller MyView
 ```
-
-## Useful things with the console
-
-I found this helpful article [Useful thinkgs you can do with the rails console](https://impactahead.com/dev/useful-things-you-can-do-with-rails-console). 
 
 ## Quick reference
 
