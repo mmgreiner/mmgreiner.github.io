@@ -1,6 +1,6 @@
 ---
 title: Mindfulness
-description: Information and references about *mindfulness*
+description: Meditations for mindfulness
 date: 2026-02-01
 categories:
 - life
@@ -13,7 +13,7 @@ showToc: false
 
 ## Introduction
 
-The podcast [The Rest is Politics - Leading][TRIP-Leading] always brings longer interviews with persons from politics, social sciences, even sports. The episode just before christmas was called: [Faith, Depression, and Finding Calm in the Chaos (Professor Mark Williams)][Episode 167]. 
+The podcast [The Rest is Politics - Leading][TRIP-Leading] always broadcasts longer interviews with persons from politics, social sciences, even sports. The episode just before christmas was called: [Faith, Depression, and Finding Calm in the Chaos (Professor Mark Williams)][Episode 167]. 
 
 > From Parliament to Prison, how can people find calm in chaotic environments? How does one cope with grief during the festive period? What are some successful ways to combat depression? 
 >
