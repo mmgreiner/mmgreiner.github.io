@@ -15,7 +15,7 @@ showToc: false
 This content was adopted from [ChatGPT](https://chatgpt.com/).
 
 
-## 🧩 What is `conventional-changelog`?
+## What is `conventional-changelog`?
 
 **`conventional-changelog`** is a Node.js tool (and family of libraries) that automatically generates changelogs from **commit messages that follow the [Conventional Commits](https://www.conventionalcommits.org/) specification**.
 
