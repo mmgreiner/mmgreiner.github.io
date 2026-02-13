@@ -137,7 +137,7 @@ If this is:
 
 Starting with rails version 8, you can very easily add authentication to a rails app (see [Rails security](https://guides.rubyonrails.org/security.html):
 
-~~~
+~~~csh
 bin/rails generate authentication
 bin/rails db:migrate
 ~~~
@@ -157,7 +157,7 @@ It all works fine during development. But after deploying to `render`, you get s
 
 So you also have to change the cache settings, particular if you are using SQlite:
 
-~~~
+~~~ruby
 # config/environments/production.rb
 config.cache_store = :solid_cache_store
 ~~~
@@ -166,7 +166,7 @@ in the render configuration, ensure that you migrate all databases. Define the s
 
 ~~~
 bundle exec rails db:migrate && bundle exec rails db:migrate:cache && bundle exec rails db:migrate:queue
-~~~ 
+~~~
 
 Otherwise, the cache database will never be set up and the application will crash.
 
