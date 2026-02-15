@@ -16,7 +16,7 @@ Lately, I have added the programming languages [Go] and [Ruby] to my portfolio a
 This blog was originally written as a static HTML site using [Jekyll]({{< param "jekyll_link" >}}), and later moved 
 to [Hugo]({{<param "hugo_link">}}).
 
-![Sky Parkway](/images/IMG_0524.jpeg "Sky Parkway, VA")
+![Sky Parkway](../images/IMG_0524.jpeg "Sky Parkway, VA")
 
 These posts are stored at [GitHub](https://github.com/mmgreiner/mmgreiner.github.io) and published as Github Pages [mmgreiner.github.io](https://mmgreiner.github.io/).
 
