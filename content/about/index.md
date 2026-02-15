@@ -18,8 +18,6 @@ to [Hugo]({{<param "hugo_link">}}).
 
 ![Sky Parkway](/images/IMG_0524.jpeg "Sky Parkway, VA")
 
-![Sky Parkway](images/IMG_0524.jpeg "Sky Parkway, VA 2")
-
 These posts are stored at [GitHub](https://github.com/mmgreiner/mmgreiner.github.io) and published as Github Pages [mmgreiner.github.io](https://mmgreiner.github.io/).
 
 
