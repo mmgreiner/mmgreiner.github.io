@@ -30,6 +30,9 @@ menu:
     - name: Drafts
       url: /draft
       weight: 25
+    - name: "✨chats"
+      url: /chats
+      weight: 27
     - name: About me
       url: /about
       weight: 80
