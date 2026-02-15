@@ -1,7 +1,10 @@
 ---
+title: Static templating with handlebars, liquid and others
+description: This post describes how to use static temlating engines like handlebars, liquid, fluid etc when programming.
+draft: false
 categories:
 - programming
-- template
+- publishing
 date: "2022-08-29T00:00:00Z"
 tags:
 - F#
@@ -9,7 +12,7 @@ tags:
 - liquid
 - handlebars
 - fluid
-title: Static templating with handlebars, liquid and others
+- templates
 showToc: true
 ---
 
