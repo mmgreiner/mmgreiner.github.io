@@ -5,7 +5,11 @@ date: "2022-12-31T00:00:00Z"
 tags:
 - OR
 - OR-Tools
+- ruby
+- C#
+- F#
 title: Operation research
+description: Usage of operation research in various programming languages for production optimization, scheduling, etc. problems.
 showToc: true
 math: true
 ---
@@ -23,7 +27,7 @@ Typical problems of OR are:
 
 I have found two good online lecture notes: [Introduction to Operation Research by Juraj Stacho][Stacho] and [Operation and Operations Resarch by Matthew Roughan][Roughan].
 
-In this post, I want to show some examples of OR problems and how they can be solved using either [OR-Tools] and dotnet or xx and Julia.
+In this post, I want to show some examples of OR problems and how they can be solved using either [OR-Tools] and dotnet or other programming languages.
 
 ## Linear optimization example
 
@@ -126,6 +130,50 @@ olver.Add(x + 7.0 * y ^<== 17.5)
 
 However, this seems to be very cumbersome. In this case, the functional programming style does not lead itself to be more concise.
 
+#### Ruby
+
+There also exists a [Ruby] wrapper for OR-Tools on [github](https://github.com/ankane/or-tools-ruby). It even has an example very similar to the one above at [Solving a CP Problem](https://github.com/ankane/or-tools-ruby?tab=readme-ov-file#solving-a-cp-problem).
+
+```ruby
+require 'or-tools'
+
+# declare the model
+model = ORTools::CpModel.new
+
+# create the variables
+var_upper_bound = 100
+x = model.new_int_var(0, var_upper_bound, "x")
+y = model.new_int_var(0, var_upper_bound, "y")
+
+# define the constraints
+model.add(x + y*7 <= 17.5)
+model.add(x <= 3.5)
+
+# define the objective function
+model.maximize(x + y*10)
+
+# call the solver
+solver = ORTools::CpSolver.new
+status = solver.solve(model)
+
+# display the solution
+if status == :optimal || status == :feasible
+  puts "Maximum of objective function: #{solver.objective_value}"
+  puts "x = #{solver.value(x)}"
+  puts "y = #{solver.value(y)}"
+else
+  puts "No solution found."
+end
+```
+
+You can run it like this:
+
+````
+% ruby cp_sample.rb
+Maximum of objective function: 23.0
+x = 3
+y = 2
+````
 
 ### Longer example
 
@@ -182,7 +230,7 @@ objective.SetMaximization()
 ~~~
 
 
-### Another Example
+### Another Example
 
 Let's take another example with only integers as variables and using arrays, taken also from [OR-Tools Arrays](https://developers.google.com/optimization/mip/mip_var_array). We will also use [F#] 2-dimensional arrays here. These are described in [F# arrays](https://learn.microsoft.com/en-gb/dotnet/fsharp/language-reference/arrays).
 
@@ -390,7 +438,12 @@ trains = 60
 
 The map coloring problem is an example taken from the [MiniZinc](https://www.minizinc.org/doc-2.5.5/en/modelling.html) tutorial. The states of Australia have to be colored with maximum 3 colors, such that no adjacent states have the same color. 
 
+<!-- 
 ![Australian States](https://www.minizinc.org/doc-2.5.5/en/images/aust.svg)
+-->
+
+![Australian States](../../images/aust.svg "Australian States")
+
 
 Now in this case, we don't have an objective function, we just need any feasible solution. We will therefore use the constrained programming solver, not the linear equation solvers. A variable is created for the color of each state. The constraints are such that neighboring states cannot have the same color. 
 
@@ -575,6 +628,8 @@ Still looking for the best way to layout these equations with LaTeX.
 [Julia]: https://julialang.org
 [Flips]: https://github.com/fslaborg/flips
 [Mosek]: https://docs.mosek.com/modeling-cookbook/index.html
+
+[Ruby]: {{< param "ruby_link" >}}
 
 [Excel Example]: https://supplychaindetective.com/supply-chain-modeling-optimization/
 [Supply Planning]: https://towardsdatascience.com/supply-planning-using-linear-programming-with-python-bff2401bf270
