@@ -12,6 +12,25 @@ tags:
 showToc: true
 ---
 
+
+# Using private repository
+
+If you want to connect a private repository to [render], proceed as follows:
+
+- go to the [Render Dashboard](https://dashboard.render.com), on the top right click on `+ New` and select *Web Service*
+- you are redirected to a list with a tab *Git Provider*
+- select *Credentials (1)*
+- Under *Select deployment credentials*, pick you github repository
+- Now do *Configure in GitHub*
+- You are redirected to *GitHub*. 
+_ Scroll down, until you see *Repository Access*
+- Pick *only select repositories*, and pick the one you need.
+
+Voilà, you have now connected it to GitHub
+
+[render]: https://dashboard.render.com
+
+
 # Deploying with SQlite
 
 *Note*: adopted from ChatGPT.
@@ -19,6 +38,49 @@ showToc: true
 By default, **SQLite is just a file on disk**, and on Render that disk is **ephemeral** unless you explicitly attach persistent storage. That’s why your DB disappears on deploy.
 
 You have two proper options:
+
+- Really use SQLite
+- Switch to PostgreSQL
+
+
+## ⚠️ If You Really Want to Keep SQLite
+
+You must attach a **Persistent Disk** in Render.
+
+### Steps:
+
+1. In Render dashboard → Your Web Service
+2. Go to **Disks**
+3. Add a new disk: **Note**: this is not available in the free of charge instances.
+4. Mount it to something like:
+
+```
+/var/data
+```
+
+5. Change your `config/database.yml` production config:
+
+```yaml
+production:
+  adapter: sqlite3
+  database: /var/data/production.sqlite3
+```
+
+Now the SQLite file lives on persistent storage.
+
+---
+
+## 🚨 Important Limitations of SQLite on Render
+
+Even with a disk:
+
+* ❌ No horizontal scaling
+* ❌ Risk of file locking issues
+* ❌ Slower under concurrent load
+* ❌ Not recommended for production apps with users
+
+SQLite is single-writer.
+
 
 ---
 
@@ -72,66 +134,7 @@ rails db:migrate
 
 After that, your DB persists across deploys and restarts.
 
----
 
-## ⚠️ If You Really Want to Keep SQLite
-
-You must attach a **Persistent Disk** in Render.
-
-### Steps:
-
-1. In Render dashboard → Your Web Service
-2. Go to **Disks**
-3. Add a new disk
-4. Mount it to something like:
-
-```
-/var/data
-```
-
-5. Change your `database.yml` production config:
-
-```yaml
-production:
-  adapter: sqlite3
-  database: /var/data/production.sqlite3
-```
-
-Now the SQLite file lives on persistent storage.
-
----
-
-## 🚨 Important Limitations of SQLite on Render
-
-Even with a disk:
-
-* ❌ No horizontal scaling
-* ❌ Risk of file locking issues
-* ❌ Slower under concurrent load
-* ❌ Not recommended for production apps with users
-
-SQLite is single-writer.
-
----
-
-## 🎯 What I Recommend
-
-If this app:
-
-* Has users
-* Will grow
-* Is more than a demo
-* Needs reliability
-
-→ Use PostgreSQL.
-
-If this is:
-
-* A personal side project
-* A small internal tool
-* A prototype
-
-→ Persistent disk + SQLite is acceptable.
 
 # Using authentication
 
