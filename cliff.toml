@@ -1,0 +1,14 @@
+[git]
+conventional_commits = false
+filter_unconventional = false
+
+[[commit_parsers]]
+message = ".*"
+group = "Other"
+
+[changelog]
+header = """
+---
+title: "Changelog"
+---
+"""

@@ -37,6 +37,9 @@ menu:
     - name: Search
       url: /search
       weight: 100
+    - name: Changelog
+      url: /changelog
+      weight: 110
 
 outputs:
   home:
