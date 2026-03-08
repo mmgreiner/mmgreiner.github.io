@@ -1,6 +1,15 @@
 ---
 title: "Changelog"
 ---
+## [unreleased]
+
+### 🐛 Bug Fixes
+
+- Fix: local sh scripts should not be committed
+
+### 📚 Documentation
+
+- Doc added changelog
 ## [0.1.0] - 2026-03-08
 
 ### 🐛 Bug Fixes
