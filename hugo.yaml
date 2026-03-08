@@ -2,10 +2,8 @@ baseURL: http://example.org/
 disablePathToLower: true
 languageCode: en-us
 title: Küse's Codes
-theme: [ "PaperMod" ] # hugo-theme-relearn   #hugo-pure    # ananke
+theme: [ "PaperMod" ] 
 
-#sectionPagesMenu: "main"
-show_reading_time: true
 summaryLength: 20
 
 ignoreFiles:
@@ -30,8 +28,8 @@ menu:
     - name: Drafts
       url: /draft
       weight: 25
-    - name: "✨chats"
-      url: /chats
+    - name: Chats
+      url: /chat
       weight: 27
     - name: About me
       url: /about
@@ -41,10 +39,10 @@ menu:
       weight: 100
 
 outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON # is necessary
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
 
 params:
   homeInfoParams:
@@ -61,9 +59,10 @@ params:
       url: mailto:mmgreiner@bluewin.ch
     - name: linkedin
       url: https://www.linkedin.com/in/markus-greiner-60b51811
-
+  
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
+  ShowReadingTime: true
 
   # comments: true
 
@@ -79,6 +78,12 @@ params:
   ruby_link: https://www.ruby-lang.org/
   rails_link: https://rubyonrails.org/
 
+  author:
+    name: Markus Greiner
+    email: mmgreiner@bluewin.ch
 
+Author_OLD:
+  name: Markus Greiner
+  email: mmgreiner@bluewin.ch
 
 

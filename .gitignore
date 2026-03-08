@@ -4,6 +4,7 @@ publish_local.sh
 
 # Hugo
 public/
+resources/
 
 # Backup Files
 *.markdown~

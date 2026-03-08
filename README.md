@@ -23,6 +23,14 @@ hugo -D --destination ~/Sites/mypages --baseURL http://localhost/~mmgreiner/mypa
 
 You can browse it at <http://localhost/~mmgreiner/mypages>
 
+### Debugging
+
+When you hit errors, use detailed logging:
+
+```
+hugo server -D --logLevel debug  
+```
+
 ## Production
 
 To prepre for production, use `minify`:
@@ -50,5 +58,21 @@ Now, `./public` containsn all the necessary files.
 
 With the workflow defined in  `.github/workflows/hugo.yaml`, upon committing and pushing the files, it should automatically be available on [mmgreiner.github.io][mmgreiner-github].
 
+## Hugo Version 157
+
+With version `hugo v0.157.0` there was a change to how the author name was treated. The following files needed to be changed:
+
+In  `hugo.yaml` these lines were added:
+
+```yaml
+parameters:
+    author:
+        name: Markus Greiner
+        email: mmgreiner@bluewin.ch
+```
+
+The partial `rss.xml` was changed, I copied from `themes/PaperMod/layouts/_default/rss.xml` to `layouts/_default/rss.xml` and adopted `Site.author` related lines there.
+
+I also copied `themes/PaperMod/layouts/partials/author.html` to `layouts/partials/author.html` and made some changes there.
 
 
