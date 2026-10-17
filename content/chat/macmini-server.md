@@ -15,7 +15,7 @@ draft: false
 showToc: false
 ---
 
-## 🤖 How can I find my IP address?
+## 🤖 How can I find my IP address?
 
 On your Mac Mini, open **Terminal** and run:
 
