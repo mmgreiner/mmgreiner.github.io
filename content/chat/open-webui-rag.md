@@ -3,7 +3,6 @@ title: RAG Systems - Pipelines vs MCP
 description: 'Auth + RAG design matters: OpenWebUI is just the entry point, not the
   enforcement layer.'
 categories:
-- auth
 - security
 - architecture
 tags:
