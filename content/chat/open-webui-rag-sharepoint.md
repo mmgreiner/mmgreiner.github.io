@@ -2,9 +2,8 @@
 title: RAG System with Open-WebUI and SharePoint
 description: Enterprise-grade retrieval with ACL filtering and security trimming
 categories:
-- Search
-- Enterprise
-- Security
+- programming
+- security
 tags:
 - enterprise-grade
 - retrieval

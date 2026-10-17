@@ -6,7 +6,8 @@ description: 'YARD is the standard documentation tool for Ruby projects, includi
   programming, publishing. This document is primarily focused on Ruby on Rails and
   YARD documentation.'
 categories:
-- Enterprise
+- programming
+- authoring
 tags:
 - rails
 - ruby

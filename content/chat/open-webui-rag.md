@@ -4,7 +4,7 @@ description: 'Auth + RAG design matters: OpenWebUI is just the entry point, not 
   enforcement layer.'
 categories:
 - security
-- architecture
+- programming
 tags:
 - Open-WebUI
 - Microsoft Entra ID
