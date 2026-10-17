@@ -12,7 +12,7 @@ tags:
 showToc: true
 ---
 
-# Small example 
+# 🤖 Ruby on Rails integrated with OpenAI tool calling
 
 Below is a **complete small Ruby on Rails example** showing how to implement **OpenAI tool calling** end-to-end.
 

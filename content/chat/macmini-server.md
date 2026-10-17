@@ -1,3 +1,22 @@
+---
+title: Finding Your IP Address
+description: Instructions for finding your IP address on a Mac Mini, either using
+  Terminal or System Settings
+categories:
+- programming
+- publishing
+tags:
+- macos
+- terminal
+- ip
+- network
+date: 2026-10-17
+draft: false
+showToc: false
+---
+
+## 🤖 How can I find my IP address?
+
 On your Mac Mini, open **Terminal** and run:
 
 ```bash

@@ -1,4 +1,21 @@
-## Problem: reset local Open-WebUI password
+---
+title: Reset Open-WebUI Password
+description: Resetting Open-WebUI password by generating a properly-hashed password
+  and updating the database. Includes step-by-step instructions for macOS and Python.
+categories:
+- programming
+tags:
+- bcrypt
+- Open-WebUI
+- password
+- Python
+- macOS
+date: 2026-10-17
+draft: false
+showToc: false
+---
+
+## 🤖 Problem: reset local Open-WebUI password
 
 There is a sql database here: `~/Library/Application Support/open-webui/data`.
 

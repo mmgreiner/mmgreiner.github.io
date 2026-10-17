@@ -1,3 +1,24 @@
+---
+title: RAG Systems - Pipelines vs MCP
+description: 'Auth + RAG design matters: OpenWebUI is just the entry point, not the
+  enforcement layer.'
+categories:
+- auth
+- security
+- architecture
+tags:
+- Open-WebUI
+- Microsoft Entra ID
+- auth
+- RAG
+- pipelines
+date: 2026-10-17
+draft: false
+showToc: false
+---
+
+# 🤖 RAG Systems - Pipelines vs MCP
+
 Short answer: **use pipelines for control, MCP for interoperability, and combine both if you’re building something serious.** The “best” setup depends on whether you care more about *tight integration and performance* or *flexibility and tool reuse*.
 
 Here’s how to think about it clearly:

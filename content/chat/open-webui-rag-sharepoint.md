@@ -1,4 +1,24 @@
-# Rag System for Open-WebUI and Sharepoint
+---
+title: RAG System with Open-WebUI and SharePoint
+description: Enterprise-grade retrieval with ACL filtering and security trimming
+categories:
+- Search
+- Enterprise
+- Security
+tags:
+- enterprise-grade
+- retrieval
+- search
+- ACL
+- security
+- Open-WebUI
+- SharePoint
+date: 2026-10-17
+draft: false
+showToc: false
+---
+
+# 🤖 Rag System for Open-WebUI and Sharepoint
 
 > Build a system with Open-WebUI and a RAG with documents in SharePoint 
 

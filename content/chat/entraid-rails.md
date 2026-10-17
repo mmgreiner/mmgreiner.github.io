@@ -1,3 +1,21 @@
+---
+title: Microsoft Entra ID Authentication with Rails 8
+description: Implementing Microsoft Entra ID authentication with Rails 8, including
+  adding a new identity provider, using OmniAuth, and integrating with the existing
+  Rails 8 authentication and session layer.
+categories:
+- programming
+tags:
+- OmniAuth
+- OpenID Connect
+- Microsoft Entra ID
+- Rails 8
+- authentication
+date: 2026-10-17
+draft: false
+showToc: false
+---
+
 Exactly. If you're using **Rails 8's built-in****`bin/rails generate authentication`**, you don't need Devise. I would keep Rails' generated authentication/session layer and make **Entra ID another way of establishing a Rails session**.
 
 Rails 8's generator gives you `User`, `Session`, `Current.user`, `SessionsController`, etc.; it doesn't provide an external identity-provider integration itself.  Ruby on Rails Guides+1
