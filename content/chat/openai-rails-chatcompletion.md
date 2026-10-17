@@ -14,7 +14,9 @@ showToc: true
 
 # 🤖 Ruby on Rails integrated with OpenAI tool calling
 
-Below is a **complete small Ruby on Rails example** showing how to implement **OpenAI tool calling** end-to-end.
+Below is a **complete small Ruby on Rails example** showing how to implement [**OpenAI tool calling**][openai-sdk] end-to-end.
+
+[openai-sdk]: https://gemdocs.org/gems/openai/0.105.0/
 
 This example:
 
