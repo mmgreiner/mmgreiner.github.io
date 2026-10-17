@@ -1,4 +1,24 @@
-# YARD Documentation in Ruby on Rails
+---
+title: 🤖 YARD Documentation in Ruby on Rails
+description: 'YARD is the standard documentation tool for Ruby projects, including
+  Rails apps. This document provides an overview of YARD comments, syntax, and best
+  practices for documenting Rails models and controllers. Categories: Enterprise,
+  programming, publishing. This document is primarily focused on Ruby on Rails and
+  YARD documentation.'
+categories:
+- Enterprise
+tags:
+- rails
+- ruby
+- yard
+- documentation
+- api
+date: 2026-10-17
+draft: false
+showToc: false
+---
+
+# 🤖 YARD Documentation in Ruby on Rails
 
 YARD is the standard documentation tool for Ruby projects, including Rails apps. Here's a quick rundown.
 
