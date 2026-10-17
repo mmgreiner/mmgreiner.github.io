@@ -1,5 +1,5 @@
 ---
-title: OpenAI and Rails
+title: 🤖 OpenAI and Rails
 description: A chat on using OpenAI with chat completion and tool calling
 date: 2026-02-12
 draft: tfalsee

@@ -1,5 +1,5 @@
 ---
-title: Using Git Cliff for Automated Changelogs
+title: 🤖 Using Git Cliff for Automated Changelogs
 description: A guide on how to use Git Cliff to generate and update changelogs, including
   tips on why to use this tool and how to customize it to fit your workflow.
 categories:
@@ -15,7 +15,7 @@ draft: false
 showToc: false
 ---
 
-## 🤖 How can I use git-cliff to automate changelogs
+## 🤖 How can I use git-cliff to automate changelogs
 
 Run git-cliff **first**, then tag.
 
