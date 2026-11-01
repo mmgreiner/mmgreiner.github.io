@@ -15,7 +15,7 @@ tags:
 - Power Management
 date: 2026-10-24
 draft: false
-showToc: false
+showToc: true
 ---
 
 # I Ignored These Mac Terminal Commands for Years <br> What most Mac developers never learn
@@ -39,7 +39,7 @@ That was the day I realized something embarrassing: I had been using my Mac’s 
 
 ## The Problem Most Mac Developers Have
 
-In my last post, [I Used the Terminal Wrong for Years](https://medium.com/@TusharKanjariya/i-used-the-terminal-wrong-for-years-5557b10c0b85), I shared the shell tricks I use every day like !!, Ctrl+R, aliases, fzf, tmux.
+In my last post, [I Used the Terminal Wrong for Years](https://medium.com/@TusharKanjariya/i-used-the-terminal-wrong-for-years-5557b10c0b85?sk=e0d80926e44933dc968c582220e11e73), I shared the shell tricks I use every day like !!, Ctrl+R, aliases, fzf, tmux.
 
 And here’s the thing about all of those: they’re *shell* tricks. They work the same on Ubuntu, on a remote server, on your Mac.
 
